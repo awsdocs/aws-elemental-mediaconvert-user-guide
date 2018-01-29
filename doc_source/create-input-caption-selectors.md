@@ -1,0 +1,24 @@
+# Create Input Captions Selectors<a name="create-input-caption-selectors"></a>
+
+When you set up captions, you begin by creating captions selectors\. Captions selectors identify a particular captions asset on the input and associate a label with it\. The captions asset is either a single language or the set of all languages contained in the input file, depending on your input captions format\. For example, you might add **Captions selector 1** and associate the French captions with it\. When you set up an output to include captions, you do so by specifying captions selectors\. 
+
+
+
+**To create input captions selectors**
+
+1. On the **Create job** page, in the **Job** pane on the left, choose an input\. 
+
+1. In the **Captions selectors** section, near the bottom of the page, choose the **Add captions selector** button\. 
+
+1. Under **Source**, choose the input captions format\. 
+
+1. For most formats, more fields appear\. Specify the values for these fields as described in the topic relating to your input captions format\. Choose the appropriate topic from the list following this procedure\.
+
+1. Create more captions selectors as necessary\. The number of captions selectors you need depends on your input captions format: See the appropriate topic from the list following this procedure\.
+
+
++ [QuickTime Captions Track or Captions in MXF VANC Data \(Ancillary\)](ancillary.md)
++ [CEA/EIA\-608, CEA/EIA\-708 \(Embedded\)](embedded.md)
++ [DVB\-Sub](dvb-sub-or-scte-27.md)
++ [Teletext](dvb-teletext.md)
++ [SCC, SRT, STL, TTML \(Sidecar\)](scc.md)
