@@ -63,11 +63,11 @@ After creating output groups, set up your outputs within each group\. For more i
 
 1. Specify values for the general settings under **Output settings**\. Depending on the output group type, these settings may include transport stream settings or other container settings\. For more information on individual settings, choose the **Info** link next to the setting\.
 
-1. Specify values for the video encoding under **Encoding settings**\. The video settings are selected by default, so you don't need to explictly choose this group of settings\.
+1. Specify values for the video encoding under **Stream settings**\. The video settings are selected by default, so you don't need to explictly choose this group of settings\.
 
    For more information on individual settings, choose the **Info** link next to the setting\.
 
-1. Choose **Audio 1** to bring up the group of encoding settings for the first audio asset included in this output\. For more information on bringing audio from the input to each output, see [Setting Up Audio in AWS Elemental MediaConvert Jobs](setting-up-audio.md)
+1. Choose **Audio 1** to bring up the group of stream settings for the first audio asset included in this output\. For more information on bringing audio from the input to each output, see [Setting Up Audio in AWS Elemental MediaConvert Jobs](setting-up-audio.md)
 
 1. To include captions in the output, choose **Add captions** to bring up a group of captions settings\. For more information on setting up captions, see [Setting Up Captions in AWS Elemental MediaConvert Jobs](including-captions.md)
 
