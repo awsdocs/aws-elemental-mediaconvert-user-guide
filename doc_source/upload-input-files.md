@@ -1,4 +1,4 @@
-# Step 5: Upload Files for Transcoding<a name="upload-input-files"></a>
+# Step 5: Upload Files for Transcoding<a name="upload-input-files"></a><a name="upload-with-s3"></a>
 
 **To upload files to an S3 bucket**
 

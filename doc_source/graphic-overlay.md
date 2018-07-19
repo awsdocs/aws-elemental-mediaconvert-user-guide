@@ -7,11 +7,8 @@ For example, you might include a logo in the corner of the video frame throughou
 ## Requirements for the Overlay File<a name="requirements-for-the-overlay-file"></a>
 
 Set up the image files that you want to insert over your video as follows:
-
 + **File type**: Use \.bmp, \.png, or \.tga
-
 + **Aspect ratio**: Use any aspect ratio; it doesn't need to match the aspect ratio of the underlying video\.
-
 + **Size in pixels**: Use any size, up to the size of the underlying video\. 
 **Note**  
 In jobs that scale the video resolution \(that is, the size of the video frame\), the overlaid image is not scaled\. Make sure that the image that you select is scaled to suit the size of the video frame after scaling\.

@@ -1,6 +1,7 @@
 # Captions Support Tables by Output Container Type<a name="captions-support-tables-by-container-type"></a>
 
-
+**Topics**
++ [CMAF Output Container](#cmaf-output-container)
 + [DASH Output Container](#dash-output-container)
 + [HLS Output Container](#hls-output-container)
 + [MS Smooth \(MSS\) Output Container](#mss-output-container)
@@ -9,24 +10,47 @@
 + [QuickTime Output Container](#quicktime-output-container)
 + [No Output Container](#no-output-container)
 
+## CMAF Output Container<a name="cmaf-output-container"></a>
+
+The following table lists supported output caption formats for this output container, sorted by the input caption container and input caption format\. 
+
+**Embedded** captions formats include:
++ CEA\-608
++ EIA\-608
++ CEA\-708
++ EIA\-708
+
+**Ancillary** captions include:
++ Captions in the Quicktime Captions Track
++ Captions in the MXF container VANC data
+
+
+| Input Caption Container | Input Caption Format | Supported Output Caption Formats | 
+| --- | --- | --- | 
+| MP4 Container | Embedded | Web\-VTT | 
+| MXF Container | Embedded | Web\-VTT | 
+|   | Ancillary | Web\-VTT | 
+| QuickTime Container | Embedded | Web\-VTT | 
+|   | Ancillary | Web\-VTT | 
+| Raw Container | SRT | Web\-VTT | 
+|   | TTML | Web\-VTT | 
+|   | STL | Web\-VTT | 
+|   | SCC | Web\-VTT | 
+| MPEG2\-TS Container | Embedded | Web\-VTT | 
+|   | Teletext | Web\-VTT | 
+
 ## DASH Output Container<a name="dash-output-container"></a>
 
 The following table lists supported output caption formats for this output container, sorted by the input caption container and input caption format\. 
 
 **Embedded** captions formats include:
-
 + CEA\-608
-
 + EIA\-608
-
 + CEA\-708
-
 + EIA\-708
 
 **Ancillary** captions include:
-
 + Captions in the Quicktime Captions Track
-
 + Captions in the MXF container VANC data
 
 
@@ -51,19 +75,13 @@ The following table lists supported output caption formats for this output conta
 The following table lists supported output caption formats for this output container, sorted by the input caption container and input caption format\. 
 
 **Embedded** captions formats include:
-
 + CEA\-608
-
 + EIA\-608
-
 + CEA\-708
-
 + EIA\-708
 
 **Ancillary** captions include:
-
 + Captions in the Quicktime Captions Track
-
 + Captions in the MXF container VANC data
 
 **Note**  
@@ -77,18 +95,18 @@ You can use only [Teletext level 1\.5](https://en.wikipedia.org/wiki/World_Syste
 
 | Input Caption Container | Input Caption Format | Supported Output Caption Formats | 
 | --- | --- | --- | 
-| MP4 Container | Embedded | Burn\-inEmbeddedWeb\-VTT | 
-| MXF Container | Embedded | Burn\-inEmbeddedWeb\-VTT | 
-|   | Ancillary | Burn\-inEmbeddedWeb\-VTT | 
-|   | Teletext | Burn inTTML | 
-| QuickTime Container | Embedded | Burn\-inEmbeddedWeb\-VTT | 
-|   | Ancillary | Burn\-inEmbeddedWeb\-VTT | 
-| Raw Container | SRT | Burn\-inWeb\-VTT | 
-|   | TTML | Burn\-inWeb\-VTT | 
-|   | STL | Burn\-inWeb\-VTT | 
-|   | SCC | Burn\-inEmbeddedWeb\-VTT | 
-| MPEG2\-TS Container | Embedded | Burn\-inEmbeddedWeb\-VTT | 
-|   | Teletext | Burn\-inWeb\-VTT | 
+| MP4 Container | Embedded |  Burn\-in Embedded Web\-VTT  | 
+| MXF Container | Embedded |  Burn\-in Embedded Web\-VTT  | 
+|   | Ancillary |  Burn\-in Embedded Web\-VTT  | 
+|   | Teletext |  Burn in TTML  | 
+| QuickTime Container | Embedded |  Burn\-in Embedded Web\-VTT  | 
+|   | Ancillary |  Burn\-in Embedded Web\-VTT  | 
+| Raw Container | SRT |  Burn\-in Web\-VTT  | 
+|   | TTML |  Burn\-in Web\-VTT  | 
+|   | STL |  Burn\-in Web\-VTT  | 
+|   | SCC |  Burn\-in Embedded Web\-VTT  | 
+| MPEG2\-TS Container | Embedded |  Burn\-in Embedded Web\-VTT  | 
+|   | Teletext |  Burn\-in Web\-VTT  | 
 |   | DVB\-Sub | Burn\-in | 
 
 ## MS Smooth \(MSS\) Output Container<a name="mss-output-container"></a>
@@ -96,19 +114,13 @@ You can use only [Teletext level 1\.5](https://en.wikipedia.org/wiki/World_Syste
 The following table lists supported output caption formats for this output container, sorted by the input caption container and input caption format\. 
 
 **Embedded** captions formats include:
-
 + CEA\-608
-
 + EIA\-608
-
 + CEA\-708
-
 + EIA\-708
 
 **Ancillary** captions include:
-
 + Captions in the Quicktime Captions Track
-
 + Captions in the MXF container VANC data
 
 
@@ -134,19 +146,13 @@ The following table lists supported output caption formats for this output conta
 The following table lists supported output caption formats for this output container, sorted by the input caption container and input caption format\. 
 
 **Embedded** captions formats include:
-
 + CEA\-608
-
 + EIA\-608
-
 + CEA\-708
-
 + EIA\-708
 
 **Ancillary** captions include:
-
 + Captions in the Quicktime Captions Track
-
 + Captions in the MXF container VANC data
 
 
@@ -171,19 +177,13 @@ The following table lists supported output caption formats for this output conta
 The following table lists supported output caption formats for this output container, sorted by the input caption container and input caption format\. 
 
 **Embedded** captions formats include:
-
 + CEA\-608
-
 + EIA\-608
-
 + CEA\-708
-
 + EIA\-708
 
 **Ancillary** captions include:
-
 + Captions in the Quicktime Captions Track
-
 + Captions in the MXF container VANC data
 
 **Note**  
@@ -194,39 +194,33 @@ You can use only [Teletext level 1\.5](https://en.wikipedia.org/wiki/World_Syste
 
 | Input Caption Container | Input Caption Format | Supported Output Caption Formats | 
 | --- | --- | --- | 
-| MP4 Container | Embedded |  Burn\-in DVB\-Sub Embedded | 
+| MP4 Container | Embedded |  Burn\-in DVB\-Sub Embedded  | 
 | MXF Container | Embedded |  Burn\-in DVB\-Sub Embedded  | 
-|   | Ancillary |  Burn\-in DVB\-Sub Embedded | 
+|   | Ancillary |  Burn\-in DVB\-Sub Embedded  | 
 |   | Teletext |  Burn\-in DVB\-Sub Teletext  | 
 | QuickTime Container | Embedded |  Burn\-in DVB\-Sub Embedded  | 
 |   | Ancillary |  Burn\-in DVB\-Sub Embedded  | 
-| Raw Container | SRT | Burn\-inTeletext | 
-|   | SMI | Burn\-inDVB\-Sub | 
-|   | TTML | Burn\-inTeletextDVB\-Sub | 
-|   | STL | Burn\-inTeletextDVB\-Sub | 
-|   | SCC | Burn\-inDVB\-SubEmbedded | 
+| Raw Container | SRT |  Burn\-in Teletext  | 
+|   | SMI |  Burn\-in DVB\-Sub  | 
+|   | TTML |  Burn\-in Teletext DVB\-Sub  | 
+|   | STL |  Burn\-in Teletext DVB\-Sub  | 
+|   | SCC |  Burn\-in DVB\-Sub Embedded  | 
 | MPEG2\-TS Container | Embedded | Burn\-inDVB\-SubEmbedded | 
-|   | Teletext | Burn\-inDVB\-SubTeletext | 
-|   | DVB\-Sub | Burn\-inDVB\-Sub | 
+|   | Teletext |  Burn\-in DVB\-Sub Teletext  | 
+|   | DVB\-Sub |  Burn\-in DVB\-Sub  | 
 
 ## QuickTime Output Container<a name="quicktime-output-container"></a>
 
 The following table lists supported output caption formats for this output container, sorted by the input caption container and input caption format\. 
 
 **Embedded** captions formats include:
-
 + CEA\-608
-
 + EIA\-608
-
 + CEA\-708
-
 + EIA\-708
 
 **Ancillary** captions include:
-
 + Captions in the Quicktime Captions Track
-
 + Captions in the MXF container VANC data
 
 
@@ -251,19 +245,13 @@ The following table lists supported output caption formats for this output conta
 The following table lists supported output caption formats for this output container, sorted by the input caption container and input caption format\. 
 
 **Embedded** captions formats include:
-
 + CEA\-608
-
 + EIA\-608
-
 + CEA\-708
-
 + EIA\-708
 
 **Ancillary** captions include:
-
 + Captions in the Quicktime Captions Track
-
 + Captions in the MXF container VANC data
 
 

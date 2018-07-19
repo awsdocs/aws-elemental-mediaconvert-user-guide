@@ -4,7 +4,7 @@ A job does the work of transcoding\. You specify the name of the file that you w
 
 **To create a job**
 
-1. Open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. Choose **Get started**\.
 
@@ -13,10 +13,6 @@ A job does the work of transcoding\. You specify the name of the file that you w
 1. Provide transcode instructions and job settings\. For more information, see [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md)\. 
 
    Make sure that you pick the same region for your job and your file storage\. 
-
-1. In the left navigation pane, under **Job settings**, choose **Settings**\.
-
-1. In the **Job settings** section of the console, under **IAM role**, choose the role that you created in Step 3 of this tutorial\. 
 
 1. Choose **Create**\.
 

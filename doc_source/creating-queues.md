@@ -1,14 +1,23 @@
 # Creating a Queue in AWS Elemental MediaConvert<a name="creating-queues"></a>
 
+AWS Elemental MediaConvert provides a default queue, but you can choose to create your own queues to manage the resources that are available to your account\. For information about how queues affect the way that AWS Elemental MediaConvert allocates the processing of resources, see [How Jobs Are Prioritized](about-resource-allocation-and-job-prioritization.md)\.
+
 **To create a queue**
 
-1. Open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\. 
+1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\. 
 
-1. On the navigation bar of the AWS Elemental MediaConvert console, choose the region that you want to create the queue in\. This region is where you create your jobs\.
+1. On the navigation bar of the AWS Elemental MediaConvert console, choose the region where you want to create the queue\.
 
-1. In the navigation pane of the console, choose **Queues**\.
+   A default queue is available in all regions\. Other queues appear only in the region where they are created\.  
+![\[Choose a region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)
 
-1. On the **Queues** page, choose **Create new queue**\.
+1. Choose the three\-bar icon on the left to access the left navigation pane\.
+
+1. Choose **Queues**\.
+
+1. In the **Job templates** pane, choose the **Create template** button\.
+
+1. On the **Queues** page, choose **Create queue**\.
 
 1. Type a name and a description for the new queue\.
 

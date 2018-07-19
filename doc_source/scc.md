@@ -3,13 +3,9 @@
 SCC, SRT, STL, and TTML are sidecar captions formats\. With these formats, you provide input captions as a separate file\. AWS Elemental MediaConvert handles all sidecar formats the same way\. The service can pass them through to the output in the same format or convert them into another sidecar format\. In all cases, you must create one captions selector for the entire set of captions languages\.
 
 Provide the following values for the captions selector fields:
-
 + **External captions file**: The URI to the captions file\. AWS Elemental MediaConvert accepts captions files from Amazon S3\.
-
 + **Time delta**: \(Optional\) Use this setting if you need to adjust the sync between the captions and the video:
-
-  + Type a positive number to add to the times in the captions file\. For example, type **15**to add 15 seconds to all the times in the captions file\.
-
+  + Type a positive number to add to the times in the captions file\. For example, type **15** to add 15 seconds to all the times in the captions file\.
   + Type a negative number to subtract from the times in the captions file\. For example, type **\-5** to subtract 5 seconds from the times in the captions file\.
 
     The format of the times in the captions file doesn't have to match the value in the **Timecode config** field \(in the input portion of your job\)\. The number that you type in this field simply delays the captions or makes the captions play earlier, regardless of the timecode formats\.
@@ -26,4 +22,4 @@ For example, your video file may have embedded timecodes that start at 00:05:00:
 
 **SRT, STL, TTML**: The start time in the captions file is slightly off\. With these types of captions files, the start time for both the video file \(containing video and audio\) and the captions file is always 00:00:00\.
 
-For example, the first instance of dialogue that requires captions might be at 00:06:15\. But in the captions file, this time is marked as 00:06:18 and every other instance of captions is also off by 3 seconds\. The solution is to subtract three seconds from the captions file\. In this case, you would enter "\-3" in the Time delta field\.
+For example, the first instance of dialogue that requires captions might be at 00:06:15\. But in the captions file, this time is marked as 00:06:18 and every other instance of captions is also off by 3 seconds\. The solution is to subtract three seconds from the captions file\. In this case, you would enter "\-3" in the **Time delta** field\.

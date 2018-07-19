@@ -25,11 +25,8 @@ The **Timecode burn\-in** setting determines whether a given output has visible 
 1. Under **Stream settings**, **Preprocessors**, choose **Timecode burn\-in**\.
 
 1. Optionally, provide values for the **Prefix**, **Font size**, and **Position** settings\. Even if you don't provide these values, timecodes are burned into your output using these default values: 
-
    + **Prefix**: no prefix
-
    + **Font size**: **Extra Small \(10\)**
-
    + **Position**: **Top Center**
 
    For details about each of these settings, choose the **Info** link next to **Timecode burn\-in**\.

@@ -11,9 +11,7 @@ To run transcoding jobs with AWS Elemental MediaConvert, first set up an AWS Ide
 1. Choose the **AWS service** role type, and then choose the **MediaConvert** service\.
 
 1. Choose the **MediaConvert** use case for your service\. Then choose **Next: Permissions**\. The service has already defined the permissions used by the role\. These permissions grant AWS Elemental MediaConvert the following permissions:
-
    + Full access to your Amazon S3 resources
-
    + API Gateway invoke full access
 
    The only entity that can assume this role is the AWS Elemental MediaConvert service\.

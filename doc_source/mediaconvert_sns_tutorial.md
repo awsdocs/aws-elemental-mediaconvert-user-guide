@@ -2,10 +2,9 @@
 
 In this tutorial, you configure a CloudWatch Events event rule that captures events when a job status changes to `ERROR` and then notifies you about the event\. To do this, you first create a topic in Amazon SNS that will send you an email notification about the failed job\. Next, you create a rule in CloudWatch Events by defining an event source and referencing the Amazon SNS topic \(the "target"\), as shown in the following illustration\.
 
-![\[This CloudWatch Events rule brings together a job event that has an error and an Amazon SNS
-                    topic.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/CloudWatchEvents_example.png)
+![\[This CloudWatch Events rule brings together a job event that has an error and an Amazon SNS topic.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/CloudWatchEvents_example.png)
 
-
+**Topics**
 + [Prerequisites](#mediaconvert_sns_prereq)
 + [Step 1: Create a Topic in Amazon SNS](#mediaconvert_sns_create_topic)
 + [Step 2: Specify an Event Source in a CloudWatch Events Rule](#mediaconvert_sns_rule_event_sourece)
@@ -14,7 +13,7 @@ In this tutorial, you configure a CloudWatch Events event rule that captures eve
 
 ## Prerequisites<a name="mediaconvert_sns_prereq"></a>
 
-This tutorial assumes that you already know how to create AWS Elemental MediaConvert transcoding jobs\. For information about creating jobs, see [[ERROR] BAD/MISSING LINK TEXT](setting-up-a-job.md)\. At the end of this tutorial, you can submit a job that you designed to fail, to test that you configured your Amazon SNS email notifications correctly\.
+This tutorial assumes that you already know how to create AWS Elemental MediaConvert transcoding jobs\. For information about creating jobs, see [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md)\. At the end of this tutorial, you can submit a job that you designed to fail, to test that you configured your Amazon SNS email notifications correctly\.
 
 ## Step 1: Create a Topic in Amazon SNS<a name="mediaconvert_sns_create_topic"></a>
 
@@ -52,7 +51,7 @@ Next, specify your event source in a CloudWatch Events rule to capture only even
 
 1. In the navigation pane, choose **Events**, and then choose **Create rule**\.
 
-1. In the **Event Source** section, for **Build event pattern to match events by service**, choose **Custom event pattern**\.
+1. In the **Event Source** section, choose Event Pattern, and then choose the element labeled **Build event pattern to match events by service**\. From the resulting dropdown list, choose **Custom event pattern**\.
 
 1. In the **Build custom event pattern** box, replace the existing text with the following text: 
 
@@ -95,6 +94,6 @@ To test your rule, submit a job that you know will cause an error\. For example,
 
 1. Open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
-1. Submit a new AWS Elemental MediaConvert job\. For more information, see [[ERROR] BAD/MISSING LINK TEXT](setting-up-a-job.md)\.
+1. Submit a new AWS Elemental MediaConvert job\. For more information, see [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md)\.
 
 1. Check the email account that you specified when you set up your Amazon SNS topic\. Confirm that you received an email notification for the job error\.

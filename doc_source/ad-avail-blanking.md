@@ -6,7 +6,7 @@ You set up whether there are SCTE\-35 markers for each output individually, but 
 
 **To enable Ad avail blanking:**
 
-1. Create a job and set up outputs to include SCTE\-35 markers as described in [[ERROR] BAD/MISSING LINK TEXT](including-scte-35-markers-in-an-output.md)\.
+1. Create a job and set up outputs to include SCTE\-35 markers as described in [Including SCTE\-35 Markers in an Output](including-scte-35-markers-in-an-output.md)\.
 
 1. In the left navigation pane, under **Job settings**, choose **Settings**\.
 

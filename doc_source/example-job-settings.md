@@ -3,14 +3,11 @@
 The provided job settings are recommended values that should work well for most jobs\. Adapt them as necessary to suit your specific workflow\.
 
 To use these examples, replace the following placeholder values with actual values:
-
 + ROLE HERE
-
 + s3://INPUT HERE
-
 + s3://OUTPUT HERE
 
-
+**Topics**
 + [Example—mp4 Output](#mp4-example)
 + [Example—ABR Output](#HLS-ABR-example)
 

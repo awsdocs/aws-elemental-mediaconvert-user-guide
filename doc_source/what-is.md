@@ -1,15 +1,10 @@
 # What Is AWS Elemental MediaConvert?<a name="what-is"></a>
 
 AWS Elemental MediaConvert is a file\-based video processing service that provides scalable video processing for content owners and distributors with media libraries of any size\. AWS Elemental MediaConvert offers advanced features that enable premium content experiences, including:
-
 + professional broadcast codecs that support increased bit depth and HDR content creation
-
 + still graphic overlays
-
 + advanced audio
-
 + digital rights management \(DRM\)
-
 + closed captioning support
 
 AWS Elemental MediaConvert offers support for various input formats and adaptive bitrate \(ABR\) packaging output formats for delivering high\-quality content from a range of sources onto primary and multiscreen devices\.

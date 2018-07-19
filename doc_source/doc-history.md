@@ -1,17 +1,17 @@
 # Document History for User Guide<a name="doc-history"></a>
 
-The following table describes the documentation for this release of AWS Elemental MediaConvert\.
+The following table describes important additions to the AWS Elemental MediaConvert documentation\. We also update the documentation frequently to address the feedback that you send us\.
++ **API version: 2017\-08\-29** 
++ **Latest documentation update:**June 20, 2018
 
-+ **API version: latest** 
-
-+ **Latest documentation update:** November 27, 2017
-
-
-****  
-
-| Change | API version | Description | Date | 
-| --- | --- | --- | --- | 
-| New AWS Elemental MediaConvert service release |  | Initial documentation for the AWS Elemental MediaConvert service\. | November 27, 2017 | 
+| Change | Description | Date | 
+| --- |--- |--- |
+| [CloudTrail changes](https://docs.aws.amazon.com/mediaconvert/latest/ug/logging-using-cloudtrail.html) | Updated the AWS Elemental MediaConvert documentation to reflect changes in AWS CloudTrail behavior\. | July 19, 2018 | 
+| [Tagging AWS Elemental MediaConvert resources initial release](https://docs.aws.amazon.com/mediaconvert/latest/ug/tagging-resources.html) | You can now tag MediaConvert resources when you create them using the MediaConvert console, the MediaConvert API, or the AWS CLI\. You can list the tags on an existing MediaConvert resource, and add and remove tags on existing MediaConvert resources, through the MediaConvert API and AWS CLI\. | July 16, 2018 | 
+| [Doc\-only update, Setting up a job](https://docs.aws.amazon.com/mediaconvert/latest/ug/specify-output-groups.html) | Added step\-by\-step procedures for setting up a job to transcode input media files into files and packages for playing on multiple device types\. | June 20, 2018 | 
+| [Doc\-only update, "working with" procedures](https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-jobs.html) | Added step\-by\-step procedures for creating, listing, editing, and deleting templates, presets, queues, and jobs\. | May 29, 2018 | 
+| [CMAF support](https://docs.aws.amazon.com/mediaconvert/latest/ug/structuring-complex-jobs.html) | AWS Elemental MediaConvert adds support for common media application format \(CMAF\) outputs\. | May 4, 2018 | 
+| [New AWS Elemental MediaConvert service release](https://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html) | Initial documentation for the AWS Elemental MediaConvert service\. | November 27, 2017 | 
 
 **Note**  
 The AWS Media Services are not designed or intended for use with applications or in situations requiring fail‐safe performance, such as life safety operations, navigation or communication systems, air traffic control, or life support machines in which the unavailability, interruption or failure of the services could lead to death, personal injury, property damage or environmental damage\.

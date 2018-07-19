@@ -7,11 +7,8 @@ You can set up your timecode configuration under job settings\. These settings a
 1. On the **Create job** page, in the **Job** pane on the left, choose **Settings**\.
 
 1.  In the **Timecode configuration** section, for **Source**, choose one of the following values:
-
    + **Embedded**: The service uses any timecodes that are embedded in the video\.
-
    + **Start at 0**: The service ignores any embedded timecodes and assigns the first video frame the timecode 00:00:00:00 \(HH:MM:SS:FF\)\.
-
    + **Specified start**: The service ignores any embedded timecodes and assigns the first video frame the value that you provide for **Start Timecode**\. 
 
      The **Start Timecode** field appears when you choose **Specified start**\.
@@ -25,15 +22,12 @@ You can set up your timecode configuration under job settings\. These settings a
    If you use an editing platform that relies on an anchor timecode, use **Anchor timecode** to specify a point at which the input and output frames have the same timecode\. Use the following 24\-hour format with a frame number: HH:MM:SS:FF\. This setting ignores framerate conversion\.
 
    The system behavior for **Anchor timecode** varies depending on your setting for **Source**:
-
    + If you choose **Start at 0** for **Source**, the anchor frame is the timecode that you provide in **Anchor timecode**, counting from 00:00:00:00\. 
 
      For example, if you set **Anchor timecode** to 01:00:05:00, the anchor frame is one hour and five seconds into the video\.
-
    + If you choose **Embedded** for **Source**, the anchor frame is the timecode that you provide in **Anchor timecode**, counting from the first embedded timecode\. 
 
      For example, if your embedded timecodes start at 01:00:00:00 and you set **Anchor timecode** to 01:00:05:00, the anchor frame is five seconds into the video\.
-
    + If you choose **Specified start** for **Source**, the anchor frame is the timecode that you provide in **Anchor timecode**, counting from the timecode that you specify for the first frame\.
 
      For example, if you specify 00:30:00:00 as your start timecode and you set **Anchor timecode** to 01:00:05:00, the anchor frame is thirty minutes and five seconds into the video\.
