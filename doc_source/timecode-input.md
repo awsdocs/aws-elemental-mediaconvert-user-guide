@@ -6,10 +6,12 @@ The value for **Timecode source** that you specify in the input settings affects
 
 1. On the **Create job** page, in the **Job** pane on the left, choose an input\.
 
-1. Under **Video selector**, **Timecode source**, specify whether AWS Elemental MediaConvert reads timecodes from the input or generates them starting from zero\. Options are as follows:
-   + **Embedded**: The service uses any timecodes embedded in the input video\. This is the default value\. 
+1. Under **Video selector**, **Timecode source**, specify whether MediaConvert reads timecodes from the input or generates them starting from zero\. Options are as follows:
+   + **Embedded**: The service uses any timecodes embedded in the input video\. 
+**Note**  
+Don't choose this value unless your input video has embedded timecodes\.
 
-     If there are no embedded timecodes in the input, the service behaves as though **Timecode source** were set to **Start at 0**\.
+     ONLY TRUE FOR SERVER
    + **Start at 0**: The service sets the timecode of the first frame of the job to 00:00:00:00\.
    + **Specified start**: Do not use this option\.
 

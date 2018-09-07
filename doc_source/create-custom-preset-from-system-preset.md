@@ -1,12 +1,12 @@
-# Creating a Custom Preset Based On a System Preset in AWS Elemental MediaConvert<a name="create-custom-preset-from-system-preset"></a>
+# Creating a Custom Preset Based On a System Preset in MediaConvert<a name="create-custom-preset-from-system-preset"></a>
 
-AWS Elemental MediaConvert doesn't allow you to modify system presets\. If you want a preset that is like a system preset but slightly modified, you can duplicate the system preset, customize the settings, and save it as a custom preset\.
+MediaConvert doesn't allow you to modify system presets\. If you want a preset that is like a system preset but slightly modified, you can duplicate the system preset, customize the settings, and save it as a custom preset\.
 
 **To create a custom output preset based on a system preset**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Sign in to the AWS Management Console and open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
-1. On the navigation bar of the AWS Elemental MediaConvert console, choose the region where you want to create the new preset\.
+1. On the navigation bar of the MediaConvert console, choose the region where you want to create the new preset\.
 
    System presets are available in all regions\. Custom presets appear only in the region where you created them\.  
 ![\[Choose a region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)

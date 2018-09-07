@@ -1,4 +1,4 @@
-# Creating a Custom Job Template in AWS Elemental MediaConvert<a name="creating-template-from-scratch"></a>
+# Creating a Custom Job Template in MediaConvert<a name="creating-template-from-scratch"></a>
 
 Job templates specify the settings that apply to all outputs of a transcoding job\. System job templates have settings that are specified for you; custom job templates have settings that are specified by you or by another user of your AWS account\. 
 
@@ -6,9 +6,9 @@ You can create a job template by individually specifying the settings for each o
 
 **To create a custom job template**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Sign in to the AWS Management Console and open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
-1. On the navigation bar of the AWS Elemental MediaConvert console, choose the region where you want to create the job template\.
+1. On the navigation bar of the MediaConvert console, choose the region where you want to create the job template\.
 
    System job templates are available in all regions\. Custom job templates appear only in the region where you created them\.  
 ![\[Choose a region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)

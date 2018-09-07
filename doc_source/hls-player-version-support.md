@@ -1,6 +1,6 @@
 # HLS Player Version Support<a name="hls-player-version-support"></a>
 
-Most HLS assets that you create with AWS Elemental MediaConvert are compatible with HLS players version 2 and later\. Depending on the features that you use in AWS Elemental MediaConvert, some assets require versions of HLS players that are later than version 2, such as versions 3, 4, or 5\. AWS Elemental MediaConvert automatically sets the player version metadata based on the features that you enable\.
+Most HLS assets that you create with AWS Elemental MediaConvert are compatible with HLS players version 2 and later\. Depending on the features that you use in MediaConvert, some assets require versions of HLS players that are later than version 2, such as versions 3, 4, or 5\. MediaConvert automatically sets the player version metadata based on the features that you enable\.
 
 This list shows the features that might require updated player support:
 

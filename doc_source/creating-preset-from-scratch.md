@@ -1,4 +1,4 @@
-# Creating a Custom Preset in AWS Elemental MediaConvert<a name="creating-preset-from-scratch"></a>
+# Creating a Custom Preset in MediaConvert<a name="creating-preset-from-scratch"></a>
 
 Output presets specify the settings that apply to a single output of a transcoding job\. System presets have the output settings that are specified for you; custom presets have settings that are specified by you or by another user of your AWS account\. 
 
@@ -6,9 +6,9 @@ You can create a custom preset by individually specifying the settings, as descr
 
 **To create a custom output preset**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Sign in to the AWS Management Console and open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
-1. On the navigation bar of the AWS Elemental MediaConvert console, choose the region where you want to create the preset\.
+1. On the navigation bar of the MediaConvert console, choose the region where you want to create the preset\.
 
    System presets are available in all regions\. Custom presets appear only in the region where they are created\.  
 ![\[Choose a region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)

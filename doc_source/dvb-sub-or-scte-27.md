@@ -1,6 +1,6 @@
 # DVB\-Sub<a name="dvb-sub-or-scte-27"></a>
 
-AWS Elemental MediaConvert supports DVB\-Sub  only in TS inputs\.
+MediaConvert supports DVB\-Sub  only in TS inputs\.
 
 In most cases, create one captions selector per language\. In each selector, specify which language you want by providing the PID or language code\.
 

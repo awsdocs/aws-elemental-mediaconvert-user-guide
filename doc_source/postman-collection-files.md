@@ -1,13 +1,13 @@
-# AWS Elemental MediaConvert Postman Collection Files<a name="postman-collection-files"></a>
+# MediaConvert Postman Collection Files<a name="postman-collection-files"></a>
 
-Use these collections with Postman for simple access to AWS Elemental MediaConvert through the REST API\. Copy the collections and save them as JSON files, then import them into Postman\.
+Use these collections with Postman for simple access to MediaConvert through the REST API\. Copy the collections and save them as JSON files, then import them into Postman\.
 
 **Topics**
-+ [AWS Elemental MediaConvert List Resources Collection](#postman-collection-GET)
-+ [AWS Elemental MediaConvert Create Resources Collection](#postman-collection-POST)
-+ [AWS Elemental MediaConvert Resource Tagging Collection](#tagging-collection)
++ [MediaConvert List Resources Collection](#postman-collection-GET)
++ [MediaConvert Create Resources Collection](#postman-collection-POST)
++ [MediaConvert Resource Tagging Collection](#tagging-collection)
 
-## AWS Elemental MediaConvert List Resources Collection<a name="postman-collection-GET"></a>
+## MediaConvert List Resources Collection<a name="postman-collection-GET"></a>
 
 ```
 {
@@ -243,7 +243,7 @@ Use these collections with Postman for simple access to AWS Elemental MediaConve
 }
 ```
 
-## AWS Elemental MediaConvert Create Resources Collection<a name="postman-collection-POST"></a>
+## MediaConvert Create Resources Collection<a name="postman-collection-POST"></a>
 
 ```
 {
@@ -576,7 +576,7 @@ Use these collections with Postman for simple access to AWS Elemental MediaConve
 }
 ```
 
-## AWS Elemental MediaConvert Resource Tagging Collection<a name="tagging-collection"></a>
+## MediaConvert Resource Tagging Collection<a name="tagging-collection"></a>
 
 ```
 {

@@ -92,8 +92,8 @@ To test your rule, submit a job that you know will cause an error\. For example,
 
 **To test the rule**
 
-1. Open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
-1. Submit a new AWS Elemental MediaConvert job\. For more information, see [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md)\.
+1. Submit a new MediaConvert job\. For more information, see [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md)\.
 
 1. Check the email account that you specified when you set up your Amazon SNS topic\. Confirm that you received an email notification for the job error\.

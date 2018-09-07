@@ -1,6 +1,6 @@
-# Using Encryption in AWS Elemental MediaConvert<a name="using-encryption"></a>
+# Using Encryption in MediaConvert<a name="using-encryption"></a>
 
-Protect your content from unauthorized use through encryption\. Digital rights management \(DRM\) systems provide keys to AWS Elemental MediaConvert for content encryption, and licenses to supported players for decryption\.
+Protect your content from unauthorized use through encryption\. Digital rights management \(DRM\) systems provide keys to MediaConvert for content encryption, and licenses to supported players for decryption\.
 
 **Note**  
 To encrypt content, you must have a DRM solution provider\. To get set up, see [http://docs\.aws\.amazon\.com/speke/latest/documentation/customer\-onboarding\.html](http://docs.aws.amazon.com/speke/latest/documentation/customer-onboarding.html)\.  
@@ -64,7 +64,7 @@ The following options are for static key encryption:
 
 ## Troubleshooting Encryption<a name="troubleshooting-encryption"></a>
 
-If the DRM system key server is unavailable when AWS Elemental MediaConvert requests keys, the console displays the following message: Key Server Unavailable 
+If the DRM system key server is unavailable when MediaConvert requests keys, the console displays the following message: Key Server Unavailable 
 
 Please have the following information available when contacting a support technician for troubleshooting purposes:
 + The region the job was run in

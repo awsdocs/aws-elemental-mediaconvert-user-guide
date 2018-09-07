@@ -4,11 +4,11 @@ For outputs in an HLS package, you can have the service include information in t
 
 **To include SCTE\-35 information in your HLS manifest:**
 
-1. Open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. Choose **Create new job**\.
 
-1. Set up your input, output groups, and outputs for video and audio, as described in [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring Complex Jobs in AWS Elemental MediaConvert](structuring-complex-jobs.md)\.
+1. Set up your input, output groups, and outputs for video and audio, as described in [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring Complex Jobs in MediaConvert](structuring-complex-jobs.md)\.
 
 1. Under **Output groups**, choose **Apple HLS**\. 
 **Note**  

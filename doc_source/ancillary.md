@@ -4,7 +4,7 @@ If your input captions are in either of the following formats, the service handl
 + QuickTime captions track \(format QTCC\)
 + MXF VANC data
 
-AWS Elemental MediaConvert does not create output captions in these formats, but you can convert them to a [ supported output format](captions-support-tables-by-container-type.md)\.
+MediaConvert does not create output captions in these formats, but you can convert them to a [ supported output format](captions-support-tables-by-container-type.md)\.
 
 **For ancillary captions**
 + Create one captions selector per language that you will use in your outputs\.

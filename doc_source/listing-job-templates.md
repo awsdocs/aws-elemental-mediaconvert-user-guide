@@ -1,12 +1,12 @@
-# Listing and Viewing Job Templates in AWS Elemental MediaConvert<a name="listing-job-templates"></a>
+# Listing and Viewing Job Templates in MediaConvert<a name="listing-job-templates"></a>
 
-You can list the system job templates that are included with AWS Elemental MediaConvert and the custom job templates that you have added in a region\. You can also view the settings for an individual job template\.
+You can list the system job templates that are included with MediaConvert and the custom job templates that you have added in a region\. You can also view the settings for an individual job template\.
 
 **To list job templates**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Sign in to the AWS Management Console and open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
-1. If you have custom job templates, on the navigation bar of the AWS Elemental MediaConvert console, choose the region that your custom templates were created in\.
+1. If you have custom job templates, on the navigation bar of the MediaConvert console, choose the region that your custom templates were created in\.
 
    The list of system job templates is the same regardless of region\. Custom job templates appear only in the region where they are created\.  
 ![\[Choose a region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)

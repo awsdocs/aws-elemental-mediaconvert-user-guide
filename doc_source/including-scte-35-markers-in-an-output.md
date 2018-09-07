@@ -4,11 +4,11 @@ You can include any SCTE\-35 markers from your input in any output that has an M
 
 **To pass through SCTE\-35 markers from the input to an output:**
 
-1. Open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. Choose **Create new job**\.
 
-1. Set up your input, output groups, and outputs for video and audio, as described in [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring Complex Jobs in AWS Elemental MediaConvert](structuring-complex-jobs.md)\.
+1. Set up your input, output groups, and outputs for video and audio, as described in [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring Complex Jobs in MediaConvert](structuring-complex-jobs.md)\.
 **Note**  
 SCTE\-35 markers are only present in transport stream inputs, such as MPEG\-2 files\. You can only include them in MPEG\-2 container outputs\. These outputs can be either standalone files or part of an HLS package\.
 

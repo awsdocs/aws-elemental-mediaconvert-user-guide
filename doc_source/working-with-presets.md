@@ -6,8 +6,8 @@ You can use a system preset with settings specified for you, or you can create a
 
 **Topics**
 + [Using Output Presets to Specify the Outputs of Your AWS Elemental MediaConvert Job](using-a-preset-to-specify-a-job-output.md)
-+ [Listing and Viewing Output Presets in AWS Elemental MediaConvert](listing-presets.md)
-+ [Creating a Custom Preset in AWS Elemental MediaConvert](creating-preset-from-scratch.md)
-+ [Creating a Custom Preset Based On a System Preset in AWS Elemental MediaConvert](create-custom-preset-from-system-preset.md)
-+ [Modifying Custom Presets in AWS Elemental MediaConvert](modifying-presets.md)
++ [Listing and Viewing Output Presets in MediaConvert](listing-presets.md)
++ [Creating a Custom Preset in MediaConvert](creating-preset-from-scratch.md)
++ [Creating a Custom Preset Based On a System Preset in MediaConvert](create-custom-preset-from-system-preset.md)
++ [Modifying Custom Presets in MediaConvert](modifying-presets.md)
 + [Deleting a Custom Preset](deleting-a-preset.md)

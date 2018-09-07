@@ -8,4 +8,4 @@ Put your captions in the same output group and the same output as your video\.
 
 ## How to Specify Multiple Languages<a name="multilang-burn-in-output-captions"></a>
 
-You can only burn\-in only one language of captions\. 
+You can burn\-in only one language of captions\. 

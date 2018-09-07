@@ -1,24 +1,24 @@
 # Correcting Color in the Output<a name="correcting-color-in-the-output"></a>
 
-Set color correction as needed in each output stream's preprocessor settings\. By default, AWS Elemental MediaConvert doesn't apply color correction\. 
+Set color correction as needed in each output stream's preprocessor settings\. By default, MediaConvert doesn't apply color correction\. 
 
 In the output's stream preprocessors options, choose **Color corrector**\. Enter your values in the selections that appear\. 
 
 **Note**  
 Depending on the output type, you might need to choose the output's **More settings** options to display the preprocessors settings area\.
 
-AWS Elemental MediaConvert calculates color correction using the values in these fields combined with the color metadata from the input\. 
+MediaConvert calculates color correction using the values in these fields combined with the color metadata from the input\. 
 
 ## Brightness, Contrast, Hue, and Saturation<a name="brightness-contrast-hue-saturation"></a>
 
-Enter correction values as needed for brightness, contrast, hue, and saturation\. AWS Elemental MediaConvert uses these settings to apply color correction independent of the other color corrector settings\. 
+Enter correction values as needed for brightness, contrast, hue, and saturation\. MediaConvert uses these settings to apply color correction independent of the other color corrector settings\. 
 
 ## Color Space Conversion<a name="color-space-conversion"></a>
 
 Set color space conversion to encode the output stream with a different standard than the input stream\. Select the option for the format that you want to convert to\. The format that you convert from is determined by the input\.
 
 **Supported Conversion Options**  
-AWS Elemental MediaConvert supports HDR formats, HDR 10 and HLG 2020, and SDR color spaces, Rec\. 601 and Rec\. 709, for input and output\. Your input color space is set by the input video or by your override of the input video setting\. For more information, see [Correcting Input Color Space Metadata](correcting-input-color-space-metadata.md)\.
+MediaConvert supports HDR formats, HDR 10 and HLG 2020, and SDR color spaces, Rec\. 601 and Rec\. 709, for input and output\. Your input color space is set by the input video or by your override of the input video setting\. For more information, see [Correcting Input Color Space Metadata](correcting-input-color-space-metadata.md)\.
 
 You can't convert from HDR input to SDR output, but all other conversion options are valid\. 
 

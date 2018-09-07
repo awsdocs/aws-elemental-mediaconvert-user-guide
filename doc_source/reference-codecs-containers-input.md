@@ -1,6 +1,6 @@
 # Supported Input Codecs and Containers<a name="reference-codecs-containers-input"></a>
 
-AWS Elemental MediaConvert accepts input files in the following combinations of codecs and containers\.
+MediaConvert accepts input files in the following combinations of codecs and containers\.
 
 ## Video<a name="reference-codecs-containers-input-video"></a>
 

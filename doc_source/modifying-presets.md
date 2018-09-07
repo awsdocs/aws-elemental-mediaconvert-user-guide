@@ -1,4 +1,4 @@
-# Modifying Custom Presets in AWS Elemental MediaConvert<a name="modifying-presets"></a>
+# Modifying Custom Presets in MediaConvert<a name="modifying-presets"></a>
 
 You can adjust the settings and field values in your custom presets\. You can't change system presets, but you can duplicate them and modify the duplicate, as described in [Creating a Custom Preset from a System Preset](create-custom-preset-from-system-preset.md)\.
 
@@ -9,9 +9,9 @@ After you modify a preset, jobs that use the preset will run with the new settin
 
 **To modify a custom output preset**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Sign in to the AWS Management Console and open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
-1. On the navigation bar of the AWS Elemental MediaConvert console, choose the region where the preset was created\.
+1. On the navigation bar of the MediaConvert console, choose the region where the preset was created\.
 
    System presets are available in all regions\. Custom presets appear only in the region where they are created\.  
 ![\[Choose a region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)

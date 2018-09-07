@@ -88,7 +88,7 @@ The following table lists supported output caption formats for this output conta
 For HLS outputs, if your input caption format is Teletext or DVB\-Sub, you can include output captions in those formats as well\. Standard Apple players will not recognize those captions, but custom players may\. 
 
 **Note**  
-AWS Elemental MediaConvert has the following limitations with Teletext in outputs:  
+MediaConvert has the following limitations with Teletext in outputs:  
 The service doesn't support captions formatting and positioning
 You can use only [Teletext level 1\.5](https://en.wikipedia.org/wiki/World_System_Teletext) languages
 
@@ -187,7 +187,7 @@ The following table lists supported output caption formats for this output conta
 + Captions in the MXF container VANC data
 
 **Note**  
-AWS Elemental MediaConvert has the following limitations with Teletext in outputs:  
+MediaConvert has the following limitations with Teletext in outputs:  
 The service doesn't support captions formatting and positioning
 You can use only [Teletext level 1\.5](https://en.wikipedia.org/wiki/World_System_Teletext) languages
 

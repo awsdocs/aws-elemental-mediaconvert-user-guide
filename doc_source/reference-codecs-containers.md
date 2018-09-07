@@ -1,6 +1,6 @@
 # Supported Output Codecs and Containers<a name="reference-codecs-containers"></a>
 
-AWS Elemental MediaConvert supports the following combinations of codecs and containers\.
+MediaConvert supports the following combinations of codecs and containers\.
 
 ## Video<a name="reference-codecs-containers-output-video"></a>
 

@@ -1,10 +1,10 @@
 # Transcoding Only a Portion of Your Input \(Input Clipping\)<a name="input-clipping-stitching"></a>
 
-You can select portions of your input file \(clips\) to transcode to your outputs, excluding the rest of the input file\. When you create clips for a job, AWS Elemental MediaConvert includes the same clips in every output of the job\. If you want two outputs with different clips of the same input file, you must create two jobs and specify different input clips\.
+You can select portions of your input file \(clips\) to transcode to your outputs, excluding the rest of the input file\. When you create clips for a job, MediaConvert includes the same clips in every output of the job\. If you want two outputs with different clips of the same input file, you must create two jobs and specify different input clips\.
 
 **Note**  
 To join more than one input file into a single output \(input stitching\), add another input to the job\. You can have up to 50 inputs in a job\.   
-On the **Create job** page, in the **Job** section, next to **Inputs**, choose **Add**\. AWS Elemental MediaConvert stitches together the inputs in the order that you add them\.
+On the **Create job** page, in the **Job** section, next to **Inputs**, choose **Add**\. MediaConvert stitches together the inputs in the order that you add them\.
 
 **To set up input clipping**
 

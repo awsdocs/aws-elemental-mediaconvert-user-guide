@@ -15,7 +15,9 @@ You can set up your timecode configuration under job settings\. These settings a
 
    If you use the API or an SDK, you can find this setting in the JSON file of your job, called `Source`, located inside `Settings`, `TimecodeConfig`\.
 
-   If you don't choose a value for **Source**, the service defaults to **Embedded**\. If there are no embedded timecodes, the service sets the timecode of the first frame to zero\.
+   If you don't choose a value for **Source**, the service defaults to **Embedded**\.
+**Note**  
+If you don's specify **Source** or choose **Embedded** and your input video doesn't have embedded timecodes, your output won't have timecodes\. This means that features that require a timecode\-based start time, such as sidecar captions and graphic overlays, won't appear in your output\.
 
 1. Set a value for **Anchor Timecode**\.
 

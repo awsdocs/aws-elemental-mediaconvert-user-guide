@@ -1,12 +1,12 @@
-# Deleting a Custom Job Template in AWS Elemental MediaConvert<a name="deleting-a-job-template"></a>
+# Deleting a Custom Job Template in MediaConvert<a name="deleting-a-job-template"></a>
 
 You can delete any custom job template\. You can't delete system job templates\.
 
 **To delete a job template**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Sign in to the AWS Management Console and open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
-1. On the navigation bar of the AWS Elemental MediaConvert console, choose the region where the queue you want to delete was created\.  
+1. On the navigation bar of the MediaConvert console, choose the region where the queue you want to delete was created\.  
 ![\[Choose a region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)
 
 1. Choose the three\-bar icon on the left to access the left navigation pane\.

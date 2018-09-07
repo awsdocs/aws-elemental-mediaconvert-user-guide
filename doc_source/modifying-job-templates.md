@@ -1,12 +1,12 @@
-# Modifying Custom Job Templates in AWS Elemental MediaConvert<a name="modifying-job-templates"></a>
+# Modifying Custom Job Templates in MediaConvert<a name="modifying-job-templates"></a>
 
 You can change the settings and field values in your custom job templates\. You can't change system job templates, but you can modify the settings in jobs that you start from a system job template, before you create the job\.
 
 **To modify a custom job template**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Sign in to the AWS Management Console and open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
-1. On the navigation bar of the AWS Elemental MediaConvert console, choose the region where the job template was created\.
+1. On the navigation bar of the MediaConvert console, choose the region where the job template was created\.
 
    System job templates are available in all regions\. Custom job templates appear only in the region where they are created\.  
 ![\[Choose a region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)

@@ -3,7 +3,7 @@
 SCC, SRT, STL, and TTML are sidecar captions formats\. With these formats, you provide input captions as a separate file\. AWS Elemental MediaConvert handles all sidecar formats the same way\. The service can pass them through to the output in the same format or convert them into another sidecar format\. In all cases, you must create one captions selector for the entire set of captions languages\.
 
 Provide the following values for the captions selector fields:
-+ **External captions file**: The URI to the captions file\. AWS Elemental MediaConvert accepts captions files from Amazon S3\.
++ **External captions file**: The URI to the captions file\. MediaConvert accepts captions files from Amazon S3\.
 + **Time delta**: \(Optional\) Use this setting if you need to adjust the sync between the captions and the video:
   + Type a positive number to add to the times in the captions file\. For example, type **15** to add 15 seconds to all the times in the captions file\.
   + Type a negative number to subtract from the times in the captions file\. For example, type **\-5** to subtract 5 seconds from the times in the captions file\.
@@ -12,11 +12,11 @@ Provide the following values for the captions selector fields:
 
 **Note**  
 To make sure that your captions are properly synchronized with your video, check that the value for **Timecode source** in the **Video selector** section matches the timecodes in your captions file\. For example, if the timecodes in your captions file start at zero but your video has embedded timecodes starting at 01:00:00:00, change the default value for **Timecode source** from **Embedded** to **Start at 0**\.  
-If you use the API or an SDK, you can find this setting in the JSON file of your job, called `TimecodeSource`, located in `Settings`, `Inputs`\. When you use SCC, you must provide a value for `TimecodeSource`\. Otherwise, AWS Elemental MediaConvert will not insert the captions\. 
+If you use the API or an SDK, you can find this setting in the JSON file of your job, called `TimecodeSource`, located in `Settings`, `Inputs`\. When you use SCC, you must provide a value for `TimecodeSource`\. Otherwise, MediaConvert will not insert the captions\. 
 
 ## Use Cases for Time Delta<a name="time-delta-use-cases"></a>
 
-**SCC**: The start time for the captions is not 00:00:00:00\. For captions handling, AWS Elemental MediaConvert always treats the video and audio start time as 00:00:00, even if your input video file has embedded timecodes that start at a time other than 00:00:00:00\. If your captions file assumes a start time other than 00:00:00, you might need to adjust the captions start time\. 
+**SCC**: The start time for the captions is not 00:00:00:00\. For captions handling, MediaConvert always treats the video and audio start time as 00:00:00, even if your input video file has embedded timecodes that start at a time other than 00:00:00:00\. If your captions file assumes a start time other than 00:00:00, you might need to adjust the captions start time\. 
 
 For example, your video file may have embedded timecodes that start at 00:05:00:00 and the first instance of dialogue that requires captions might be one minute into the video, at timecode 00:06:00:00\. If your captions file is set to begin captions at 00:06:00:00, you must subtract five minutes from the captions\. In this case, you would enter **\-300** in the **Time delta** field\.
 

@@ -1,6 +1,6 @@
 # Choosing Your ABR Streaming Output Groups<a name="choosing-your-streaming-output-groups"></a>
 
-To create media assets for people to stream to their devices, choose one or more of the adaptive bitrate \(ABR\) output groups: Apple HLS, DASH ISO, Microsoft Smooth Streaming, or CMAF\. The type of output group determines which media players can play the files that AWS Elemental MediaConvert creates from that output group\.
+To create media assets for people to stream to their devices, choose one or more of the adaptive bitrate \(ABR\) output groups: Apple HLS, DASH ISO, Microsoft Smooth Streaming, or CMAF\. The type of output group determines which media players can play the files that MediaConvert creates from that output group\.
 
 The following table summarizes the relationships between output groups and media players\.
 
@@ -13,7 +13,7 @@ The following table summarizes the relationships between output groups and media
 | Microsoft devices | Microsoft Smooth Streaming | 
 
 **Note**  
-AWS Elemental MediaConvert bills per minute of transcoded output time, not per job\. Therefore, when you add output groups to a job, it becomes more expensive\.   
+MediaConvert bills per minute of transcoded output time, not per job\. Therefore, when you add output groups to a job, it becomes more expensive\.   
 For example, a job with an Apple HLS package and a DASH ISO package costs twice as much as a job with only one of those packages, assuming the transcoding settings are the same\.
 
 **To determine which output groups you need**
@@ -29,7 +29,7 @@ For example, a job with an Apple HLS package and a DASH ISO package costs twice 
 
    If you include a CMAF output, you don't need to create a DASH ISO output because all the common DASH\-compatible players are also CMAF\-compatible\. 
 **Note**  
-There are a few uncommon DASH players that explicitly require the video segmentation extension type \.mp4\. AWS Elemental MediaConvert outputs CMAF video segments in the \.cmfv format\. To create output that is compatible with these players, include a DASH ISO output group in your job\.
+There are a few uncommon DASH players that explicitly require the video segmentation extension type \.mp4\. MediaConvert outputs CMAF video segments in the \.cmfv format\. To create output that is compatible with these players, include a DASH ISO output group in your job\.
 
 1. Consider cost trade\-off\.
 

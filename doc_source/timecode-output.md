@@ -4,7 +4,7 @@ There are two timecode\-related settings that you can adjust differently for eac
 
 ## Inserting Timecode Metadata<a name="timecode-insertion"></a>
 
-The **Timecode insertion** setting determines whether a given output has timecodes embedded in its metadata\. AWS Elemental MediaConvert automatically puts this information in the appropriate place, depending on the output codec\. For MPEG\-2 and QuickTime codecs, such as Apple ProRes, the service inserts the timecodes in the video I\-frame metadata\. For H\.265 \(HEVC\) and H\.264 \(AVC\), the service inserts the timecodes in the supplemental enhancement information \(SEI\) picture timing message\. 
+The **Timecode insertion** setting determines whether a given output has timecodes embedded in its metadata\. MediaConvert automatically puts this information in the appropriate place, depending on the output codec\. For MPEG\-2 and QuickTime codecs, such as Apple ProRes, the service inserts the timecodes in the video I\-frame metadata\. For H\.265 \(HEVC\) and H\.264 \(AVC\), the service inserts the timecodes in the supplemental enhancement information \(SEI\) picture timing message\. 
 
 **To include timecode metadata in an output**
 

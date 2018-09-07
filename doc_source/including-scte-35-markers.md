@@ -10,4 +10,4 @@ With this feature, you have three options:
 By default, the service removes SCTE\-35 markers from the output, and therefore doesn't include SCTE\-35 information in HLS manifests or do ad avail blanking\.
 
 **Note**  
-AWS Elemental MediaConvert does not process information from input manifests\.
+MediaConvert does not process information from input manifests\.

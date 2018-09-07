@@ -1,12 +1,12 @@
-# Listing and Viewing Queues in AWS Elemental MediaConvert<a name="listing-queues"></a>
+# Listing and Viewing Queues in MediaConvert<a name="listing-queues"></a>
 
-You can list the AWS Elemental MediaConvert queues that are associated with your AWS account and view the details about those queues\. The following procedure explains how to do so using the AWS Elemental MediaConvert console\.
+You can list the MediaConvert queues that are associated with your AWS account and view the details about those queues\. The following procedure explains how to do so using the MediaConvert console\.
 
 **To list queues and view queue settings**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Sign in to the AWS Management Console and open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
-1. On the navigation bar of the AWS Elemental MediaConvert console, choose the region where the queues you want to view were created\.
+1. On the navigation bar of the MediaConvert console, choose the region where the queues you want to view were created\.
 
    A default queue is available in all regions\. Other queues appear only in the region where they are created\.  
 ![\[Choose a region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)

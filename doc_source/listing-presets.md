@@ -1,12 +1,12 @@
-# Listing and Viewing Output Presets in AWS Elemental MediaConvert<a name="listing-presets"></a>
+# Listing and Viewing Output Presets in MediaConvert<a name="listing-presets"></a>
 
-You can list the system presets that are included with AWS Elemental MediaConvert and the custom presets that you have added in an AWS Region\. You can also view the settings for an individual preset\. 
+You can list the system presets that are included with MediaConvert and the custom presets that you have added in an AWS Region\. You can also view the settings for an individual preset\. 
 
 **To list output presets**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Sign in to the AWS Management Console and open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
-1. If you have custom presets, on the navigation bar of the AWS Elemental MediaConvert console, choose the region that your custom presets were created in\.
+1. If you have custom presets, on the navigation bar of the MediaConvert console, choose the region that your custom presets were created in\.
 
    The list of system presets is the same regardless of region\. Custom presets appear only in the region where they are created\.  
 ![\[Choose a region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)

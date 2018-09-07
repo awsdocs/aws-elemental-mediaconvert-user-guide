@@ -1,6 +1,6 @@
 # Using Output Presets to Specify the Outputs of Your AWS Elemental MediaConvert Job<a name="using-a-preset-to-specify-a-job-output"></a>
 
-When you specify the outputs of your AWS Elemental MediaConvert job, you can use an output preset instead of choosing each output setting separately\.
+When you specify the outputs of your MediaConvert job, you can use an output preset instead of choosing each output setting separately\.
 
 **To specify a job output using an output preset**
 
