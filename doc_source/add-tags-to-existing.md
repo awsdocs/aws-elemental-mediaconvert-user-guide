@@ -3,7 +3,7 @@
 The following procedure shows you how to add tags to existing queues, job templates, and output presets using the AWS Elemental MediaConvert console\. 
 
 **Note**  
-These AWS tags on AWS Elemental MediaConvert queues, job templates, and output presets are different from the tags you can add to MediaConvert jobs\. For information about tags on jobs, see [Tagging Jobs](tagging-jobs.md)
+These AWS tags on AWS Elemental MediaConvert queues, job templates, and output presets are different from the tags that you can add to MediaConvert jobs\. For information about tags on jobs, see [Tagging Jobs](tagging-jobs.md)\.
 
 For information about adding tags using the API, see the `POST` method in the [Tags](https://docs.aws.amazon.com/mediaconvert/latest/apireference/tags.html) endpoint section of the *MediaConvert API Reference*\.
 
@@ -12,7 +12,7 @@ Tags on your MediaConvert queues, job templates, and output presets don't appear
 
 **To add tags to queues, job templates, and output presets \(console\)**
 
-1. Sign in to the AWS Management Console and open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. Choose the three\-bar icon on the left to access the left navigation pane\.
 

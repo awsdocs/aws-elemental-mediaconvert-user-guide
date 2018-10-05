@@ -6,7 +6,7 @@ The first part of setting up an MediaConvert job is specifying the location of y
 
 **To specify the location of your input**
 
-1. Sign in to the AWS Management Console and open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. On the **Create job** page, in the **Job** pane on the left, choose **Input 1**\.
 

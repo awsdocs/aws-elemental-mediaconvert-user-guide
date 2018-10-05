@@ -3,7 +3,7 @@
 The following procedures show you how to add tags to your MediaConvert queues, job templates, and output presets when you create them\.
 
 **Note**  
-These AWS tags on AWS Elemental MediaConvert queues, job templates, and output presets are different from the tags you can add to MediaConvert jobs\. For information about tags on jobs, see [Tagging Jobs](tagging-jobs.md)
+These AWS tags on AWS Elemental MediaConvert queues, job templates, and output presets are different from the tags that you can add to MediaConvert jobs\. For information about tags on jobs, see [Tagging Jobs](tagging-jobs.md)\.
 
 **Topics**
 
@@ -14,7 +14,7 @@ You can add tags when you create a queue, job template, or output preset\.
 **To add tags when you create a queue, job template, or output preset \(console\)**
 
 1. Follow the steps in one of the following procedures to begin creating the resource, but don't save the resource:
-   + [Creating a Queue](creating-queues.md)
+   + [Creating an On\-Demand Queue](creating-queues.md)
    + [Creating a Custom Preset from Scratch](creating-template-from-scratch.md)
    + [Creating a Custom Preset from Scratch](creating-preset-from-scratch.md)
    + [Creating a Custom Preset from a System Preset](create-custom-preset-from-system-preset.md)

@@ -1,11 +1,11 @@
-# Deleting an On\-Demand Queue in AWS Elemental MediaConvert<a name="deleting-a-queue"></a>
+# Deleting a Reserved Queue in AWS Elemental MediaConvert<a name="deleting-a-reserved-queue"></a>
 
 You can delete any queue other than the default queue\.
 
 **Note**  
-You can't delete a queue that contains unprocessed jobs\.
+You can't delete a reserved queue that has an active pricing plan or that contains unprocessed jobs\.
 
-**To delete an on\-demand queue**
+**To delete a reserved queue**
 
 1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
@@ -16,6 +16,6 @@ You can't delete a queue that contains unprocessed jobs\.
 
 1. Choose **Queues**\.
 
-1. On the **Queues** page, in the **On\-demand queues** section, choose the name of the queue that you want to delete\.
+1. On the **Queues** page, in the **Reserved queues** section, choose the option next to the name of the queue that you want to delete\.
 
-1. On the queue's page, choose the **Delete queue** button\.
+1. Choose **Actions**, **Delete reserved queue**\.

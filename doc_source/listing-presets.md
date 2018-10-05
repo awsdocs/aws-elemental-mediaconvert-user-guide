@@ -4,7 +4,7 @@ You can list the system presets that are included with MediaConvert and the cust
 
 **To list output presets**
 
-1. Sign in to the AWS Management Console and open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. If you have custom presets, on the navigation bar of the MediaConvert console, choose the region that your custom presets were created in\.
 

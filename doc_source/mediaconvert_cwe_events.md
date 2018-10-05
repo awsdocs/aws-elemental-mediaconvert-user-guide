@@ -1,6 +1,6 @@
-# MediaConvert Events<a name="mediaconvert_cwe_events"></a>
+# AWS Elemental MediaConvert Events<a name="mediaconvert_cwe_events"></a>
 
-MediaConvert sends change events about the status of jobs to CloudWatch Events\. You can create CloudWatch Events rules for any of the following events\.
+AWS Elemental MediaConvert sends change events about the status of jobs to CloudWatch Events\. You can create CloudWatch Events rules for any of the following events\.
 
 
 **Job Status Change Events**  

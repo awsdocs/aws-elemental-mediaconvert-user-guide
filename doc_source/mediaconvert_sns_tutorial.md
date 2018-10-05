@@ -27,7 +27,7 @@ The first part of setting up a CloudWatch Events rule is preparing the rule targ
 
 1. In the navigation pane, choose **Topics**, and then choose **Create new topic**\.
 
-1. For **Topic name**, type **MediaConvertJobErrorAlert**, and then choose **Create topic**\.
+1. For **Topic name**, enter **MediaConvertJobErrorAlert**, and then choose **Create topic**\.
 
 1. Choose the topic ARN link for the topic that you just created\. It looks something like this: **arn:aws:sns:region:123456789012:MediaConvertJobErrorAlert**\.
 
@@ -37,7 +37,7 @@ The first part of setting up a CloudWatch Events rule is preparing the rule targ
 
 1. Choose **Create subscription**\.
 
-1. You will receive an email from AWS Notifications\. When you receive it, choose the **Confirm subscription** link in the email\. 
+1. You will receive a notification email from Amazon SNS\. When you receive it, choose the **Confirm subscription** link in the email\. 
 
 ## Step 2: Specify an Event Source in a CloudWatch Events Rule<a name="mediaconvert_sns_rule_event_sourece"></a>
 
@@ -51,9 +51,9 @@ Next, specify your event source in a CloudWatch Events rule to capture only even
 
 1. In the navigation pane, choose **Events**, and then choose **Create rule**\.
 
-1. In the **Event Source** section, choose Event Pattern, and then choose the element labeled **Build event pattern to match events by service**\. From the resulting dropdown list, choose **Custom event pattern**\.
+1. In the **Event Source** section, choose **Event Pattern**, and then choose the element labeled **Build event pattern to match events by service**\. From the resulting dropdown list, choose **Custom event pattern**\.
 
-1. In the **Build custom event pattern** box, replace the existing text with the following text: 
+1. In the **Build custom event pattern** box, replace the existing code with the following code: 
 
    ```
    {
@@ -68,11 +68,11 @@ Next, specify your event source in a CloudWatch Events rule to capture only even
    }
    ```
 
-   This code defines a CloudWatch Events event rule that matches any event where the job status changes to `ERROR`\. For more information about event patterns, see [Events and Event Patterns](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CloudWatchEventsandEventPatterns.html) in the *Amazon CloudWatch User Guide*\. 
+   This code defines a CloudWatch Events event rule that matches any event where the job status changes to `ERROR`\. For more information about event patterns, see [Events and Event Patterns](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CloudWatchEventsandEventPatterns.html) in the *Amazon CloudWatch User Guide*\. 
 
 ## Step 3: Add the Amazon SNS Topic and Finish Your Rule<a name="add-target-and-finish-rule"></a>
 
-Next, add the target \(the Amazon SNS topic\) that you created in Step 1 to the CloudWatch Events rule that you started in Step 2\.
+Next, add the target \(the Amazon SNS topic\) that you created in step 1 to the CloudWatch Events rule that you started in step 2\.
 
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/CloudWatchEvents_tutorial-rule.png)
 
@@ -84,7 +84,7 @@ Next, add the target \(the Amazon SNS topic\) that you created in Step 1 to the 
 
 1. Choose the **Configure details** button\.
 
-1. For **Rule definition**, type a name and description for your rule, and then choose **Create rule**\.
+1. For **Rule definition**, enter a name and description for your rule, and then choose **Create rule**\.
 
 ## Step 4: Test Your Rule<a name="mediaconvert_sns_test_rule"></a>
 
@@ -92,7 +92,7 @@ To test your rule, submit a job that you know will cause an error\. For example,
 
 **To test the rule**
 
-1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. Submit a new MediaConvert job\. For more information, see [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md)\.
 

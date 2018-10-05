@@ -3,7 +3,7 @@
 Protect your content from unauthorized use through encryption\. Digital rights management \(DRM\) systems provide keys to MediaConvert for content encryption, and licenses to supported players for decryption\.
 
 **Note**  
-To encrypt content, you must have a DRM solution provider\. To get set up, see [http://docs\.aws\.amazon\.com/speke/latest/documentation/customer\-onboarding\.html](http://docs.aws.amazon.com/speke/latest/documentation/customer-onboarding.html)\.  
+To encrypt content, you must have a DRM solution provider\. To get set up, see [https://docs\.aws\.amazon\.com/speke/latest/documentation/customer\-onboarding\.html](https://docs.aws.amazon.com/speke/latest/documentation/customer-onboarding.html)\.  
 The only exception to this requirement is with the Apple HLS streaming protocol, where you can choose to define your own static keys or to use a DRM provider\. 
 
 **Topics**
@@ -44,7 +44,7 @@ When you request encryption, you provide input parameters that allow the service
   ```
   MovieNight20171126093045
   ```
-+ **System IDs** – Unique identifiers for your streaming protocol and DRM system\. Provide up to two IDs for DASH and exactly one for the other streaming protocols\. If you provide more than one system ID, enter them on separate lines, and do not separate them with commas or any other punctuation\. For a list of common system IDs, see [DASH\-IF System IDs](http://www.dashif.org/identifiers/protection/)\. If you do not know your IDs, ask your DRM solution provider\.
++ **System IDs** – Unique identifiers for your streaming protocol and DRM system\. Provide up to two IDs for DASH and exactly one for the other streaming protocols\. If you provide more than one system ID, enter them on separate lines, and do not separate them with commas or any other punctuation\. For a list of common system IDs, see [DASH\-IF System IDs](https://dashif.org/identifiers/content_protection/)\. If you do not know your IDs, ask your DRM solution provider\.
 + **URL** – The URL from the API Gateway proxy that you set up to talk to your key server\. 
 
   The following example shows a URL: 
