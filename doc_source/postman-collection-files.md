@@ -1,4 +1,4 @@
-# MediaConvert Postman Collection Files<a name="postman-collection-files"></a>
+# AWS Elemental MediaConvert Postman Collection Files<a name="postman-collection-files"></a>
 
 Use these collections with Postman for simple access to MediaConvert through the REST API\. Copy the collections and save them as JSON files, then import them into Postman\.
 

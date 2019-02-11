@@ -10,8 +10,6 @@ The value for **Timecode source** that you specify in the input settings affects
    + **Embedded**: The service uses any timecodes embedded in the input video\. 
 **Note**  
 Don't choose this value unless your input video has embedded timecodes\.
-
-     ONLY TRUE FOR SERVER
    + **Start at 0**: The service sets the timecode of the first frame of the job to 00:00:00:00\.
    + **Specified start**: Do not use this option\.
 

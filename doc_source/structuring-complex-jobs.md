@@ -1,4 +1,4 @@
-# Structuring Complex Jobs in MediaConvert<a name="structuring-complex-jobs"></a>
+# Structuring Complex Jobs in AWS Elemental MediaConvert<a name="structuring-complex-jobs"></a>
 
 A single MediaConvert job can create outputs in the form of a standalone file \(for example, an \.mp4 file\), a set of files for adaptive bitrate \(ABR\) streaming \(for example, an Apple HLS package\), or combinations of both\. 
 

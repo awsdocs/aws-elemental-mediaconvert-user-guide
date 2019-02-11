@@ -1,4 +1,4 @@
-# Creating a Custom Job Template in MediaConvert<a name="creating-template-from-scratch"></a>
+# Creating a Custom Job Template in AWS Elemental MediaConvert<a name="creating-template-from-scratch"></a>
 
 Job templates specify the settings that apply to all outputs of a transcoding job\. System job templates have settings that are specified for you; custom job templates have settings that are specified by you or by another user of your AWS account\. 
 

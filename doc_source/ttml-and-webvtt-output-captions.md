@@ -16,6 +16,6 @@ After you add captions to an output, delete the **Video** and **Audio 1** groups
 
 1. The **Audio 1** group of settings is automatically displayed in the **Stream settings** section\. Choose the **Remove** button\.
 
-## How to Specify Multiple Languages<a name="multilang-ttml-and-webvtt-output-captions"></a>
+## How to Specify Multiple Captions Tracks<a name="multilang-ttml-and-webvtt-output-captions"></a>
 
-Put each captions language in its own output\.
+Put each captions track in its own output\.

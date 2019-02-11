@@ -2,6 +2,9 @@
 
 To create media assets for people to stream to their devices, choose one or more of the adaptive bitrate \(ABR\) output groups: Apple HLS, DASH ISO, Microsoft Smooth Streaming, or CMAF\. The type of output group determines which media players can play the files that MediaConvert creates from that output group\.
 
+**Note**  
+When you set up CMAF, DASH ISO, or Microsoft Smooth Streaming output groups, make sure to set your fragment length correctly\. For information about setting fragment length, see [Setting the Fragment Length for Streaming Outputs](setting-the-fragment-length.md)\.
+
 The following table summarizes the relationships between output groups and media players\.
 
 

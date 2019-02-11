@@ -8,10 +8,8 @@ The following illustration shows how the value for **Layer** affects how a graph
 
 **To specify a value for the **Layer** setting**
 
-1. Set up your graphic overlay as described in [Setting Up Graphic Overlay](graphic-overlay.md#setting-up-a-graphic-overlay)\.
+1. Set up your graphic overlay as described in [Still Graphic Overlay](setting-up-a-graphic-overlay.md)\.
 
-1. For **Layer**, type a whole number from 0 to 99\. 
+1. For **Layer**, enter a whole number from 0 to 99\. 
 **Note**  
 You can use each number only once\. Each graphic overlay must have its own layer\.
-
-\.

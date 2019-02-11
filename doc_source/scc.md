@@ -1,6 +1,6 @@
 # SCC, SRT, STL, TTML \(Sidecar\)<a name="scc"></a>
 
-SCC, SRT, STL, and TTML are sidecar captions formats\. With these formats, you provide input captions as a separate file\. AWS Elemental MediaConvert handles all sidecar formats the same way\. The service can pass them through to the output in the same format or convert them into another sidecar format\. In all cases, you must create one captions selector for the entire set of captions languages\.
+SCC, SRT, STL, and TTML are sidecar captions formats\. With these formats, you provide input captions as a separate file\. AWS Elemental MediaConvert handles all sidecar formats the same way\. The service can pass them through to the output in the same format or convert them into another sidecar format\. In all cases, you must create one captions selector for the entire set of captions tracks\.
 
 Provide the following values for the captions selector fields:
 + **External captions file**: The URI to the captions file\. MediaConvert accepts captions files from Amazon S3\.
