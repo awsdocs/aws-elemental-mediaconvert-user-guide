@@ -6,6 +6,8 @@ The following table describes important additions to the AWS Elemental MediaConv
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Find information about the new rotate feature\.](auto-rotate.md) | For most inputs, you can now use the rotate feature to specify how the service rotates your video from input to output\. You can also specify whether the service follows any rotation metadata in the input\. Find information and instructions for setting rotation\.  | February 19, 2019 | 
+| [ESAM support](specifying-scte-35-markers-using-esam-xml.md) | You can now specify ad insertion points by including Event Signaling and Management \(ESAM\) XML documents as strings inside your AWS Elemental MediaConvert job settings\. | February 13, 2019 | 
 | [New supported captions formats](captions-support-tables-by-container-type.md) | Updated reference tables to reflect new support for the following captions formats\. On input: SMI, SCTE\-20\. On output: SCTE\-20 \+ embedded, Embedded \+ SCTE\-20, SMI\. | November 19, 2018 | 
 | [Find information about the new image inserter features](graphic-overlay.md) | You can now use image inserter to overlay still graphics on individual inputs as well as outputs\. You can also overlay motion graphics\. Find information and instructions for setting up these overlays\.  | November 19, 2018 | 
 | [Added content key encryption to DRM encryption](drm-content-key-encryption.md) | Added the option to encrypt content keys\. Prior to this, AWS Elemental MediaConvert supported clear key delivery only\. To use content key encryption, your DRM key provider must support encrypted content keys\. If you enable this feature for a key provider that doesn't handle content key encryption, the operation fails\. | November 19, 2018 | 
