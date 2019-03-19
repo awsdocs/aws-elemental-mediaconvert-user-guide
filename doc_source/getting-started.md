@@ -13,6 +13,6 @@ If you aren't familiar with jobs, queues, presets, and job templates—the basic
 + [Step 1: Sign Up for AWS](gs-1-sign-up.md)
 + [Step 2: Create Storage for Files](set-up-file-locations.md)
 + [Step 3: Set Up IAM Permissions](iam-role.md)
-+ [Step 4: \(Optional\) Get Set Up to Use Encryption](set-up-encryption.md)
++ [Step 4: \(Optional\) Get Set Up to Use DRM Encryption](set-up-encryption.md)
 + [Step 5: Upload Files for Transcoding](upload-input-files.md)
 + [Step 6: Create a Job](create-a-job.md)

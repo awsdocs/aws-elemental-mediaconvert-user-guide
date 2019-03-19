@@ -2,8 +2,6 @@
 
 When you pause a queue, AWS Elemental MediaConvert doesn't start processing any jobs in that queue\. MediaConvert finishes processing any job that is already running when you pause it\.
 
-If you want to cancel a job, we recommend that you first pause the corresponding queue so that AWS Elemental MediaConvert doesn't start processing the job\. After the status of a job changes from **Submitted** to **Progressing**, you can't cancel it\.
-
 The following procedure explains how to pause and reactivate a queue using the console\.
 
 **To pause or reactivate an on\-demand queue**

@@ -6,7 +6,7 @@ For both on\-demand and reserved queues, AWS Elemental MediaConvert processes th
 The time that is required to complete a job varies significantly based on the size of the file that you're converting and the job specifications\. Accordingly, AWS Elemental MediaConvert doesn't always finish jobs in the order that you create them\.  
 If you configure a job to transcode into more than one format, MediaConvert creates the files for each format in the same order that you specify the formats in the job\.
 
-You can temporarily stop processing jobs by pausing the queue\. When you pause a queue, AWS Elemental MediaConvert continues processing any jobs that it has already started, but doesn't start any new jobs from that queue\. You can still submit jobs to a paused queue\. You can also cancel jobs in a paused queue that the service hasn't started processing\.
+You can temporarily stop processing jobs by pausing the queue\. When you pause a queue, AWS Elemental MediaConvert continues processing any jobs that it has already started, but doesn't start any new jobs from that queue\. You can still submit jobs to a paused queue and cancel jobs in a paused queue\.
 
 You must submit all jobs to a queue\. If you don't specify the queue when you create the jobs, AWS Elemental MediaConvert sends them to the default queue and starts them in the order in which you create them\. The default queue is an on\-demand queue\. You can create up to 10 total queues\.
 

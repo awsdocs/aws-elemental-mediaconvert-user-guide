@@ -1,4 +1,4 @@
-# Step 4: \(Optional\) Get Set Up to Use Encryption<a name="set-up-encryption"></a>
+# Step 4: \(Optional\) Get Set Up to Use DRM Encryption<a name="set-up-encryption"></a>
 
 Protect your content from unauthorized use through encryption\. Digital rights management \(DRM\) systems provide keys to MediaConvert for content encryption, and licenses to supported players for decryption\.
 

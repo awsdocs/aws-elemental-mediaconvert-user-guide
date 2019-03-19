@@ -14,13 +14,13 @@ Use the following procedure to enable content encryption in **DASH ISO**, **MS S
    + For **DASH ISO** and **MS Smooth**, fill in the encryption parameter fields\. For more information, see [SPEKE Encryption Parameters](#speke-encryption-parameters)\.
    + For **Apple HLS**, fill in the following parameters:
      + **Encryption method** – Choose **Sample\-AES** for Apple HLS Fairplay or **AES\-128** for Apple HLS AES\-128\. 
-     + **Key provider type** – Choose **SPEKE** to encrypt using a key provided by your DRM solution provider, or choose **Static Key** to type your own key\. 
+     + **Key provider type** – Choose **SPEKE** to encrypt using a key provided by your DRM solution provider, or choose **Static key** to enter your own key\. 
        + For **SPEKE**, fill in the encryption parameter fields\. For more information, see [SPEKE Encryption Parameters](#speke-encryption-parameters)\. 
        + For **Static Key**, see [Static Key Encryption Parameters](#static-key-encryption-parameters)\.
 
 ## SPEKE Encryption Parameters<a name="speke-encryption-parameters"></a>
 
-When you request encryption, you provide input parameters that allow the service to locate your DRM solution provider's key server, to authenticate you as a user, and to request the proper encoding keys\. This section describes the options\. Some options are available only for particular streaming protocols\. 
+When you request encryption, you provide input parameters that allow the service to locate your DRM solution provider's key server, to authenticate you as a user and to request the proper encoding keys\. This section describes the options\. Some options are available only for particular streaming protocols: 
 + **Resource ID** – Identifier that you define for the content, which is sent to the key server to identify the current endpoint\. How unique you make this depends on how fine\-grained you want access controls to be\. The service does not allow you to use the same ID for two simultaneous encryption processes\. 
 
   The following example shows a resource ID:

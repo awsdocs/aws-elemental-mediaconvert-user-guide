@@ -1,8 +1,15 @@
 # Using CloudWatch Events to Monitor AWS Elemental MediaConvert Jobs<a name="cloudwatch_events"></a>
 
 You can use Amazon CloudWatch Events to notify you when your job status changes, to receive information about completed jobs, and to trigger automated actions in other AWS services when these events happen\. Here are some examples of what you can do with CloudWatch Events:
-+ You can set up CloudWatch Events to notify you through email if one of your AWS Elemental MediaConvert jobs fails\. For a tutorial on setting up this CloudWatch Events event rule, see [Tutorial: Setting Up Email Notifications for Failed Jobs](mediaconvert_sns_tutorial.md)\.
-+ You can use `COMPLETE` events to programmatically receive the file name and location of the job's outputs\. For more information, see [Output File Names and Paths](output-file-names-and-paths.md)\.
++ You can use CloudWatch Events to monitor the progress of your job\. 
+
+  `STATUS_UPDATE` events provide information about what phase your job is in \(`PROBING`, `TRANSCODING`, and `UPLOADING`\)\. For some jobs, AWS Elemental MediaConvert provides an estimate of how far your job has progressed, shown as a percentage of the total time from when your job leaves its queue to when your output files appear in your output Amazon S3 bucket\.
++ You can set up CloudWatch Events to notify you through email if one of your AWS Elemental MediaConvert jobs fails\.
+
+  For a tutorial on setting up this CloudWatch Events event rule, see [Tutorial: Setting Up Email Notifications for Failed Jobs](mediaconvert_sns_tutorial.md)\.
++ You can use `COMPLETE` events to programmatically receive the file name and location of the job's outputs\.
+
+  For more information, see [Output File Names and Paths](output-file-names-and-paths.md)\.
 + You can set up CloudWatch Events so that a Lambda function initiates your post\-processing code after your job finishes\. 
 
   For more information about using AWS Lambda with MediaConvert, see one of these resources:

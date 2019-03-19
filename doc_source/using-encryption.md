@@ -1,14 +1,15 @@
-# Using Encryption in AWS Elemental MediaConvert<a name="using-encryption"></a>
+# Using Encryption with AWS Elemental MediaConvert<a name="using-encryption"></a>
 
-Protect your content from unauthorized use through encryption\. Digital rights management \(DRM\) systems provide keys to MediaConvert for content encryption, and licenses to supported players for decryption\.
+Use encryption to protect your content from unauthorized access\. You can use any combination of these encryption options with AWS Elemental MediaConvert:
++ Client\-side encryption: Encrypt your input files before you upload them to Amazon S3 to protect them in transit\.
++ Server\-side encryption: Keep your output files secure in the Amazon S3 buckets that AWS Elemental MediaConvert reads from and writes to\.
++ Digital rights management \(DRM\): Make sure that, once you distribute your content, only authorized viewers can watch it\.
 
-**Note**  
-To encrypt content, you must have a DRM solution provider\.   
-For an overview, see [https://docs\.aws\.amazon\.com/speke/latest/documentation/what\-is\-speke\.html\#services\-architecture](https://docs.aws.amazon.com/speke/latest/documentation/what-is-speke.html#services-architecture)\.
-To get set up, see [https://docs\.aws\.amazon\.com/speke/latest/documentation/customer\-onboarding\.html](https://docs.aws.amazon.com/speke/latest/documentation/customer-onboarding.html)\.
-The only exception to this requirement is with the Apple HLS streaming protocol, where you can choose to either define your own static keys or use a DRM provider\. 
+The following illustration shows these encryption options\.
+
+![\[Three rectangles represent each of the three encryption options. The text reads as follows. 1. Client-side encryption: Encrypt your content using open protocols before you upload your input files. Protects your input files in transit. Protects your input files at rest. 2. Server-side encryption: Use Amazon S3 default bucket encryption to encrypt your files as they enter the S3 buckets. You can use this as you upload your input files and as MediaConvert writes your output files. Protects your files at rest. 3. DRM: Use digital rights management (DRM) to protect your content during distribution. Protects your output files in transit. Protects your output files at rest.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/encryption_overview.png)
 
 **Topics**
-+ [Using Encrypted Content Keys with DRM](drm-content-key-encryption.md)
-+ [Encrypting Content](encrypting-content.md)
-+ [Troubleshooting Encryption](troubleshooting-encryption.md)
++ [Implementing Client\-Side Encryption](implementing-client-side-encryption.md)
++ [Implementing Server\-Side Encryption](implementing-server-side-encryption.md)
++ [Implementing Digital Rights Management \(DRM\)](implementing-digital-rights-management-drm.md)

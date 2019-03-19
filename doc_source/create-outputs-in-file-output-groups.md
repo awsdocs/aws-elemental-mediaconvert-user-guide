@@ -10,7 +10,7 @@ If you created a file output group in [Step 3: Create Output Groups](specify-out
 
 **To create an output in a File output group**
 
-1. When you create an output group, MediaConvert automatically populates the output group with output 1, so you don't need to explicitly create it\. If you are creating only one standalone file, skip the rest of this procedure\.
+1. When you create an output group, AWS Elemental MediaConvert automatically populates the output group with output 1, so you don't need to explicitly create it\. If you are creating only one standalone file, skip the rest of this procedure\.
 
 1. If you want to create more than one standalone file, create additional outputs as follows:
 
@@ -30,7 +30,7 @@ Next, for each file output you just created, set up output selectors\. The follo
 
 1. In the **Output settings** pane, for **Name modifier**, type a value\.
 
-   MediaConvert appends the name modifier to the file names that it assigns to the file that it creates for this output\. Type a name modifier that will make it easy to identify which files came from which output, such as `-standalone-hi-res`\.
+   AWS Elemental MediaConvert appends the name modifier to the file names that it assigns to the file that it creates for this output\. Type a name modifier that will make it easy to identify which files came from which output, such as `-standalone-hi-res`\.
 
 1. If one of the predefined groups of settings listed under **Preset** is suitable for your workflow, choose it from the list\. If you use a preset, skip the next step of this procedure\.
 **Note**  

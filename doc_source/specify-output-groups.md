@@ -4,7 +4,7 @@ After specifying your input, create output groups\. The choices that you make wh
 
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/Job_output-groups.png)
 
-As shown in the preceding illustration, you can use MediaConvert to create media assets that fall broadly into two categories:
+As shown in the preceding illustration, you can use AWS Elemental MediaConvert to create media assets that fall broadly into two categories:
 + **ABR streaming packages**\. You can create adaptive bitrate \(ABR\) packages to allow end viewers to download the asset a little at a time while they watch\. Depending on how you set up your outputs, the end viewer's device can adapt to changes in the available bandwidth by downloading higher\- or lower\-quality segments\. ABR packages are also called ABR *stacks*, because they are made up of a "stack" of video, audio, and captions components\. Each component in the stack or package is called a *rendition*\.
 + **Standalone files**\. You might create these files and host them in a location where end viewers download the entire file all at once and then view it\. You might also create standalone files and then send them to downstream systems for packaging and distribution\.
 

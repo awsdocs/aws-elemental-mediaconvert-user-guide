@@ -1,6 +1,6 @@
-# Canceling an MediaConvert Job<a name="canceling-a-job"></a>
+# Canceling a MediaConvert Job<a name="canceling-a-job"></a>
 
-You can cancel any job in a queue that the service hasn't started to transcode\. 
+The following procedure explains how to cancel a job using the AWS Elemental MediaConvert console\. 
 
 **To cancel a job**
 
@@ -9,7 +9,7 @@ You can cancel any job in a queue that the service hasn't started to transcode\.
 1. On the navigation bar at the top of the page, choose the region where you created the job that you want to cancel\.  
 ![\[Choose a region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)
 
-1. **\(Optional but recommended\)** Pause the queue that contains the job so that the service doesn't start to process it\. You can't cancel a job after the service starts processing it\.
+1. **\(Optional but recommended\)** Pause the queue that contains the job so that the service doesn't start to process it\.
 
    1. Choose the three\-bar icon on the left to access the left navigation pane\.
 
@@ -22,10 +22,6 @@ You can cancel any job in a queue that the service hasn't started to transcode\.
    1. Under the **Status** dropdown list, choose **Pause**\.
 
 1. In the left navigation pane of the console, choose **Jobs**\.
-
-1. In the **Recent jobs** pane, from the **Status** dropdown list, choose **Submitted** to filter your list of jobs to just those that you can cancel\.
-
-   To view more details about a job to determine whether it's the one that you want to cancel, choose the job ID\.
 
 1. From the **Recent jobs** pane, choose the job that you want to cancel by choosing the radio button next to it\.
 
