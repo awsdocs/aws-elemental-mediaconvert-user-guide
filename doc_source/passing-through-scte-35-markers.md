@@ -18,4 +18,4 @@ You can include time\_signal SCTE\-35 markers from your input in any output that
 
    A PID, or packet identifier, is an identifier for a set of data in an MPEG\-2 transport stream container\. PIDs are used by downstream systems and players to locate specific information in the container\. 
 
-1. If your output is in an **Apple HLS**, optionally set up the job to include ad markers in the manifest\. For more information, see [](including-scte-35-information-in-your-hls-manifest.md)\.
+1. If your output is in an **Apple HLS**, optionally set up the job to include ad markers in the manifest\. For more information, see [Including SCTE\-35 Information in Your HLS Manifest](including-scte-35-information-in-your-hls-manifest.md)\.

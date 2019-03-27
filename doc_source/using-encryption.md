@@ -1,4 +1,4 @@
-# Using Encryption with AWS Elemental MediaConvert<a name="using-encryption"></a>
+# Data Protection for AWS Elemental MediaConvert<a name="using-encryption"></a>
 
 Use encryption to protect your content from unauthorized access\. You can use any combination of these encryption options with AWS Elemental MediaConvert:
 + Client\-side encryption: Encrypt your input files before you upload them to Amazon S3 to protect them in transit\.

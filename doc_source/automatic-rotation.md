@@ -24,4 +24,4 @@ If your input file has rotation metadata that specifies a rotation other than th
 1. In the **Video selector** section on the left, for **Rotate**, choose **Automatic**\.
 
 **Note**  
-AWS Elemental MediaConvert doesn't rotate images and motion graphics that you overlay\. If you use the image inserter \(graphic overlay\) feature or the feature with the rotate feature, rotate your overlay before you upload it\. Specify the position of your overlays as you want them to appear on the video after rotation\.
+AWS Elemental MediaConvert doesn't rotate images and motion graphics that you overlay\. If you use the image inserter \(graphic overlay\) feature or the motion image inserter \(motion graphic overlay\) feature with the rotate feature, rotate your overlay before you upload it\. Specify the position of your overlays as you want them to appear on the video after rotation\.

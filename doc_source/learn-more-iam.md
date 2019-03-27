@@ -1,0 +1,8 @@
+# Learning More about AWS Identity and Access Management<a name="learn-more-iam"></a>
+
+[Authentication and Access Control for AWS Elemental MediaConvert](auth-and-access-control.md) provides information about identity and access management as it relates to AWS Elemental MediaConvert\. These topics provide more detailed information about the AWS Identity and Access Management \(IAM\) service generally\. 
+
+**Topics**
++ [What is Authentication?](auth_access_what-is-authentication.md)
++ [What is Access Control?](auth_access_what-is-access-control.md)
++ [What are Policies?](auth_access_what-are-policies.md)

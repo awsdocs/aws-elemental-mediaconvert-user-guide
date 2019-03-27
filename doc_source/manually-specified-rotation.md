@@ -16,4 +16,4 @@ AWS Elemental MediaConvert doesn't pass through rotation metadata\. Regardless o
 If you use the API or an SDK, you can find this setting in the JSON file of your job, called `rotate`\. Find the [rotate](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-videoselector-rotate) property in the AWS Elemental MediaConvert API Reference\.
 
 **Note**  
-AWS Elemental MediaConvert doesn't rotate images and motion graphics that you overlay\. If you use the image inserter \(graphic overlay\) feature or the feature with the rotate feature, rotate your overlay before you upload it\. Specify the position of your overlays as you want them to appear on the video after rotation\.
+AWS Elemental MediaConvert doesn't rotate images and motion graphics that you overlay\. If you use the image inserter \(graphic overlay\) feature or the motion image inserter \(motion graphic overlay\) feature with the rotate feature, rotate your overlay before you upload it\. Specify the position of your overlays as you want them to appear on the video after rotation\.
