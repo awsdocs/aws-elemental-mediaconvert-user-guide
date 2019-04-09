@@ -13,7 +13,7 @@ Use the following procedure to enable content encryption in **DASH ISO**, **MS S
 1. Follow one of these two paths, depending on your output group type: 
    + For **DASH ISO** and **MS Smooth**, fill in the encryption parameter fields\. For more information, see [SPEKE Encryption Parameters](#speke-encryption-parameters)\.
    + For **Apple HLS**, fill in the following parameters:
-     + **Encryption method** – Choose **Sample\-AES** for Apple HLS Fairplay or **AES\-128** for Apple HLS AES\-128\. 
+     + For **Encryption method**, choose **Sample\-AES** for Apple HLS Fairplay or choose **AES\-128** for Apple HLS AES\-128\. 
      + **Key provider type** – Choose **SPEKE** to encrypt using a key provided by your DRM solution provider, or choose **Static key** to enter your own key\. 
        + For **SPEKE**, fill in the encryption parameter fields\. For more information, see [SPEKE Encryption Parameters](#speke-encryption-parameters)\. 
        + For **Static Key**, see [Static Key Encryption Parameters](#static-key-encryption-parameters)\.
@@ -21,15 +21,15 @@ Use the following procedure to enable content encryption in **DASH ISO**, **MS S
 ## SPEKE Encryption Parameters<a name="speke-encryption-parameters"></a>
 
 When you request encryption, you provide input parameters that allow the service to locate your DRM solution provider's key server, to authenticate you as a user and to request the proper encoding keys\. This section describes the options\. Some options are available only for particular streaming protocols: 
-+ **Resource ID** – Identifier that you define for the content, which is sent to the key server to identify the current endpoint\. How unique you make this depends on how fine\-grained you want access controls to be\. The service does not allow you to use the same ID for two simultaneous encryption processes\. 
++ For **Resource ID**, enter an identifier for the content\. The service sends this to the key server to identify the current endpoint\. How unique you make this depends on how fine\-grained you want access controls to be\. The service does not allow you to use the same ID for two simultaneous encryption processes\. The resource ID is also known as the content ID\. 
 
   The following example shows a resource ID:
 
   ```
   MovieNight20171126093045
   ```
-+ **System IDs** – Unique identifiers for your streaming protocol and DRM system\. Provide up to two IDs for DASH and exactly one for the other streaming protocols\. If you provide more than one system ID, enter them on separate lines, and do not separate them with commas or any other punctuation\. For a list of common system IDs, see [DASH\-IF System IDs](https://dashif.org/identifiers/content_protection/)\. If you do not know your IDs, ask your DRM solution provider\.
-+ **URL** – The URL from the API Gateway proxy that you set up to talk to your key server\. The API Gateway must reside in the same AWS Region as MediaConvert\.
++ For **System IDs**, enter unique identifiers for your streaming protocol and DRM system\. Provide up to two IDs for DASH and exactly one for the other streaming protocols\. If you provide more than one system ID, enter them on separate lines, and do not separate them with commas or any other punctuation\. For a list of common system IDs, see [DASH\-IF System IDs](https://dashif.org/identifiers/content_protection/)\. If you do not know your IDs, ask your DRM solution provider\.
++ For **URL**, enter the URL from the API Gateway proxy that you set up to talk to your key server\. The API Gateway proxy must reside in the same AWS Region as MediaConvert\.
 
   The following example shows a URL: 
 
@@ -47,7 +47,7 @@ When you request encryption, you provide input parameters that allow the service
   ```
 
 ### Additional Configuration Options for Apple HLS<a name="additional-encryption-parameters"></a>
-+ **\(Optional\) Constant initialization vector** – A 128\-bit, 16\-byte hex value represented by a 32\-character string that is used with the key for encrypting content\.
++ \(Optional\) For **Constant initialization vector** enter a 128\-bit, 16\-byte hex value represented by a 32\-character string, to be used with the key for encrypting content\.
 
 ## Static Key Encryption Parameters<a name="static-key-encryption-parameters"></a>
 

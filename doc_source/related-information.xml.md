@@ -1,4 +1,4 @@
-# AWS Elemental MediaConvert Related Information<a name="resources"></a>
+# AWS Elemental MediaConvert Related Information<a name="related-information.xml"></a>
 
 Find links to code samples, tutorials, and other helpful information for getting started with AWS Elemental MediaConvert\.
 

@@ -1,6 +1,6 @@
 # Step 4: \(Optional\) Get Set Up to Use DRM Encryption<a name="set-up-encryption"></a>
 
-Protect your content from unauthorized use through encryption\. Digital rights management \(DRM\) systems provide keys to MediaConvert for content encryption, and licenses to supported players for decryption\.
+Protect your content from unauthorized use through encryption\. Digital rights management \(DRM\) systems provide keys to AWS Elemental MediaConvert for content encryption, and licenses to supported players and other consumers for decryption\.
 
 To encrypt content, you must have a DRM solution provider\. 
 + For an overview, see [https://docs\.aws\.amazon\.com/speke/latest/documentation/what\-is\-speke\.html\#services\-architecture](https://docs.aws.amazon.com/speke/latest/documentation/what-is-speke.html#services-architecture)\.

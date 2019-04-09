@@ -4,7 +4,7 @@ DRM is one of the three encryption options that you can use with AWS Elemental M
 
 ![\[Three rectangles represent each of the three encryption options. The third, DRM, is highlighted. The text reads as follows. Use digital rights management (DRM) to protect your content during distribution. Protects your output files in transit. Protects your output files at rest.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/encryption_DRM.png)
 
-Protect your content from unauthorized use through encryption\. Digital rights management \(DRM\) systems provide keys to MediaConvert for content encryption, and licenses to supported players for decryption\.
+Protect your content from unauthorized use through encryption\. Digital rights management \(DRM\) systems provide keys to AWS Elemental MediaConvert for content encryption, and licenses to supported players and other consumers for decryption\.
 
 **Note**  
 To encrypt content, you must have a DRM solution provider\.   

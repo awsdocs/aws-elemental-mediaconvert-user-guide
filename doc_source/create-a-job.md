@@ -16,4 +16,8 @@ A job does the work of transcoding\. You specify the name of the file that you w
 
 1. Choose **Create**\.
 
+   For information about tracking the status of your job, see [Using CloudWatch Events to Monitor AWS Elemental MediaConvert Jobs](cloudwatch_events.md)\.
+
+   For information about the file names and paths for your job outputs, see [Output File Names and Paths](output-file-names-and-paths.md)\.
+
 1. If you don't want to keep the transcoded files that you generate during this tutorial, delete them from Amazon S3 to avoid incurring storage charges\.
