@@ -14,7 +14,7 @@ As shown in the preceding illustration, you can use AWS Elemental MediaConvert t
 
 1. Choose an output group type, and then choose **Select**\. Create one file output group for all the standalone files that you intend to create\. Create one ABR streaming output group for each ABR streaming package that you intend to create\. For guidance on which ABR streaming output groups to include in your job, see [Choosing Your ABR Streaming Output Groups](choosing-your-streaming-output-groups.md)\.
 
-1. Optionally, for **Custom group name**, type a name for your group\. Any name that you provide here appears in the **Output groups** section of the console but does not affect your outputs\.
+1. Optionally, for **Custom group name**, enter a name for your group\. Any name that you provide here appears in the **Output groups** section of the console but does not affect your outputs\.
 
 1. For **Destination**, specify the URI for the Amazon S3 location where the transcoding service will store your output files\. You can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\.
 **Note**  

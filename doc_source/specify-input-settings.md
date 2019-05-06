@@ -15,5 +15,7 @@ The first part of setting up an AWS Elemental MediaConvert job is specifying the
 If your input audio or captions are in a separate file, don't create separate inputs for them\. You specify these files later in this procedure, within your audio and captions selectors\.
 
 1. To join more than one input file into a single asset \(input stitching\), add another input to the job\. To do so, in the **Job** pane, in the **Inputs** section, choose **Add**\. For jobs that have multiple input files, AWS Elemental MediaConvert creates outputs by concatenating the inputs in the order that you specify them in the job\.
+
+   You can include up to 150 inputs in your job\.
 **Tip**  
-You can transcode only portions of your inputs\. For more information, see [Input Clipping](input-clipping-stitching.md)\.
+You can also transcode only portions of your inputs\. For more information, see [Input Clipping](input-clipping-stitching.md)\.

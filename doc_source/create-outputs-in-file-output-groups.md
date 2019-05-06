@@ -28,9 +28,9 @@ Next, for each file output you just created, set up output selectors\. The follo
 
 1. On the **Create job** page, in the **Job** pane on the left, under **Output Groups**, under **File group**, choose **Output 1**\. 
 
-1. In the **Output settings** pane, for **Name modifier**, type a value\.
+1. In the **Output settings** pane, for **Name modifier**, enter a value\.
 
-   AWS Elemental MediaConvert appends the name modifier to the file names that it assigns to the file that it creates for this output\. Type a name modifier that will make it easy to identify which files came from which output, such as `-standalone-hi-res`\.
+   AWS Elemental MediaConvert appends the name modifier to the file names that it assigns to the file that it creates for this output\. Enter a name modifier that will make it easy to identify which files came from which output, such as `-standalone-hi-res`\.
 
 1. If one of the predefined groups of settings listed under **Preset** is suitable for your workflow, choose it from the list\. If you use a preset, skip the next step of this procedure\.
 **Note**  

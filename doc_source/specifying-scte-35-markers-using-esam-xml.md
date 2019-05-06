@@ -141,4 +141,4 @@ For example, a job has the following three inputs: a five\-minute preroll, a one
 
 1. Submit your job as usual\. 
 
-   For information about submitting AWS Elemental MediaConvert jobs programmatically, see [Getting Started with AWS Elemental MediaConvert Using the AWS SDKs or the AWS CLI](https://docs.aws.amazon.com/mediaconvert/latest/apireference//custom-endpoints.html) and [Getting Started with AWS Elemental MediaConvert Using the API](https://docs.aws.amazon.com/mediaconvert/latest/apireference/getting-started.html)\.
+   For information about submitting AWS Elemental MediaConvert jobs programmatically, see [Getting Started with AWS Elemental MediaConvert Using the AWS SDKs or the AWS CLI](https://docs.aws.amazon.com/mediaconvert/latest/apireference/custom-endpoints.html) and [Getting Started with AWS Elemental MediaConvert Using the API](https://docs.aws.amazon.com/mediaconvert/latest/apireference/getting-started.html)\.

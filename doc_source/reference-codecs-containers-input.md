@@ -7,14 +7,14 @@ MediaConvert doesn't currently support HLS input\.
 
 ## Video<a name="reference-codecs-containers-input-video"></a>
 
-Supported video input codecs and containers are listed in the table below\.
+Supported video input codecs and containers are listed in the following table\.
 
 
 | Container | Video Codecs Supported with Container | 
 | --- | --- | 
 | No Container | DV/DVCPRO, AVC \(H\.264\), HEVC \(H\.265\), MPEG\-1, MPEG\-2 | 
 | Audio Video Interleave | Uncompressed, DivX/Xvid, DV/DVCPRO | 
-| Adobe® Flash® | Flash® 9 File, H\.263, AVC \(H\.264\) | 
+| Adobe® Flash® | AVC \(H\.264\), Flash® 9 File, H\.263 | 
 | Matroska | AVC \(H\.264\), MPEG\-2, MPEG\-4 part 2, VC\-1 | 
 | IMF | JPEG 2000 \(J2K\) | 
 | MPEG Transport Streams | AVC \(H\.264\), HEVC \(H\.265\), MPEG\-2, VC\-1 | 
@@ -29,13 +29,13 @@ AWS Elemental MediaConvert doesn't support external reference MOV or MXF input f
 
 ## Audio<a name="reference-codecs-containers-input-audio"></a>
 
-Supported audio input codecs and containers are listed in the table below\.
+Supported audio input codecs and containers are listed in the following table\.
 
 
 | Container | Audio Codecs | 
 | --- | --- | 
-| No Container | 
-| Audio Video Interleave | Dolby® Digital, Dolby® Digital Plus™, Dolby® E frames carried in PCM streams, MPEG Audio, PCM | 
+| No Container | PCM | 
+| Audio Video Interleave | Dolby® Digital, Dolby® Digital Plus™, Dolby® E frames carried in PCM streams, MP3, MPEG Audio, PCM | 
 | Adobe® Flash® | AAC | 
 | IMF | PCM | 
 | Matroska | AAC, Dolby® Digital, Dolby® Digital Plus™, WMA, WMA2 | 
@@ -43,5 +43,5 @@ Supported audio input codecs and containers are listed in the table below\.
 | MPEG\-1 System Streams | AAC, AIFF, Dolby® Digital, Dolby® Digital Plus™, MPEG, Audio PCM | 
 | MPEG\-4 | AAC, Dolby® Digital, Dolby® Digital Plus™, PCM, WMA, WMA2 | 
 | MXF | AAC, AIFF, Dolby® E frames carried in PCM streams, MPEG Audio, PCM | 
-| QuickTime® | AAC | 
+| QuickTime® | AAC, MP3, PCM | 
 | WMV/ASF | WMA, WMA2 | 
