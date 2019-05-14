@@ -6,6 +6,7 @@ The following table describes important additions to the AWS Elemental MediaConv
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Monitor output file upload progress](monitoring-overview.md) | Using CloudWatch Events, you can now monitor the progress of your job with finer granularity, because AWS Elemental MediaConvert now reports percentage completion of the job phases PROBING, UPLOADING, and TRANSCODING, in addition to reporting overall job progress in percent completion\. | May 7, 2019 | 
 | [Doc\-only update, format identifiers ](using-variables-in-your-job-settings.md) | Learn how to use format identifiers as variables in your job settings\. For example, you can use a format identifier to represent your input file name in a job template or output preset, so that AWS Elemental MediaConvert uses the input file name in the file path for your output\. | April 24, 2019 | 
 | [You can now cancel an in\-progress job\.](working-with-jobs.md) | AWS Elemental MediaConvert now allows you to cancel jobs that are already in progress\. | March 13, 2019 | 
 | [Monitor job progress](monitoring-overview.md) | Using CloudWatch Events, you can now monitor the progress of your AWS Elemental MediaConvert jobs by viewing the percentage of job completion\. | March 13, 2019 | 

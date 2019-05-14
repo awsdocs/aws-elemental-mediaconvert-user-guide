@@ -1,4 +1,4 @@
-# CloudWatch Metrics<a name="MediaConvert-metrics"></a>
+# Using CloudWatch Metrics to View Metrics for AWS Elemental MediaConvert Resources<a name="MediaConvert-metrics"></a>
 
 AWS Elemental MediaConvert sends the following metrics to CloudWatch every time the status of a job changes\.
 

@@ -1,23 +1,29 @@
-# Using CloudWatch Events to Monitor AWS Elemental MediaConvert Jobs<a name="cloudwatch_events"></a>
+# Using CloudWatch Events with AWS Elemental MediaConvert<a name="cloudwatch_events"></a>
 
-You can use Amazon CloudWatch Events to notify you when your job status changes, to receive information about completed jobs, and to trigger automated actions in other AWS services when these events happen\. Here are some examples of what you can do with CloudWatch Events:
-+ You can use CloudWatch Events to monitor the progress of your job\. 
+You can use Amazon CloudWatch Events to monitor your AWS Elemental MediaConvert jobs\. Here are some examples of what you can do with CloudWatch Events:
++ **Monitor the progress of your job\.**
 
   `STATUS_UPDATE` events provide information about what phase your job is in \(`PROBING`, `TRANSCODING`, and `UPLOADING`\)\. For some jobs, AWS Elemental MediaConvert provides an estimate of how far your job has progressed, shown as a percentage of the total time from when your job leaves its queue to when your output files appear in your output Amazon S3 bucket\.
-+ You can set up CloudWatch Events to notify you through email if one of your AWS Elemental MediaConvert jobs fails\.
+
+  For more information about `STATUS_UPDATE` events, see the table of event types in [Events That AWS Elemental MediaConvert Sends to CloudWatch](mediaconvert_cwe_events.md)\.
+
+  For information about adjusting the frequency of status updates, see [Adjusting the Status Update Interval](mediaconvert_cwe_events.md#adjusting-the-status-update-interval)\.
++ **Set up email notifications for any failed jobs\.**
 
   For a tutorial on setting up this CloudWatch Events event rule, see [Tutorial: Setting Up Email Notifications for Failed Jobs](mediaconvert_sns_tutorial.md)\.
-+ You can use `COMPLETE` events to programmatically receive the file name and location of the job's outputs\.
 
-  For more information, see [Output File Names and Paths](output-file-names-and-paths.md)\.
-+ You can set up CloudWatch Events so that a Lambda function initiates your post\-processing code after your job finishes\. 
+  This is a specific example of setting up a CloudWatch Events event rule to find out about changes to your job status\. For a list of all job status change notifications that you can set up event rules for, see [Events That AWS Elemental MediaConvert Sends to CloudWatch](mediaconvert_cwe_events.md)\.
++ **Get details about your job outputs\.**
 
-  For more information about using AWS Lambda with MediaConvert, see one of these resources:
+  AWS Elemental MediaConvert provides details about your job outputs in the notification for the `COMPLETE` event\. This information includes the location and file names of the job's media files and manifests\. For details, see [Output File Names and Paths](output-file-names-and-paths.md)\.
++ **Automatically initiate post\-processing with an AWS Lambda function\.**
+
+  You can set up CloudWatch Events so that a Lambda function initiates your post\-processing code after your job finishes\. For more information about using AWS Lambda with AWS Elemental MediaConvert, see one of these resources:
   + For experienced cloud architects, see the [Video on Demand on AWS](https://aws.amazon.com/answers/media-entertainment/video-on-demand-on-aws/) post on the *AWS Answers* blog\.
   + For developers new to MediaConvert and Lambda, see the [Automating MediaConvert Jobs with Lambda](https://github.com/aws-samples/aws-media-services-simple-vod-workflow/blob/master/7-MediaConvertJobLambda/README.md) tutorial on GitHub\. This tutorial is part of the Simple VOD Workflow series of tutorials on using MediaConvert to create video on demand \(VOD\)\.
 
-To set up CloudWatch Events, you create a rule that links MediaConvert and the service that responds to your job status change, such as Amazon Simple Notification Service \(SNS\) or AWS Lambda\. The following illustration shows these two parts of CloudWatch Events rules\. 
-
-![\[CloudWatch Events rules bring together an event source and a target.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/CloudWatchEvents_overview.png)
-
-For more information about the events that MediaConvert can send in the CloudWatch Events event stream, see [AWS Elemental MediaConvert Events](mediaconvert_cwe_events.md)\.
+**Topics**
++ [Setting Up CloudWatch Event Rules](setting-up-cloudwatch-event-rules.md)
++ [Tutorial: Setting Up Email Notifications for Failed Jobs](mediaconvert_sns_tutorial.md)
++ [Output File Names and Paths](output-file-names-and-paths.md)
++ [Events That AWS Elemental MediaConvert Sends to CloudWatch](mediaconvert_cwe_events.md)

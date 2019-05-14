@@ -1,19 +1,28 @@
-# Monitoring AWS Elemental MediaConvert Jobs<a name="monitoring-overview"></a>
+# Monitoring AWS Elemental MediaConvert<a name="monitoring-overview"></a>
 
-You can keep on top of your AWS Elemental MediaConvert jobs in these ways:
-+ *Amazon CloudWatch Events* delivers a near real\-time stream of system events that describe changes in AWS resources\. Some examples of what you can do with AWS Elemental MediaConvert CloudWatch Events are as follows:
-  + You can monitor the progress of your job with `STATUS_UPDATE` event notifications\. 
+**Monitoring the Progress of Your AWS Elemental MediaConvert Jobs**  
+You can track the status, phase, and percent completion of your jobs\. For information about status and phase, see [How AWS Elemental MediaConvert Jobs Progress](how-mediaconvert-jobs-progress.md)\.
 
-    For more information, see `STATUS_UPDATE` in the table of event types in [AWS Elemental MediaConvert Events](mediaconvert_cwe_events.md)\.
-  + You can set up notifications for your job status changes\. 
+You can monitor the status of your jobs and their percent completion in these places:
++ *AWS Elemental MediaConvert **Recent jobs** page*
 
-    For more information and a tutorial on setting up email job notifications with CloudWatch Events, see [Using CloudWatch Events to Monitor AWS Elemental MediaConvert Jobs](cloudwatch_events.md)\.
-  + You can get details about your job outputs\.
+  On the console, you can see your job status and the overall percent completion of your jobs\. For more granular information, such as percent completion of the probing, transcoding, and uploading phase, use Amazon CloudWatch Events, discussed in the following bullet\.
 
-    AWS Elemental MediaConvert provides details about your job outputs in the notification for the `COMPLETE` event\. This information includes the location and file names of the job's media files and manifests\. For details, see [Output File Names and Paths](output-file-names-and-paths.md)\.
-  + You can use trigger automated actions in other AWS services when your job status changes\.
+  Access the **Recent jobs** page by opening the [AWS Elemental MediaConvert console](https://console.aws.amazon.com/mediaconvert/) and choosing **Jobs** in the navigation pane\. If the navigation pane is closed, choose the menu icon \(the three\-bar icon\) in the upper\-left corner of the console to open it\.
 
-    A common use case is to trigger a Lambda function to initiate your postprocessing\. For more information, see the *[Amazon CloudWatch Events User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/)*\.
-+ *Amazon CloudWatch* monitors your AWS resources and the applications that you run on AWS in real\-time\. You can collect and track metrics, create customized dashboards, and set alarms that notify you or that take actions when a specified metric reaches a threshold that you specify\. For example, you can have CloudWatch track the number of successful jobs over a specified period of time\. For more information, see the *[Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/)*\. For a list of the MediaConvert metrics that CloudWatch tracks, see [CloudWatch Metrics](MediaConvert-metrics.md)\.
-+ *AWS CloudTrail* captures API calls and related events made by or on behalf of your AWS account and delivers the log files to an Amazon S3 bucket that you specify\. You can identify which users and accounts called AWS, the source IP address from which the calls were made, and when the calls occurred\. For more information, see [Logging MediaConvert API Calls with CloudTrail](logging-using-cloudtrail.md)\.
-+ The *MediaConvert Recent Jobs* page shows the status of your jobs\. Access it by opening the MediaConvert console and choosing **Jobs** in the navigation pane\. You might need to choose the menu icon \(the three\-bar icon\) in the upper\-left corner of the console to open this navigation pane\.
+  Optionally, you can filter to see only jobs that are progressing\. From the **Any status** filter, choose **Progressing**\.
++ *Amazon CloudWatch Events* 
+
+  With CloudWatch Events, you can get more detailed information about the progress of your jobs, including percent completion of the probing, transcoding, and uploading phases\. AWS Elemental MediaConvert sends these `STATUS_UPDATE` events to the CloudWatch Events service\. You can subscribe to these events to receive job notifications programmatically or through Amazon SNS\.
+
+  For more information about using the STATUS\_UPDATE event, see [Using CloudWatch Events with AWS Elemental MediaConvert](cloudwatch_events.md)\.
+
+**Monitoring Your AWS Resources, Applications, and API Calls**  
+The following AWS services help you stay on top of your resources and the activity on your account:
++ *Amazon CloudWatch* monitors your AWS resources and the applications that you run on AWS in real\-time\. You can collect and track metrics, create customized dashboards, and set alarms that notify you or that take actions when a specified metric reaches a threshold that you specify\. For example, you can have CloudWatch track the number of successful jobs over a specified period of time\. For more information, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/)\. For a list of the MediaConvert metrics that CloudWatch tracks, see [Using CloudWatch Metrics to View Metrics for AWS Elemental MediaConvert Resources](MediaConvert-metrics.md)\.
++ *AWS CloudTrail* captures API calls and related events made by or on behalf of your AWS account and delivers the log files to an Amazon S3 bucket that you specify\. You can identify which users and accounts called AWS, the source IP address from which the calls were made, and when the calls occurred\. For more information, see [Logging MediaConvert API Calls with AWS CloudTrail](logging-using-cloudtrail.md)\.
+
+**Topics**
++ [How AWS Elemental MediaConvert Jobs Progress](how-mediaconvert-jobs-progress.md)
++ [Using CloudWatch Events with AWS Elemental MediaConvert](cloudwatch_events.md)
++ [Using CloudWatch Metrics to View Metrics for AWS Elemental MediaConvert Resources](MediaConvert-metrics.md)
