@@ -21,7 +21,7 @@ For this error, ask your administrator to update your policies to allow you to a
 
 ## I'm an administrator and want to allow others to access AWS Elemental MediaConvert<a name="auth_access_troubleshoot-admin-allow-access"></a>
 
-To allow others to access AWS Elemental MediaConvert, you must create an IAM entity \(user or role\) for the person or application that needs access\. They will use the credentials for that entity to access AWS\. You must then attach a policy to the entity that grants them the correct permissions in AWS Elemental MediaConvert\. 
+To allow others to access AWS Elemental MediaConvert, you must create an IAM entity \(user or role\) for the person or application that needs access\. They will use the credentials for that entity to access AWS\. You must then attach a policy to the entity that grants them the correct permissions in MediaConvert\. 
 
 ## I want to understand IAM without becoming an expert<a name="auth_access_troubleshoot-iam-expert"></a>
 

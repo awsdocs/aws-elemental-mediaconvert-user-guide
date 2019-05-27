@@ -15,7 +15,7 @@ Supported video input codecs and containers are listed in the following table\.
 | No Container | DV/DVCPRO, AVC \(H\.264\), HEVC \(H\.265\), MPEG\-1, MPEG\-2 | 
 | Audio Video Interleave | Uncompressed, DivX/Xvid, DV/DVCPRO | 
 | Adobe® Flash® | AVC \(H\.264\), Flash® 9 File, H\.263 | 
-| Matroska | AVC \(H\.264\), MPEG\-2, MPEG\-4 part 2, VC\-1 | 
+| Matroska | AVC \(H\.264\), PCM, MPEG\-2, MPEG\-4 part 2, VC\-1 | 
 | IMF | JPEG 2000 \(J2K\) | 
 | MPEG Transport Streams | AVC \(H\.264\), HEVC \(H\.265\), MPEG\-2, VC\-1 | 
 | MPEG\-1 System Streams |  MPEG\-1, MPEG\-2 | 
@@ -35,13 +35,13 @@ Supported audio input codecs and containers are listed in the following table\.
 | Container | Audio Codecs | 
 | --- | --- | 
 | No Container | PCM | 
-| Audio Video Interleave | Dolby® Digital, Dolby® Digital Plus™, Dolby® E frames carried in PCM streams, MP3, MPEG Audio, PCM | 
+| Audio Video Interleave | Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), Dolby E frames carried in PCM streams, MP3, MPEG Audio, PCM | 
 | Adobe® Flash® | AAC | 
 | IMF | PCM | 
-| Matroska | AAC, Dolby® Digital, Dolby® Digital Plus™, WMA, WMA2 | 
-| MPEG Transport Streams | AAC, AIFF, Dolby® Digital, Dolby® Digital Plus™, Dolby® E frames carried in PCM streams, MPEG Audio, PCM, WMA, WMA2 | 
-| MPEG\-1 System Streams | AAC, AIFF, Dolby® Digital, Dolby® Digital Plus™, MPEG, Audio PCM | 
-| MPEG\-4 | AAC, Dolby® Digital, Dolby® Digital Plus™, PCM, WMA, WMA2 | 
-| MXF | AAC, AIFF, Dolby® E frames carried in PCM streams, MPEG Audio, PCM | 
+| Matroska | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), WMA, WMA2 | 
+| MPEG Transport Streams | AAC, AIFF, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), Dolby E frames carried in PCM streams, MPEG Audio, PCM, WMA, WMA2 | 
+| MPEG\-1 System Streams | AAC, AIFF, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), MPEG, Audio PCM | 
+| MPEG\-4 | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), PCM, WMA, WMA2 | 
+| MXF | AAC, AIFF, Dolby E frames carried in PCM streams, MPEG Audio, PCM | 
 | QuickTime® | AAC, MP3, PCM | 
 | WMV/ASF | WMA, WMA2 | 

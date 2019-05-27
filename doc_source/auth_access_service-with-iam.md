@@ -1,7 +1,7 @@
 # Understanding How AWS Elemental MediaConvert Works with IAM<a name="auth_access_service-with-iam"></a>
 
 AWS services can work with IAM in several ways\. AWS Elemental MediaConvert supports the following ways:
-+ **Actions** – AWS Elemental MediaConvert supports using actions in a policy\. This allows an administrator to control whether an entity can complete an operation in AWS Elemental MediaConvert\. For example, to allow an entity to update a job template by performing the `UpdateJobTemplate` AWS API operation, an administrator must attach a policy that allows the `iam:UpdateJobTemplate` action\. 
++ **Actions** – AWS Elemental MediaConvert supports using actions in a policy\. This allows an administrator to control whether an entity can complete an operation in MediaConvert\. For example, to allow an entity to update a job template by performing the `UpdateJobTemplate` AWS API operation, an administrator must attach a policy that allows the `iam:UpdateJobTemplate` action\. 
 + **Resource\-level permissions** – AWS Elemental MediaConvert supports resource\-level permissions\. Resource\-level permissions allow you to specify individual resources in the policy\. For example, you can grant permissions for a user to submit jobs only to a particular queue, or to use only job templates that have a particular ID in their name\.
 
   For an example IAM policy that grants resource\-level permissions, see [Example Policy: Resource\-Level Access Control](example-policies.md#example-policy-resource-level-access-control)\.
@@ -39,7 +39,7 @@ The resources in the following table have unique ARNs associated with them\.
 | [Output preset]( https://docs.aws.amazon.com/mediaconvert/latest/apireference/presets.html) | arn:partition:mediaconvert:region:account:presets/PresetName | 
 | [Job template]( https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobtemplates.html) | arn:partition:mediaconvert:region:account:jobTemplates/JobTemplateName | 
 
-AWS Elemental MediaConvert provides a set of operations to work with AWS Elemental MediaConvert resources\. For a list of available operations for each resource, follow the links to the *AWS Elemental MediaConvert API Reference* in the preceding table\.
+AWS Elemental MediaConvert provides a set of operations to work with MediaConvert resources\. For a list of available operations for each resource, follow the links to the *AWS Elemental MediaConvert API Reference* in the preceding table\.
 
 To allow or deny access to a subset of AWS Elemental MediaConvert resources, include the ARN of the resource in the `Resource` element of your policy\. The ARNs for MediaConvert have the following format:
 

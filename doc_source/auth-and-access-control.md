@@ -1,6 +1,6 @@
 # Authentication and Access Control for AWS Elemental MediaConvert<a name="auth-and-access-control"></a>
 
-AWS Identity and Access Management \(IAM\) is an AWS service that helps an administrator securely control access to AWS Elemental MediaConvert resources\. Administrators use IAM to control who is *authenticated* \(signed in\) and *authorized* \(has permissions\) to use AWS Elemental MediaConvert resources\. IAM is a feature of your AWS account offered at no additional charge\.
+AWS Identity and Access Management \(IAM\) is an AWS service that helps an administrator securely control access to AWS Elemental MediaConvert resources\. Administrators use IAM to control who is *authenticated* \(signed in\) and *authorized* \(has permissions\) to use MediaConvert resources\. IAM is a feature of your AWS account offered at no additional charge\.
 
 When you use AWS Elemental MediaConvert, you typically interact with two different kinds of resources:
 + **Media files** – The media files that are inputs to and outputs from AWS Elemental MediaConvert are Amazon S3 resources, not MediaConvert resources\. The MediaConvert service must have permissions to access these files, but the user submitting the job doesn't need permissions to access them\.

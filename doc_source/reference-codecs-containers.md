@@ -27,14 +27,14 @@ Supported audio output codecs and containers are listed in the table below\.
 
 | Container | Codecs Supported with Container | 
 | --- | --- | 
-| MPEG DASH | AAC, Dolby Digital Plus, Dolby Digital | 
-| MPEG\-2 TS | AAC, Dolby Digital Plus, Dolby Digital, MP2 | 
-| HLS | AAC, Dolby Digital Plus, Dolby Digital  | 
-| Smooth \(ISMV | AAC, Dolby Digital Plus, Dolby Digital | 
-| MPEG\-4 \(\.mp4\) | AAC, Dolby Digital Plus, Dolby Digital | 
+| MPEG DASH | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), | 
+| MPEG\-2 TS | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), MP2 | 
+| HLS | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\),  | 
+| Smooth \(ISMV | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), | 
+| MPEG\-4 \(\.mp4\) | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), | 
 | MPEG\-4 Flash \(\.f4v\) | AAC | 
-| QuickTime | AAC \(with H\.264 and MPEG\-2\), AIFF \(with Apple ProRes\), Dolby Digital Plus \(with H\.264 and MPEG\-2\), Dolby Digital \(with H\.264 and MPEG\-2\), WAV \(with H\.264 and MPEG\-2\),  | 
+| QuickTime | AAC, with H\.264 and MPEG\-2; AIFF, with Apple ProRes; Dolby Digital \(AC3\), with H\.264 and MPEG\-2; Dolby Digital Plus \(EAC3\), with H\.264 and MPEG\-2; WAV \(with H\.264 and MPEG\-2\),  | 
 | MXF \(\.mxf\) | WAV | 
-| Raw \(no container\) |  AAC, AIFF, Dolby Digital Plus, Dolby Digital, WAV | 
-| Audio Only MPEG\-2 TS | AAC, Dolby Digital Plus, Dolby Digital, MP2 | 
-| Audio Only MPEG\-4 | AAC, Dolby Digital Plus, Dolby Digital, | 
+| Raw \(no container\) |  AAC, AIFF, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), WAV | 
+| Audio Only MPEG\-2 TS | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), MP2 | 
+| Audio Only MPEG\-4 | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), | 
