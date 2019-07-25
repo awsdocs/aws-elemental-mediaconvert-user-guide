@@ -10,7 +10,7 @@ The first part of setting up an AWS Elemental MediaConvert job is specifying the
 
 1. On the **Create job** page, in the **Job** pane on the left, choose **Input 1**\.
 
-1.  In the **Input 1** pane, provide the URI to your video input file that is stored in Amazon S3\. You can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\.
+1.  In the **Input 1** pane, provide the URI to your video input file that is stored in Amazon S3 or on an HTTP server\. For Amazon S3 inputs, you can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\. For HTTP inputs, provide the URL to your input video file\. For HTTP input requirements, see [HTTP Input Requirements](upload-input-files.md#http-input-requirements)\.
 **Note**  
 If your input audio or captions are in a separate file, don't create separate inputs for them\. You specify these files later in this procedure, within your audio and captions selectors\.
 

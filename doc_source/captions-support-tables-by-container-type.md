@@ -63,8 +63,10 @@ The following table lists supported output caption formats for this output conta
 | IMF Container Specify the CPL to define your input\.  | IMSC1 text profile | Burn inTTML | 
 | MP4 Container | Embedded | Burn inTTML | 
 |   | SCTE\-20 | Burn inTTML | 
-| MPEG2\-TS Container | Embedded | WebVTT | 
-|   | SCTE\-20 | WebVTT | 
+| MPEG2\-TS Container | DVB\-Sub | Burn in | 
+|  | Embedded | Burn inTTMLWebVTT | 
+|   | SCTE\-20 | Burn inTTMLWebVTT | 
+|   | Teletext | Burn inTTML | 
 | MXF Container | Embedded | Burn inTTML | 
 |   | SCTE\-20 | Burn inTTML | 
 |   | Ancillary | Burn inTTML | 
@@ -77,10 +79,6 @@ The following table lists supported output caption formats for this output conta
 |   | STL | Burn inTTML | 
 |   | SCC | Burn inTTML | 
 |   | SMI | Burn inTTML | 
-| MPEG2\-TS Container | Embedded | Burn inTTML | 
-|   | SCTE\-20 | Burn inTTML | 
-|   | Teletext | Burn inTTML | 
-|   | DVB\-Sub | Burn in | 
 
 ## HLS Output Container<a name="hls-output-container"></a>
 
@@ -261,22 +259,22 @@ The following table lists supported output caption formats for this output conta
 
 | Input Caption Container | Input Caption Format | Supported Output Caption Formats | 
 | --- | --- | --- | 
-| IMF Container Specify the CPL to define your input\.  | IMSC1 text profile | Burn in | 
-| MP4 Container | Embedded | Burn\-inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | SCTE\-20 | Burn\-inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
+| IMF Container Specify the CPL to define your input\.  | IMSC1 text profile |  Burn in  | 
+| MP4 Container | Embedded |  Burn\-in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   | SCTE\-20 |  Burn\-in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
 | MPEG2\-TS Container | DVB\-Sub | Burn\-inDVB\-Sub | 
-|  | Teletext | Burn\-inDVB\-Sub | 
-| MXF Container | Ancillary | Burn\-inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-| QuickTime Container | Embedded | Burn\-inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | SCTE\-20 | Burn\-inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | Ancillary | Burn\-inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-| Raw Container | SRT | Burn\-in | 
-|   | TTML | Burn\-in | 
-|   | STL | Burn\-in | 
-|   | SCC | Burn\-inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | SMI | Burn\-in | 
-| MPEG2\-TS Container | Embedded | Burn\-inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | SCTE\-20 | Burn\-inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
+|  | Embedded |  Burn\-in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   | SCTE\-20 |  Burn\-in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|  | Teletext |  Burn\-in DVB\-Sub  | 
+| MXF Container | Ancillary |  Burn\-in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+| QuickTime Container | Embedded |  Burn\-in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   | SCTE\-20 |  Burn\-in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   | Ancillary |  Burn\-in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+| Raw Container | SRT |  Burn\-in  | 
+|   | TTML |  Burn\-in  | 
+|   | STL |  Burn\-in  | 
+|   | SCC |  Burn\-in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   | SMI |  Burn\-in  | 
 
 ## QuickTime Output Container<a name="quicktime-output-container"></a>
 

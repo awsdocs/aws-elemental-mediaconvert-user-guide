@@ -4,7 +4,9 @@ The following example JSON job converts an MP4 file to another MP4 file that is 
 + `Role`: This is the AWS Identity and Access Management \(IAM\) role that you set up to give AWS Elemental MediaConvert permission to access your input and output Amazon S3 buckets and to access Amazon API Gateway on your behalf\. For information about setting up this role, see [Set Up IAM Permissions](https://docs.aws.amazon.com/mediaconvert/latest/ug/iam-role.html) in the *AWS Elemental MediaConvert User Guide*\.
 + `Destination`: The Amazon S3 bucket where you want MediaConvert to store your output file\. Make sure to include a trailing backslash, as in the example\.
 + `InputClippings`: Define the clips that you want transcoded by specifying sets of values for `StartTimecode` and `EndTimecode`\. Alternatively, you can remove `InputClippings` entirely to transcode the entire asset\.
-+ **`FileInput`**: Specify the file name and location in Amazon S3 for your input file\. Accelerated transcoding is supported with jobs that have only a single input; you can't do input stitching\.
++ **`FileInput`**: Specify the file name and location for your input file\. Your file input can be an Amazon S3 object or an HTTP URL\.
+
+  Accelerated transcoding is supported with jobs that have only a single input; you can't do input stitching\.
 
 ```
 {

@@ -23,7 +23,7 @@ The following procedure explains how to cancel a job using the AWS Elemental Med
 
 1. In the left navigation pane of the console, choose **Jobs**\.
 
-1. From the **Recent jobs** pane, choose the job that you want to cancel by choosing the radio button next to it\.
+1. From the **Jobs** page, choose the job that you want to cancel by choosing the radio button next to it\.
 
 1. Choose the **Cancel job** button\.
 

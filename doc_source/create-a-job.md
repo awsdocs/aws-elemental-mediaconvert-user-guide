@@ -12,7 +12,7 @@ A job does the work of transcoding\. You specify the name of the file that you w
 
 1. Provide transcode instructions and job settings\. For more information, see [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md)\. 
 
-   Make sure that you pick the same region for your job and your file storage\. 
+   Make sure that you pick the same Region for your job and your file storage\. 
 
 1. Choose **Create**\.
 

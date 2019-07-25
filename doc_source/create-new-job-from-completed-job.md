@@ -13,11 +13,11 @@ To create a job that is similar to one that you ran before, you can duplicate a 
 
 1. Choose the three\-bar icon on the left to access the left navigation pane\.
 
-1. Choose **Jobs** to display the **Recent jobs** pane\.
+1. Choose **Jobs** to display the **Jobs** page\.
 **Tip**  
 Optionally, from the **Status** dropdown list, choose **Complete** to filter your list of jobs to just those that finished successfully\.
 
-1. On the **Recent jobs** pane, from the **Job ID** column of the job history, choose the job that you want to duplicate\.
+1. On the **Jobs** page, from the **Job ID** column of the job history, choose the job that you want to duplicate\.
 
 1. On the **Job summary** page, choose the **Duplicate** button\.
 

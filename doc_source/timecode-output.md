@@ -1,6 +1,6 @@
 # Adjusting the Output Timecode Settings<a name="timecode-output"></a>
 
-There are two timecode\-related settings that you can adjust differently for each output\. These are **Timecode insertion** and **Timecode burn\-in**\.
+There are two timecode\-related settings that you can adjust differently for each output: **Timecode insertion** and **Timecode burn\-in**\.
 
 ## Inserting Timecode Metadata<a name="timecode-insertion"></a>
 
@@ -14,7 +14,7 @@ The **Timecode insertion** setting determines whether a given output has timecod
 
 If you use the API or an SDK, you can find this setting in the JSON file of your job, called `TimecodeInsertion`, located in `Settings`, `OutputGroups`, `Outputs`, `VideoDescription`\.
 
-## Burning In Timecodes on the Video Frames<a name="timecode-burn-in"></a>
+## Burning in Timecodes on the Video Frames<a name="timecode-burn-in"></a>
 
 The **Timecode burn\-in** setting determines whether a given output has visible timecodes inscribed into the video frames themselves\. The timecodes are not an overlay, but rather a permanent part of the video frames\.
 

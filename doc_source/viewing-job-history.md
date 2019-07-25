@@ -2,9 +2,9 @@
 
 You can view the recent history of MediaConvert jobs that you created with your AWS account in a given region\. After three months, the service automatically deletes the record of a job\.
 
-The **Recent jobs** list shows successfully completed jobs and also those that ended in error, were canceled, are currently being processed, and are waiting in the queue\. You can filter the job history list by the status and by the queue that the jobs were sent to\. You can also choose a specific job from the list to view the job's settings\.
+The **Jobs** page shows successfully completed jobs and also those that ended in error, were canceled, are currently being processed, and are waiting in the queue\. You can filter the job history list by the status and by the queue that the jobs were sent to\. You can also choose a specific job from the list to view the job's settings\.
 
-**To list recent jobs**
+**To list jobs**
 
 1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 

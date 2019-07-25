@@ -1,12 +1,12 @@
 # Setting Up Captions in Outputs<a name="set-up-captions-in-outputs"></a>
 
-The location of the captions in a job depends on your output captions format: your captions might be in the same output as your video, a separate output in the same output group as your video, or in an entirely separate output group\. How you set up multiple captions tracks also depends on the output captions format\. The following procedure shows how to set up captions for different outputs\. 
+The location of the captions in a job depends on your output captions format: Your captions might be in the same output as your video, a separate output in the same output group as your video, or in an entirely separate output group\. How you set up multiple captions tracks also depends on the output captions format\. The following procedure shows how to set up captions for different outputs\. 
 
 **To set up captions for different outputs**
 
 1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
-1. Choose **Create new job**\.
+1. Choose **Create job**\.
 
 1. Set up your input, output groups, and outputs for video and audio, as described in [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring Complex Jobs in AWS Elemental MediaConvert](structuring-complex-jobs.md)\.
 
@@ -14,7 +14,7 @@ The location of the captions in a job depends on your output captions format: yo
 
 1. Determine where in your job to specify the captions\. This choice depends on the output captions format\. Consult the relevant topic below to look this up\.
 
-1. In the left pane of the **Create new job** page, choose the appropriate output from the list of outputs\.
+1. In the left pane of the **Create job** page, choose the appropriate output from the list of outputs\.
 
 1. Under **Encoding settings**, choose **Add caption**\. This displays a captions settings area under **Encoding settings**\. 
 

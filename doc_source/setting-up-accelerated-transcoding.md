@@ -21,7 +21,7 @@ We recommend that you use a dedicated transcoding queue for your accelerated tra
 
    1. In the **Video selector ** pane, for **Timecode source**, choose **Start at 0**\.
 
-1. If you don't already have a dedicated queue for accelerated transcoding jobs, create one\. For more information, see [Creating an On\-Demand Queue in AWS Elemental MediaConvert](creating-queues.md)\.\.
+1. If you don't already have a dedicated queue for accelerated transcoding jobs, create one\. For more information, see [Creating an On\-Demand Queue in AWS Elemental MediaConvert](creating-queues.md)\.
 
 1. On the **Create job** page, in the **Job** pane on the left, in the **Job Settings** section, choose **Settings**\.
 

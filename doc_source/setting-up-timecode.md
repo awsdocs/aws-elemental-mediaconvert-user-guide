@@ -3,7 +3,7 @@
 MediaConvert manages transcoded video frames by their timecode\. The service uses the timecode to synchronize some audio and captions, and to determine the timing for displaying video frames in an output\. The service also relies on timecodes to manage features—such as input clipping and graphic overlay \(image inserter\)—that are applied to only some parts of the video\.
 
 **Tip**  
-If your graphic overlays or sidecar captions aren't appearing when you expect, or aren't appearing at all, try setting both your job\-wide and input timecode **Source** to **Start at 0**\.
+If your graphic overlays or sidecar captions don't appear when you expect, or don't appear at all, try setting both the job\-wide timecode **Source** and the input **Timecode source** to **Start at 0**\.
 
 There are three distinct groups of timecode settings, located in three different places on the console:
 

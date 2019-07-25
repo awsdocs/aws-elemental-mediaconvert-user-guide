@@ -1,6 +1,6 @@
 # Step 2: Create Storage for Files<a name="set-up-file-locations"></a>
 
-MediaConvert transcodes your input files to generate output files\. For input and output locations, MediaConvert works with Amazon S3 buckets\.<a name="create-s3-buckets-procedure"></a>
+AWS Elemental MediaConvert transcodes your input files to generate output files\. MediaConvert can take in your input files from Amazon S3 or from a server through HTTP or HTTPS\. For your output locations, MediaConvert works with Amazon S3 buckets\.<a name="create-s3-buckets-procedure"></a>
 
 **To create an Amazon S3 bucket**
 
@@ -10,7 +10,7 @@ MediaConvert transcodes your input files to generate output files\. For input an
 
 1. In the **Create bucket** dialog box, type a bucket name\. If you want to create separate input and output buckets, give the bucket an appropriate name that will help you identify it later\.
 
-1. Choose a region for your bucket\. Make sure that you create your Amazon S3 buckets and do your MediaConvert transcoding in the same region\.
+1. Choose a Region for your bucket\. Make sure that you create your Amazon S3 buckets and do your MediaConvert transcoding in the same Region\.
 
 1. Choose **Create**\.
 

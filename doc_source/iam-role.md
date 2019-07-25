@@ -31,6 +31,6 @@ To run transcoding jobs with MediaConvert, first set up an AWS Identity and Acce
 **Note**  
 When you [enable Amazon S3 default encryption](https://docs.aws.amazon.com/AmazonS3/latest/dev/bucket-encryption.html#bucket-encryption-how-to-set-up), Amazon S3 automatically encrypts your objects as you upload them\. You can optionally choose to use AWS Key Management Service \(KMS\) to manage the master key\. This is called SSE\-KMS encryption\.  
 If you enable SSE\-KMS default encryption on the buckets that hold your AWS Elemental MediaConvert input or output files, you must also [add inline policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console) to this MediaConvert role\. Otherwise, MediaConvert can't read your input files or write your output files\. Grant these permissions:  
-If your input bucket has SSE\-KMS default encryption, grant `kms:Decrypt`
-If your output bucket has SSE\-KMS default encryption, grant `kms:GenerateDataKey`
+If your input bucket has SSE\-KMS default encryption, grant `kms:Decrypt`\.
+If your output bucket has SSE\-KMS default encryption, grant `kms:GenerateDataKey`\.
 This [example inline policy](example-inline-policy-kms-decrypt-generatedatakey.md) grants both permissions\.

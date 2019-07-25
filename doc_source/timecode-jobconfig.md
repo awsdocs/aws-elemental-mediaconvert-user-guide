@@ -17,11 +17,11 @@ You can set up your timecode configuration under job settings\. These settings a
 
    If you don't choose a value for **Source**, the service defaults to **Embedded**\.
 **Note**  
-If you don't specify **Source** or choose **Embedded** and your input video doesn't have embedded timecodes, your output won't have timecodes\. This means that features that require a timecode\-based start time, such as sidecar captions and graphic overlays, won't appear in your output\.
+If your input video doesn't have embedded timecodes and you set **Source** to **Embedded** or leave **Source** unspecified, your output won't have timecodes\. This means that features that require a timecode\-based start time, such as sidecar captions and graphic overlays, won't appear in your output\.
 
 1. Set a value for **Anchor Timecode**\.
 
-   If you use an editing platform that relies on an anchor timecode, use **Anchor timecode** to specify a point at which the input and output frames have the same timecode\. Use the following 24\-hour format with a frame number: HH:MM:SS:FF\. This setting ignores framerate conversion\.
+   If you use an editing platform that relies on an anchor timecode, use **Anchor timecode** to specify a point at which the input and output frames have the same timecode\. Use the following 24\-hour format with a frame number: HH:MM:SS:FF\. This setting ignores frame rate conversion\.
 
    The system behavior for **Anchor timecode** varies depending on your setting for **Source**:
    + If you choose **Start at 0** for **Source**, the anchor frame is the timecode that you provide in **Anchor timecode**, counting from 00:00:00:00\. 

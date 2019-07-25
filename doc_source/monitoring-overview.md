@@ -4,11 +4,11 @@
 You can track the status, phase, and percent completion of your jobs\. For information about status and phase, see [How AWS Elemental MediaConvert Jobs Progress](how-mediaconvert-jobs-progress.md)\.
 
 You can monitor the status of your jobs and their percent completion in these places:
-+ *AWS Elemental MediaConvert **Recent jobs** page*
++ *AWS Elemental MediaConvert **Jobs** page*
 
   On the console, you can see your job status and the overall percent completion of your jobs\. For more granular information, such as percent completion of the probing, transcoding, and uploading phase, use Amazon CloudWatch Events, discussed in the following bullet\.
 
-  Access the **Recent jobs** page by opening the [AWS Elemental MediaConvert console](https://console.aws.amazon.com/mediaconvert/) and choosing **Jobs** in the navigation pane\. If the navigation pane is closed, choose the menu icon \(the three\-bar icon\) in the upper\-left corner of the console to open it\.
+  Access the **Jobs** page by opening the [AWS Elemental MediaConvert console](https://console.aws.amazon.com/mediaconvert/) and choosing **Jobs** in the navigation pane\. If the navigation pane is closed, choose the menu icon \(the three\-bar icon\) in the upper\-left corner of the console to open it\.
 
   Optionally, you can filter to see only jobs that are progressing\. From the **Any status** filter, choose **Progressing**\.
 + *Amazon CloudWatch Events* 
