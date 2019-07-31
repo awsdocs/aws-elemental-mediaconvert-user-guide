@@ -2,7 +2,7 @@
 
 When you edit a queue, you can change the following:
 + The description, which helps you identify it in the queue dashboard\.
-+ The auto renew status of the queue's pricing plan for reserved transcode slots \(RTS\)\. For more information, see [How You Pay for Transcoding with Reserved Queues](how-queues-work.md#how-you-pay-for-reserved-queues)\.
++ The auto renew status of the queue's pricing plan for reserved transcode slots \(RTS\)\. For more information, see [How You Pay for Transcoding with Reserved Queues](about-reserved-queues.md#how-you-pay-for-reserved-queues)\.
 + The paused or active status of the queue\. Pausing the queue prevents the service from starting any more jobs until you reactivate the queue\.
 
 **To edit a queue**

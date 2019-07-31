@@ -6,6 +6,8 @@ The following table describes important additions to the AWS Elemental MediaConv
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Specify the priority of your jobs](setting-the-priority-of-a-job.md) | Learn how to set the relative priority of your jobs when you create them\. | July 30, 2019 | 
+| [Convert two SCC input files to embedded captions](scc.md#converting-dual-scc-input-files-to-embedded-captions) | Learn about converting dual SCC input captions to embedded format\. | July 30, 2019 | 
 | [Create audio\-only outputs](audio-only.md) | Learn how to create MediaConvert outputs that contain only audio, without video\. | July 23, 2019 | 
 | [HTTP Inputs to AWS Elemental MediaConvert](upload-input-files.md#http-input-requirements) | You can now specify an HTTP URL for your primary inputs to MediaConvert transcoding jobs\. Learn about HTTP input requirements\. | July 12, 2019 | 
 | [Monitor output file upload progress](monitoring-overview.md) | Using CloudWatch Events, you can now monitor the progress of your job with finer granularity, because AWS Elemental MediaConvert now reports percentage completion of the job phases PROBING, UPLOADING, and TRANSCODING, in addition to reporting overall job progress in percent completion\. | May 7, 2019 | 
