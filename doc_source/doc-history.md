@@ -6,6 +6,8 @@ The following table describes important additions to the AWS Elemental MediaConv
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Multi\-system SPEKE DRM for CMAF](encrypting-content.md#speke-encryption-parameters) | When you work with SPEKE\-compliant DRM partners to enable DRM on your CMAF outputs, you can now signal up to three system IDs in your DASH manifest and one in your HLS manifest\. Learn about setting up this SPEKE encryption parameter in your AWS Elemental MediaConvert job\. | August 12, 2019 | 
+| [Export and import jobs](exporting-and-importing-jobs.md) | Learn how to export MediaConvert jobs and how to create new jobs by importing one\. | August 9, 2019 | 
 | [Specify the priority of your jobs](setting-the-priority-of-a-job.md) | Learn how to set the relative priority of your jobs when you create them\. | July 30, 2019 | 
 | [Convert two SCC input files to embedded captions](scc.md#converting-dual-scc-input-files-to-embedded-captions) | Learn about converting dual SCC input captions to embedded format\. | July 30, 2019 | 
 | [Create audio\-only outputs](audio-only.md) | Learn how to create MediaConvert outputs that contain only audio, without video\. | July 23, 2019 | 

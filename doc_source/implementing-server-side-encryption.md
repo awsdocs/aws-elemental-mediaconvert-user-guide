@@ -32,7 +32,7 @@ If you choose to use an AWS KMS CMK, you can specify a customer managed CMK in y
 
       If you choose **Amazon S3**, Amazon S3 encrypts your data key with a master key that Amazon S3 stores securely\. If you choose **AWS KMS**, Amazon S3 encrypts your data key with a CMK that AWS Key Management Service \(AWS KMS\) stores and manages\.
 
-   1. If you chose **AWS KMS** in the previous step, optionally specify the ARN of one of your [customer managed CMKs](https://docs.aws.amazon.com/kms/latest/developerguide/concept.html#customer-cmk)\. If you do, AWS KMS will use that CMK to encrypt the data key that Amazon S3 uses to encrypt your media files\. 
+   1. If you chose **AWS KMS** in the preceding step, optionally specify the ARN of one of your [customer managed CMKs](https://docs.aws.amazon.com/kms/latest/developerguide/concept.html#customer-cmk)\. If you do, AWS KMS will use that CMK to encrypt the data key that Amazon S3 uses to encrypt your media files\. 
 
       If you don't specify a CMK for **AWS KMS**, Amazon S3 uses the [AWS managed CMK](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-managed-cmk) in your AWS account that is used exclusively for Amazon S3\.
 

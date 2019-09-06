@@ -9,7 +9,7 @@ AWS Elemental MediaConvert is a file\-based video processing service that provid
 
 AWS Elemental MediaConvert offers support for various input formats and adaptive bitrate \(ABR\) packaging output formats for delivering high\-quality content from a range of sources onto primary and multiscreen devices\.
 
-For simple use cases, you can set up a MediaConvert transcoding job in just a few steps\. For instructions, see [Getting Started with MediaConvert](getting-started.md)\. 
+For simple use cases, you can set up a MediaConvert transcoding job in just a few steps\. For instructions, see [Getting Started with AWS Elemental MediaConvert](getting-started.md)\. 
 
  MediaConvert has the following components:
 

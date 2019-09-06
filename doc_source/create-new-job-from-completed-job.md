@@ -1,15 +1,15 @@
-# Creating an MediaConvert Job by Duplicating a Completed Job<a name="create-new-job-from-completed-job"></a>
+# Creating an AWS Elemental MediaConvert Job by Duplicating a Completed Job<a name="create-new-job-from-completed-job"></a>
 
 To create a job that is similar to one that you ran before, you can duplicate a completed job from your job history, and then modify any settings that you need to change\.
 
-**To create a job based on a completed job**
+**To create a job based on a recently completed job**
 
 1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
-1. On the navigation bar of the MediaConvert console, choose the region where the completed job was created\.
+1. On the navigation bar of the MediaConvert console, choose the Region where the completed job was created\.
 
-   Completed jobs appear only in the region where they are created\.  
-![\[Choose a region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)
+   Completed jobs appear only in the Region where they are created\.  
+![\[Choose a Region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)
 
 1. Choose the three\-bar icon on the left to access the left navigation pane\.
 

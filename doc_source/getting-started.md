@@ -1,6 +1,6 @@
-# Getting Started with MediaConvert<a name="getting-started"></a>
+# Getting Started with AWS Elemental MediaConvert<a name="getting-started"></a>
 
-This Getting Started tutorial shows you how to use the MediaConvert console to transcode media files in a few basic steps\. To get started accessing MediaConvert programmatically, see the following topics in the API reference:
+This Getting Started tutorial shows you how to use the AWS Elemental MediaConvert console to transcode media files in a few basic steps\. To get started accessing MediaConvert programmatically, see the following topics in the API reference:
 + If you are using one of the AWS SDKs, see [Getting Started with the SDKs](https://docs.aws.amazon.com/mediaconvert/latest/apireference/custom-endpoints.html)\.
 + If you are using the MediaConvert API directly, see [Getting Started with the API](https://docs.aws.amazon.com/mediaconvert/latest/apireference/getting-started.html)\.
 

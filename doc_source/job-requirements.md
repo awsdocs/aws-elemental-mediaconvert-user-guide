@@ -2,10 +2,17 @@
 
 Before you enable accelerated transcoding, make sure that your job conforms to the following requirements and limitations\.
 
-**Video Input Requirements**
-+ Progressive scan type only\. Telecine input is not supported\.
-+ The following table shows the supported video input codecs and containers\.    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/job-requirements.html)
+**Video Input Requirements**  
+The following table shows the supported video input codecs and containers\.
+
+
+| Container | Video Codecs Supported with Container | 
+| --- | --- | 
+| IMF | JPEG 2000 \(J2K\) | 
+| MPEG Transport Streams | AVC \(H\.264\), HEVC \(H\.265\), MPEG\-2, VC\-1 | 
+| MPEG\-4 | AVC Intra 50/100, AVC \(H\.264\), HEVC \(H\.265\), MPEG\-2 | 
+| MXF | Apple ProRes, AVC Intra 50/100, AVC \(H\.264\), JPEG 2000 \(J2K\), MPEG\-2, SonyXDCam, SonyXDCam \(as an MPEG\-2 variant only\) | 
+| QuickTime | Apple ProRes, AVC Intra 50/100, AVC \(H\.264\), JPEG 2000 \(J2K\), MPEG\-2 | 
 
 **Output Restrictions**
 + You can't set up an output for frame capture\. That is, you can't choose **Frame Capture to JPEG** for **Video codec** in any of your outputs\.

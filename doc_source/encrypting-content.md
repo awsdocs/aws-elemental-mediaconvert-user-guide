@@ -1,39 +1,44 @@
 # Encrypting Content<a name="encrypting-content"></a>
 
-Use the following procedure to enable content encryption in **DASH ISO**, **MS Smooth**, and **Apple HLS** output groups\. To use this procedure, you should be comfortable working with output groups\. For more information, see [Step 3: Create Output Groups](specify-output-groups.md)\.
+Use the following procedure to enable content encryption in **CMAF**, **DASH ISO**, **Apple HLS**, and **MS Smooth** output groups\. To use this procedure, you should be comfortable working with output groups\. For more information, see [Step 3: Create Output Groups](specify-output-groups.md)\.
 
 **To encrypt content**
 
-1. Open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Set up your transcoding job as usual\. For more information, see [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md)\.
 
-1. In the navigation pane, under **Output groups**, choose the output group that you want to enable encryption for\. 
+1. On the **Create job** page, in the **Job** pane on the left, under **Output groups**, choose an output group that you want to enable encryption for\.
 
-1. Below the main pane, locate and enable the **DRM encryption** option\.
+1. Turn on **DRM encryption**\.
 
-1. Follow one of these two paths, depending on your output group type: 
-   + For **DASH ISO** and **MS Smooth**, fill in the encryption parameter fields\. For more information, see [SPEKE Encryption Parameters](#speke-encryption-parameters)\.
-   + For **Apple HLS**, fill in the following parameters:
-     + For **Encryption method**, choose **Sample\-AES** for Apple HLS FairPlay or choose **AES\-128** for Apple HLS AES\-128\. 
-     + **Key provider type** – Choose **SPEKE** to encrypt using a key provided by your DRM solution provider, or choose **Static key** to enter your own key\. 
-       + For **SPEKE**, fill in the encryption parameter fields\. For more information, see [SPEKE Encryption Parameters](#speke-encryption-parameters)\. 
-       + For **Static Key**, see [Static Key Encryption Parameters](#static-key-encryption-parameters)\.
+1. For the output group types that support it, choose the encryption method\. Make sure that you choose an encryption method that works with the DRM system that you use\.
+
+1. For the output group types that support it, choose the source for the content encryption key\. For **Key provider type**, choose **SPEKE** to encrypt using a key provided by your DRM solution provider, or choose **Static key** to enter your own key\.
+   + For **SPEKE**, fill in the encryption parameter fields\. For more information, see [SPEKE Encryption Parameters](#speke-encryption-parameters)\. 
+   + For **Static Key**, see [Static Key Encryption Parameters](#static-key-encryption-parameters)\.
 
 ## SPEKE Encryption Parameters<a name="speke-encryption-parameters"></a>
 
-When you request encryption, you provide input parameters that allow the service to locate your DRM solution provider's key server, to authenticate you as a user and to request the proper encoding keys\. Some options are available only for particular streaming protocols\.
+When you request encryption, you provide input parameters that allow the service to locate your DRM solution provider's key server, to authenticate you as a user and to request the proper encoding keys\. Some options are available only for particular output groups\.
 
 Enter the SPEKE encryption parameters as follows: 
 + For **Resource ID**, enter an identifier for the content\. The service sends this to the key server to identify the current endpoint\. How unique you make this depends on how fine\-grained you want access controls to be\. The service does not allow you to use the same ID for two simultaneous encryption processes\. The resource ID is also known as the content ID\. 
 
-  The following example shows a resource ID:
+  The following example shows a resource ID\.
 
   ```
   MovieNight20171126093045
   ```
-+ For **System IDs**, enter unique identifiers for your streaming protocol and DRM system\. Provide up to two IDs for DASH and exactly one for the other streaming protocols\. If you provide more than one system ID, enter them on separate lines, and do not separate them with commas or any other punctuation\. For a list of common system IDs, see [DASH\-IF System IDs](https://dashif.org/identifiers/content_protection/)\. If you do not know your IDs, ask your DRM solution provider\.
++  For **System ID**, enter unique identifiers for your streaming protocol and DRM system\. The number of system IDs that you can specify varies depending on the output group type:
+  + CMAF – For **System IDs signaled in DASH**, specify at least one and up to three IDs\. For **System ID signaled in HLS**, specify one ID\.
+  + DASH – For **System ID**, specify at least one and up to two IDs\.
+  + Apple HLS – For **System ID**, specify one ID\.
+
+  If you provide more than one system ID in a single field, enter them on separate lines, and don't separate them with commas or any other punctuation\. 
+
+  For a list of common system IDs, see [DASH\-IF System IDs](https://dashif.org/identifiers/content_protection/)\. If you don't know your IDs, ask your DRM solution provider\.
 + For **URL**, enter the URL of the API Gateway proxy that you set up to talk to your key server\. The API Gateway proxy must reside in the same AWS Region as MediaConvert\.
 
-  The following example shows a URL: 
+  The following example shows a URL\. 
 
   ```
   https://1wm2dx1f33.execute-api.us-west-2.amazonaws.com/SpekeSample/copyProtection
@@ -42,7 +47,7 @@ Enter the SPEKE encryption parameters as follows:
 
   To enter a certificate ARN here, you must have already imported the corresponding certificate into AWS Certificate Manager, entered the certificate ARN from ACM into the MediaConvert **Certificates** pane, and associated it with MediaConvert\. For more information, see [Using Encrypted Content Keys with DRM](drm-content-key-encryption.md)\. 
 
-  The following example shows a certificate ARN:
+  The following example shows a certificate ARN\.
 
   ```
   arn:aws:acm:region:123456789012:certificate/97b4deb6-8983-4e39-918e-ef1378924e1e
@@ -55,4 +60,4 @@ Enter the SPEKE encryption parameters as follows:
 
 The following options are for static key encryption:
 + **Static key value** – A valid string for encrypting content\.
-+ **URL** – The URL to include in the manifest so that content can be decrypted\.
++ **URL** – The URL to include in the manifest so that player devices can decrypt the content\.

@@ -5,7 +5,7 @@ You can specify a job's place in a queue by setting its priority in the job sett
 MediaConvert doesn't stop the current job when you submit a job with a higher priority\. When the running job is finished, MediaConvert starts the next job based on its relative priority in the queue\.
 
 **Note**  
-MediaConvert doesn't currently support the job priority feature in the ARN Region\.
+MediaConvert doesn't currently support the job priority feature in the EU \(Stockholm\) Region\.
 
 **To set the priority for a job \(console\)**
 

@@ -1,6 +1,6 @@
 # Step 3: Set Up IAM Permissions<a name="iam-role"></a>
 
-To run transcoding jobs with MediaConvert, first set up an AWS Identity and Access Management \(IAM\) role to allow MediaConvert access to your input files and the locations where your output files are stored\. If you use DRM, your IAM permissions also allow MediaConvert to access your encryption keys through API Gateway\.
+To run transcoding jobs with AWS Elemental MediaConvert, first set up an AWS Identity and Access Management \(IAM\) role to allow MediaConvert access to your input files and the locations where your output files are stored\. If you use DRM, your IAM permissions also allow MediaConvert to access your encryption keys through API Gateway\.
 
 **To set up your MediaConvert role in IAM**
 
@@ -18,11 +18,11 @@ To run transcoding jobs with MediaConvert, first set up an AWS Identity and Acce
 
 1. Choose **Next: Review**\.
 
-1. For **Role name**, type a name that describes the purpose of the role\. You might want to begin the name with "MediaConvert" to make it easy to find when you are creating a job\.
+1. For **Role name**, enter a name that describes the purpose of the role\. If you use the name **MediaConvert\_Default\_Role**, then the MediaConvert console will use this role by default when you run jobs\.
 
    Role names must be unique within your AWS account\. You can use up to 64 characters that are letters, numbers, or any of the following: \+ = , \. @ \- \_
 
-   Because various entities might reference the role, you cannot edit the name of the role after it has been created\.
+   Because various entities might reference the role, you can't edit the name of the role after it has been created\.
 
 1. \(Optional\) For **Role description**, edit the description for the new service role\.
 

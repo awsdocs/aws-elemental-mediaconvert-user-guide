@@ -6,6 +6,7 @@ The following combinations of input container and codec are supported for audio\
 
 | Container | Audio Codecs | 
 | --- | --- | 
+| MPEG\-1 Layer 3 \(\.mp3\) | MP3 | 
 | MPEG\-2 TS \(\.ts, m2ts, m2p\) | MP2, PCM | 
 | MPEG\-4 \(\.mp4\) | AAC | 
 | QuickTime \(\.mov\) | PCM | 

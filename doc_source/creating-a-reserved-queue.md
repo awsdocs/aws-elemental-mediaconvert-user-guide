@@ -19,9 +19,14 @@ Reserved queues allow you to purchase transcoding capacity for a 12\-month perio
 
 1. On the **Create reserved queue** page, in the **General information** section, enter a name and a description for the new queue\.
 
-1. In the **Commitment to purchase RTS for reserved queue** section, specify the number of reserved transcode slots \(RTS\) that you want to purchase\.
+1. Optionally, use the **Reserved transcode slots \(RTS\) calculator** to help determine how many RTS you need\. Specify values as follows:
+   + **Turnaround time** \- The time frame that you want your content transcoded in\. For example, if you need to finish transcoding three films each day, enter **24** for **hours** and **0** for **minutes**\.
+   + **Number of jobs** \- The number of jobs that you want to complete within your turnaround time\. In the previous example, this value would be **3**\.
+   + **Time to run one job** \- The amount of time that it takes to transcode a piece of content\. The time strongly depends on your transcoding settings\. The best way to determine a value for this setting is to run a typical job in an on\-demand queue, with **Simulate reserved queue** enabled\.
 
-   A reserved queue can simultaneously process a number of jobs equal to the number of RTS that you purchase for it\. You can optionally use the RTS calculator to help you estimate how many RTS you need\.
+     Find this setting as follows: On the **Create job** page, in the **Job** pane on the left, under **Job settings**, choose **Settings**\. In the **Job settings** section on the right, for **Simulate reserved queue**, choose **Enabled**\.
+
+1. In the **Commitment to purchase RTS for reserved queue** section, specify the number of reserved transcode slots \(RTS\) that you want to purchase\. A reserved queue can simultaneously process a number of jobs equal to the number of RTS that you purchase for it\.
 
 1. Select the **I agree** check box to confirm your intention to make a 12\-month commitment\. AWS bills you monthly for the RTS\.
 **Important**  

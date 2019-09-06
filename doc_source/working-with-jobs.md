@@ -8,6 +8,6 @@ You can work with your jobs in the following ways:
 + **View jobs history** – You can view a record of any job that you've created within the last three months\. This record shows the job settings and the job's completion status \(SUBMITTED, PROGRESSING, COMPLETE, or ERROR\)\. After a job record is three months old, MediaConvert automatically deletes it\.
 
   For instructions about listing and viewing your job history, see [Viewing Your Job History](viewing-job-history.md)\.
-+ **Cancel job** – You can cancel a job any time after you submit it and before the service uploads the job outputs to your output Amazon S3 bucket\.
++ **Cancel job** – You can cancel a job anytime after you submit it and before the service uploads the job outputs to your output Amazon S3 bucket\.
 
   For instructions about canceling a job, see [Canceling a Job](canceling-a-job.md)\.

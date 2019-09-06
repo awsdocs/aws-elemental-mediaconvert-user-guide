@@ -24,7 +24,7 @@ For example, a job has the following three inputs: a five\-minute preroll, a one
 
 1. In the **Ad signaling** section, enable **Event signaling and messaging \(ESAM\)**\.
 
-1. For **Signal processing notification XML**, enter your ESAM signaling XML document as text\.
+1. For **Signal processing notification XML**, enter your ESAM signaling XML document as text\. For an example, see [Example ESAM XML Signal Processing Notification](example-esam-xml.md)\.
 
 1. Optionally, if you want to include information about your SCTE\-35 markers in your HLS manifests, for **Manifest confirm condition notification XML**, enter your ESAM manifest conditional XML document as text\. 
 

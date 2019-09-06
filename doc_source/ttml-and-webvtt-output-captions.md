@@ -19,3 +19,6 @@ After you add captions to an output, delete the **Video** and **Audio 1** groups
 ## How to Specify Multiple Captions Tracks<a name="multilang-ttml-and-webvtt-output-captions"></a>
 
 Put each captions track in its own output\.
+
+**Note**  
+The captions track that you specify first in your job is signaled as the default track in the HLS manifest\.
