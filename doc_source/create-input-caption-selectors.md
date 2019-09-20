@@ -5,6 +5,8 @@ When you set up captions, you begin by creating captions selectors\. Captions se
 **To create input captions selectors**
 
 1. On the **Create job** page, in the **Job** pane on the left, choose an input\. 
+**Note**  
+In jobs with multiple inputs, each input must have the same number of captions selectors\. For inputs that don't have captions, create empty captions selectors\. With these selectors, for **Source**, choose **Empty captions track**\.
 
 1. In the **Captions selectors** section, near the bottom of the page, choose **Add captions selector**\. 
 
@@ -19,5 +21,5 @@ When you set up captions, you begin by creating captions selectors\. Captions se
 + [Embedded \(CEA/EIA\-608, CEA/EIA\-708\), Embedded\+SCTE\-20, and SCTE\-20\+Embedded](embedded.md)
 + [DVB\-Sub](dvb-sub-or-scte-27.md)
 + [Teletext](teletext.md)
-+ [SCC, SRT, STL, TTML \(Sidecar\)](scc.md)
-+ [IMSC \(as Part of an IMF Source\)](IMSC.md)
++ [IMSC, SCC, SRT, STL, TTML \(Sidecar\)](sidecar-input.md)
++ [IMSC \(as Part of an IMF Source\)](IMSC-in-MXF.md)

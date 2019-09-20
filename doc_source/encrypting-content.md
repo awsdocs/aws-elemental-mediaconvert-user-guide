@@ -1,6 +1,8 @@
 # Encrypting Content<a name="encrypting-content"></a>
 
-Use the following procedure to enable content encryption in **CMAF**, **DASH ISO**, **Apple HLS**, and **MS Smooth** output groups\. To use this procedure, you should be comfortable working with output groups\. For more information, see [Step 3: Create Output Groups](specify-output-groups.md)\.
+Use the following procedure to enable content encryption in **CMAF**, **DASH ISO**, **Apple HLS**, and **MS Smooth** output groups\.
+
+ To use this procedure, you should be comfortable working with output groups\. For more information, see [Step 3: Create Output Groups](specify-output-groups.md)\.
 
 **To encrypt content**
 
@@ -10,9 +12,13 @@ Use the following procedure to enable content encryption in **CMAF**, **DASH ISO
 
 1. Turn on **DRM encryption**\.
 
-1. For the output group types that support it, choose the encryption method\. Make sure that you choose an encryption method that works with the DRM system that you use\.
+1. For **CMAF** and **Apple HLS** output groups, choose the encryption method\. Make sure that you choose an encryption method that works with the DRM system that you use\.
 
-1. For the output group types that support it, choose the source for the content encryption key\. For **Key provider type**, choose **SPEKE** to encrypt using a key provided by your DRM solution provider, or choose **Static key** to enter your own key\.
+   For **DASH ISO** and **MS Smooth** output groups, you don't specify the encryption method\. MediaConvert always uses AES\-CTR \(AES\-128\) encryption with these output groups\.
+
+1. For **CMAF** and **Apple HLS** output groups, choose the source for the content encryption key\. For **Key provider type**, choose **SPEKE** to encrypt using a key provided by your DRM solution provider, or choose **Static key** to enter your own key\.
+
+   For **DASH ISO** and **MS Smooth** output groups, you don't specify the source for the content encryption key\. With these output groups, MediaConvert does DRM only with a SPEKE\-compliant key provider\.
    + For **SPEKE**, fill in the encryption parameter fields\. For more information, see [SPEKE Encryption Parameters](#speke-encryption-parameters)\. 
    + For **Static Key**, see [Static Key Encryption Parameters](#static-key-encryption-parameters)\.
 
@@ -53,7 +59,7 @@ Enter the SPEKE encryption parameters as follows:
   arn:aws:acm:region:123456789012:certificate/97b4deb6-8983-4e39-918e-ef1378924e1e
   ```
 
-### Additional Configuration Options for Apple HLS<a name="additional-encryption-parameters"></a>
+### Additional Configuration Options for Apple HLS and CMAF<a name="additional-encryption-parameters"></a>
 + \(Optional\) For **Constant initialization vector** enter a 128\-bit, 16\-byte hex value represented by a 32\-character string, to be used with the key for encrypting content\.
 
 ## Static Key Encryption Parameters<a name="static-key-encryption-parameters"></a>

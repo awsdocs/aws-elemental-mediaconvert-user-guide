@@ -1,6 +1,6 @@
-# TTML and WebVTT \(ABR\) Output Captions<a name="ttml-and-webvtt-output-captions"></a>
+# IMSC, TTML and WebVTT \(Sidecar\) Output Captions<a name="ttml-and-webvtt-output-captions"></a>
 
-If your output captions are TTML or WebVTT format, set them up in your outputs according to the following information\.
+If your output captions are IMSC, TTML or WebVTT format, set them up in your outputs according to the following information\. For restrictions on IMSC support, see [IMSC Captions Support in AWS Elemental MediaConvert](imsc-captions-support.md)\.
 
 ## Where to Specify the Captions<a name="where-ttml-and-webvtt-output-captions"></a>
 

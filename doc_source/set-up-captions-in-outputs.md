@@ -29,9 +29,9 @@ The location of the captions in a job depends on your output captions format: Yo
 1. Provide values for any additional fields as described in the relevant topic below\.
 
 **Topics**
-+ [TTML and WebVTT \(ABR\) Output Captions](ttml-and-webvtt-output-captions.md)
 + [CEA/EIA\-608 and CEA/EIA\-708 \(Embedded\) Output Captions](embedded-output-captions.md)
 + [DVB\-Sub Output Captions](dvb-sub-output-captions.md)
++ [IMSC, TTML and WebVTT \(Sidecar\) Output Captions](ttml-and-webvtt-output-captions.md)
 + [SCC, SRT \(Sidecar\) Output Captions](scc-srt-output-captions.md)
 + [Teletext Output Captions](teletext-output-captions.md)
 + [Burn\-In Output Captions](burn-in-output-captions.md)

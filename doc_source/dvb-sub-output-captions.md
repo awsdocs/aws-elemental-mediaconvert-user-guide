@@ -14,10 +14,10 @@ AWS Elemental MediaConvert automatically selects the appropriate script for your
 
 **To ensure that the service uses the correct font script**
 
-1. In the **Captions** section under **Encoding settings**, for **Language**, choose the language of the caption text\.
+1. In the **Captions** section under **Encoding settings**, for **Language**, choose the language of the captions text\.
 
 1. If the language that you specify has more than one possible script, use **Font script** to specify the script\.
 
    For example, if you choose **Chinese** \(ZH\) for **Language**, use **Font script** to choose either **Simplified Chinese** or **Traditional Chinese**\. In this case, if you don’t specify a value for **Font script**, the service defaults to simplified Chinese\. 
 **Tip**  
-In most cases, for **Font script** you can keep the default value of **Automatic**\. When you do, the service chooses the script based on the language of the caption text\.
+In most cases, for **Font script** you can keep the default value of **Automatic**\. When you do, the service chooses the script based on the language of the captions text\.

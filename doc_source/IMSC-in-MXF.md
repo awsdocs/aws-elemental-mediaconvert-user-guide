@@ -1,12 +1,11 @@
-# IMSC \(as Part of an IMF Source\)<a name="IMSC"></a>
+# IMSC \(as Part of an IMF Source\)<a name="IMSC-in-MXF"></a>
 
-AWS Elemental MediaConvert supports IMSC as an input captions format only when it's part of an IMF source\. Therefore, you don't specify the source file for IMSC captions\. That information is in the CPL file that you specify for your job input\.
+AWS Elemental MediaConvert supports IMSC as an input captions format either as a sidecar file or as part of an IMF source\. If your input IMSC captions are in a sidecar file, see [IMSC, SCC, SRT, STL, TTML \(Sidecar\)](sidecar-input.md)\.
 
-**Note**  
-AWS Elemental MediaConvert doesn't support IMSC as a sidecar file\.
+When your input IMSC captions are part of an IMF source, you don't specify the source file for IMSC captions\. That information is in the CPL file that you specify for your job input\. For restrictions on IMSC support, see [IMSC Captions Support in AWS Elemental MediaConvert](imsc-captions-support.md)\.
 
 **Number of Captions Selectors for IMSC**  
-Create one captions selector per track\. In each selector, specify the subtitle track that you want by providing a track number\.
+Create one captions selector per track\.
 
 **Track Number**  
 Specify which captions you want by providing a track number\. The track numbers correspond to the order that the tracks appear in the CPL file\. For example, if your CPL file lists your French captions first, set **Track number** to **1** to specify the French captions\.
@@ -28,6 +27,8 @@ If you use the API or an SDK, you can find these settings in the JSON file of yo
               "TrackSourceSettings": {
                 "TrackNumber": 1
               }
+            }
+          },
 
           "Captions Selector 2": {
             "SourceSettings": {
@@ -35,4 +36,7 @@ If you use the API or an SDK, you can find these settings in the JSON file of yo
               "TrackSourceSettings": {
                 "TrackNumber": 4
               }
+            }
+          },
+          ...
 ```
