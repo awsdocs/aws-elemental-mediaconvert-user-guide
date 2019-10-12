@@ -18,7 +18,7 @@ Don't choose this value unless your input video has embedded timecodes\.
    Regardless of the source, timecodes are in the following 24\-hour format with a frame number: HH:MM:SS:FF\.
 
 **To adjust the **Timecode source** setting \(API, SDK, and AWS CLI\)**  
-If you use the API or an SDK, you can find this setting in the JSON file of your job, called `TimecodeSource`, located in `Settings`, `Inputs`\. For more information, see [InputTimecodeSource](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-model-inputtimecodesource) in the AWS Elemental MediaConvert API Reference\.
+If you use the API or an SDK, you can find this setting in the JSON file of your job\. The setting name is `TimecodeSource`, located in `Settings`, `Inputs`\. For more information, see [InputTimecodeSource](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-model-inputtimecodesource) in the AWS Elemental MediaConvert API Reference\.
 
 ## About Input Timecode Source and Captions Alignment<a name="about-input-timecode-source-and-captions-alignment"></a>
 

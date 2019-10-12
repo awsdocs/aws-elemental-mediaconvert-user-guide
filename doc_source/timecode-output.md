@@ -12,7 +12,7 @@ The **Timecode insertion** setting determines whether a given output has timecod
 
 1. Under **Stream settings**, **Timecode insertion**, choose **PIC\_TIMING\_SEI** to include timecode metadata\. Choose **Disabled** to leave out timecode metadata\.
 
-If you use the API or an SDK, you can find this setting in the JSON file of your job, called `TimecodeInsertion`, located in `Settings`, `OutputGroups`, `Outputs`, `VideoDescription`\.
+If you use the API or an SDK, you can find this setting in the JSON file of your job\. The setting name is `TimecodeInsertion`, located in `Settings`, `OutputGroups`, `Outputs`, `VideoDescription`\.
 
 ## Burning in Timecodes on the Video Frames<a name="timecode-burn-in"></a>
 

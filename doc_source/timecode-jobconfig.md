@@ -13,7 +13,7 @@ You can set up your timecode configuration under job settings\. These settings a
 
      The **Start Timecode** field appears when you choose **Specified start**\.
 
-   If you use the API or an SDK, you can find this setting in the JSON file of your job, called `Source`, located inside `Settings`, `TimecodeConfig`\.
+   If you use the API or an SDK, you can find this setting in the JSON file of your job\. The setting name is `Source`, located inside `Settings`, `TimecodeConfig`\.
 
    If you don't choose a value for **Source**, the service defaults to **Embedded**\.
 **Note**  
@@ -34,10 +34,10 @@ If your input video doesn't have embedded timecodes and you set **Source** to **
 
      For example, if you specify 00:30:00:00 as your start timecode and you set **Anchor timecode** to 01:00:05:00, the anchor frame is thirty minutes and five seconds into the video\.
 
-   If you use the API or an SDK, you can find this setting in the JSON file of your job, called `Anchor`, located in `Settings`, `TimecodeConfig`\.
+   If you use the API or an SDK, you can find this setting in the JSON file of your job\. The setting name is `Anchor`, located in `Settings`, `TimecodeConfig`\.
 
    If you don't set a value for **Anchor timecode**, the service doesn't use any anchor timecode\.
 
 1. Under **Timestamp offset**, provide a date\. This setting applies only to outputs that support a program\-date\-time stamp\. Use **Timestamp offset** to overwrite the timecode date without affecting the time and frame number\. This setting has no effect unless you also include the program\-date\-time stamp in the output\.
 
-   If you use the API or an SDK, you can find this setting in the JSON file of your job, called `TimestampOffset`, located in `Settings`, `TimecodeConfig`\.
+   If you use the API or an SDK, you can find this setting in the JSON file of your job\. The setting name is `TimestampOffset`, located in `Settings`, `TimecodeConfig`\.

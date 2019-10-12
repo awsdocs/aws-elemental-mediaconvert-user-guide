@@ -26,9 +26,9 @@ If you choose to use an AWS KMS CMK, you can specify a customer managed CMK in y
 
    1. In the **Job** pane on the left, choose the output group\.
 
-   1. In the group settings section on the right, choose **Server\-side encryption**\. If you use the API or an SDK, you can find this setting in the JSON file of your job, called `S3EncryptionSettings`\.
+   1. In the group settings section on the right, choose **Server\-side encryption**\. If you use the API or an SDK, you can find this setting in the JSON file of your job\. The setting name is `S3EncryptionSettings`\.
 
-   1. For **Encryption key management**, choose the AWS service that protects your data key\. If you use the API or an SDK, you can find this setting in the JSON file of your job, called `S3ServerSideEncryptionType`\.
+   1. For **Encryption key management**, choose the AWS service that protects your data key\. If you use the API or an SDK, you can find this setting in the JSON file of your job\. The setting name is `S3ServerSideEncryptionType`\.
 
       If you choose **Amazon S3**, Amazon S3 encrypts your data key with a master key that Amazon S3 stores securely\. If you choose **AWS KMS**, Amazon S3 encrypts your data key with a CMK that AWS Key Management Service \(AWS KMS\) stores and manages\.
 

@@ -25,6 +25,16 @@ We recommend that you use a dedicated transcoding queue for your accelerated tra
 
 1. On the **Create job** page, in the **Job** pane on the left, in the **Job Settings** section, choose **Settings**\.
 
-1. For **Acceleration**, choose **Enabled**\.
+1. For **Acceleration**, choose **Enabled** or **Preferred**\.
 
-If you use the API or an SDK, you can find this setting in the JSON file of your job, called [AccelerationSettings](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-job-accelerationsettings)\.
+   With both **Enabled** and **Preferred**, if your input files and transcoding settings are compatible with accelerated transcoding, MediaConvert runs the job with accelerated transcoding\. 
+
+   If your input files or transcoding settings aren't compatible with accelerated transcoding, MediaConvert handles the job differently, depending on the value that you set for **Acceleration**:
+   + **Enabled** – The service fails the incompatible job\.
+   + **Preferred** – The service runs the job without accelerated transcoding\.
+
+     Setting **Acceleration** to **Preferred** incurs Professional tier pricing only when MediaConvert runs the job with accelerated transcoding\.
+
+   For more information about what files and settings are compatible with accelerated transcoding, see [Job Limitations for Accelerated Transcoding in AWS Elemental MediaConvert](job-requirements.md)\.
+
+If you use the API or an SDK, you can find this setting in the JSON file of your job\. The setting name is AccelerationMode, under [AccelerationSettings](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-createjobrequest-accelerationsetting)\.

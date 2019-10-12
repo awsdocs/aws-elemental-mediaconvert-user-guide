@@ -17,7 +17,7 @@ Provide the following values for the captions selector fields:
 **Synchronizing Sidecar Captions and Video**  
 To make sure that your captions are properly synchronized with your video, check that the value for **Timecode source** in the **Video selector** section matches the timecodes in your captions file\. For example, if the timecodes in your captions file start at zero but your video has embedded timecodes starting at 01:00:00:00, change the default value for **Timecode source** from **Embedded** to **Start at 0**\. If other aspects of your job prevent that, use the **Time delta** setting to adjust your captions, as described in [Use Cases for Time Delta](time-delta-use-cases.md)\.
 
-If you use the API or an SDK, you can find this setting in the JSON file of your job, called `TimecodeSource`, located in `Settings`, `Inputs`\. 
+If you use the API or an SDK, you can find this setting in the JSON file of your job\. The setting name is `TimecodeSource`, located in `Settings`, `Inputs`\. 
 
 **Note**  
 MediaConvert handles the alignment of captions with video differently depending on whether the caption format is timecode\-based or timestamp\-based\. For more information, see [About Input Timecode Source and Captions Alignment](timecode-input.md#about-input-timecode-source-and-captions-alignment)\.

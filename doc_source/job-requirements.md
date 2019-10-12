@@ -15,7 +15,6 @@ The following table shows the supported video input codecs and containers\.
 | QuickTime | Apple ProRes, AVC Intra 50/100, AVC \(H\.264\), JPEG 2000 \(J2K\), MPEG\-2 | 
 
 **Output Restrictions**
-+ You can't set up an output for frame capture\. That is, you can't choose **Frame Capture to JPEG** for **Video codec** in any of your outputs\.
 + Use only supported combinations of container and codec\. The following table shows the supported video output codecs and containers\.    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/job-requirements.html)
 **Note**  
@@ -31,7 +30,6 @@ For MPEG\-2 TS outputs, to use accelerated transcoding, you must change the defa
 + Avail blanking
 + Motion image inserter \(Motion graphic overlay\)
 + Interpolated frame rate conversion
-+ Frame capture to JPEG
 + VBI passthrough
 + Timecode passthrough
 + SEI timecode

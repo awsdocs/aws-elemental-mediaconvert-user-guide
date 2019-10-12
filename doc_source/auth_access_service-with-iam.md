@@ -13,7 +13,7 @@ AWS services can work with IAM in several ways\. AWS Elemental MediaConvert supp
 
   For an example IAM policy that grants these permissions, see [Example Policy: Tag\-based Access Control Using Resource Tags](example-policies.md#example-policy-tag-based-access-control-using-resource-tags)\.
 
-  For information about putting tags on your AWS Elemental MediaConvert resources, see [Tagging AWS Elemental MediaConvert Queues, Job Templates, and Output Presets](tagging-queues-templates-presets.md)\.
+  For information about putting tags on your AWS Elemental MediaConvert resources, see [Tagging AWS Elemental MediaConvert Resources](tagging-mediaconvert-resources.md)\.
 
   For more information about using tags to limit access to your resources, see [Controlling Access Using Tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html) in the *IAM User Guide*\.
 + **Temporary credentials** – AWS Elemental MediaConvert supports temporary credentials\. This feature allows you to sign in with federation, assume an IAM role, or assume a cross\-account role\. You obtain temporary security credentials by calling AWS STS API operations such as [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) or [GetFederationToken](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html)\. 

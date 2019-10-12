@@ -28,4 +28,4 @@ AWS Elemental MediaConvert sends STATUS\_UPDATE events to CloudWatch Events to l
 
 1. In the **Job settings** section on the right, for **Status update interval \(sec\)**, choose interval, in seconds, between updates\.
 
-If you use the API or an SDK, you can find this setting in the JSON file of your job, called [statusUpdateInterval](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-createjobrequest-statusupdateinterval)\.
+If you use the API or an SDK, you can find this setting in the JSON file of your job\. The setting name is [statusUpdateInterval](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-createjobrequest-statusupdateinterval)\.

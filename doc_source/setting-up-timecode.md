@@ -19,7 +19,7 @@ Input timecode setting
 The **Timecode source** setting under **Input** affects only the following:  
 + Synchronization for audio and captions that you provide as input files that are separate from the video
 + How the service interprets the timecodes that you provide if you use [input clipping](input-clipping-stitching.md) to specify only a portion of your input for transcoding
-If you use the API or an SDK, you can find this setting in the JSON file of your job, called `TimecodeSource`, located in `Settings`, `Inputs`\.
+If you use the API or an SDK, you can find this setting in the JSON file of your job\. The setting name is `TimecodeSource`, located in `Settings`, `Inputs`\.
 
 Output timecode settings  
 The timecode settings under **Output** determine whether and how timecode information appears in each output:  
