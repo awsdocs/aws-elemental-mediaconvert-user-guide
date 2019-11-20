@@ -16,6 +16,8 @@ If you don't specify overlay start time and duration, the service puts the overl
 
    1. In the **Image inserter** section to the right of the **Job** pane, choose **Add image**, and then specify the overlay settings\.
 
+      For **Image location**, specify an input file that is stored in Amazon S3 or on an HTTP\(S\) server\. For Amazon S3 inputs, you can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\. For HTTP\(S\) inputs, provide the URL to your input video file\. For more information, see [HTTP Input Requirements](upload-input-files.md#http-input-requirements)\. 
+
 For details about the more complex input graphic overlay settings, see the following topics:
 
 [About Sizing Your Overlay to Account for Scaling](about-overlay-scaling.md)

@@ -22,7 +22,7 @@ An *audio asset* is often dialogue, background sound, and music together in one 
 **Note**  
 For most use cases, you associate one input track per input selector\. If your use case requires combining multiple tracks into one track, or multiple tracks into one rendition of a streaming package, combine multiple input tracks in one audio selector by typing a comma\-separated list\. You can also use a wildcard \(\*\) instead of a track number\. For more information about combining tracks, see [More About Audio Tracks and Audio Selectors](more-about-audio-tracks-selectors.md)\.
 
-   1. If your audio is in a separate file from your video, choose the **External file** slider switch element and provide the URI to your audio input file that is stored in Amazon S3\. You can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\.
+   1. If your audio is in a separate file from your video, choose the **External file** slider switch element and provide the URI to your audio input file that is stored in Amazon S3 or on an HTTP\(S\) server\. For Amazon S3 inputs, you can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\. For HTTP\(S\) inputs, provide the URL to your input video file\. For more information, see [HTTP Input Requirements](upload-input-files.md#http-input-requirements)\. 
 
 1. If you have additional audio assets—for example, multiple language tracks—choose **Add audio selector** and provide information about the next asset as described in the preceding step of this procedure\.
 

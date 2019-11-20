@@ -2,7 +2,7 @@
 
 If your input video doesn't contain SCTE\-35 markers, but you need to specify ad insertion points in your outputs, you can provide Event Signaling and Management \(ESAM\) XML documents in your AWS Elemental MediaConvert job settings\. When you do, MediaConvert conditions your outputs  with IDR \(Instantaneous Decoder Refresh\) frames at the insertion points that you specify in the document\. In outputs that are also wrapped in MPEG2\-TS and HLS containers, MediaConvert inserts SCTE\-35 time\_signal messages at those points\. 
 
-You also can optionally provide an HLS manifest conditioning XML document\. You can then set up your job to condition the manifests for your HLS outputs accordingly\.
+For your **Apple HLS** output groups, you also can optionally provide an HLS manifest conditioning XML document\. You can then set up your job to condition the manifests for your HLS outputs accordingly\.
 
 **Note**  
 To put SCTE\-35 markers in your MPEG2\-TS outputs, in addition to supplying the ESAM XML documents, you must also enable **ESAM SCTE\-35** on each output\. For more information, see the console procedure following this overview\.
@@ -26,7 +26,7 @@ For example, a job has the following three inputs: a five\-minute preroll, a one
 
 1. For **Signal processing notification XML**, enter your ESAM signaling XML document as text\. For an example, see [Example ESAM XML Signal Processing Notification](example-esam-xml.md)\.
 
-1. Optionally, if you want to include information about your SCTE\-35 markers in your HLS manifests, for **Manifest confirm condition notification XML**, enter your ESAM manifest conditional XML document as text\. 
+1. Optionally, if you want to include information about your SCTE\-35 markers in your HLS manifests, for **Manifest confirm condition notification XML**, enter your ESAM manifest conditional XML document as text\. MediaConvert doesn't include information about your SCTE\-35 markers in your DASH manifests\.
 
 1. For each MPEG2\-TS output where you want SCTE\-35 markers, enable the markers:
 
@@ -40,7 +40,9 @@ For example, a job has the following three inputs: a five\-minute preroll, a one
 
    1. For **SCTE\-35 source**, keep the default **None**\.
 
-1. If you want to condition your HLS manifest with your ESAM insertion points, follow the procedure in [Including SCTE\-35 Information in Your HLS Manifest](including-scte-35-information-in-your-hls-manifest.md)\. Otherwise, follow these steps to confirm that the following settings are still in their default state:
+1. Do this step only for any **Apple HLS** output groups in your job\.
+
+   If you want to condition your HLS manifest with your ESAM insertion points, follow the procedure in [Including SCTE\-35 Information in Your HLS Manifest](including-scte-35-information-in-your-hls-manifest.md)\. Otherwise, follow these steps to confirm that the following settings are still in their default state:
 
    1. Make sure that **Manifest confirm condition notification XML**, discussed in a previous step of this procedure, is empty\.
 
@@ -49,8 +51,6 @@ For example, a job has the following three inputs: a five\-minute preroll, a one
       1. In the **Job** pane on the left, under **Output groups**, choose **Apple HLS**\.
 
       1. In the **Apple HLS group settings** section, choose **Advanced**\.
-
-      1. Choose **Container settings**, then scroll down to find the **PID controls** section\.
 
       1. In the **Ad markers** section, clear the **Elemental** and **SCTE\-35 enhanced** check boxes\.
 

@@ -10,12 +10,12 @@ You can include time\_signal SCTE\-35 markers from your input in any output that
 
 1. Set up your input, output groups, and outputs for video and audio, as described in [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring Complex Jobs in AWS Elemental MediaConvert](structuring-complex-jobs.md)\.
 
-1. Choose an output under either **File group** or **Apple HLS**\. 
+1. Choose an output under either **File group**, **DASH ISO**, or **Apple HLS**\. 
 
-1. Under **Container settings** \(for **File group** outputs\) or **Transport stream settings** \(for **Apple HLS** outputs\), find **SCTE\-35 source**, and then choose **Passthrough**\.
+1. Under **Container settings** \(for **File group** outputs\), **Container settings** \(for **DASH ISO** outputs\), or **Transport stream settings** \(for **Apple HLS** outputs\), find **SCTE\-35 source**, and then choose **Passthrough**\.
 
-1. Optionally, under **SCTE\-35 PID**, enter a different value from the default **500**\. 
+1. Optional\. For outputs in a **File group** output group, when you set **Output settings**, **Container** to **MPEG\-2 Transport Stream** \(M2TS\), you can enter a value for **SCTE\-35 PID** that is different from the default **500**\. 
 
    A PID, or packet identifier, is an identifier for a set of data in an MPEG\-2 transport stream container\. PIDs are used by downstream systems and players to locate specific information in the container\. 
 
-1. If your output is in an **Apple HLS**, optionally set up the job to include ad markers in the manifest\. For more information, see [Including SCTE\-35 Information in Your HLS Manifest](including-scte-35-information-in-your-hls-manifest.md)\.
+1. Optional\. For outputs in an **Apple HLS** output group, you can set up the job to include ad markers in the manifest\. For more information, see [Including SCTE\-35 Information in Your HLS Manifest](including-scte-35-information-in-your-hls-manifest.md)\.

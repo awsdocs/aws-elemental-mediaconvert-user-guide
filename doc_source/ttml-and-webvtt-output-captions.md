@@ -1,4 +1,4 @@
-# IMSC, TTML and WebVTT \(Sidecar\) Output Captions<a name="ttml-and-webvtt-output-captions"></a>
+# IMSC, TTML, and WebVTT \(Sidecar\) Output Captions<a name="ttml-and-webvtt-output-captions"></a>
 
 If your output captions are IMSC, TTML or WebVTT format, set them up in your outputs according to the following information\. For restrictions on IMSC support, see [IMSC Captions Support in AWS Elemental MediaConvert](imsc-captions-support.md)\.
 
@@ -22,3 +22,23 @@ Put each captions track in its own output\.
 
 **Note**  
 The captions track that you specify first in your job is signaled as the default track in the HLS manifest\.
+
+## Sidecar Captions Container Options<a name="sidecar-captions-container-options"></a>
+
+Depending on your output group, you can choose the captions container for IMSC and TTML captions outputs\.
+
+For **DASH ISO** output groups, you can choose from these:
++ Fragmented MP4 \(`.fmp4`\)
++ Raw \(`.xml` for IMSC, `.ttml` for TTML\)
+
+For all other output groups, IMSC and TTML files are raw\.
+
+**To specify the captions container for IMSC and TTML captions in DASH ISO output groups**
+
+1. Set up the outputs in your **DASH ISO** output group as described in [Creating Outputs in ABR Streaming Output Groups](create-outputs-in-abr-streaming-output-groups.md)\. Put captions in a separate output\.
+
+1. On the **Create job** page, in the **Job** pane on the left, choose the captions output\.
+
+1. In the **Output settings** section on the right, choose **Container settings**, and then enable **DASH container settings**\.
+
+1. For **Captions container**, keep the default **Raw** or choose **Fragmented MPEG\-4**\.

@@ -2,7 +2,7 @@
 
 To include captions in your job, follow these steps in the order listed:
 
-1. [Set the timecode source settings\.](set-the-timecode-source-settings.md)
+1. If your input captions are a timecode\-based sidecar captions format, such as SCC or STL, [set the timecode source settings\.](set-the-timecode-source-settings.md)
 
 1. [Gather required captions information\.](gather-required-captions-information.md)
 

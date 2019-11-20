@@ -26,7 +26,6 @@ For MPEG\-2 TS outputs, to use accelerated transcoding, you must change the defa
   For a list of supported captions formats, see [Captions Support Tables by Output Container Type](captions-support-tables-by-container-type.md)\.
 
 **Transcoding Features Not Supported with Accelerated Transcoding**
-+ Slow PAL
 + Avail blanking
 + Motion image inserter \(Motion graphic overlay\)
 + Interpolated frame rate conversion

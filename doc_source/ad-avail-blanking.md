@@ -16,6 +16,8 @@ You set up SCTE\-35 markers in each output individually, but you enable or disab
 
 1. Under **Global processors**, enable **Ad avail blanking**\.
 
-1. Optionally, under **Blanking image**, provide a URI to an image file located in an Amazon S3 bucket\. If you specify an image here, the service inserts the image on all video frames inside the ad avail\. If you don't specify an image, the service uses a black slate instead\.
+1. Optionally, under **Blanking image**, provide a URI to an image input file that is stored in Amazon S3 or on an HTTP\(S\) server\. For Amazon S3 inputs, you can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\. For HTTP\(S\) inputs, provide the URL to your input video file\. For more information, see [HTTP Input Requirements](upload-input-files.md#http-input-requirements)\. 
+
+   If you specify an image here, the service inserts the image on all video frames inside the ad avail\. If you don't specify an image, the service uses a black slate instead\.
 
    Blanking images must be \.png or \.bmp files that are the same size or smaller, in pixels, as the output video resolution\. 

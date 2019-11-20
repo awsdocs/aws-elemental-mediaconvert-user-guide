@@ -10,12 +10,12 @@ Understanding Dolby Atmos is required prerequisite knowledge for using this feat
  To encode Dolby Atmos, you must have 16 input channels of PCM audio, either in individual \.wav files or as tracks in a single container\.
 
 **Note**  
-AWS Elemental MediaConvert doesnt support ADM or DAMF input\.
+AWS Elemental MediaConvert doesn't support ADM or DAMF input\.
 
 ## Feature Restrictions for Dolby Atmos Encoding<a name="feature-restrictions-for-dolby-atmos-encoding"></a>
 
 Note the following restrictions in the AWS Elemental MediaConvert implementation of Dolby Atmos encoding:
-+ **Channel\-based immersive only:** AWS Elemental MediaConvert supports only channel\-based immersive \(CBI\) content\. MediaConvert doesnt read any Atmos metadata in the input audio files or in sidecar metadata files\. 
++ **Channel\-based immersive only:** AWS Elemental MediaConvert supports only channel\-based immersive \(CBI\) content\. MediaConvert doesn't read any Atmos metadata in the input audio files or in sidecar metadata files\. 
 + **Output codec:** You can create Dolby Atmos audio outputs encoded with only the Dolby Digital Plus \(EAC3\) codec\.
 + **Output containers:** For file outputs, you can create Dolby Atmos audio in only in one of the video containers that supports Dolby Digital Plus: MPEG\-4, MPEG\-2 Transport Stream, or QuickTime\.
 + **Output packages:** For adaptive bitrate \(ABR\) outputs, you can create Dolby Atmos audio in any of the AWS Elemental MediaConvert output group types: CMAF, Apple HLS, DASH ISO, or Microsoft Smooth Streaming\.

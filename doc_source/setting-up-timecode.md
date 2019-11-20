@@ -1,34 +1,21 @@
 # Setting Up Timecodes<a name="setting-up-timecode"></a>
 
-MediaConvert manages transcoded video frames by their timecode\. The service uses the timecode to synchronize some audio and captions, and to determine the timing for displaying video frames in an output\. The service also relies on timecodes to manage features—such as input clipping and graphic overlay \(image inserter\)—that are applied to only some parts of the video\.
-
-**Tip**  
-If your graphic overlays or sidecar captions don't appear when you expect, or don't appear at all, try setting both the job\-wide timecode **Source** and the input **Timecode source** to **Start at 0**\. For more information about syncing sidecar captions, see [About Input Timecode Source and Captions Alignment](timecode-input.md#about-input-timecode-source-and-captions-alignment)\.
+MediaConvert manages transcoded video frames by their timecode\. The service uses the timecodes from the input and output timelines that it constructs to line up the elements of your output assets\. For information about which features are affected by each type of timeline, and about how timelines work, see [How MediaConvert Uses Timelines to Assemble Jobs](how-mediaconvert-uses-timelines-to-assemble-jobs.md)\.
 
 There are three distinct groups of timecode settings, located in three different places on the console:
++ Input timecode settings
 
-Job\-wide timecode configuration  
-The **Timecode configuration** settings under **Job settings** affect how timecodes appear in the outputs\. The settings also affect the system behavior for features that apply to every output in the job\. This includes the following:  
-+ When overlaid graphics \(inserted images\) appear in the video
-+ How your HLS variant playlists show time
-+ How inserted timecodes appear in your output
-+ How the service interprets the timecode that you provide if you specify an anchor timecode
-If you use the API or an SDK, you can find these settings in the JSON file of your job\. These settings are under `Settings`, `TimecodeConfig`\.
+  The input setting **Timecode source** affects the input timeline\.
++ Job\-wide timecode configuration
 
-Input timecode setting  
-The **Timecode source** setting under **Input** affects only the following:  
-+ Synchronization for audio and captions that you provide as input files that are separate from the video
-+ How the service interprets the timecodes that you provide if you use [input clipping](input-clipping-stitching.md) to specify only a portion of your input for transcoding
-If you use the API or an SDK, you can find this setting in the JSON file of your job\. The setting name is `TimecodeSource`, located in `Settings`, `Inputs`\.
+  The **Timecode configuration** settings under **Job settings** affect the output timeline\.
++ Output timecode settings
 
-Output timecode settings  
-The timecode settings under **Output** determine whether and how timecode information appears in each output:  
-+ The **Timecode insertion** setting under **Output**, **Stream settings**, **Video** determines whether the service embeds timecode metadata in a given output\. You can insert timecodes into MPEG\-2, Apple ProRes, H\.264, and H\.265 outputs\.
-+ The **Timecode burn\-in** settings under **Output**, **Stream settings**, **Video**, **Preprocessors** determine whether the service inscribes the timecode visually on the video frame\.
+  The timecode settings under **Output** determine whether and how timecode information appears in each output\. These settings affect only what is included in the outputs; they don't determine what timecodes are\.
 
-To provide frame accuracy, AWS Elemental MediaConvert uses timecodes that specify frames by frame number, not by millisecond\. All timecodes are in the following 24\-hour format with a frame number: HH:MM:SS:FF\.
+To provide frame accuracy, AWS Elemental MediaConvert uses timecodes that specify frames by frame number, not by millisecond\. All timecodes are in the following 24\-hour format with a frame number: HH:MM:SS:FF\. For drop frame, MediaConvert uses a semicolon before the frame number: HH:MM:SS;FF\.
 
 **Topics**
-+ [Adjusting the Job\-wide Timecode Configuration](timecode-jobconfig.md)
-+ [Adjusting the Input Timecode Setting](timecode-input.md)
-+ [Adjusting the Output Timecode Settings](timecode-output.md)
++ [Adjusting the Input Timeline with the Input Timecode Source](timecode-input.md)
++ [Adjusting the Output Timeline with the Job\-wide Timecode Configuration](timecode-jobconfig.md)
++ [Putting Timecodes In Your Outputs](timecode-output.md)

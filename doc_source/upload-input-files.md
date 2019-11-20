@@ -14,9 +14,9 @@ AWS Elemental MediaConvert can take in your input files from Amazon S3 or from a
 
 ## HTTP Input Requirements<a name="http-input-requirements"></a>
 
-When your input file source is HTTP, you specify the URL rather than an Amazon S3 path\. Requirements for using HTTP for input are as follows:
-+ The HTTP server must be public\.
-+ The HTTP server must not require authentication\.
-+ You can use HTTP for your primary video source, but not for sidecar captions, sidecar audio, or graphic overlays\.
+When your input file source is HTTP\(S\), you specify the URL rather than an Amazon S3 path\. Requirements for using HTTP\(S\) for input are as follows:
++ All input files must be publicly readable\.
++ The HTTP\(S\) server must not require authentication\.
 + The URL that you specify must be a direct link to your file; MediaConvert doesn't follow redirects\.
 + The URL that you specify can't be a pre\-signed URL\.
++ The URL that you specify can't include parameters\.
