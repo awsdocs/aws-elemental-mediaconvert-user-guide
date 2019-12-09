@@ -10,7 +10,7 @@ You can use AWS Elemental MediaConvert to create profile 5 Dolby Vision outputs\
 
 1. For your input file or files, choose an MXF file or an IMF package that has frame\-interleaved Dolby Vision metadata\. 
 
-   If your input is an IMF package, specify a CPL file for your input\. If your CPL is from an incomplete IMP, toggle **Supplemental IMPs** to specify the location of your supplemental IMPs\.
+   If your input is an IMF package, specify a CPL file for your input\. If your CPL is from an incomplete IMP, choose **Supplemental IMPs** to specify the location of your supplemental IMPs\.
 
 1. Set up your input audio and video as described in [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md)\. Make sure to keep the input color space set to the default value **Follow**\.
 

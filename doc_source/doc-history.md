@@ -6,6 +6,7 @@ The following table describes important additions to the AWS Elemental MediaConv
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [8k output support in AWS Elemental MediaConvert](supported-output-resolution-maximums-by-codec.md) | MediaConvert now supports up to 8k output resolution\. Find more information about resolution maximums by output codec\. | November 25, 2019 | 
 | [Use accelerated transcoding with slow PAL](job-requirements.md) | You can now use accelerated transcoding for slow PAL jobs\. | November 15, 2019 | 
 | [Set up access for other AWS accounts to your MediaConvert outputs](setting-up-access-for-other-aws-accounts.md) | You can now grant cross\-account access by writing your AWS Elemental MediaConvert outputs to an Amazon S3 bucket owned by another AWS account and applying a canned access control list \(ACL\) to your outputs\. This chapter also provides information about the alternative method for setting up access—granting other accounts access to your output bucket in Amazon S3\. | November 15, 2019 | 
 | [New supported input format](reference-codecs-containers-input.md) | Updated reference tables to reflect new input format support\. MediaConvert now supports HEVC \(H\.265\) in QuickTime containers as input files\. | November 15, 2019 | 

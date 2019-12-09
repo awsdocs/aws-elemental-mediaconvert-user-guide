@@ -4,7 +4,7 @@ Job templates apply to an entire transcoding job and provide values for settings
 
 **To create a job using a job template**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. On the navigation bar of the MediaConvert console, choose the region where you want to create your job\. This is almost always the region where your input files are stored\.  
 ![\[Choose a region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)

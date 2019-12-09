@@ -9,7 +9,7 @@ After you modify a preset, jobs that use the preset will run with the new settin
 
 **To modify a custom output preset**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. On the navigation bar of the MediaConvert console, choose the region where the preset was created\.
 

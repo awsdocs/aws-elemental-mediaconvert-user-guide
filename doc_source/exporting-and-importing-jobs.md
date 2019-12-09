@@ -4,7 +4,7 @@ Completed MediaConvert jobs remain on the **Jobs** page for three months\. If yo
 
 **To export a completed job**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. On the navigation bar of the MediaConvert console, choose the Region where the job that you want to export was created\.
 
@@ -25,7 +25,7 @@ Optionally, from the **Status** dropdown list, choose **Complete** to filter you
 
 **To create a job by importing a previously exported completed job**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. On the navigation bar of the MediaConvert console, choose the Region where you want to create your new job\.
 

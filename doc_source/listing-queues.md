@@ -4,7 +4,7 @@ You can list the AWS Elemental MediaConvert queues that are associated with your
 
 **To list queues and view queue settings**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. On the navigation bar of the AWS Elemental MediaConvert console, choose the Region where you created the queues that you want to view\.
 

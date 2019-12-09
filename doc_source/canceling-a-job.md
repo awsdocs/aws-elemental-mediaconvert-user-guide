@@ -4,7 +4,7 @@ The following procedure explains how to cancel a job using the AWS Elemental Med
 
 **To cancel a job**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. On the navigation bar at the top of the page, choose the Region where you created the job that you want to cancel\.  
 ![\[Choose a Region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)

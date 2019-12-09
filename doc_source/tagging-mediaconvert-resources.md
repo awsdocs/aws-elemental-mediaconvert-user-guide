@@ -9,7 +9,7 @@ Popular use cases for these tags are as follows:
 
 **Note**  
 You can use two types of tags on your MediaConvert jobs: standard AWS tags \(`tags`\) and metadata tags \(`userMetadata`\)\. Standard AWS tags integrate with AWS Billing and Cost Management, the AWS Resource Groups Tagging API, and IAM resource\-based permissions\. Metadata tags aren't integrated with other AWS services\.  
-Unless you have existing integrations or workflows that rely on metadata tags, we recommend that you use standard AWS tags for both automatic integration with AWS services and for custom integrations and workflows\.
+Unless you have existing integrations or workflows that rely on metadata tags, we recommend that you use standard AWS tags for both automatic integration with AWS services and for custom integrations and workflows\. For information, see [Using Metadata Tags with AWS Elemental MediaConvert Jobs](user-metadata-tags.md)\.
 
 The following topics apply only to standard AWS tags\.
 
@@ -18,6 +18,7 @@ The following topics apply only to standard AWS tags\.
 + [Adding Tags When You Create an AWS Elemental MediaConvert Resource](add-tags-on-create.md)
 + [Adding Tags to an Existing AWS Elemental MediaConvert Resource](add-tags-to-existing.md)
 + [Viewing Tags on an AWS Elemental MediaConvert Resource](view-tags-on-resource.md)
-+ [Editing Tags on a Resource](edit-tags-on-resource.md)
++ [Editing Tags on an AWS Elemental MediaConvert Resource](edit-tags-on-resource.md)
 + [Removing Tags from an AWS Elemental MediaConvert Resource](remove-tags-from-resource.md)
-+ [AWS Elemental MediaConvert Queue, Template, and Preset Tag Restrictions](resource-tagging-restrictions.md)
++ [Restrictions for Tags on AWS Elemental MediaConvert Resources](resource-tagging-restrictions.md)
++ [Using Metadata Tags with AWS Elemental MediaConvert Jobs](user-metadata-tags.md)

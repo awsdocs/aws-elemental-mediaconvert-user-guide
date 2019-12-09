@@ -324,6 +324,9 @@ The following table lists supported output captions formats for this output cont
 
 The following table lists supported output captions formats for this output container, sorted by the input captions container and input captions format\. 
 
+**Note**  
+You can create sidecar captions outputs only as part of a job that also generates a video output\.
+
 
 |  Input Captions Container  |  Input Captions Format  |  Supported Output Captions Formats  | 
 | --- | --- | --- | 

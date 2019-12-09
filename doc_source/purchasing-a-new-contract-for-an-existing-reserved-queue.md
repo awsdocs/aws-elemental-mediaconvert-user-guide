@@ -4,7 +4,7 @@ After your initial pricing plan term for reserved transcode slots \(RTS\) expire
 
 **To purchase transcoding capacity for an existing reserved queue**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. On the navigation bar of the MediaConvert console, choose the Region where you created the reserved queue\.  
 ![\[Choose a Region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)

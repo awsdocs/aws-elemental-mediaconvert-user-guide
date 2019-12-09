@@ -6,7 +6,7 @@ To do this using the API, see the `GET` method in the [Tags arn](https://docs.aw
 
 **To view tags for queues, job templates, and output presets \(console\)**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. Choose the three\-bar icon on the left to access the left navigation pane\.
 

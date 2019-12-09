@@ -4,7 +4,7 @@ You can list the system job templates that are included with MediaConvert and th
 
 **To list job templates**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. If you have custom job templates, on the navigation bar of the MediaConvert console, choose the region that your custom templates were created in\.
 

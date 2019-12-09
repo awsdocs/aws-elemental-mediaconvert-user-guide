@@ -1,4 +1,4 @@
-# AWS Elemental MediaConvert Queue, Template, and Preset Tag Restrictions<a name="resource-tagging-restrictions"></a>
+# Restrictions for Tags on AWS Elemental MediaConvert Resources<a name="resource-tagging-restrictions"></a>
 
 The following basic restrictions apply to tags:
 + Maximum number of tags per resource – 50\.

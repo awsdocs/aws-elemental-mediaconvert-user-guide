@@ -9,7 +9,7 @@ Tags on your MediaConvert resources don't appear in the JSON response to a `GET`
 
 **To add tags to job templates, output presets, and queues \(console\)**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. Choose the three\-bar icon on the left to access the left navigation pane\.
 

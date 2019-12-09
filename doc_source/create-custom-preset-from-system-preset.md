@@ -4,7 +4,7 @@ MediaConvert doesn't allow you to modify system presets\. If you want a preset t
 
 **To create a custom output preset based on a system preset**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. On the navigation bar of the MediaConvert console, choose the region where you want to create the new preset\.
 

@@ -6,7 +6,7 @@ The **Jobs** page shows successfully completed jobs and also those that ended in
 
 **To list jobs**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. On the navigation bar of the MediaConvert console, choose the Region your jobs were created in\. If you have jobs that were created in more than one Region, you must view them separately by Region\.  
 ![\[Choose a Region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)

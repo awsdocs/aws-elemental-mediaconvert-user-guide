@@ -4,7 +4,7 @@ If you are just getting started with AWS Elemental MediaConvert or are experimen
 
 **To pause or reactivate an on\-demand queue**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. If you are pausing or reactivating a queue other than the default queue, on the navigation bar of the AWS Elemental MediaConvert console, choose the Region where you created the queue\.
 

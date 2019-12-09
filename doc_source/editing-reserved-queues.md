@@ -7,7 +7,7 @@ When you edit a queue, you can change the following:
 
 **To edit a queue**
 
-1. Sign in to the AWS Management Console and open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
+1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
 1. If you are editing a queue other than the default queue, on the navigation bar of the AWS Elemental MediaConvert console, choose the Region where you created the queue\.
 
