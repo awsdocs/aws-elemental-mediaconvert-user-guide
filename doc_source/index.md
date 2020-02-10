@@ -1,7 +1,7 @@
 # MediaConvert User Guide
 
 -----
-*****Copyright &copy; 2019 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; 2020 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -35,8 +35,8 @@ Amazon's trademarks and trade dress may not be used in
          + [Creating Audio ABR Streaming Outputs](audio-abr-streaming-outputs.md)
          + [Creating Captions ABR Streaming Outputs](captions-abr-streaming-outputs.md)
          + [Creating Additional Manifests](create-additional-manifests.md)
-      + [Creating and Setting Up Outputs in File Output Groups](create-outputs-in-file-output-groups.md)
    + [Step 5: Specify Global Job Settings](specify-global-job-settings.md)
+   + [Creating and Setting Up Outputs in File Output Groups](create-outputs-in-file-output-groups.md)
    + [Using Variables in Your Job Settings](using-variables-in-your-job-settings.md)
       + [List of Settings Variables with Examples](list-of-settings-variables-with-examples.md)
       + [Using Settings Variables with Streaming Outputs](using-settings-variables-with-streaming-outputs.md)
@@ -88,6 +88,7 @@ Amazon's trademarks and trade dress may not be used in
       + [Listing and Viewing On-Demand Queues in AWS Elemental MediaConvert](listing-queues.md)
       + [Deleting an On-Demand Queue in AWS Elemental MediaConvert](deleting-a-queue.md)
    + [Working with Reserved Queues in AWS Elemental MediaConvert](working-with-reserved-queues.md)
+      + [Feature Limitations with AWS Elemental MediaConvert Reserved Queues](feature-limitations-with-reserved-queues.md)
       + [Creating a Reserved Queue in AWS Elemental MediaConvert](creating-a-reserved-queue.md)
       + [Purchasing Additional Capacity for a Reserved Queue in AWS Elemental MediaConvert](purchasing-additional-capacity-for-a-reserved-queue.md)
       + [Editing Reserved Queues in AWS Elemental MediaConvert](editing-reserved-queues.md)
@@ -143,7 +144,7 @@ Amazon's trademarks and trade dress may not be used in
 + [Using the QVBR Rate Control Mode](cbr-vbr-qvbr.md)
 + [Creating Dolby Vision Outputs with AWS Elemental MediaConvert](dolby-vision.md)
    + [Setting Up a Dolby Vision Job](setting-up-a-dolby-vision-job.md)
-   + [Dolby Vision Job Limitations with AWS Elemental MediaConvert](dolby-vision-job-limitations-and-requirements.md)
+   + [Dolby Vision Job Limitations](dolby-vision-job-limitations-and-requirements.md)
 + [Creating Dolby Atmos Outputs with AWS Elemental MediaConvert](dolby-atmos.md)
    + [Using Dolby Atmos Passthrough with AWS Elemental MediaConvert](using-dolby-atmos-passthrough.md)
    + [Using Dolby Atmos Encoding with AWS Elemental MediaConvert](using-dolby-atmos-encoding.md)

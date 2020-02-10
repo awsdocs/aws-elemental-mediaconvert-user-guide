@@ -2,6 +2,9 @@
 
 Reserved queues differ from on\-demand queues in how AWS Elemental MediaConvert allocates transcoding resources for jobs and in how you pay for your transcoding\.
 
+**Note**  
+There are a few features that you can't use with jobs that you send to a reserved queue\. For more information, see [Feature Limitations with Reserved Queues](feature-limitations-with-reserved-queues.md)\.
+
 ## How MediaConvert Allocates Resources and Prioritizes Jobs with Reserved Queues<a name="resource-allocation-and-job-prioritization-with-reserved-queues"></a>
 
 When you set up your reserved queue, you choose how many jobs it can run at once by specifying the number of reserved transcode slots \(RTS\) in the queue\. For example, if you send five jobs to a reserved queue with two RTS, AWS Elemental MediaConvert immediately begins processing the first two jobs that you submit and holds the other three in the queue\. When one of the jobs that MediaConvert is processing finishes, the service begins processing the next job\.

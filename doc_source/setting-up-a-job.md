@@ -15,4 +15,5 @@ To set up your job, complete the procedures in the following topics\.
 + [Step 3: Create Output Groups](specify-output-groups.md)
 + [Step 4: Create Outputs](create-outputs.md)
 + [Step 5: Specify Global Job Settings](specify-global-job-settings.md)
++ [Creating and Setting Up File Outputs](create-outputs-in-file-output-groups.md)
 + [Using Variables in Your Job Settings](using-variables-in-your-job-settings.md)

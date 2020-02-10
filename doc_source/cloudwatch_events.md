@@ -19,7 +19,7 @@ You can use Amazon CloudWatch Events to monitor your AWS Elemental MediaConvert 
 + **Automatically initiate post\-processing with an AWS Lambda function\.**
 
   You can set up CloudWatch Events so that a Lambda function initiates your post\-processing code after your job finishes\. For more information about using AWS Lambda with AWS Elemental MediaConvert, see one of these resources:
-  + For experienced cloud architects, see the [Video on Demand on AWS](https://aws.amazon.com/answers/media-entertainment/video-on-demand-on-aws/) post on the *AWS Answers* blog\.
+  + For experienced cloud architects, see the [Video on Demand on AWS](https://aws.amazon.com/solutions/video-on-demand-on-aws/) post on the *AWS Answers* blog\.
   + For developers new to MediaConvert and Lambda, see the [Automating MediaConvert Jobs with Lambda](https://github.com/aws-samples/aws-media-services-simple-vod-workflow/blob/master/7-MediaConvertJobLambda/README.md) tutorial on GitHub\. This tutorial is part of the Simple VOD Workflow series of tutorials on using MediaConvert to create video on demand \(VOD\)\.
 
 **Topics**

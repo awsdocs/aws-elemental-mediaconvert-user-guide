@@ -6,7 +6,7 @@ The result of this setup is that you own the files, but they reside in another a
 
 **To write your outputs to a bucket owned by another account**
 
-1. Work with an administrator of the other account to add a bucket policy to the Amazon S3 bucket that you want to write your output files to\. For more information, see [How Do I Add an S3 Bucket Policy?](https://docs.aws.amazon.com/AmazonS3/latest/dev//add-bucket-policy.html) in the *Amazon Simple Storage Service Developer Guide*\.
+1. Work with an administrator of the other account to add a bucket policy to the Amazon S3 bucket that you want to write your output files to\. For more information, see [How Do I Add an S3 Bucket Policy?](https://docs.aws.amazon.com/AmazonS3/latest/dev/add-bucket-policy.html) in the *Amazon Simple Storage Service Developer Guide*\.
 
    The following example bucket policy grants the necessary permissions:
 

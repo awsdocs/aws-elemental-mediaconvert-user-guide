@@ -34,7 +34,7 @@ For more information and an example of using a policy to control AWS access to i
 Administrators can control who can create, edit, and delete customer managed policies, and who can attach and detach all managed policies\. When you review a policy, you can view the policy summary that includes a summary of the access level for each service within that policy\. AWS categorizes each service action into one of four *access levels* based on what each action does: `List`, `Read`, `Write`, or `Permissions management`\. You can use these access levels to determine which actions to include in your policies\. For more information, see [Understanding Access Level Summaries Within Policy Summaries](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary-access-level-summaries.html) in the *IAM User Guide*\.
 
 **Warning**  
-You should limit Permissions Management access\-level permissions in your account\. Otherwise, your account members can create policies for themselves with more permissions than they should have\. Or they can create separate users with full access to AWS\. 
+You should restrict Permissions Management access\-level permissions in your account\. Otherwise, your account members can create policies for themselves with more permissions than they should have\. Or they can create separate users with full access to AWS\. 
 
 For more information and an example of how to control AWS access to policies, see [Controlling Access to Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_controlling.html#access_controlling-policies) in the *IAM User Guide*\.
 

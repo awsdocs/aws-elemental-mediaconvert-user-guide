@@ -23,8 +23,8 @@ In your output file names, `$Bandwidth$` resolves to the value of **Video**, **B
 For example, suppose you specify these values:  
 + **Video**, **Bitrate \(bits/s\)**: **50000000** 
 +  **Audio**, **Bitrate \(kbits/s\)**: **96\.0** \(96,000 bits/s\)
-+ **Name modifier**: **video\_$Bitrate$**
-The value for $Bitrate$ resolves to 50,096,000\. The service creates segment files named `video_50096000_000000001.mp4`, `video_50096000_000000002.mp4`, and so on\.  
++ **Name modifier**: **video\_$Bandwidth$**
+The value for $Bandwidth$ resolves to 50,096,000\. The service creates segment files named `video_50096000_000000001.mp4`, `video_50096000_000000002.mp4`, and so on\.  
 In the manifest, AWS Elemental MediaConvert includes `duration` and `startNumber` inside the `SegmentTemplate` element, like this: `<SegmentTemplate timescale="90000" media="main_video_$Bandwidth$.mp4" initialization="main_video_$Bandwidth$init.mp4" duration="3375000"/>`\.
 
 $Time$  
