@@ -19,5 +19,6 @@ The following combinations of output container and codec are supported for audio
 | Container | Audio Codecs | 
 | --- | --- | 
 | HLS \(\.ts\) | AAC, Dolby Digital \(AC3\) | 
+| MPEG\-1 Layer 3 \(\.mp3\) | MP3 | 
 | MPEG\-2 TS \(\.ts, m2ts, m2p\) | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), MP2 | 
 | MPEG\-4 \(\.mp4\) | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\) | 
