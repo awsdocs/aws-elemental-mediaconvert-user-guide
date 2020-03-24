@@ -19,7 +19,6 @@ Note the following restrictions in the AWS Elemental MediaConvert implementation
 + **Output codec:** You can create Dolby Atmos audio outputs encoded with only the Dolby Digital Plus \(EAC3\) codec\.
 + **Output containers:** For file outputs, you can create Dolby Atmos audio in only in one of the video containers that supports Dolby Digital Plus: MPEG\-4, MPEG\-2 Transport Stream, or QuickTime\.
 + **Output packages:** For adaptive bitrate \(ABR\) outputs, you can create Dolby Atmos audio in any of the AWS Elemental MediaConvert output group types: CMAF, Apple HLS, DASH ISO, or Microsoft Smooth Streaming\.
-+ **Two\-pass encoding:** You must choose two\-pass encoding for your transcode job\. The first pass of your audio transcode measures the loudness of the audio\. The second pass performs the transcode using these measurements\.
 
 ## Setting Up a Job for Dolby Atmos Encoding<a name="setting-up-a-job-for-dolby-atmos-encoding"></a>
 

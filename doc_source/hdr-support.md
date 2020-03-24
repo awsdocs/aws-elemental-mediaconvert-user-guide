@@ -18,14 +18,17 @@ MediaConvert ingests and outputs video in the following standard formats:
 
 Your input color space is set by your input video or by the values that you set for **Color space** and **Color space usage** in your input settings\. For more information about the input color space settings, see [Replacing Inaccurate or Missing HDR Metadata](replacing-inaccurate-or-missing-hdr-metadata.md)\.
 
+For information about how to convert the color space, see [Converting the Color Space](converting-the-color-space.md)\.
+
 MediaConvert supports the following color space conversions:
 + From any supported HDR format to any other supported HDR format
 + From any supported SDR color space to any other supported SDR color space
 + From any supported SDR color space to any supported HDR format
 **Note**  
 Converting from SDR to HDR doesn't upgrade the dynamic range of the video content itself\. Therefore, the output is formatted as HDR but looks the same as it would if you created it as an SDR output\.
-
-You can't convert HDR to SDR with MediaConvert\.
++ From any supported HDR format to any supported SDR color space
+**Note**  
+When professional color graders convert an asset from HDR to SDR, they make artistic decisions about where to map colors from the larger space that don't exist in the smaller space\. There is no standard formula to map these values automatically\. The tone mapping technology that MediaConvert uses to do automatic conversion from HDR to SDR approximates the outcome of manually regrading from HDR to SDR\. This automatic conversion works well with most content, but we recommend that you review your outputs to confirm the tone mapping results\.
 
 ## Creating HDR HLS Outputs That Comply with the Apple Specification<a name="creating-hdr-hls-outputs-that-comply-with-the-apple-specification"></a>
 

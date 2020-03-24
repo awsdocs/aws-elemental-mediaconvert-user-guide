@@ -6,6 +6,7 @@ The following table describes important additions to the AWS Elemental MediaConv
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [You can now convert from HDR to SDR with automatic tone mapping](hdr-support.md#supported-color-space-conversions) | Learn about how AWS Elemental MediaConvert uses tone mapping to automatically convert from HDR formats to SDR color spaces\. | March 6, 2020 | 
 | [8k output support in AWS Elemental MediaConvert](supported-output-resolution-maximums-by-codec.md) | MediaConvert now supports up to 8k output resolution\. Find more information about resolution maximums by output codec\. | November 25, 2019 | 
 | [Use accelerated transcoding with slow PAL](job-requirements.md) | You can now use accelerated transcoding for slow PAL jobs\. | November 15, 2019 | 
 | [Set up access for other AWS accounts to your MediaConvert outputs](setting-up-access-for-other-aws-accounts.md) | You can now grant cross\-account access by writing your AWS Elemental MediaConvert outputs to an Amazon S3 bucket owned by another AWS account and applying a canned access control list \(ACL\) to your outputs\. This chapter also provides information about the alternative method for setting up access—granting other accounts access to your output bucket in Amazon S3\. | November 15, 2019 | 

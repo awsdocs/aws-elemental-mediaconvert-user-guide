@@ -7,7 +7,7 @@ For outputs that contain only audio inside the output container, MediaConvert su
 
 ## Video<a name="reference-codecs-containers-input-video"></a>
 
-Supported video input codecs and containers are listed in the following table\.
+MediaConvert supports the following combinations of input containers and video codecs\.
 
 
 | Container | Video Codecs Supported with Container | 
@@ -31,7 +31,10 @@ MediaConvert doesn't currently support HLS inputs\.
 
 ## Audio<a name="reference-codecs-containers-input-audio"></a>
 
-Supported audio input codecs and containers are listed in the following table\.
+MediaConvert supports the following combinations of input containers and audio codecs\.
+
+**Note**  
+For outputs that contain only audio inside the output container, MediaConvert supports a smaller set of input containers and codecs\. For more information, see [Supported Codecs and Containers for Audio\-Only Outputs](supported-codecs-containers-audio-only.md)\.
 
 
 | Container | Audio Codecs | 
@@ -47,5 +50,18 @@ Supported audio input codecs and containers are listed in the following table\.
 | MPEG\-4 | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), PCM, WMA, WMA2 | 
 | MXF | AAC, AIFF, Dolby E frames carried in PCM streams, MPEG Audio, PCM | 
 | QuickTime | AAC, MP3, PCM | 
-| WebM | Vorbis | 
+| WebM | Opus, Vorbis | 
 | WMV/ASF | WMA, WMA2 | 
+
+## Audio\-Only<a name="reference-codecs-containers-input-audio-only"></a>
+
+MediaConvert supports the following combinations of input container and codec for audio\-only outputs\.
+
+
+| Container | Audio Codecs | 
+| --- | --- | 
+| MPEG\-1 Layer 3 \(\.mp3\) | MP3 | 
+| MPEG\-2 TS \(\.ts, m2ts\) | MP2, PCM | 
+| MPEG\-4 \(\.mp4\) | AAC | 
+| QuickTime \(\.mov\) | PCM | 
+| WAV \(\.wav\) | PCM | 
