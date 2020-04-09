@@ -21,8 +21,21 @@ Creating additional queues doesn't increase the transcoding resources that are a
 
 ## How You Pay for Transcoding with On\-Demand Queues<a name="how-you-pay-for-on-demand-queues"></a>
 
-With on\-demand queues, you pay based on what you use\. After a job from your on\-demand queue successfully finishes, AWS bills you based on the duration of your outputs\. You pay a price per minute, billed at \.01 minute increments\. The price per minute varies depending on your job configuration and the AWS Region that you choose for transcoding\. For pricing details, see [AWS Elemental MediaConvert Pricing](https://aws.amazon.com/mediaconvert/pricing/)\.
+With on\-demand queues, you pay based on what you use\. After a job from your on\-demand queue successfully finishes, AWS bills you based on the duration of your outputs\. You pay a price per minute of output video, billed at \.01 minute increments\. The price per minute varies depending on your job configuration and the AWS Region that you choose for transcoding\. For pricing details, see [AWS Elemental MediaConvert Pricing](https://aws.amazon.com/mediaconvert/pricing/)\.
 
-**Note**  
-If you configure your job with multiple outputs, you pay for each output\. AWS bills you for the duration of the finished assets, not the transcoding time\.  
-For example, your input video file is 10 minutes, 30 seconds long \(10\.5 minutes\) and you set up your job to create three outputs: one low\-resolution SD output at $0\.0075 per minute, one high\-resolution HD output using [pro\-tier features](https://aws.amazon.com/mediaconvert/pricing/) at $0\.0630 per minute, and one audio\-only output at $0\.0003 per minute\. You pay \($0\.0075 x 10\.5\) \+ \($0\.0630 x 10\.5\) \+ \($0\.0003 x 10\.5\) = $0\.7434\.
+### Pricing Tiers Per Output<a name="pricing-per-output"></a>
+
+If you configure your job with multiple outputs, you pay for each output\. AWS bills you for the duration of the finished assets, not the transcoding time\.
+
+Whether AWS bills you for an output at professional tier rates or basic tier rates depends on your job settings\. If you enable a job\-wide pro\-tier setting, such as accelerated transcoding, all of your outputs are billed at pro\-tier rates\. If you don't use any job\-wide pro\-tier features, each output is assessed for billing tier separately\.
+
+For example, say that you don't enable job\-wide pro\-tier features and your input video file is 10 minutes, 30 seconds long \(10\.5 minutes\)\. You set up your job to create three outputs: 
++ One low\-resolution SD output encoded with AVC, billed at $0\.0075 per minute
++ One high\-resolution HD output using pro\-tier features at $0\.0630 per minute
++ One audio\-only output at $0\.005 per minute
+
+You pay \($0\.0075 x 10\.5\) \+ \($0\.0630 x 10\.5\) \+ \($0\.005 x 10\.5\) = $0\.79275\.
+
+Say that you run the same job as in the previous example, but you also enable accelerated transcoding\. Then your SD AVC output is billed at the pro\-tier pricing for AVC outputs\. In this case, you pay \($0\.024 x 10\.5\) \+ \($0\.0630 x 10\.5\) \+ \($0\.005 x 10\.5\) = $0\.966\.
+
+These rates are examples only; for actual pricing rates, see the [AWS Elemental MediaConvert Pricing](https://aws.amazon.com/mediaconvert/pricing/) page\.

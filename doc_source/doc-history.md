@@ -6,6 +6,7 @@ The following table describes important additions to the AWS Elemental MediaConv
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Queue hopping](setting-up-queue-hopping-to-avoid-long-waits.md) | Learn about the AWS Elemental MediaConvert queue hopping feature\. This feature lets you set up a job to automatically move to a different queue after waiting a specified length of time in the queue that you originally submitted it to\. | April 8, 2020 | 
 | [You can now convert from HDR to SDR with automatic tone mapping](hdr-support.md#supported-color-space-conversions) | Learn about how AWS Elemental MediaConvert uses tone mapping to automatically convert from HDR formats to SDR color spaces\. | March 6, 2020 | 
 | [8k output support in AWS Elemental MediaConvert](supported-output-resolution-maximums-by-codec.md) | MediaConvert now supports up to 8k output resolution\. Find more information about resolution maximums by output codec\. | November 25, 2019 | 
 | [Use accelerated transcoding with slow PAL](job-requirements.md) | You can now use accelerated transcoding for slow PAL jobs\. | November 15, 2019 | 

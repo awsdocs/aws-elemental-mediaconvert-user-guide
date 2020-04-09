@@ -12,3 +12,4 @@ You must submit all jobs to a queue\. If you don't specify the queue when you cr
 + [About On\-Demand Queues](about-on-demand-queues.md)
 + [About Reserved Queues](about-reserved-queues.md)
 + [Setting the Priority of a Job](setting-the-priority-of-a-job.md)
++ [Setting Up Queue Hopping to Avoid Long Waits](setting-up-queue-hopping-to-avoid-long-waits.md)

@@ -4,9 +4,6 @@ You can specify a job's place in a queue by setting its priority in the job sett
 
 MediaConvert doesn't stop the current job when you submit a job with a higher priority\. When the running job is finished, MediaConvert starts the next job based on its relative priority in the queue\.
 
-**Note**  
-MediaConvert doesn't currently support the job priority feature in the Europe \(Stockholm\) Region\.
-
 **To set the priority for a job \(console\)**
 
 1. Set up your job as described in [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md)\.
@@ -16,10 +13,15 @@ MediaConvert doesn't currently support the job priority feature in the Europe \(
 1. In the **Job settings** section on the right, for **Priority**, enter a number from \-50 to 50\. MediaConvert processes jobs with the highest value for **Priority** first\. If you don't specify a value, MediaConvert assigns the default value of 0\.
 
 **To set the priority for a job \(API, SDK, and AWS CLI\)**
-+ Set up your JSON job specification\. Either manually edit your JSON file, or use the console to generate it as follows:
 
-  1. Follow the previous procedure for the console\.
+1. Set up your JSON job specification\. Either manually edit your JSON file, or use the console to generate it as follows:
 
-  1. In the **Job** pane on the left, under **Job settings**, choose **Show job JSON**\.
+   1. Follow the previous procedure for the console\.
 
-  The JSON job specification has the value for the job's priority in the property `priority`\. This property is a direct child of `job`, which is the top level of the JSON job specification\. Set the value of `priority` to an integer in the range from \-50 to 50, inclusive\. The default value is 0\.
+   1. In the **Job** pane on the left, under **Job settings**, choose **Show job JSON**\.
+
+   The JSON job specification has the value for the job's priority in the property `priority`\. This property is a direct child of `job`, which is the top level of the JSON job specification\. Set the value of `priority` to an integer in the range from \-50 to 50, inclusive\. The default value is 0\.
+
+1. Submit your job according to the instructions in the *AWS Elemental MediaConvert API Reference\.*
+   + If you're using one of the AWS SDKs or the AWS CLI, see [Getting Started with MediaConvert Using the AWS SDKs or the AWS CLI](https://docs.aws.amazon.com/mediaconvert/latest/apireference/custom-endpoints.html)\.
+   + If you're calling the MediaConvert API directly, see [Getting Started with MediaConvert Using the API](https://docs.aws.amazon.com/mediaconvert/latest/apireference/getting-started.html)\.
