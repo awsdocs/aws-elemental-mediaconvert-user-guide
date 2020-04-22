@@ -16,7 +16,7 @@ MediaConvert supports the following combinations of output containers and video 
 | MPEG\-4 \(\.mp4\) | AV1, AVC \(H\.264\), HEVC \(H\.265\) | 
 | MPEG\-4 Flash \(\.f4v\) | AVC \(H\.264\), MPEG\-2 | 
 | MXF \(\.mxf\) | MPEG\-2 | 
-| QuickTime | AVC \(H\.264\), MPEG\-2, Apple ProRes If your output container is QuickTime and your output video codec is Apple ProRes, you must use AIFF for your output audio codec\.  | 
+| QuickTime | AVC \(H\.264\), MPEG\-2, Apple ProRes \([supported types](supported-types-for-apple-prores-outputs.md)\) If your output container is QuickTime and your output video codec is Apple ProRes, you must use AIFF for your output audio codec\.  | 
 | Smooth \(ISMV\) | AVC \(H\.264\) | 
 | Raw \(no container\) | AVC \(H\.264\), HEVC \(H\.265\), MPEG\-2 | 
 

@@ -20,8 +20,8 @@ MediaConvert supports the following combinations of input containers and video c
 | MPEG Transport Streams | AVC \(H\.264\), HEVC \(H\.265\), MPEG\-2, VC\-1 | 
 | MPEG\-1 System Streams |  MPEG\-1, MPEG\-2 | 
 | MPEG\-4 | Uncompressed, AVC Intra 50/100, DivX/Xvid, H\.261, H\.262, H\.263, AVC \(H\.264\), HEVC \(H\.265\), JPEG 2000, MJPEG, MPEG\-2, MPEG\-4 part 2, VC\-1 | 
-| MXF | Uncompressed, Apple ProRes, AVC Intra 50/100, DNxHD, DV/DVCPRO, DV25, DV50, DVCPro HD, AVC \(H\.264\), JPEG 2000 \(J2K\), MPEG\-2, Panasonic P2, SonyXDCam, SonyXDCam MPEG\-4 Proxy | 
-| QuickTime | Uncompressed, Apple ProRes, AVC Intra 50/100, DivX/Xvid, DV/DVCPRO, H\.261, H\.262, H\.263, AVC \(H\.264\), HEVC \(H\.265\), JPEG 2000 \(J2K\), MJPEG, MPEG\-2, MPEG\-4 part 2, QuickTime Animation \(RLE\) | 
+| MXF | Uncompressed, Apple ProRes \([supported types](supported-types-for-apple-prores-inputs.md)\), AVC Intra 50/100, DNxHD, DV/DVCPRO, DV25, DV50, DVCPro HD, AVC \(H\.264\), JPEG 2000 \(J2K\), MPEG\-2, Panasonic P2, SonyXDCam, SonyXDCam MPEG\-4 Proxy | 
+| QuickTime | Uncompressed, Apple ProRes \([supported types](supported-types-for-apple-prores-inputs.md)\), AVC Intra 50/100, DivX/Xvid, DV/DVCPRO, H\.261, H\.262, H\.263, AVC \(H\.264\), HEVC \(H\.265\), JPEG 2000 \(J2K\), MJPEG, MPEG\-2, MPEG\-4 part 2, QuickTime Animation \(RLE\) | 
 | WebM | VP8, VP9 | 
 | WMV/ASF | VC\-1 | 
 
