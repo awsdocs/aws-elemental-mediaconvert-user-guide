@@ -2,8 +2,8 @@
 
 Before you enable accelerated transcoding, make sure that your job conforms to the following requirements and limitations\.
 
-**Video Input Requirements**  
-The following table shows the supported video input codecs and containers\.
+**Video Inputs Supported with Accelerated Transcoding**  
+The following table shows the video input codecs and containers that MediaConvert supports with accelerated transcoding\.
 
 
 | Container | Video Codecs Supported with Container | 
@@ -14,11 +14,28 @@ The following table shows the supported video input codecs and containers\.
 | MXF | Apple ProRes, AVC Intra 50/100, AVC \(H\.264\), JPEG 2000 \(J2K\), MPEG\-2, SonyXDCam, SonyXDCam \(as an MPEG\-2 variant only\) | 
 | QuickTime | Apple ProRes, AVC Intra 50/100, AVC \(H\.264\), JPEG 2000 \(J2K\), MPEG\-2 | 
 
-**Output Restrictions**
-+ Use only supported combinations of container and codec\. The following table shows the supported video output codecs and containers\.    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/job-requirements.html)
+**Video Outputs Supported with Accelerated Transcoding**  
+The following table shows the video output codecs and containers that MediaConvert supports with accelerated transcoding\.
+
+
+| Container | Codecs Supported with Container | 
+| --- | --- | 
+| CMAF | AV1, AVC \(H\.264\), HEVC \(H\.265\) | 
+| DASH | AV1, AVC \(H\.264\), HEVC \(H\.265\) | 
+| HLS | AVC \(H\.264\), HEVC \(H\.265\) | 
+| MPEG\-2 TS | AVC \(H\.264\), HEVC \(H\.265\), MPEG\-2 | 
+| MPEG\-4 \(\.mp4\) | AV1, AVC \(H\.264\), HEVC \(H\.265\) | 
+| MPEG\-4 Flash \(\.f4v\) | AVC \(H\.264\) | 
+| MXF \(\.mxf\) | MPEG\-2 | 
+| QuickTime | AVC \(H\.264\), MPEG\-2 | 
+| Smooth \(ISMV\) | AVC \(H\.264\) | 
+| Raw \(no container\) | AVC \(H\.264\), HEVC \(H\.265\), MPEG\-2 | 
+
 **Note**  
 For MPEG\-2 TS outputs, to use accelerated transcoding, you must change the default value of **CBR** for **Transport stream settings** > **Rate mode** to **VBR**\.
+
+**Output Restrictions**
++ Use only supported combinations of container and codec\. The preceding table shows the supported video output codecs and containers\.
 + Use only supported output captions formats\. For accelerated transcoding, MediaConvert doesn’t support the following output captions formats:
   + Not supported: Burn\-in
   + Not supported: SCTE\-20

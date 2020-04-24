@@ -7,7 +7,7 @@ IMSC, SCC, SRT, STL, and TTML are sidecar captions formats\. With these formats,
 In all cases, you create one captions selector for each input captions file\.
 
 Provide the following values for the captions selector fields:
-+ **External captions file**: The URI to the captions input file that is stored in Amazon S3 or on an HTTP\(S\) server\. For Amazon S3 inputs, you can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\. For HTTP\(S\) inputs, provide the URL to your input video file\. For more information, see [HTTP Input Requirements](upload-input-files.md#http-input-requirements)\. \.
++ **External captions file**: The URI to the captions input file that is stored in Amazon S3 or on an HTTP\(S\) server\. For Amazon S3 inputs, you can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\. For HTTP\(S\) inputs, provide the URL to your input video file\. For more information, see [HTTP Input Requirements](upload-input-files.md#http-input-requirements)\. 
 + **Time delta**: \(Optional\) Use this setting if you need to adjust the sync between the captions and the video\. For more information, see [Use Cases for Time Delta](time-delta-use-cases.md)\.
 
   Enter a positive or negative number to modify the times in the captions file\. For example, type **15** to add 15 seconds to all the times in the captions file\. Type **\-5** to subtract 5 seconds from the times in the captions file\.

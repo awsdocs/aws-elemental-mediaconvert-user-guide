@@ -257,10 +257,10 @@ The following table lists supported output captions formats for this output cont
 | IMF Container Specify the CPL to define your input\.  | IMSC1 text profile |  Burn in  | 
 | MP4 Container | Embedded |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
 |   | SCTE\-20 |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-| MPEG2\-TS Container | DVB\-Sub | Burn inDVB\-Sub | 
+| MPEG2\-TS Container | DVB\-Sub | Burn in | 
 |  | Embedded |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
 |   | SCTE\-20 |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-|  | Teletext |  Burn in DVB\-Sub  | 
+|  | Teletext |  Burn in  | 
 | MXF Container | Ancillary |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
 | QuickTime Container | Embedded |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
 |   | SCTE\-20 |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 

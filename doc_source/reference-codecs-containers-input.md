@@ -13,6 +13,8 @@ MediaConvert supports the following combinations of input containers and video c
 | Container | Video Codecs Supported with Container | 
 | --- | --- | 
 | No Container | DV/DVCPRO, AVC \(H\.264\), HEVC \(H\.265\), MPEG\-1, MPEG\-2 | 
+| 3G2 | AVC \(H\.264\), H\.263, MPEG\-4 part 2 | 
+| 3GP | AVC \(H\.264\), H\.263, MPEG\-4 part 2 | 
 | Audio Video Interleave \(AVI\) | Uncompressed, Canopus HQ, DivX/Xvid, DV/DVCPRO | 
 | Adobe Flash | AVC \(H\.264\), Flash 9 File, H\.263 | 
 | Matroska | AVC \(H\.264\), PCM, MPEG\-2, MPEG\-4 part 2, VC\-1 | 
@@ -40,6 +42,8 @@ For outputs that contain only audio inside the output container, MediaConvert su
 | Container | Audio Codecs | 
 | --- | --- | 
 | No Container | PCM | 
+| 3G2 | AAC | 
+| 3GP | AAC | 
 | Audio Video Interleave \(AVI\) | Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), Dolby E frames carried in PCM streams, MP3, MPEG Audio, PCM | 
 | Adobe Flash | AAC | 
 | IMF | PCM | 
