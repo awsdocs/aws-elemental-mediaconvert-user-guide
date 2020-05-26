@@ -8,7 +8,7 @@ Next, create input selectors to flag the video, audio, and captions elements fro
 
 1. In the **Video selector** section, specify values for the fields that are applicable to your job\. 
 
-   You don't need to create a video selector because AWS Elemental MediaConvert automatically creates a video selector when you begin setting up a job\. However, the service doesn't automatically detect information about the video source\. You can provide this information in the **Video selector** fields\. If you leave these settings in their default state, you will create a valid job\. For more information about individual settings, choose the **Info** links on the console\.
+   You don't need to create a video selector because AWS Elemental MediaConvert automatically creates a video selector when you begin setting up a job\. However, the service doesn't automatically detect information about the video source\. You can provide this information in the **Video selector** fields\. If you leave these settings in their default state, you will create a valid job\. For more information about individual settings, choose the **Info** link next to each setting\.
 **Note**  
  AWS Elemental MediaConvert doesn't support inputs with multiple video streams, such as Quad 4k\. Each input can have only one video selector; therefore, there is no **Add video selector** button on the console\.
 

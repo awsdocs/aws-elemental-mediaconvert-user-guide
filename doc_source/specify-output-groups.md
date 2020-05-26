@@ -21,4 +21,4 @@ As shown in the preceding illustration, you can use AWS Elemental MediaConvert t
 You can optionally append a basename to your destination URI\. To create the file name of your final asset, the transcoding service uses this basename along with any name modifier that you provide in the individual output settings\.  
 If you don't provide a basename with your URI, the transcoding service generates a basename from the Input 1 file name, minus the extension\.
 
-1. Specify the values for any additional settings that apply to the entire output group\. These settings vary depending on the type of output group that you select\. For more information about individual settings, choose the **Info** links on the console\.
+1. Specify the values for any additional settings that apply to the entire output group\. These settings vary depending on the type of output group that you select\. For more information about individual settings, choose the **Info** link next to each setting\.

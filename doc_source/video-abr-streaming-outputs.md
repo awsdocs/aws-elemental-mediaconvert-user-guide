@@ -19,9 +19,9 @@ Although the job has only one video *input* selector, ABR streaming output group
 
 1. Specify your video settings as follows:
 
-   1. In the **Output settings** section, specify values for any remaining general settings\. Depending on the output group type, these settings might include transport stream settings or other container settings\. For more information about individual settings, choose the **Info** links on the console\.
+   1. In the **Output settings** section, specify values for any remaining general settings\. Depending on the output group type, these settings might include transport stream settings or other container settings\. For more information about individual settings, choose the **Info** link next to each setting\.
 
-   1. In the **Stream settings** section, specify values for video encoding\. The video settings are selected by default, so you don't need to explicitly choose this group of settings\. For more information about individual settings, choose the **Info** links on the console\.
+   1. In the **Stream settings** section, specify values for video encoding\. The video settings are selected by default, so you don't need to explicitly choose this group of settings\. For more information about individual settings, choose the **Info** link next to each setting\.
 **Note**  
 There is only one input video selector per job, so you don't need to explicitly choose it when you set up your video outputs\.
 

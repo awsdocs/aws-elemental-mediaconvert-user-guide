@@ -12,7 +12,7 @@ Many jobs have one output for each type of device that will play the video creat
 
 1. On the **Create job** page, in the **Job** pane on the left, choose an output\. Outputs are listed in the **Output groups** section, under their output group\.
 
-1. In the **Output settings** pane, choose an output preset from the **Preset** dropdown list\.
+1. In the **Output settings** pane, choose an output preset from the **Preset** dropdown list\. For more information about individual settings, choose the **Info** link next to each setting\.
 **Note**  
 The **Preset** dropdown list shows only the presets that work with the type of output group that the output is in\.
 

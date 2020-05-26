@@ -39,9 +39,9 @@ If you can't use presets in your output, but you want to use the preset settings
 
 1. Specify your output settings as follows:
 
-   1. In the **Output settings** section, specify values for any remaining general settings\. These settings vary depending on the container that you choose\. For more information about individual settings, choose the **Info** links on the console\.
+   1. In the **Output settings** section, specify values for any remaining general settings\. These settings vary depending on the container that you choose\. For more information about individual settings, choose the **Info** link next to each setting\.
 
-   1. In the **Stream settings** section, specify values for video encoding\. For more information about individual settings, choose the **Info** links on the console\.
+   1. In the **Stream settings** section, specify values for video encoding\. For more information about individual settings, choose the **Info** link next to each setting\.
 **Note**  
 The video settings tab is selected by default, so you don't need to explicitly choose this group of settings\. 
 **Note**  
@@ -51,6 +51,6 @@ There is only one input video selector per job, so you don't need to explicitly 
 
    1. Under **Stream settings**, for **Audio source**, choose one of the audio selectors that you created in [Step 2: Create Input Selectors for Video, Audio, and Captions](create-selectors.md)\.
 
-   1. In the **Stream settings** section, specify values for audio encoding\. For more information about individual settings, choose the **Info** links on the console\.
+   1. In the **Stream settings** section, specify values for audio encoding\. For more information about individual settings, choose the **Info** link next to each setting\.
 
    1. To include captions in the output, choose **Add captions** to display a group of captions settings\. For more information about setting up captions, see [Setting Up Captions in AWS Elemental MediaConvert Jobs](including-captions.md)\.

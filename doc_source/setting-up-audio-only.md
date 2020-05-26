@@ -4,6 +4,9 @@ You set up an audio\-only output in the same way that you set up an output that 
 
 For jobs with audio\-only outputs in a **File** output group, MediaConvert generates one separate audio\-only file for each output\. For jobs with audio\-only outputs in an **HLS** output group, MediaConvert creates a single rendition in the ABR stack for each output\.
 
+**Note**  
+For AAC streaming outputs, the initial segment is longer in duration than the others\. This is because, with AAC, the initial segment must contain silent AAC pre\-roll samples before the audible part of the segment\. MediaConvert accounts for these extra samples in the timestamps, so the audio plays back correctly\. 
+
 **To create an audio\-only output \(console\)**
 
 1. To confirm that MediaConvert supports your input files, consult the input table in [Supported Codecs and Containers for Audio\-Only Outputs](supported-codecs-containers-audio-only.md)\.

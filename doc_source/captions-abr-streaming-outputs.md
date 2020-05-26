@@ -22,7 +22,7 @@ Setting up captions can be complex\. For detailed information, see [Setting Up C
 
 1. Specify your captions settings as follows:
 
-   1. In the **Output settings** section, specify values for any remaining general settings\. For more information about individual settings, choose the **Info** links on the console\.
+   1. In the **Output settings** section, specify values for any remaining general settings\. For more information about individual settings, choose the **Info** link next to each setting\.
 
    1. Under **Stream settings**, for **Captions source**, choose one of the captions selectors that you created in [Step 2: Create Input Selectors for Video, Audio, and Captions](create-selectors.md)\.
 

@@ -16,23 +16,23 @@
 The following table lists supported output captions formats for this output container, sorted by the input captions container and input captions format\. 
 
 
-| Input Captions Container | Input Captions Format | Supported Output Captions Formats | 
+|  Input Captions Container  |  Input Captions Format  |  Supported Output Captions Formats  | 
 | --- | --- | --- | 
-| MP4 Container | Embedded |  IMSC \(as sidecar \.fmp4\)WebVTT | 
-|   | SCTE\-20 |  IMSC \(as sidecar \.fmp4\)WebVTT | 
-| MXF Container | Embedded |  IMSC \(as sidecar \.fmp4\)WebVTT | 
-|   | Ancillary |  IMSC \(as sidecar \.fmp4\)WebVTT | 
-| QuickTime Container | Embedded |  IMSC \(as sidecar \.fmp4\)WebVTT | 
-|   | Ancillary |  IMSC \(as sidecar \.fmp4\)WebVTT | 
-| Raw Container | IMSC1 text profile |  IMSC \(as sidecar \.fmp4\)WebVTT | 
+|  MP4 Container  |  Embedded  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
+|   |  SCTE\-20  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
+|  MXF Container  |  Embedded  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
+|   |  Ancillary  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
+|  QuickTime Container  |  Embedded  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
+|   |  Ancillary  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
+|  Raw Container  |  IMSC1 text profile  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
 |   |  SRT  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
-|   | TTML |  IMSC \(as sidecar \.fmp4\)WebVTT | 
-|   | STL |  IMSC \(as sidecar \.fmp4\)WebVTT | 
-|   | SCC |  IMSC \(as sidecar \.fmp4\)WebVTT | 
-|   | SMI |  IMSC \(as sidecar \.fmp4\)WebVTT | 
-| MPEG2\-TS Container | Embedded |  IMSC \(as sidecar \.fmp4\)WebVTT | 
-|   | SCTE\-20 |  IMSC \(as sidecar \.fmp4\)WebVTT | 
-|   | Teletext |  IMSC \(as sidecar \.fmp4\)WebVTT | 
+|   |  TTML  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
+|   |  STL  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
+|   |  SCC  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
+|   |  SMI  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
+|  MPEG2\-TS Container  |  Embedded  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
+|   |  SCTE\-20  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
+|   |  Teletext  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
 
 **Embedded** captions formats include:
 + CEA\-608
@@ -49,28 +49,28 @@ The following table lists supported output captions formats for this output cont
 The following table lists supported output captions formats for this output container, sorted by the input captions container and input captions format\. 
 
 
-| Input Captions Container | Input Captions Format | Supported Output Captions Formats | 
+|  Input Captions Container  |  Input Captions Format  |  Supported Output Captions Formats  | 
 | --- | --- | --- | 
-| IMF Container Specify the CPL to define your input\.  | IMSC1 text profile | Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\)TTML \(as sidecar \.ttml\) | 
-| MP4 Container | Embedded | Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) WebVTT | 
-|   | SCTE\-20 | Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) | 
-| MPEG2\-TS Container | DVB\-Sub | Burn in | 
-|   | Embedded | Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)WebVTT | 
-|   | SCTE\-20 | Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)WebVTT | 
-|   | Teletext | Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) | 
-| MXF Container | Embedded | Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) | 
-|   | SCTE\-20 | Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) | 
-|   | Ancillary | Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) | 
-|   | Teletext | Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) | 
-| QuickTime Container | Embedded | Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) | 
-|   | SCTE\-20 | Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) | 
-|   | Ancillary | Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) | 
-| Raw Container |  IMSC1 text profile  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
+|  IMF Container  Specify the CPL to define your input\.   |  IMSC1 text profile  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
+|  MP4 Container  |  Embedded  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) WebVTT  | 
+|   |  SCTE\-20  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
+|  MPEG2\-TS Container  | DVB\-Sub |  Burn in  | 
+|   |  Embedded  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) WebVTT  | 
+|   |  SCTE\-20  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) WebVTT  | 
+|   |  Teletext  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
+|  MXF Container  |  Embedded  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
+|   |  SCTE\-20  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
+|   |  Ancillary  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
+|   |  Teletext  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
+|  QuickTime Container  |  Embedded  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
+|   |  SCTE\-20  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
+|   |  Ancillary  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
+|  Raw Container  |  IMSC1 text profile  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
 |  |  SRT  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
-|   | TTML | Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) | 
-|   | STL | Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) | 
-|   | SCC | Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) | 
-|   | SMI | Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) | 
+|   |  TTML  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
+|   |  STL  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
+|   |  SCC  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
+|   |  SMI  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
 
 **Embedded** captions formats include:
 + CEA\-608
@@ -95,28 +95,28 @@ The service doesn't support captions formatting and positioning
 You can use only [Teletext level 1\.5](https://en.wikipedia.org/wiki/World_System_Teletext) languages
 
 
-| Input Captions Container | Input Captions Format | Supported Output Captions Formats | 
+|  Input Captions Container  |  Input Captions Format  |  Supported Output Captions Formats  | 
 | --- | --- | --- | 
-| IMF Container Specify the CPL to define your input\.  | IMSC1 text profile | WebVTT | 
-| MP4 Container | Embedded |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
-|   | SCTE\-20 |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
-| MXF Container | Embedded |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
-|   | SCTE\-20 |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
-|   | Ancillary |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
-|   | Teletext |  Burn in  | 
-| QuickTime Container | Embedded |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
-|   | SCTE\-20 |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
-|   | Ancillary |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
-| Raw Container | IMSC1 text profile |  Burn in WebVTT  | 
+|  IMF Container  Specify the CPL to define your input\.   |  IMSC1 text profile  |  WebVTT  | 
+|  MP4 Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
+|   |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
+|  MXF Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
+|   |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
+|   |  Ancillary  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
+|   |  Teletext  |  Burn in  | 
+|  QuickTime Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
+|   |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
+|   |  Ancillary  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
+|  Raw Container  |  IMSC1 text profile  |  Burn in WebVTT  | 
 |  |  SRT  |  Burn in WebVTT  | 
-|   | TTML |  Burn in WebVTT  | 
-|   | STL |  Burn in WebVTT  | 
-|   | SCC |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
-|   | SMI |  Burn in WebVTT  | 
-| MPEG2\-TS Container | Embedded |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
-|   | SCTE\-20 |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
-|   | Teletext |  Burn in WebVTT  | 
-|   | DVB\-Sub | Burn in | 
+|   |  TTML  |  Burn in WebVTT  | 
+|   |  STL  |  Burn in WebVTT  | 
+|   |  SCC  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
+|   |  SMI  |  Burn in WebVTT  | 
+|  MPEG2\-TS Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
+|   |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
+|   |  Teletext  |  Burn in WebVTT  | 
+|   | DVB\-Sub |  Burn in  | 
 
 **Embedded** captions formats include:
 + CEA\-608
@@ -133,28 +133,28 @@ You can use only [Teletext level 1\.5](https://en.wikipedia.org/wiki/World_Syste
 The following table lists supported output captions formats for this output container, sorted by the input captions container and input captions format\. 
 
 
-| Input Captions Container | Input Captions Format | Supported Output Captions Formats | 
+|  Input Captions Container  |  Input Captions Format  |  Supported Output Captions Formats  | 
 | --- | --- | --- | 
-| MP4 Container | Embedded | Burn inTTML | 
-|   | SCTE\-20 | Burn inTTML | 
-| MXF Container | Embedded | Burn inTTML | 
-|   | SCTE\-20 | Burn inTTML | 
-|   | Ancillary | Burn inTTML | 
-|   | Teletext | Burn inTTML | 
-| QuickTime Container | Embedded | Burn inTTML | 
-|   | SCTE\-20 | Burn inTTML | 
-|   | Ancillary | Burn inTTML | 
-| Raw Container | IMSC1 text profile | Burn inTTML | 
+|  MP4 Container  |  Embedded  |  Burn in TTML  | 
+|   |  SCTE\-20  |  Burn in TTML  | 
+|  MXF Container  |  Embedded  |  Burn in TTML  | 
+|   |  SCTE\-20  |  Burn in TTML  | 
+|   |  Ancillary  |  Burn in TTML  | 
+|   |  Teletext  |  Burn in TTML  | 
+|  QuickTime Container  |  Embedded  |  Burn in TTML  | 
+|   |  SCTE\-20  |  Burn in TTML  | 
+|   |  Ancillary  |  Burn in TTML  | 
+|  Raw Container  |  IMSC1 text profile  |  Burn in TTML  | 
 |  |  SRT  |  Burn in TTML  | 
-|   | SMI | Burn inTTML | 
-|   | TTML | Burn inTTML | 
-|   | STL | Burn inTTML | 
-|   | SCC | Burn inTTML | 
-|   | SMI | Burn inTTML | 
-| MPEG2\-TS Container | Embedded | Burn inTTML | 
-|   | SCTE\-20 | Burn inTTML | 
-|   | Teletext | Burn inTTML | 
-|   | DVB\-Sub | Burn in | 
+|   |  SMI  |  Burn in TTML  | 
+|   |  TTML  |  Burn in TTML  | 
+|   |  STL  |  Burn in TTML  | 
+|   |  SCC  |  Burn in TTML  | 
+|   |  SMI  |  Burn in TTML  | 
+|  MPEG2\-TS Container  |  Embedded  |  Burn in TTML  | 
+|   |  SCTE\-20  |  Burn in TTML  | 
+|   |  Teletext  |  Burn in TTML  | 
+|   | DVB\-Sub |  Burn in  | 
 
 **Embedded** captions formats include:
 + CEA\-608
@@ -171,27 +171,27 @@ The following table lists supported output captions formats for this output cont
 The following table lists supported output captions formats for this output container, sorted by the input captions container and input captions format\. 
 
 
-| Input Captions Container | Input Captions Format | Supported Output Captions Formats | 
+|  Input Captions Container  |  Input Captions Format  |  Supported Output Captions Formats  | 
 | --- | --- | --- | 
-| MP4 Container | Embedded | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | SCTE\-20 | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-| MXF Container | Embedded | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | SCTE\-20 | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | Ancillary | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | Teletext | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-| QuickTime Container | Embedded | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | SCTE\-20 | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | Ancillary | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-| Raw Container | IMSC1 text profile | Burn in | 
+|  MP4 Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|  MXF Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  Ancillary  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  Teletext  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|  QuickTime Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  Ancillary  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|  Raw Container  |  IMSC1 text profile  |  Burn in  | 
 |  |  SRT  |  Burn in  | 
-|   | TTML | Burn in | 
-|   | STL | Burn in | 
-|   | SCC | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | SMI | Burn in | 
-| MPEG2\-TS Container | Embedded | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | SCTE\-20 | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | Teletext | Burn in | 
-|   | DVB\-Sub | Burn in | 
+|   |  TTML  |  Burn in  | 
+|   |  STL  |  Burn in  | 
+|   |  SCC  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  SMI  |  Burn in  | 
+|  MPEG2\-TS Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  Teletext  |  Burn in  | 
+|   | DVB\-Sub |  Burn in  | 
 
 **Embedded** captions formats include:
 + CEA\-608
@@ -213,28 +213,28 @@ The service doesn't support captions formatting and positioning
 You can use only [Teletext level 1\.5](https://en.wikipedia.org/wiki/World_System_Teletext) languages
 
 
-| Input Captions Container | Input Captions Format | Supported Output Captions Formats | 
+|  Input Captions Container  |  Input Captions Format  |  Supported Output Captions Formats  | 
 | --- | --- | --- | 
-| IMF Container Specify the CPL to define your input\.  | IMSC1 text profile |  Burn in DVB\-Sub Teletext  | 
-| MP4 Container | Embedded |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-|   | SCTE\-20 |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-| MXF Container | Embedded |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-|   | SCTE\-20 |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-|   | Ancillary |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-|   | Teletext |  Burn in DVB\-Sub Teletext  | 
-| QuickTime Container | Embedded |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-|   | SCTE\-20 |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-|   | Ancillary |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-| Raw Container | IMSC1 text profile |  Burn in Teletext DVB\-Sub  | 
+|  IMF Container  Specify the CPL to define your input\.   |  IMSC1 text profile  |  Burn in DVB\-Sub Teletext  | 
+|  MP4 Container  |  Embedded  |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  SCTE\-20  |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|  MXF Container  |  Embedded  |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  SCTE\-20  |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  Ancillary  |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  Teletext  |  Burn in DVB\-Sub Teletext  | 
+|  QuickTime Container  |  Embedded  |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  SCTE\-20  |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  Ancillary  |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|  Raw Container  |  IMSC1 text profile  |  Burn in Teletext DVB\-Sub  | 
 |  |  SRT  |  Burn in Teletext  | 
-|   | SMI |  Burn in DVB\-Sub  | 
-|   | TTML |  Burn in Teletext DVB\-Sub  | 
-|   | STL |  Burn in Teletext DVB\-Sub  | 
-|   | SCC |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-|   | SMI |  Burn in DVB\-Sub  | 
-| MPEG2\-TS Container | Embedded | Burn inDVB\-SubEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | SCTE\-20 | Burn inDVB\-SubEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | Teletext |  Burn in DVB\-Sub Teletext  | 
+|   |  SMI  |  Burn in DVB\-Sub  | 
+|   |  TTML  |  Burn in Teletext DVB\-Sub  | 
+|   |  STL  |  Burn in Teletext DVB\-Sub  | 
+|   |  SCC  |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  SMI  |  Burn in DVB\-Sub  | 
+|  MPEG2\-TS Container  |  Embedded  |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  SCTE\-20  |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  Teletext  |  Burn in DVB\-Sub Teletext  | 
 |   | DVB\-Sub |  Burn in DVB\-Sub  | 
 
 **Embedded** captions formats include:
@@ -252,25 +252,25 @@ You can use only [Teletext level 1\.5](https://en.wikipedia.org/wiki/World_Syste
 The following table lists supported output captions formats for this output container, sorted by the input captions container and input captions format\. 
 
 
-| Input Captions Container | Input Captions Format | Supported Output Captions Formats | 
+|  Input Captions Container  |  Input Captions Format  |  Supported Output Captions Formats  | 
 | --- | --- | --- | 
-| IMF Container Specify the CPL to define your input\.  | IMSC1 text profile |  Burn in  | 
-| MP4 Container | Embedded |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-|   | SCTE\-20 |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-| MPEG2\-TS Container | DVB\-Sub | Burn in | 
-|  | Embedded |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-|   | SCTE\-20 |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-|  | Teletext |  Burn in  | 
-| MXF Container | Ancillary |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-| QuickTime Container | Embedded |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-|   | SCTE\-20 |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-|   | Ancillary |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-| Raw Container | IMSC1 text profile |  Burn in  | 
+|  IMF Container  Specify the CPL to define your input\.   |  IMSC1 text profile  |  Burn in  | 
+|  MP4 Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|  MPEG2\-TS Container  | DVB\-Sub |  Burn in  | 
+|  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|  |  Teletext  |  Burn in  | 
+|  MXF Container  |  Ancillary  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|  QuickTime Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  Ancillary  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|  Raw Container  |  IMSC1 text profile  |  Burn in  | 
 |  |  SRT  |  Burn in  | 
-|   | TTML |  Burn in  | 
-|   | STL |  Burn in  | 
-|   | SCC |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
-|   | SMI |  Burn in  | 
+|   |  TTML  |  Burn in  | 
+|   |  STL  |  Burn in  | 
+|   |  SCC  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  SMI  |  Burn in  | 
 
 **Embedded** captions formats include:
 + CEA\-608
@@ -287,24 +287,24 @@ The following table lists supported output captions formats for this output cont
 The following table lists supported output captions formats for this output container, sorted by the input captions container and input captions format\. 
 
 
-| Input Captions Container | Input Captions Format | Supported Output Captions Formats | 
+|  Input Captions Container  |  Input Captions Format  |  Supported Output Captions Formats  | 
 | --- | --- | --- | 
-| IMF Container Specify the CPL to define your input\.  | IMSC1 text profile | Burn in | 
-| MP4 Container | Embedded | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | SCTE\-20 | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-| MXF Container | Embedded | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | SCTE\-20 | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | Ancillary | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | Teletext | Burn in | 
-| QuickTime Container | Embedded | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | SCTE\-20 | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   | Ancillary | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-| Raw Container | IMSC1 text profile | Burn in | 
+|  IMF Container  Specify the CPL to define your input\.   |  IMSC1 text profile  |  Burn in  | 
+|  MP4 Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|  MXF Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  Ancillary  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  Teletext  |  Burn in  | 
+|  QuickTime Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  Ancillary  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded   | 
+|  Raw Container  |  IMSC1 text profile  |  Burn in  | 
 |  |  SRT  |  Burn in  | 
-|   | TTML | Burn in | 
-|   | STL | Burn in | 
-|   | SCC | Burn inEmbeddedEmbedded plus SCTE\-20SCTE\-20 plus embedded | 
-|   |  SMI  | Burn in | 
+|   |  TTML  |  Burn in  | 
+|   |  STL  |  Burn in  | 
+|   |  SCC  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|   |  SMI  |  Burn in  | 
 |  MPEG2\-TS Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
 |   |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
 |   |  Teletext  |  Burn in  | 

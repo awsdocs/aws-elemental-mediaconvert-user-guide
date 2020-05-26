@@ -15,4 +15,4 @@ Global job settings apply to every output that the job creates, as shown in the 
 If your job incorporates audio or captions provided in a separate file from your input, or if you use the graphic overlay \(image inserter\) feature, it is especially important to get these settings right\.  
 There are three distinct groups of timecode settings\. Global job timecode configuration is one of those three\. For more information about the different sets of timecode settings and how AWS Elemental MediaConvert manages timecodes, see [Setting Up Timecodes](setting-up-timecode.md)\.
 
-1. Optionally, specify values for the other job settings and enable global processors\. For more information about individual settings, choose the **Info** links on the console\.
+1. Optionally, specify values for the other job settings and enable global processors\. For more information about individual settings, choose the **Info** link next to each setting\.
