@@ -1,4 +1,4 @@
-# Creating a Custom Preset Based On a System Preset in MediaConvert<a name="create-custom-preset-from-system-preset"></a>
+# Creating a custom preset based on a system preset in MediaConvert<a name="create-custom-preset-from-system-preset"></a>
 
 MediaConvert doesn't allow you to modify system presets\. If you want a preset that is like a system preset but slightly modified, you can duplicate the system preset, customize the settings, and save it as a custom preset\.
 

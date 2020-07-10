@@ -1,4 +1,4 @@
-# Setting Up Audio\-Only Outputs<a name="setting-up-audio-only"></a>
+# Setting up audio\-only outputs<a name="setting-up-audio-only"></a>
 
 You set up an audio\-only output in the same way that you set up an output that contains video, except that you don't include video or captions\. 
 
@@ -9,12 +9,12 @@ For AAC streaming outputs, the initial segment is longer in duration than the ot
 
 **To create an audio\-only output \(console\)**
 
-1. To confirm that MediaConvert supports your input files, consult the input table in [Supported Codecs and Containers for Audio\-Only Outputs](supported-codecs-containers-audio-only.md)\.
+1. To confirm that MediaConvert supports your input files, consult the input table in [Supported codecs and containers for audio\-only outputs](supported-codecs-containers-audio-only.md)\.
 
-1. Set up your job as described in [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md), but with the following differences:
+1. Set up your job as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md), but with the following differences:
    + Put all of your outputs in a **File** output group, or put all of your outputs in an **HLS** output group\.
    + Remove the **Video** tab in the **Encoding settings** section of your output\.
-   + Choose a supported output container and audio codec from the output table in [Supported Codecs and Containers for Audio\-Only Outputs](supported-codecs-containers-audio-only.md)\.
+   + Choose a supported output container and audio codec from the output table in [Supported codecs and containers for audio\-only outputs](supported-codecs-containers-audio-only.md)\.
    + Include only one group of audio settings per output\. That is, don't choose **Add audio** to create an **Audio 2** tab under **Encoding settings**\.
 
 1. If your outputs are in an **HLS** output group, choose a container for the audio\-only output\.
@@ -23,7 +23,7 @@ For AAC streaming outputs, the initial segment is longer in duration than the ot
 
 **To create an audio\-only output \(API, SDK, and AWS CLI\)**
 
-1. To confirm that MediaConvert supports your input files, consult the input table in [Supported Codecs and Containers for Audio\-Only Outputs](supported-codecs-containers-audio-only.md)\.
+1. To confirm that MediaConvert supports your input files, consult the input table in [Supported codecs and containers for audio\-only outputs](supported-codecs-containers-audio-only.md)\.
 
 1. Set up your JSON job specification\. Either manually edit your JSON file, or use the console to generate it as follows:
 

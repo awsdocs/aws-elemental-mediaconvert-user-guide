@@ -1,8 +1,8 @@
-# Putting Timecodes In Your Outputs<a name="timecode-output"></a>
+# Putting timecodes in your outputs<a name="timecode-output"></a>
 
 There are two timecode\-related settings that you can adjust differently for each output: **Timecode insertion** and **Timecode burn\-in**\.
 
-## Inserting Timecode Metadata<a name="timecode-insertion"></a>
+## Inserting timecode metadata<a name="timecode-insertion"></a>
 
 The **Timecode insertion** setting determines whether a given output has timecodes embedded in its metadata\. MediaConvert automatically puts this information in the appropriate place, depending on the output codec\. For MPEG\-2 and QuickTime codecs, such as Apple ProRes, the service inserts the timecodes in the video I\-frame metadata\. For H\.265 \(HEVC\) and H\.264 \(AVC\), the service inserts the timecodes in the supplemental enhancement information \(SEI\) picture timing message\. 
 
@@ -17,7 +17,7 @@ The **Timecode insertion** setting determines whether a given output has timecod
 
   Use `PIC_TIMING_SEI` to include timecode metadata\. Use `DISABLED` to omit timecode metadata\.
 
-## Burning in Timecodes on the Video Frames<a name="timecode-burn-in"></a>
+## Burning in timecodes on the video frames<a name="timecode-burn-in"></a>
 
 The **Timecode burn\-in** setting determines whether a given output has visible timecodes inscribed into the video frames themselves\. The timecodes are not an overlay, but rather a permanent part of the video frames\.
 

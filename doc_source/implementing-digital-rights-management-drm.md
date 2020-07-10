@@ -1,4 +1,4 @@
-# Implementing Digital Rights Management \(DRM\)<a name="implementing-digital-rights-management-drm"></a>
+# Implementing digital rights management \(DRM\)<a name="implementing-digital-rights-management-drm"></a>
 
 DRM is one of the three encryption options that you can use with AWS Elemental MediaConvert\. You can use it in conjunction with the other two options\. The following illustration shows the three options\.
 
@@ -13,6 +13,6 @@ To get set up, see [https://docs\.aws\.amazon\.com/speke/latest/documentation/cu
 The only exception to this requirement is with the Apple HLS streaming protocol, where you can choose to either define your own static keys or use a DRM provider\. 
 
 **Topics**
-+ [Encrypting Content](encrypting-content.md)
-+ [Using Encrypted Content Keys with DRM](drm-content-key-encryption.md)
-+ [Troubleshooting DRM Encryption](troubleshooting-encryption.md)
++ [Encrypting content](encrypting-content.md)
++ [Using encrypted content keys with DRM](drm-content-key-encryption.md)
++ [Troubleshooting DRM encryption](troubleshooting-encryption.md)

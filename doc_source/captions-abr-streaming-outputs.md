@@ -1,6 +1,6 @@
-# Creating Captions ABR Streaming Outputs<a name="captions-abr-streaming-outputs"></a>
+# Creating captions ABR streaming outputs<a name="captions-abr-streaming-outputs"></a>
 
-Setting up captions can be complex\. For detailed information, see [Setting Up Captions in AWS Elemental MediaConvert Jobs](including-captions.md)\. For basic instructions, complete the following procedure\.
+Setting up captions can be complex\. For detailed information, see [Setting up captions in MediaConvert jobs](including-captions.md)\. For basic instructions, complete the following procedure\.
 
 **To create and set up captions ABR streaming outputs**
 
@@ -24,6 +24,6 @@ Setting up captions can be complex\. For detailed information, see [Setting Up C
 
    1. In the **Output settings** section, specify values for any remaining general settings\. For more information about individual settings, choose the **Info** link next to each setting\.
 
-   1. Under **Stream settings**, for **Captions source**, choose one of the captions selectors that you created in [Step 2: Create Input Selectors for Video, Audio, and Captions](create-selectors.md)\.
+   1. Under **Stream settings**, for **Captions source**, choose one of the captions selectors that you created in [Step 2: Create input selectors for video, audio, and captions](create-selectors.md)\.
 
    1. In the **Stream settings** section, specify values for the remaining captions settings\. 

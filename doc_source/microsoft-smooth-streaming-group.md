@@ -1,4 +1,4 @@
-# Microsoft Smooth Streaming Group<a name="microsoft-smooth-streaming-group"></a>
+# Microsoft Smooth Streaming group<a name="microsoft-smooth-streaming-group"></a>
 
 ```
 {

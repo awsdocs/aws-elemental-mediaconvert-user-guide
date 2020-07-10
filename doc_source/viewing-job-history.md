@@ -1,4 +1,4 @@
-# Viewing Your AWS Elemental MediaConvert Job History<a name="viewing-job-history"></a>
+# Viewing your AWS Elemental MediaConvert job history<a name="viewing-job-history"></a>
 
 You can view the recent history of MediaConvert jobs that you created with your AWS account in a given Region\. After three months, the service automatically deletes the record of a job\.
 

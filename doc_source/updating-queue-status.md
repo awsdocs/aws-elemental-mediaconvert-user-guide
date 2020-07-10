@@ -1,4 +1,4 @@
-# Pausing and Reactivating On\-Demand Queues in AWS Elemental MediaConvert<a name="updating-queue-status"></a>
+# Pausing and reactivating on\-demand queues in AWS Elemental MediaConvert<a name="updating-queue-status"></a>
 
 When you pause a queue, AWS Elemental MediaConvert doesn't start processing any jobs in that queue\. MediaConvert finishes processing any job that is already running when you pause it\.
 

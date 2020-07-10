@@ -1,4 +1,4 @@
-# Deleting an On\-Demand Queue in AWS Elemental MediaConvert<a name="deleting-a-queue"></a>
+# Deleting an on\-demand queue in AWS Elemental MediaConvert<a name="deleting-a-queue"></a>
 
 You can delete any queue other than the default queue\.
 

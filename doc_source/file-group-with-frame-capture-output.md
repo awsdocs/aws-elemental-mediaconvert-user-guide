@@ -1,4 +1,4 @@
-# File Group with a Frame Capture Output<a name="file-group-with-frame-capture-output"></a>
+# File group with a frame capture output<a name="file-group-with-frame-capture-output"></a>
 
 A *frame capture output* is an output that you set up to create \.jpeg still images of each I\-frame in your video\. You set it up like a regular **File group** output group, except that you remove the audio component, choose **No container** for the container, and then choose **Frame capture to JPEG** for the video codec\.
 

@@ -1,4 +1,4 @@
-# Listing and Viewing Job Templates in AWS Elemental MediaConvert<a name="listing-job-templates"></a>
+# Listing and viewing job templates in AWS Elemental MediaConvert<a name="listing-job-templates"></a>
 
 You can list the system job templates that are included with MediaConvert and the custom job templates that you have added in a region\. You can also view the settings for an individual job template\.
 

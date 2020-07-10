@@ -1,4 +1,4 @@
-# Creating an AWS Elemental MediaConvert Job by Duplicating a Completed Job<a name="create-new-job-from-completed-job"></a>
+# Creating an AWS Elemental MediaConvert job by duplicating a completed job<a name="create-new-job-from-completed-job"></a>
 
 To create a job that is similar to one that you ran before, you can duplicate a completed job from your job history, and then modify any settings that you need to change\.
 

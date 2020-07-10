@@ -1,19 +1,19 @@
-# AWS Elemental MediaConvert Related Information<a name="related-information.xml"></a>
+# AWS Elemental MediaConvert related information<a name="related-information.xml"></a>
 
 Find links to code samples, tutorials, and other helpful information for getting started with AWS Elemental MediaConvert\.
 
 **Code samples and tutorials for AWS Elemental MediaConvert VOD solutions**  
 Find code samples and tutorials for automating video on demand \(VOD\) workflows: 
-+ **[VOD Automation Toolkit](https://github.com/aws-samples/aws-media-services-vod-automation)** – Sample code and AWS CloudFormation scripts on GitHub for automating video on demand \(VOD\) workflows on AWS\.
-+ **[Video on Demand at AWS](https://aws.amazon.com/solutions/video-on-demand-on-aws/)** – Sample code, deployment guide, and AWS CloudFormation template in *AWS Solutions*\. The workflow in this solution ingests source videos, processes the videos for playback on a wide range of devices, and stores the transcoded media files for on\-demand delivery to end users through Amazon CloudFront\.
++ **[VOD automation toolkit](https://github.com/aws-samples/aws-media-services-vod-automation)** – Sample code and AWS CloudFormation scripts on GitHub for automating video on demand \(VOD\) workflows on AWS\.
++ **[Video on demand at AWS](https://aws.amazon.com/solutions/video-on-demand-on-aws/)** – Sample code, deployment guide, and AWS CloudFormation template in *AWS Solutions*\. The workflow in this solution ingests source videos, processes the videos for playback on a wide range of devices, and stores the transcoded media files for on\-demand delivery to end users through Amazon CloudFront\.
 
-Find code for a complete VOD workflow from ingest through delivery in [Video on Demand at AWS](https://aws.amazon.com/solutions/video-on-demand-on-aws/) in *AWS Solutions*\.
+Find code for a complete VOD workflow from ingest through delivery in [Video on demand at AWS](https://aws.amazon.com/solutions/video-on-demand-on-aws/) in *AWS Solutions*\.
 
 **AWS Elemental video basics**  
 Learn the basics about AWS Media Services, video compression, and video delivery\. Register for any of our free 30\-minute online training courses:
-+ **[Introduction to AWS Media Services](https://www.aws.training/account/logonoptions?returnUrl=%2flearningobject%2fwbc%3fid%3d18343)**
-+  **[AWS Elemental Foundations \- Video Compression Basics](https://www.aws.training/account/logonoptions?returnUrl=%2flearningobject%2fwbc%3fid%3d17775)**
-+  **[AWS Elemental Foundations \- Video Delivery Basics](https://www.aws.training/account/logonoptions?returnUrl=%2flearningobject%2fwbc%3fid%3d17887)** 
++ **[Introduction to AWS media services](https://www.aws.training/account/logonoptions?returnUrl=%2flearningobject%2fwbc%3fid%3d18343)**
++  **[AWS Elemental foundations \- video compression basics](https://www.aws.training/account/logonoptions?returnUrl=%2flearningobject%2fwbc%3fid%3d17775)**
++  **[AWS Elemental foundations \- video delivery basics](https://www.aws.training/account/logonoptions?returnUrl=%2flearningobject%2fwbc%3fid%3d17887)** 
 
 **AWS learning resources**  
 Explore the places to learn about using AWS services:

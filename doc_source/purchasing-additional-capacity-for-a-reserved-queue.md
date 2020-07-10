@@ -1,4 +1,4 @@
-# Purchasing Additional Capacity for a Reserved Queue in AWS Elemental MediaConvert<a name="purchasing-additional-capacity-for-a-reserved-queue"></a>
+# Purchasing additional capacity for a reserved queue in AWS Elemental MediaConvert<a name="purchasing-additional-capacity-for-a-reserved-queue"></a>
 
 If you want to increase the number of jobs that your reserved queue can process at once, you can purchase additional capacity for it\. To purchase additional capacity, you extend your existing commitment with a new 12\-month commitment for a larger number of RTS\. The new commitment begins when you purchase the additional capacity\. You can't decrease the number of RTS in your reserved queue\.
 

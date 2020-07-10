@@ -1,4 +1,4 @@
-# Example Job Settings<a name="example-job-settings"></a>
+# Example job settings<a name="example-job-settings"></a>
 
 The provided job settings are recommended values that should work well for most jobs\. Adapt them as necessary to suit your specific workflow\.
 
@@ -8,10 +8,10 @@ To use these examples, replace the following placeholder values with actual valu
 + s3://OUTPUT HERE
 
 **Topics**
-+ [Example—mp4 Output](#mp4-example)
-+ [Example—ABR Output](#HLS-ABR-example)
++ [Example—mp4 output](#mp4-example)
++ [Example—ABR output](#HLS-ABR-example)
 
-## Example—mp4 Output<a name="mp4-example"></a>
+## Example—mp4 output<a name="mp4-example"></a>
 
 ```
 {
@@ -150,7 +150,7 @@ To use these examples, replace the following placeholder values with actual valu
 }
 ```
 
-## Example—ABR Output<a name="HLS-ABR-example"></a>
+## Example—ABR output<a name="HLS-ABR-example"></a>
 
 ```
 {

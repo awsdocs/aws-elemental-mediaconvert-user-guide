@@ -1,4 +1,4 @@
-# How Output Groups Affect Outputs in MediaConvert<a name="outputs-file-ABR"></a>
+# How output groups affect outputs in MediaConvert<a name="outputs-file-ABR"></a>
 
 An MediaConvert output functions differently depending on which type of output group it is a part of\. In a **File** output group, each output is a standalone file that contains all the video, audio, and captions together\. 
 
@@ -14,4 +14,4 @@ The following illustration shows an MediaConvert job that generates two standalo
 
 ![\[A single file output group with two outputs results in two standalone files. A single Apple HLS output group with seven outputs results in a single viewable package with seven renditions.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/jobSetupToOutput.png)
 
-For information about setting up output groups and outputs within your job, see [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md)\.
+For information about setting up output groups and outputs within your job, see [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md)\.

@@ -1,4 +1,4 @@
-# Choosing Between Input Overlay and Output Overlay<a name="choosing-between-input-overlay-and-output-overlay"></a>
+# Choosing between input overlay and output overlay<a name="choosing-between-input-overlay-and-output-overlay"></a>
 
 You can add still image overlays to your inputs, your outputs, or both\. Where you specify your graphic overlays affects where in your transcoded assets the overlays appear\. 
 
@@ -9,7 +9,7 @@ In this diagram, all overlays are specified for the entire duration of the input
 
 ![\[The job has three inputs. Input 1 and Input 3 have an input overlay. The job has two outputs. Output 1 has no overlays; output 2 has an output overlay. The job produces two output files, which have the content from each of the inputs joined together. Output 1 has only the input overlays, which appear at the beginning and end of the final asset. The middle portion of Output 1, made from the content of Input 2, has no overlay. Output 2 has the overlays in Output 1, plus the output overlay for the entire duration of the asset.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/ImageInserter.png)
 
-## Input Overlays<a name="input-overlays"></a>
+## Input overlays<a name="input-overlays"></a>
 
 Choose input overlay for the following situations:
 + You want the same overlays on every output\.
@@ -20,7 +20,7 @@ These examples are situations where you would use input overlay:
 + Some of your inputs are programming that you want your logo on\. Other inputs are advertisements or blank slates that you don't want your overlay on\.
 + Your job has only one input and you want your overlay to appear for the entire duration of the video on every output of the job\.
 
-## Output Overlays<a name="output-overlays"></a>
+## Output overlays<a name="output-overlays"></a>
 
 Choose output overlay for the following situations:
 + You want overlays on some outputs but not others\.

@@ -1,4 +1,4 @@
-# Replacing Inaccurate or Missing HDR Metadata<a name="replacing-inaccurate-or-missing-hdr-metadata"></a>
+# Replacing inaccurate or missing HDR metadata<a name="replacing-inaccurate-or-missing-hdr-metadata"></a>
 
 If your input video is missing HDR metadata, or has HDR metadata that is wrong, you can add it or overwrite it in the input video settings\. For HLG and HDR 10, you can specify the correct color space\. For HDR 10, you can also specify accurate master display information\.
 
@@ -7,7 +7,7 @@ You use the input settings to supply metadata that is wrong or missing from your
 
 **To replace inaccurate or missing HDR metadata**
 
-1. Set up your transcoding job as usual\. For more information, see [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md)\.
+1. Set up your transcoding job as usual\. For more information, see [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md)\.
 
 1. On the **Create job** page, in the **Job** pane on the left, choose your input\.
 

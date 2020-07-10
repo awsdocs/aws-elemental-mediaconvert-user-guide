@@ -1,4 +1,4 @@
-# Step 3: Create Output Groups<a name="specify-output-groups"></a>
+# Step 3: Create output groups<a name="specify-output-groups"></a>
 
 After specifying your input, create output groups\. The choices that you make when you set up output groups affect the types of assets that your job produces and which devices can play them\. The following illustration shows the two categories of output groups and how outputs and selectors are organized within them\.
 
@@ -12,7 +12,7 @@ As shown in the preceding illustration, you can use AWS Elemental MediaConvert t
 
 1. In the **Job** pane, in the **Output groups** section, choose **Add**\.
 
-1. Choose an output group type, and then choose **Select**\. Create one file output group for all the standalone files that you intend to create\. Create one ABR streaming output group for each ABR streaming package that you intend to create\. For guidance on which ABR streaming output groups to include in your job, see [Choosing Your ABR Streaming Output Groups](choosing-your-streaming-output-groups.md)\.
+1. Choose an output group type, and then choose **Select**\. Create one file output group for all the standalone files that you intend to create\. Create one ABR streaming output group for each ABR streaming package that you intend to create\. For guidance on which ABR streaming output groups to include in your job, see [Choosing your ABR streaming output groups](choosing-your-streaming-output-groups.md)\.
 
 1. Optionally, for **Custom group name**, enter a name for your group\. Any name that you provide here appears in the **Output groups** section of the console but does not affect your outputs\.
 

@@ -1,8 +1,8 @@
-# Finding the Settings Related to Fragment Length<a name="finding-the-settings-related-to-fragment-length"></a>
+# Finding the settings related to fragment length<a name="finding-the-settings-related-to-fragment-length"></a>
 
 When you set **Fragment length**, check your values for **Closed GOP cadence**, **GOP size**, and **Framerate**\.
 
-## Fragment Length<a name="fragment-length"></a>
+## Fragment length<a name="fragment-length"></a>
 
 You can set the fragment length using either the console or the JSON job specification\. The **Fragment length** setting applies to an output group and affects every output in the group\.
 
@@ -39,7 +39,7 @@ You can set the fragment length using either the console or the JSON job specifi
   		...
   ```
 
-## Closed GOP Cadence, GOP Size, and Framerate<a name="closed-gop-cadence-gop-size-and-framerate"></a>
+## Closed GOP cadence, GOP size, and framerate<a name="closed-gop-cadence-gop-size-and-framerate"></a>
 
 You can set **Closed GOP cadence**, **GOP size**, and **Framerate** using either the console or the JSON job specification\. These settings apply to each output individually\. When you set them, make sure that the values you set for each output in the output group work with the value you specify for the output group's **Fragment length**\.
 

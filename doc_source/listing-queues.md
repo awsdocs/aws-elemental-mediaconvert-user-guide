@@ -1,4 +1,4 @@
-# Listing and Viewing On\-Demand Queues in AWS Elemental MediaConvert<a name="listing-queues"></a>
+# Listing and viewing on\-deman queues in AWS Elemental MediaConvert<a name="listing-queues"></a>
 
 You can list the AWS Elemental MediaConvert queues that are associated with your AWS account and view the details about those queues\. The following procedure explains how to do so using the MediaConvert console\.
 

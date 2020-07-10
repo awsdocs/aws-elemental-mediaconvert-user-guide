@@ -1,16 +1,16 @@
-# Burn\-In Output Captions<a name="burn-in-output-captions"></a>
+# Burn\-in output captions<a name="burn-in-output-captions"></a>
 
 Burn\-in is a delivery method rather than a captions format\. Burn\-in writes the captions directly on your video frames, replacing pixels of video content with the captions\. If you want burn\-in captions in an output, set the captions up according to the following information\.
 
-## Where to Specify the Captions<a name="where-burn-in-output-captions"></a>
+## Where to specify the captions<a name="where-burn-in-output-captions"></a>
 
 Put your captions in the same output group and the same output as your video\.
 
-## How to Specify Multiple Captions Tracks<a name="multilang-burn-in-output-captions"></a>
+## How to specify multiple captions tracks<a name="multilang-burn-in-output-captions"></a>
 
 You can burn in only one track of captions in each output\.
 
-## How to Specify the Font Script<a name="how-to-specify-the-language-script-burnin"></a>
+## How to specify the font script<a name="how-to-specify-the-language-script-burnin"></a>
 
 AWS Elemental MediaConvert automatically selects the appropriate script for your captions, based on the language that you specify in the output captions settings\. If the language that you choose has more than one possible script, specify the script that you want\.
 

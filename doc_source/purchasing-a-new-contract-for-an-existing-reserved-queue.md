@@ -1,4 +1,4 @@
-# Purchasing Transcoding Capacity for an Existing Reserved Queue<a name="purchasing-a-new-contract-for-an-existing-reserved-queue"></a>
+# Purchasing transcoding capacity for an existing reserved queue<a name="purchasing-a-new-contract-for-an-existing-reserved-queue"></a>
 
 After your initial pricing plan term for reserved transcode slots \(RTS\) expires, your reserved queue persists without the capacity to run transcoding jobs\. You can send jobs to the queue, but AWS Elemental MediaConvert doesn't process them\. To begin processing jobs through the queue again, you can set up a new pricing plan, which requires a new 12\-month commitment\.
 

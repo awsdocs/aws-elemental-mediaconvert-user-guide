@@ -1,4 +1,4 @@
-# File Group<a name="file-group"></a>
+# File group<a name="file-group"></a>
 
 ```
 {

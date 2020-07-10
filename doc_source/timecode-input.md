@@ -1,6 +1,6 @@
-# Adjusting the Input Timeline with the Input Timecode Source<a name="timecode-input"></a>
+# Adjusting the input timeline with the input timecode source<a name="timecode-input"></a>
 
-The value for **Timecode source** that you specify in an input's settings affects the input timeline for that input\. For information about which features are affected by the input timeline, see [Input Timelines](input-timelines.md)\.
+The value for **Timecode source** that you specify in an input's settings affects the input timeline for that input\. For information about which features are affected by the input timeline, see [Input timelines](input-timelines.md)\.
 
 **To adjust the input **Timecode source** setting \(console\)**
 

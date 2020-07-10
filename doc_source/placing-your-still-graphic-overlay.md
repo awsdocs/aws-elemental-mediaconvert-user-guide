@@ -1,4 +1,4 @@
-# Placing Your Still Graphic Overlay<a name="placing-your-still-graphic-overlay"></a>
+# Placing your still graphic overlay<a name="placing-your-still-graphic-overlay"></a>
 
 Regardless of whether you specify a still graphic overlay in an input or an output, you set up when it starts and how long it runs by specifying the **Start time** and **Duration**\. The following image shows how you would specify these settings if you wanted your overlay to start two minutes into the video and to remain on the video for two minutes\. If you keep these settings in their default state, the overlay will begin at the first frame of the input or output and remain on the video for the duration of the input or output\.
 
@@ -11,7 +11,7 @@ Make sure that you take the right timeline into account when you provide your st
 + For input overlays, **Start time** is relative to the input timeline\. This timeline is affected by the input **Timecode source** setting\.
 + For output overlays, **Start time** is relative to the output timeline\. This timeline is affected by the job\-wide **Timecode configuration**, **Source** setting\.
 
-For more information about the input and output timelines, and the timecode settings that affect them, see [How MediaConvert Uses Timelines to Assemble Jobs](how-mediaconvert-uses-timelines-to-assemble-jobs.md)\.
+For more information about the input and output timelines, and the timecode settings that affect them, see [How MediaConvert uses timelines to assemble jobs](how-mediaconvert-uses-timelines-to-assemble-jobs.md)\.
 
 **Tip**  
 For simplest setup, specify **Start time** counting from 00:00:00:00 as the first frame, and set both of the following settings to **Start at 0**:  

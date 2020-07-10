@@ -1,4 +1,4 @@
-# Deleting a Reserved Queue in AWS Elemental MediaConvert<a name="deleting-a-reserved-queue"></a>
+# Deleting a reserved queue in AWS Elemental MediaConvert<a name="deleting-a-reserved-queue"></a>
 
 You can delete any queue other than the default queue\.
 

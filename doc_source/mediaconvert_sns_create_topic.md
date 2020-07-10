@@ -1,4 +1,4 @@
-# Step 1: Create a Topic in Amazon SNS<a name="mediaconvert_sns_create_topic"></a>
+# Step 1: Create a topic in Amazon SNS<a name="mediaconvert_sns_create_topic"></a>
 
 The first part of setting up a CloudWatch Events rule is preparing the rule target\. In this case, that means creating and subscribing to an Amazon SNS topic\.
 

@@ -1,4 +1,4 @@
-# Step 3: Add the Amazon SNS Topic and Finish Your Rule<a name="add-target-and-finish-rule"></a>
+# Step 3: Add the Amazon SNS topic and finish your rule<a name="add-target-and-finish-rule"></a>
 
 Next, add the target \(the Amazon SNS topic\) that you created in step 1 to the CloudWatch Events rule that you started in step 2\.
 

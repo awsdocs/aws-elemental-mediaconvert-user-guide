@@ -1,6 +1,6 @@
-# Optional: Pause Your Queues<a name="optional-pause-the-queue"></a>
+# Optional: Pause your queues<a name="optional-pause-the-queue"></a>
 
-If you are just getting started with AWS Elemental MediaConvert or are experimenting with the MediaConvert console, you might want to pause your queues to avoid accidentally starting a job before you're ready\. For more information about queues, see [Working with Queues](working-with-queues.md)\.
+If you are just getting started with AWS Elemental MediaConvert or are experimenting with the MediaConvert console, you might want to pause your queues to avoid accidentally starting a job before you're ready\. For more information about queues, see [Working with queues](working-with-queues.md)\.
 
 **To pause or reactivate an on\-demand queue**
 

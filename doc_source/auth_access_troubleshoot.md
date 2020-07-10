@@ -1,4 +1,4 @@
-# Troubleshooting Authentication and Access Control<a name="auth_access_troubleshoot"></a>
+# Troubleshooting authentication and access control<a name="auth_access_troubleshoot"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when working with IAM\.
 
@@ -26,6 +26,6 @@ To allow others to access AWS Elemental MediaConvert, you must create an IAM ent
 ## I want to understand IAM without becoming an expert<a name="auth_access_troubleshoot-iam-expert"></a>
 
 To learn more about IAM terms, concepts, and procedures, see the following pages:
-+ [What is Authentication?](auth_access_what-is-authentication.md)
-+ [What is Access Control?](auth_access_what-is-access-control.md)
-+ [What are Policies?](auth_access_what-are-policies.md)
++ [What is authentication?](auth_access_what-is-authentication.md)
++ [What is access control?](auth_access_what-is-access-control.md)
++ [What are policies?](auth_access_what-are-policies.md)

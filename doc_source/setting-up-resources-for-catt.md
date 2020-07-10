@@ -1,4 +1,4 @@
-# Setting Up AWS Elemental MediaConvert Resources for Cost Allocation Through Tagging<a name="setting-up-resources-for-catt"></a>
+# Setting up AWS Elemental MediaConvert resources for cost allocation through tagging<a name="setting-up-resources-for-catt"></a>
 
 For all outputs that you produce using an on\-demand queue, you can use the AWS Billing and Cost Management dashboard to set up a monthly cost allocation report\. This report shows what AWS charges you for transcoding, sorted by resource\. You can set up your jobs so that your job outputs are sorted by tags on the job or on a resource that you use to create the job\. That is, you can sort your bill by the tags that you put on the job, on the queue that you submit the job to, on the job template that you create the job from, or on the output presets that you use to set up the individual outputs of the job\.
 
@@ -14,6 +14,6 @@ For all outputs that you produce using an on\-demand queue, you can use the AWS 
 **Note**  
 Jobs, and the tags on them, persist for only 90 days\. If your workflow references tags over longer periods of time, use tags on the queue, job template, or output preset rather than tags on the job\.
 
-1. Activate these tags on the AWS Billing and Cost Management dashboard\. For more information, see [Activating User\-Defined Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html) in the *Billing and Cost Management User Guide*\.
+1. Activate these tags on the AWS Billing and Cost Management dashboard\. For more information, see [Activating user\-defined cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html) in the *Billing and Cost Management User Guide*\.
 
-1. Set up your report\. For more information, see [Monthly Cost Allocation Report](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/configurecostallocreport.html) in the *Billing and Cost Management User Guide*\.
+1. Set up your report\. For more information, see [Monthly cost allocation report](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/configurecostallocreport.html) in the *Billing and Cost Management User Guide*\.

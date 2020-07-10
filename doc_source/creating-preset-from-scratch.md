@@ -1,8 +1,8 @@
-# Creating a Custom Preset in MediaConvert<a name="creating-preset-from-scratch"></a>
+# Creating a custom preset in MediaConvert<a name="creating-preset-from-scratch"></a>
 
 Output presets specify the settings that apply to a single output of a transcoding job\. System presets have the output settings that are specified for you; custom presets have settings that are specified by you or by another user of your AWS account\. 
 
-You can create a custom preset by individually specifying the settings, as described in this topic\. Or you can create a custom preset by duplicating and modifying an existing preset, as described in [Creating a Custom Preset from a System Preset](create-custom-preset-from-system-preset.md)\.
+You can create a custom preset by individually specifying the settings, as described in this topic\. Or you can create a custom preset by duplicating and modifying an existing preset, as described in [Creating a custom preset from a system preset](create-custom-preset-from-system-preset.md)\.
 
 **To create a custom output preset**
 

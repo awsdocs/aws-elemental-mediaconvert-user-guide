@@ -1,4 +1,4 @@
-# Setting Up a Job in AWS Elemental MediaConvert<a name="setting-up-a-job"></a>
+# Setting up a job in AWS Elemental MediaConvert<a name="setting-up-a-job"></a>
 
 An AWS Elemental MediaConvert job does the work of transcoding a media file into packages and files in various formats and in different sizes for distribution to end viewers\. When you create a job, you specify the information that the service requires to perform the transcoding: which file to transcode, which types of files to create and where to store them, which encoding settings to use, which advanced features to apply, and so on\.
 
@@ -9,11 +9,11 @@ To set up a job, you define input files for the service to transcode, and you sp
 To set up your job, complete the procedures in the following topics\.
 
 **Topics**
-+ [Optional: Pause Your Queues](optional-pause-the-queue.md)
-+ [Step 1: Specify Input Files](specify-input-settings.md)
-+ [Step 2: Create Input Selectors](create-selectors.md)
-+ [Step 3: Create Output Groups](specify-output-groups.md)
-+ [Step 4: Create Outputs](create-outputs.md)
-+ [Step 5: Specify Global Job Settings](specify-global-job-settings.md)
-+ [Creating and Setting Up File Outputs](create-outputs-in-file-output-groups.md)
-+ [Using Variables in Your Job Settings](using-variables-in-your-job-settings.md)
++ [Optional: Pause your queues](optional-pause-the-queue.md)
++ [Step 1: Specify input files](specify-input-settings.md)
++ [Step 2: Create input selectors](create-selectors.md)
++ [Step 3: Create output groups](specify-output-groups.md)
++ [Step 4: Create outputs](create-outputs.md)
++ [Step 5: Specify global job settings](specify-global-job-settings.md)
++ [Creating and setting up File outputs](create-outputs-in-file-output-groups.md)
++ [Using variables in your job settings](using-variables-in-your-job-settings.md)

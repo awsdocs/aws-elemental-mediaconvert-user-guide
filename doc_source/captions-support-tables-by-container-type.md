@@ -1,22 +1,22 @@
-# Captions Support Tables by Output Container Type<a name="captions-support-tables-by-container-type"></a>
+# Captions support tables by output container type<a name="captions-support-tables-by-container-type"></a>
 
 **Topics**
-+ [CMAF Output Container](#cmaf-output-container)
-+ [DASH Output Container](#dash-output-container)
-+ [HLS Output Container](#hls-output-container)
-+ [MS Smooth \(MSS\) Output Container](#mss-output-container)
-+ [MP4 Output Container](#mp4-output-container)
-+ [MPEG2\-TS File Output Container](#mpeg2-ts-file-output-container)
-+ [MXF Output Container](#mxf-output-container)
-+ [QuickTime Output Container](#quicktime-output-container)
-+ [No Output Container](#no-output-container)
++ [CMAF output container](#cmaf-output-container)
++ [DASH output container](#dash-output-container)
++ [HLS output container](#hls-output-container)
++ [MS smooth \(MSS\) output container](#mss-output-container)
++ [MP4 output container](#mp4-output-container)
++ [MPEG2\-TS File output container](#mpeg2-ts-file-output-container)
++ [MXF output container](#mxf-output-container)
++ [QuickTime output container](#quicktime-output-container)
++ [No output container](#no-output-container)
 
-## CMAF Output Container<a name="cmaf-output-container"></a>
+## CMAF output container<a name="cmaf-output-container"></a>
 
 The following table lists supported output captions formats for this output container, sorted by the input captions container and input captions format\. 
 
 
-|  Input Captions Container  |  Input Captions Format  |  Supported Output Captions Formats  | 
+|  Input captions container  |  Input captions format  |  Supported output captions formats  | 
 | --- | --- | --- | 
 |  MP4 Container  |  Embedded  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
 |   |  SCTE\-20  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
@@ -44,12 +44,12 @@ The following table lists supported output captions formats for this output cont
 + Captions in the QuickTime Captions Track
 + Captions in the MXF container VANC data
 
-## DASH Output Container<a name="dash-output-container"></a>
+## DASH output container<a name="dash-output-container"></a>
 
 The following table lists supported output captions formats for this output container, sorted by the input captions container and input captions format\. 
 
 
-|  Input Captions Container  |  Input Captions Format  |  Supported Output Captions Formats  | 
+|  Input captions container  |  Input captions format  |  Supported output captions formats  | 
 | --- | --- | --- | 
 |  IMF Container  Specify the CPL to define your input\.   |  IMSC1 text profile  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
 |  MP4 Container  |  Embedded  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) WebVTT  | 
@@ -82,7 +82,7 @@ The following table lists supported output captions formats for this output cont
 + Captions in the QuickTime Captions Track
 + Captions in the MXF container VANC data
 
-## HLS Output Container<a name="hls-output-container"></a>
+## HLS output container<a name="hls-output-container"></a>
 
 The following table lists supported output captions formats for this output container, sorted by the input captions container and input captions format\. 
 
@@ -95,7 +95,7 @@ The service doesn't support captions formatting and positioning
 You can use only [Teletext level 1\.5](https://en.wikipedia.org/wiki/World_System_Teletext) languages
 
 
-|  Input Captions Container  |  Input Captions Format  |  Supported Output Captions Formats  | 
+|  Input captions container  |  Input captions format  |  Supported output captions formats  | 
 | --- | --- | --- | 
 |  IMF Container  Specify the CPL to define your input\.   |  IMSC1 text profile  |  WebVTT  | 
 |  MP4 Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
@@ -128,12 +128,12 @@ You can use only [Teletext level 1\.5](https://en.wikipedia.org/wiki/World_Syste
 + Captions in the QuickTime Captions Track
 + Captions in the MXF container VANC data
 
-## MS Smooth \(MSS\) Output Container<a name="mss-output-container"></a>
+## MS smooth \(MSS\) output container<a name="mss-output-container"></a>
 
 The following table lists supported output captions formats for this output container, sorted by the input captions container and input captions format\. 
 
 
-|  Input Captions Container  |  Input Captions Format  |  Supported Output Captions Formats  | 
+|  Input captions container  |  Input captions format  |  Supported output captions formats  | 
 | --- | --- | --- | 
 |  MP4 Container  |  Embedded  |  Burn in TTML  | 
 |   |  SCTE\-20  |  Burn in TTML  | 
@@ -166,12 +166,12 @@ The following table lists supported output captions formats for this output cont
 + Captions in the QuickTime Captions Track
 + Captions in the MXF container VANC data
 
-## MP4 Output Container<a name="mp4-output-container"></a>
+## MP4 output container<a name="mp4-output-container"></a>
 
 The following table lists supported output captions formats for this output container, sorted by the input captions container and input captions format\. 
 
 
-|  Input Captions Container  |  Input Captions Format  |  Supported Output Captions Formats  | 
+|  Input captions container  |  Input captions format  |  Supported output captions formats  | 
 | --- | --- | --- | 
 |  MP4 Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
 |   |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
@@ -203,7 +203,7 @@ The following table lists supported output captions formats for this output cont
 + Captions in the QuickTime Captions Track
 + Captions in the MXF container VANC data
 
-## MPEG2\-TS File Output Container<a name="mpeg2-ts-file-output-container"></a>
+## MPEG2\-TS File output container<a name="mpeg2-ts-file-output-container"></a>
 
 The following table lists supported output captions formats for this output container, sorted by the input captions container and input captions format\. 
 
@@ -213,7 +213,7 @@ The service doesn't support captions formatting and positioning
 You can use only [Teletext level 1\.5](https://en.wikipedia.org/wiki/World_System_Teletext) languages
 
 
-|  Input Captions Container  |  Input Captions Format  |  Supported Output Captions Formats  | 
+|  Input captions container  |  Input captions format  |  Supported output captions formats  | 
 | --- | --- | --- | 
 |  IMF Container  Specify the CPL to define your input\.   |  IMSC1 text profile  |  Burn in DVB\-Sub Teletext  | 
 |  MP4 Container  |  Embedded  |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
@@ -247,12 +247,12 @@ You can use only [Teletext level 1\.5](https://en.wikipedia.org/wiki/World_Syste
 + Captions in the QuickTime Captions Track
 + Captions in the MXF container VANC data
 
-## MXF Output Container<a name="mxf-output-container"></a>
+## MXF output container<a name="mxf-output-container"></a>
 
 The following table lists supported output captions formats for this output container, sorted by the input captions container and input captions format\. 
 
 
-|  Input Captions Container  |  Input Captions Format  |  Supported Output Captions Formats  | 
+|  Input captions container  |  Input captions format  |  Supported output captions formats  | 
 | --- | --- | --- | 
 |  IMF Container  Specify the CPL to define your input\.   |  IMSC1 text profile  |  Burn in  | 
 |  MP4 Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
@@ -282,12 +282,12 @@ The following table lists supported output captions formats for this output cont
 + Captions in the QuickTime Captions Track
 + Captions in the MXF container VANC data
 
-## QuickTime Output Container<a name="quicktime-output-container"></a>
+## QuickTime output container<a name="quicktime-output-container"></a>
 
 The following table lists supported output captions formats for this output container, sorted by the input captions container and input captions format\. 
 
 
-|  Input Captions Container  |  Input Captions Format  |  Supported Output Captions Formats  | 
+|  Input captions container  |  Input captions format  |  Supported output captions formats  | 
 | --- | --- | --- | 
 |  IMF Container  Specify the CPL to define your input\.   |  IMSC1 text profile  |  Burn in  | 
 |  MP4 Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
@@ -320,7 +320,7 @@ The following table lists supported output captions formats for this output cont
 + Captions in the QuickTime Captions Track
 + Captions in the MXF container VANC data
 
-## No Output Container<a name="no-output-container"></a>
+## No output container<a name="no-output-container"></a>
 
 The following table lists supported output captions formats for this output container, sorted by the input captions container and input captions format\. 
 
@@ -328,7 +328,7 @@ The following table lists supported output captions formats for this output cont
 You can create sidecar captions outputs only as part of a job that also generates a video output\.
 
 
-|  Input Captions Container  |  Input Captions Format  |  Supported Output Captions Formats  | 
+|  Input captions container  |  Input captions format  |  Supported output captions formats  | 
 | --- | --- | --- | 
 |  MP4 Container  |  Embedded  |  IMSC \(as sidecar \.xml\) SCC SRT SMI TTML WebVTT  | 
 |   |  SCTE\-20  |  IMSC \(as sidecar \.xml\) SCC SRT SMI TTML WebVTT  | 

@@ -14,8 +14,8 @@ Input requirements:
 + You must keep **Image inserter** disabled\.
 
 Output settings requirements:
-+ You must set **Audio Codec** to HEVC \(H\.265\)\.
-+ Your output container must be supported with the HEVC \(H\.265\) codec\. For a list of supported output containers and codecs, see [Supported Output Codecs and Containers](reference-codecs-containers.md)\.
++ You must set **Video codec** to HEVC \(H\.265\)\.
++ Your output container must be supported with the HEVC \(H\.265\) codec\. For a list of supported output containers and codecs, see [Supported output codecs and containers](reference-codecs-containers.md)\.
 + You must set your output resolution no higher than 4096x4096\.
 + For **Color metadata**, you must keep the default setting **Insert**\.
 + For **Respond to AFD**, you must keep the default setting **None**\.

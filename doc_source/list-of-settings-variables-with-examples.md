@@ -1,9 +1,9 @@
-# List of Settings Variables with Examples<a name="list-of-settings-variables-with-examples"></a>
+# List of settings variables with examples<a name="list-of-settings-variables-with-examples"></a>
 
-The following table provides information about each of the format identifiers that you can use in your AWS Elemental MediaConvert job\. For information about format identifiers that function differently in streaming outputs, see [Using Settings Variables with Streaming Outputs](using-settings-variables-with-streaming-outputs.md)\.
+The following table provides information about each of the format identifiers that you can use in your AWS Elemental MediaConvert job\. For information about format identifiers that function differently in streaming outputs, see [Using settings variables with streaming outputs](using-settings-variables-with-streaming-outputs.md)\.
 
 
-| Format Identifier | Value to Put in the Job Setting | Compatible Job Settings | Description and Example | 
+| Format identifier | Value to put in the job setting | Compatible job settings | Description and example | 
 | --- |--- |--- |--- |
 | Date and time |  `$dt$`  |  Destination Name modifier Segment modifier  |  UTC date and time of the start time of the job\. Format: YYYYMMDDTHHMMSS Example: For a job that starts at 3:05:28 PM on June 4, 2020, **$dt$** resolves to `20200604T150528`\.   | 
 | Date |  `$d$`  |  Destination Name modifier Segment modifier  |  UTC date of the start time of the job\.  Format: YYYYMMDD Example: For a job that starts on June 4, 2020, **$d$** resolves to `20200604`\.   | 

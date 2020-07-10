@@ -1,8 +1,8 @@
-# IMSC, TTML, and WebVTT \(Sidecar\) Output Captions<a name="ttml-and-webvtt-output-captions"></a>
+# IMSC, TTML, and WebVTT \(sidecar\) output captions<a name="ttml-and-webvtt-output-captions"></a>
 
-If your output captions are IMSC, TTML or WebVTT format, set them up in your outputs according to the following information\. For restrictions on IMSC support, see [IMSC Captions Support in AWS Elemental MediaConvert](imsc-captions-support.md)\.
+If your output captions are IMSC, TTML or WebVTT format, set them up in your outputs according to the following information\. For restrictions on IMSC support, see [IMSC captions support in AWS Elemental MediaConvert](imsc-captions-support.md)\.
 
-## Where to Specify the Captions<a name="where-ttml-and-webvtt-output-captions"></a>
+## Where to specify the captions<a name="where-ttml-and-webvtt-output-captions"></a>
 
 Put your captions in the same output group, but a different output from your video\.
 
@@ -16,14 +16,14 @@ After you add captions to an output, delete the **Video** and **Audio 1** groups
 
 1. The **Audio 1** group of settings is automatically displayed in the **Stream settings** section\. Choose the **Remove** button\.
 
-## How to Specify Multiple Captions Tracks<a name="multilang-ttml-and-webvtt-output-captions"></a>
+## How to specify multiple captions tracks<a name="multilang-ttml-and-webvtt-output-captions"></a>
 
 Put each captions track in its own output\.
 
 **Note**  
 The captions track that you specify first in your job is signaled as the default track in the HLS manifest\.
 
-## Sidecar Captions Container Options<a name="sidecar-captions-container-options"></a>
+## Sidecar captions container options<a name="sidecar-captions-container-options"></a>
 
 Depending on your output group, you can choose the captions container for IMSC and TTML captions outputs\.
 
@@ -35,7 +35,7 @@ For all other output groups, IMSC and TTML files are raw\.
 
 **To specify the captions container for IMSC and TTML captions in DASH ISO output groups**
 
-1. Set up the outputs in your **DASH ISO** output group as described in [Creating Outputs in ABR Streaming Output Groups](create-outputs-in-abr-streaming-output-groups.md)\. Put captions in a separate output\.
+1. Set up the outputs in your **DASH ISO** output group as described in [Creating outputs in ABR streaming output groups](create-outputs-in-abr-streaming-output-groups.md)\. Put captions in a separate output\.
 
 1. On the **Create job** page, in the **Job** pane on the left, choose the captions output\.
 

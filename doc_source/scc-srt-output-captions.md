@@ -1,6 +1,6 @@
-# SCC, SRT \(Sidecar\) Output Captions<a name="scc-srt-output-captions"></a>
+# SCC, SRT \(sidecar\) output captions<a name="scc-srt-output-captions"></a>
 
-## Where to Specify the Captions<a name="where-scc-srt-output-captions"></a>
+## Where to specify the captions<a name="where-scc-srt-output-captions"></a>
 
 Put your captions in the same output group, but a different output from your video\.
 
@@ -14,6 +14,6 @@ After you add captions to an output, delete the **Video** and **Audio 1** groups
 
 1. The **Audio 1** group of settings is automatically displayed in the **Stream settings** section\. Choose the **Remove** button\.
 
-## How to Specify Multiple Captions Tracks<a name="multilang-scc-srt-output-captions"></a>
+## How to specify multiple aptions tracks<a name="multilang-scc-srt-output-captions"></a>
 
 Specify all tracks in the same output by creating one group of captions settings for each track\. They will appear in the list of settings groups as **Captions 1**, **Captions 2**, and so forth\. In each group of settings, choose the captions selector under **Captions source** that is set up for the track that you want to include\.

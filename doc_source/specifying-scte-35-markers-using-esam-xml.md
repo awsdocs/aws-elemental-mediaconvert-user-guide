@@ -1,4 +1,4 @@
-# Specifying SCTE\-35 Markers Using ESAM XML<a name="specifying-scte-35-markers-using-esam-xml"></a>
+# Specifying SCTE\-35 markers using ESAM XML<a name="specifying-scte-35-markers-using-esam-xml"></a>
 
 If your input video doesn't contain SCTE\-35 markers, but you need to specify ad insertion points in your outputs, you can provide Event Signaling and Management \(ESAM\) XML documents in your AWS Elemental MediaConvert job settings\. When you do, MediaConvert conditions your outputs  with IDR \(Instantaneous Decoder Refresh\) frames at the insertion points that you specify in the document\. In outputs that are also wrapped in MPEG2\-TS and HLS containers, MediaConvert inserts SCTE\-35 time\_signal messages at those points\. 
 
@@ -18,15 +18,21 @@ For example, a job has the following three inputs: a five\-minute preroll, a one
 
 1. Choose **Create new job**\.
 
-1. Set up your input, output groups, and outputs for video and audio, as described in [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring Complex Jobs in AWS Elemental MediaConvert](structuring-complex-jobs.md)\.
+1. Set up your input, output groups, and outputs for video and audio, as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring complex jobs in AWS Elemental MediaConvert](structuring-complex-jobs.md)\.
 
 1. In the **Job** pane on the left, in the **Job settings** section, choose **Settings**\.
 
 1. In the **Ad signaling** section, enable **Event signaling and messaging \(ESAM\)**\.
 
-1. For **Signal processing notification XML**, enter your ESAM signaling XML document as text\. For an example, see [Example ESAM XML Signal Processing Notification](example-esam-xml.md)\.
+1. For **Signal processing notification XML**, enter your ESAM signaling XML document as text\. For an example, see [Example ESAM XML signal processing notification](example-esam-xml.md)\.
+**Note**  
+By default, MediaConvert adds a four\-second preroll to the ESAM payload\. This might result in MediaConvert placing the SCTE\-35 message one segment earlier than the cue marker designates in the HLS manifest\. To remove the preroll, set `responseSignalPreroll` to zero\. This setting is a child of [EsamSettings](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs-id.html#jobs-id-model-esamsettings)\.
 
 1. Optionally, if you want to include information about your SCTE\-35 markers in your HLS manifests, for **Manifest confirm condition notification XML**, enter your ESAM manifest conditional XML document as text\. MediaConvert doesn't include information about your SCTE\-35 markers in your DASH manifests\.
+
+   To insert SCTE\-35 markers in the transport stream as well as in the manifest, set the `dataPassThrough` attribute in your MCC document to `"true"`\. If you don't want markers in the transport stream, remove the `dataPassThrough` attributes\.
+
+   For an example, see [Example ESAM XML Manifest Confirm Condition Notification](example-esam-xml-manifest-conditioning.md)\. 
 
 1. For each MPEG2\-TS output where you want SCTE\-35 markers, enable the markers:
 
@@ -42,7 +48,7 @@ For example, a job has the following three inputs: a five\-minute preroll, a one
 
 1. Do this step only for any **Apple HLS** output groups in your job\.
 
-   If you want to condition your HLS manifest with your ESAM insertion points, follow the procedure in [Including SCTE\-35 Information in Your HLS Manifest](including-scte-35-information-in-your-hls-manifest.md)\. Otherwise, follow these steps to confirm that the following settings are still in their default state:
+   If you want to condition your HLS manifest with your ESAM insertion points, follow the procedure in [Including SCTE\-35 information in your HLS manifest](including-scte-35-information-in-your-hls-manifest.md)\. Otherwise, follow these steps to confirm that the following settings are still in their default state:
 
    1. Make sure that **Manifest confirm condition notification XML**, discussed in a previous step of this procedure, is empty\.
 
@@ -104,7 +110,7 @@ For example, a job has the following three inputs: a five\-minute preroll, a one
    +  Set [https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-m3u8settings-scte35source](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-m3u8settings-scte35source) to `PASSTHROUGH`\.
    + Include [https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-hlsgroupsettings-admarkers](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-hlsgroupsettings-admarkers) and list one or both of `ELEMENTAL_SCTE35` or `ELEMENTAL` in an array\.
 
-     For sample manifests created with each setting selected, see [Sample Manifest: Elemental Ad Markers](sample-manifest-elemental-ad-markers.md) and [Sample Manifest: SCTE\-35 Enhanced Ad Markers](sample-manifest-scte-35-enhanced-ad-markers.md)\.
+     For sample manifests created with each setting selected, see [Sample manifest: Elemental ad markers](sample-manifest-elemental-ad-markers.md) and [Sample manifest: SCTE\-35 enhanced ad markers](sample-manifest-scte-35-enhanced-ad-markers.md)\.
 
    If you don't want to condition your HLS manifests with SCTE\-35 information, keep the default setting `NONE` for `scte35Source` and don't include `adMarkers`:
 
@@ -141,4 +147,4 @@ For example, a job has the following three inputs: a five\-minute preroll, a one
 
 1. Submit your job as usual\. 
 
-   For information about submitting AWS Elemental MediaConvert jobs programmatically, see [Getting Started with AWS Elemental MediaConvert Using the AWS SDKs or the AWS CLI](https://docs.aws.amazon.com/mediaconvert/latest/apireference/custom-endpoints.html) and [Getting Started with AWS Elemental MediaConvert Using the API](https://docs.aws.amazon.com/mediaconvert/latest/apireference/getting-started.html)\.
+   For information about submitting AWS Elemental MediaConvert jobs programmatically, see [Getting started with AWS Elemental MediaConvert using the AWS SDKs or the AWS CLI](https://docs.aws.amazon.com/mediaconvert/latest/apireference/custom-endpoints.html) and [Getting started with AWS Elemental MediaConvert using the API](https://docs.aws.amazon.com/mediaconvert/latest/apireference/getting-started.html)\.

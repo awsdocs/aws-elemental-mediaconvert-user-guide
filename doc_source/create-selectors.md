@@ -1,4 +1,4 @@
-# Step 2: Create Input Selectors for Video, Audio, and Captions<a name="create-selectors"></a>
+# Step 2: Create input selectors for video, audio, and captions<a name="create-selectors"></a>
 
 Next, create input selectors to flag the video, audio, and captions elements from your input that you will use in your outputs\. This labels each input element so that you can point to it when you set up your outputs\. When you set up input selectors, you also provide the service with information about where to find the data and how to interpret it\. The following illustration shows the three types of input selectors\.
 
@@ -20,10 +20,10 @@ An *audio asset* is often dialogue, background sound, and music together in one 
 
    1. Provide the identifier \(that is, track number, PID, or language code\) for your primary audio asset\. Your primary audio asset is likely to be track 1\.
 **Note**  
-For most use cases, you associate one input track per input selector\. If your use case requires combining multiple tracks into one track, or multiple tracks into one rendition of a streaming package, combine multiple input tracks in one audio selector by typing a comma\-separated list\. For more information about combining tracks, see [More About Audio Tracks and Audio Selectors](more-about-audio-tracks-selectors.md)\.
+For most use cases, you associate one input track per input selector\. If your use case requires combining multiple tracks into one track, or multiple tracks into one rendition of a streaming package, combine multiple input tracks in one audio selector by typing a comma\-separated list\. For more information about combining tracks, see [More about audio tracks and audio selectors](more-about-audio-tracks-selectors.md)\.
 
-   1. If your audio is in a separate file from your video, choose the **External file** slider switch element and provide the URI to your audio input file that is stored in Amazon S3 or on an HTTP\(S\) server\. For Amazon S3 inputs, you can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\. For HTTP\(S\) inputs, provide the URL to your input video file\. For more information, see [HTTP Input Requirements](upload-input-files.md#http-input-requirements)\. 
+   1. If your audio is in a separate file from your video, choose the **External file** slider switch element and provide the URI to your audio input file that is stored in Amazon S3 or on an HTTP\(S\) server\. For Amazon S3 inputs, you can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\. For HTTP\(S\) inputs, provide the URL to your input video file\. For more information, see [HTTP input requirements](upload-input-files.md#http-input-requirements)\. 
 
 1. If you have additional audio assets—for example, multiple language tracks—choose **Add audio selector** and provide information about the next asset as described in the preceding step of this procedure\.
 
-1. In the **Captions selectors** section, choose **Add captions selector** to create input captions selectors for any sets of captions that you plan to use in an output\. For more information about setting up captions for your job, see [Setting Up Captions in AWS Elemental MediaConvert Jobs](including-captions.md)\.
+1. In the **Captions selectors** section, choose **Add captions selector** to create input captions selectors for any sets of captions that you plan to use in an output\. For more information about setting up captions for your job, see [Setting up captions in MediaConvert jobs](including-captions.md)\.

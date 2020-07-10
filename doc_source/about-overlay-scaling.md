@@ -1,4 +1,4 @@
-# About Sizing Your Overlay to Account for Scaling<a name="about-overlay-scaling"></a>
+# About sizing your overlay to account for scaling<a name="about-overlay-scaling"></a>
 
 In jobs that scale the video resolution, whether your overlay scales with your video depends on where you specify the graphic overlay\. Motion graphic overlay and input overlays scale with the video; output overlays don't\.
 

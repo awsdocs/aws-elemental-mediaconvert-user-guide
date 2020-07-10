@@ -1,4 +1,4 @@
-# Step 5: Upload Files for Transcoding<a name="upload-input-files"></a>
+# Step 5: Upload files for transcoding<a name="upload-input-files"></a>
 
 AWS Elemental MediaConvert can take in your input files from Amazon S3 or from a server through HTTP or HTTPS\.<a name="upload-with-s3"></a>
 
@@ -12,7 +12,7 @@ AWS Elemental MediaConvert can take in your input files from Amazon S3 or from a
 
 1. Choose **Upload**\.
 
-## HTTP Input Requirements<a name="http-input-requirements"></a>
+## HTTP input requirements<a name="http-input-requirements"></a>
 
 When your input file source is HTTP\(S\), you specify the URL rather than an Amazon S3 path\. Requirements for using HTTP\(S\) for input are as follows:
 + All input files must be publicly readable\.

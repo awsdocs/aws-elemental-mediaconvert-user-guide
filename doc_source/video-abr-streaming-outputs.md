@@ -1,4 +1,4 @@
-# Creating Video ABR Streaming Outputs<a name="video-abr-streaming-outputs"></a>
+# Creating video ABR streaming outputs<a name="video-abr-streaming-outputs"></a>
 
 For each video output that you include in your output group, AWS Elemental MediaConvert creates one video rendition, or set of segmented video files\. Multiple video renditions in a streaming package, of varying resolutions and video quality, allow the end viewer's device to adapt the quality of video to the available bandwidth\.
 

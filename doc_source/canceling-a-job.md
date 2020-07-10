@@ -1,4 +1,4 @@
-# Canceling an AWS Elemental MediaConvert Job<a name="canceling-a-job"></a>
+# Canceling an AWS Elemental MediaConvert job<a name="canceling-a-job"></a>
 
 The following procedure explains how to cancel a job using the AWS Elemental MediaConvert console\. 
 

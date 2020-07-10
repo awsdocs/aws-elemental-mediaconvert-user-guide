@@ -1,4 +1,4 @@
-# How AWS Elemental MediaConvert Jobs Progress<a name="how-mediaconvert-jobs-progress"></a>
+# How AWS Elemental MediaConvert jobs progress<a name="how-mediaconvert-jobs-progress"></a>
 
 **Job Status**  
 A job's *status* tells you, at the highest level, what is happening with your job\. Successful jobs go through the following statuses, in this order:

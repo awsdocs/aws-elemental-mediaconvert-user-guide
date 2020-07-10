@@ -1,4 +1,4 @@
-# Creating a Reserved Queue in AWS Elemental MediaConvert<a name="creating-a-reserved-queue"></a>
+# Creating a reserved queue in AWS Elemental MediaConvert<a name="creating-a-reserved-queue"></a>
 
 Reserved queues allow you to purchase transcoding capacity for a 12\-month period, instead of paying per minute for each output\.
 
@@ -36,4 +36,4 @@ After you commit to your pricing plan, you can’t cancel it\.
 
 1. On the **Purchase RTS for reserved queue** confirmation page, review the details of your pricing plan, and then choose **Purchase**\.
 
-   If you decide later that you want to purchase additional capacity for your reserved queue, you can do so\. For more information, see [Purchasing Additional Capacity for a Reserved Queue](purchasing-additional-capacity-for-a-reserved-queue.md)\.
+   If you decide later that you want to purchase additional capacity for your reserved queue, you can do so\. For more information, see [Purchasing additional capacity for a reserved queue](purchasing-additional-capacity-for-a-reserved-queue.md)\.

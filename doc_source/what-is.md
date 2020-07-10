@@ -1,4 +1,4 @@
-# What Is AWS Elemental MediaConvert?<a name="what-is"></a>
+# What is AWS Elemental MediaConvert?<a name="what-is"></a>
 
 AWS Elemental MediaConvert is a file\-based video processing service that provides scalable video processing for content owners and distributors with media libraries of any size\. MediaConvert offers advanced features that enable premium content experiences, including:
 + professional broadcast codecs that support increased bit depth and HDR content creation
@@ -9,7 +9,7 @@ AWS Elemental MediaConvert is a file\-based video processing service that provid
 
 AWS Elemental MediaConvert offers support for various input formats and adaptive bitrate \(ABR\) packaging output formats for delivering high\-quality content from a range of sources onto primary and multiscreen devices\.
 
-For simple use cases, you can set up a MediaConvert transcoding job in just a few steps\. For instructions, see [Getting Started with AWS Elemental MediaConvert](getting-started.md)\. 
+For simple use cases, you can set up a MediaConvert transcoding job in just a few steps\. For instructions, see [Getting started with AWS Elemental MediaConvert](getting-started.md)\. 
 
  MediaConvert has the following components:
 
@@ -18,7 +18,7 @@ A *job* does the work of transcoding\. Each job converts an input file into an o
 When you create a job, you specify the name of the file that you want to transcode, the names that you want MediaConvert to give to the finished output files, and several other settings\.
 
 Queues  
-A *queue* allows you to manage the resources that are available to your account for parallel processing of jobs\. For more information, see [Working with Queues](working-with-queues.md)\. 
+A *queue* allows you to manage the resources that are available to your account for parallel processing of jobs\. For more information, see [Working with queues](working-with-queues.md)\. 
 
 Presets  
  A *preset* is a saved group of encoding settings for a single output\. You can create many common outputs by simply selecting a system preset\. You can also create your own custom presets, either by duplicating and modifying an existing preset or by creating one from scratch\.  

@@ -1,10 +1,10 @@
-# Example Policies<a name="example-policies"></a>
+# Example policies<a name="example-policies"></a>
 
-Use these example IAM policies to grant access to your resources, or modify them to suit your use case\. For information about how to attach a policy to an IAM user, see [Creating Policies on the JSON Tab](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html#access_policies_create-json-editor) in the *IAM User Guide*\.
+Use these example IAM policies to grant access to your resources, or modify them to suit your use case\. For information about how to attach a policy to an IAM user, see [Creating policies on the JSON tab](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html#access_policies_create-json-editor) in the *IAM User Guide*\.
 
-## Example Policy: Basic MediaConvert User Policy<a name="example-policy-basic-mediaconvert-user-policy"></a>
+## Example policy: Basic MediaConvert user policy<a name="example-policy-basic-mediaconvert-user-policy"></a>
 
-The following example policy grants the basic permissions that a user needs to operate AWS Elemental MediaConvert\. If you are using encryption, or if your Amazon S3 buckets have default encryption enabled, you need additional permissions\. For more information, see [Data Protection for AWS Elemental MediaConvert](using-encryption.md)\.
+The following example policy grants the basic permissions that a user needs to operate AWS Elemental MediaConvert\. If you are using encryption, or if your Amazon S3 buckets have default encryption enabled, you need additional permissions\. For more information, see [Data protection for AWS Elemental MediaConvert](using-encryption.md)\.
 
 ```
 {
@@ -44,7 +44,7 @@ The following example policy grants the basic permissions that a user needs to o
 }
 ```
 
-## Example Policy: Resource\-Level Access Control<a name="example-policy-resource-level-access-control"></a>
+## Example policy: Resource\-level access control<a name="example-policy-resource-level-access-control"></a>
 
 The following example policy grants permissions to certain AWS Elemental MediaConvert resources in your account\. In this example, the account number is *012345678910*\. It allows the following actions, in any partition and Region:
 + View the details of all queues in the account at once\.
@@ -88,7 +88,7 @@ You can't grant cross\-account permissions to AWS Elemental MediaConvert resourc
 }
 ```
 
-## Example Policy: Tag\-based Access Control Using Resource Tags<a name="example-policy-tag-based-access-control-using-resource-tags"></a>
+## Example policy: Tag\-based access control using resource tags<a name="example-policy-tag-based-access-control-using-resource-tags"></a>
 
 The following policy grants the user access to all actions on all AWS Elemental MediaConvert resources in the account, unless the resource or resources are tagged with the key `access` and value `denied` or a value that starts with the string "`deny`"\.
 

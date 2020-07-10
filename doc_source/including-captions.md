@@ -1,4 +1,4 @@
-# Setting Up Captions in AWS Elemental MediaConvert Jobs<a name="including-captions"></a>
+# Setting up captions in MediaConvert jobs<a name="including-captions"></a>
 
 To include captions in your job, follow these steps in the order listed:
 

@@ -1,16 +1,16 @@
-# Supported Input Codecs and Containers<a name="reference-codecs-containers-input"></a>
+# Supported input codecs and containers<a name="reference-codecs-containers-input"></a>
 
 AWS Elemental MediaConvert accepts input files in the following combinations of codecs and containers\.
 
 **Note**  
-For outputs that contain only audio inside the output container, MediaConvert supports a smaller set of input containers and codecs\. For more information, see [Supported Codecs and Containers for Audio\-Only Outputs](supported-codecs-containers-audio-only.md)\.
+For outputs that contain only audio inside the output container, MediaConvert supports a smaller set of input containers and codecs\. For more information, see [Supported codecs and containers for audio\-only outputs](supported-codecs-containers-audio-only.md)\.
 
 ## Video<a name="reference-codecs-containers-input-video"></a>
 
 MediaConvert supports the following combinations of input containers and video codecs\.
 
 
-| Container | Video Codecs Supported with Container | 
+| Container | Video codecs supported with container | 
 | --- | --- | 
 | No Container | DV/DVCPRO, AVC \(H\.264\), HEVC \(H\.265\), MPEG\-1, MPEG\-2 | 
 | 3G2 | AVC \(H\.264\), H\.263, MPEG\-4 part 2 | 
@@ -36,10 +36,10 @@ MediaConvert doesn't currently support HLS inputs\.
 MediaConvert supports the following combinations of input containers and audio codecs\.
 
 **Note**  
-For outputs that contain only audio inside the output container, MediaConvert supports a smaller set of input containers and codecs\. For more information, see [Supported Codecs and Containers for Audio\-Only Outputs](supported-codecs-containers-audio-only.md)\.
+For outputs that contain only audio inside the output container, MediaConvert supports a smaller set of input containers and codecs\. For more information, see [Supported codecs and containers for audio\-only outputs](supported-codecs-containers-audio-only.md)\.
 
 
-| Container | Audio Codecs | 
+| Container | Audio codecs | 
 | --- | --- | 
 | No Container | PCM | 
 | 3G2 | AAC | 
@@ -57,7 +57,7 @@ For outputs that contain only audio inside the output container, MediaConvert su
 | WebM | Opus, Vorbis | 
 | WMV/ASF | WMA, WMA2 | 
 
-## Audio\-Only<a name="reference-codecs-containers-input-audio-only"></a>
+## Audio\-only<a name="reference-codecs-containers-input-audio-only"></a>
 
 MediaConvert supports the following combinations of input container and codec for audio\-only outputs\.
 

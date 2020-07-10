@@ -1,4 +1,4 @@
-# Specified Rotation<a name="manually-specified-rotation"></a>
+# Specified rotation<a name="manually-specified-rotation"></a>
 
 When you specify the rotation for your input, AWS Elemental MediaConvert rotates the video from your input clockwise the amount that you specify\. This rotation applies to all outputs in the job\. You can rotate clockwise by 90, 180, or 270 degrees\. The following image shows a video output from a job that specifies a 90\-degree rotation\.
 

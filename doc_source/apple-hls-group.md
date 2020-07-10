@@ -1,4 +1,4 @@
-# Apple HLS Group<a name="apple-hls-group"></a>
+# Apple HLS group<a name="apple-hls-group"></a>
 
 The following example shows a CloudWatch Events `JobResult` notification, with output file path information, for an Apple HLS group\.
 

@@ -1,4 +1,4 @@
-# Implementing Client\-Side Encryption<a name="implementing-client-side-encryption"></a>
+# Implementing client\-side encryption<a name="implementing-client-side-encryption"></a>
 
 Client\-side encryption is one of the three encryption options that you can use with AWS Elemental MediaConvert\. With client\-side encryption, you encrypt your input files before you upload them to Amazon S3\.
 
@@ -12,7 +12,7 @@ When you set up client\-side encryption, you use multiple AWS services, as shown
 
 **To use client\-side encryption with AWS Elemental MediaConvert**
 
-1. Use AWS Key Management Service \(AWS KMS\) to create a customer managed customer master key \(CMK\)\. For procedures, see [Creating Keys](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html) in the *AWS Key Management Service Developer Guide*\. For an overview, see [Customer Master Keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys) in the same guide\.
+1. Use AWS Key Management Service \(AWS KMS\) to create a customer managed customer master key \(CMK\)\. For procedures, see [Creating keys](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html) in the *AWS Key Management Service Developer Guide*\. For an overview, see [Customer master keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys) in the same guide\.
 
 1. Create a data key to use to encrypt your content\. Use the AWS KMS [Encrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html) operation to encrypt the data key under your customer managed CMK\. You must use this encryption context: 
 
@@ -22,11 +22,11 @@ When you set up client\-side encryption, you use multiple AWS services, as shown
 
    You can create and encrypt your data key in one the following ways:
    + Create a data key using AWS Key Management Service \(AWS KMS\) by calling KMS [GenerateDataKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html)\. For the `KeyId` parameter, specify the Amazon Resource Name \(ARN\) of the CMK that you created in the first step of this procedure\. This operation returns a plaintext copy of the data key and a copy that is encrypted under the CMK\.
-   + Use an encryption library, such as [OpenSSL](https://www.openssl.org/), to create an [Advanced Encryption Standard](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) \(AES\) key\. Then, encrypt the key by calling AWS KMS [Encrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html)\. Include the CMK that you created in the first step of this procedure as the `KeyId` when you make this call\.
+   + Use an encryption library, such as [OpenSSL](https://www.openssl.org/), to create an [Advanced encryption standard](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) \(AES\) key\. Then, encrypt the key by calling AWS KMS [Encrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html)\. Include the CMK that you created in the first step of this procedure as the `KeyId` when you make this call\.
 
      For more information about creating an AES key using OpenSSL, see the [OpenSSL documentation](https://www.openssl.org/docs/)\.
 
-   For more information, see [data keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#data-keys) in the [AWS Key Management Service Concepts](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html) topic of the *AWS Key Management Service Developer Guide*\.
+   For more information, see [data keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#data-keys) in the [AWS Key Management Service concepts](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html) topic of the *AWS Key Management Service Developer Guide*\.
 
 1. Use the plaintext data key that you created in the preceding step to encrypt your content as follows:
    + Use one of the following AES encryption modes: CTR, CBC, or GCM\.
@@ -55,6 +55,6 @@ You must provide your initialization vector encoded in base64\. You can do base6
    1. If the AWS Region that you used for AWS KMS when you generated your data key is different from the Region that you are currently using to run your AWS Elemental MediaConvert job, specify that Region for **AWS Region for decryption key**\.
 
 1. Grant `kms:Decrypt` permissions to your AWS Elemental MediaConvert AWS Identity and Access Management \(IAM\) role\. Use an IAM inline policy\. To learn more, see these topics:
-   + For more information about setting up an IAM role for AWS Elemental MediaConvert to assume, see [Step 3: Set Up IAM Permissions ](iam-role.md) in the Getting Started chapter of this guide\.
-   + For more information about granting IAM permissions using an inline policy, see the procedure **To embed an inline policy for a user or role** in [Adding IAM Identity Permissions \(Console\)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console) in the *IAM User Guide*\. 
-   + For examples of IAM policies that grant AWS KMS permissions, including decrypting encrypted content, see [Customer Managed Policy Examples](https://docs.aws.amazon.com/kms/latest/developerguide/iam-policies.html#customer-managed-policies) in the *AWS Key Management Service Developer Guide*\.
+   + For more information about setting up an IAM role for AWS Elemental MediaConvert to assume, see [Step 3: Set up IAM permissions ](iam-role.md) in the Getting Started chapter of this guide\.
+   + For more information about granting IAM permissions using an inline policy, see the procedure **To embed an inline policy for a user or role** in [Adding IAM identity permissions \(console\)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console) in the *IAM User Guide*\. 
+   + For examples of IAM policies that grant AWS KMS permissions, including decrypting encrypted content, see [Customer managed policy examples](https://docs.aws.amazon.com/kms/latest/developerguide/iam-policies.html#customer-managed-policies) in the *AWS Key Management Service Developer Guide*\.

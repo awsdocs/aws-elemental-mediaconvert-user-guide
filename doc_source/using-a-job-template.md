@@ -1,4 +1,4 @@
-# Using a Job Template to Create a Job in AWS Elemental MediaConvert<a name="using-a-job-template"></a>
+# Using a job template to create a job in AWS Elemental MediaConvert<a name="using-a-job-template"></a>
 
 Job templates apply to an entire transcoding job and provide values for settings that stay the same across multiple jobs\. You specify the input settings and the AWS Identity and Access Management \(IAM\) service role in the job itself\. These values are not saved in the template because they are likely to vary from job to job\.
 
@@ -29,4 +29,4 @@ Make sure that you specify your audio and captions selectors in a way that corre
 
 1. In the **Job settings** section of the **Job pane**, choose **Settings**\.
 
-1. In the **Job settings** pane, in the **IAM role** dropdown list, choose the service role that you created to grant permissions to MediaConvert to access your resources on your behalf\. For instructions on creating this role, see [Getting Started](getting-started.md)\.
+1. In the **Job settings** pane, in the **IAM role** dropdown list, choose the service role that you created to grant permissions to MediaConvert to access your resources on your behalf\. For instructions on creating this role, see [Getting started](getting-started.md)\.

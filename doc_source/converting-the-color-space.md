@@ -1,12 +1,12 @@
-# Converting the Color Space<a name="converting-the-color-space"></a>
+# Converting the color space<a name="converting-the-color-space"></a>
 
 If you want your output video to use a different color space than your input video, use color space conversion\. Set up color space conversion in the output **Color corrector** settings\.
 
 **To convert the color space**
 
-1. Confirm that MediaConvert supports the conversion that you want to do\. See [Supported Color Space Conversions](hdr-support.md#supported-color-space-conversions)\.
+1. Confirm that MediaConvert supports the conversion that you want to do\. See [Supported color space conversions](hdr-support.md#supported-color-space-conversions)\.
 
-1. Set up your transcoding job as usual\. For more information, see [Setting Up a Job in AWS Elemental MediaConvert](setting-up-a-job.md)\.
+1. Set up your transcoding job as usual\. For more information, see [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md)\.
 
 1. On the **Create job** page, in the **Job** pane on the left, choose your HDR output\.
 

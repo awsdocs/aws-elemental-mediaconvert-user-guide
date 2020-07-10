@@ -1,8 +1,11 @@
-# Setting Up an Assembly Workflow Job<a name="setting-up-an-assembly-workflow-job"></a>
+# Setting up an assembly workflow job<a name="setting-up-an-assembly-workflow-job"></a>
 
 Follow these steps to set up a job that combines assembly workflow features such as input clipping, input stitching, graphic overlay, and sidecar captions sync\. Doing these tasks in this order can make setup easier\. In particular, we recommend that you specify your input clips last\. This is because each input timeline counts frames from the entire input, not from each individual clip\.
 
-This procedure relies on the concept of input and output timelines\. For more information, see [How MediaConvert Uses Timelines to Assemble Jobs](how-mediaconvert-uses-timelines-to-assemble-jobs.md)\.
+**Note**  
+You can’t use input clipping for audio\-only jobs\. All job outputs must have video\.
+
+This procedure relies on the concept of input and output timelines\. For more information, see [How MediaConvert uses timelines to assemble jobs](how-mediaconvert-uses-timelines-to-assemble-jobs.md)\.
 
 **To set up an assembly workflow job \(console\)**
 
@@ -10,11 +13,11 @@ This procedure relies on the concept of input and output timelines\. For more in
 
    You can have up to 150 inputs in a job\. MediaConvert stitches together the inputs in the order that you add them\. If you want to use multiple clips from the same input file, and you want them in chronological order without other inputs in between them, specify the input file only once\.
 
-   For full instructions, see [Step 1: Specify Your Input Files](specify-input-settings.md)\.
+   For full instructions, see [Step 1: Specify your input files](specify-input-settings.md)\.
 
 1. **Set up your audio selectors\.**
 
-   In each input, you create audio selectors to map your input audio to your outputs\. For instructions, see [Step 2: Create Input Selectors for Video, Audio, and Captions](create-selectors.md)\.
+   In each input, you create audio selectors to map your input audio to your outputs\. For instructions, see [Step 2: Create input selectors for video, audio, and captions](create-selectors.md)\.
 
    With sidecar audio files, MediaConvert synchronizes audio and video without regard to timecodes\. MediaConvert lines up the start of the audio file with the start of the video file\.
 
@@ -27,9 +30,9 @@ This procedure relies on the concept of input and output timelines\. For more in
    + If your input captions format is timestamp\-based \(for example, SRT, SMI, or TTML\), the service synchronizes the captions with the video without regard to timecodes\.
 
 **Related information**
-   + [About Input Timecode Source and Captions Alignment](about-input-timecode-source-and-captions-alignment.md)
-   + [Adjusting the Input Timeline with the Input Timecode Source](timecode-input.md)
-   + [Setting Up Captions](including-captions.md) 
+   + [About input timecode source and captions alignment](about-input-timecode-source-and-captions-alignment.md)
+   + [Adjusting the input timeline with the input timecode source](timecode-input.md)
+   + [Setting up captions](including-captions.md) 
 
 1. **Set up when you want any graphic overlays or motion graphic overlays to appear\.**
 
@@ -39,9 +42,9 @@ This procedure relies on the concept of input and output timelines\. For more in
    + For motion graphic overlays, specify when you want the overlay to appear based on the inputs' timelines\.
 
 **Related information**
-   + [Adjusting the Input Timeline with the Input Timecode Source](timecode-input.md)
-   + [Adjusting the Output Timeline with the Job\-wide Timecode Configuration](timecode-jobconfig.md)
-   + [Using Image Inserter \(Graphic Overlay\)](graphic-overlay.md)
+   + [Adjusting the input timeline with the input timecode source](timecode-input.md)
+   + [Adjusting the output timeline with the job\-wide timecode configuration](timecode-jobconfig.md)
+   + [Using image inserter \(graphic overlay\)](graphic-overlay.md)
 
 1. **Specify input clips\.**
 
@@ -55,7 +58,13 @@ This procedure relies on the concept of input and output timelines\. For more in
 
    1. Enter the starting and ending timecodes for the first clip that you want to include\. Use the following 24\-hour format with a frame number: HH:MM:SS:FF\.
 
-      Make sure that you provide timecodes that align with your input timeline\. For more information, see [Adjusting the Input Timeline with the Input Timecode Source](timecode-input.md)\.
+      Make sure that you provide timecodes that align with your input timeline\. By default, MediaConvert bases input clipping on timecodes that are embedded in your input video\. How you align your timecodes depends on whether your input video has embedded timecodes:
+      + If your input doesn't have embedded timecodes, you must set **Timecode source** to **Start at 0** or **Specified start**\.
+      + If your input *does* have embedded timecodes and you want MediaConvert to use them, for **Timecode source**, keep the default value, **Embedded**\. Specify your clip start and end times accordingly\.
+
+        For example, if your input **Timecode source** is set to **Embedded** and your video has embedded timecodes that start at 01:00:00:00, define the start timecode for a clip thirty seconds in as 01:00:30:00, not 00:00:30:00\. By default, the input timeline is the same as the timecodes embedded in the video\. You can change what determines the input timeline by adjusting the input **Timecode source** setting\.
+
+      For more information, see [Adjusting the input timeline with the input timecode source](timecode-input.md)\.
 
    1. Specify any additional clips\. Multiple clips must be in chronological order and can't overlap; each **Start timecode** must come after the previous clip's **End timecode**\.
 

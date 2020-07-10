@@ -1,4 +1,4 @@
-# Deleting a Custom Job Template in AWS Elemental MediaConvert<a name="deleting-a-job-template"></a>
+# Deleting a custom job template in AWS Elemental MediaConvert<a name="deleting-a-job-template"></a>
 
 You can delete any custom job template\. You can't delete system job templates\.
 

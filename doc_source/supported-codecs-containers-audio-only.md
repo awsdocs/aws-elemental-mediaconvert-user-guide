@@ -1,6 +1,6 @@
-# Supported Codecs and Containers for Audio\-Only Outputs<a name="supported-codecs-containers-audio-only"></a>
+# Supported codecs and containers for audio\-only outputs<a name="supported-codecs-containers-audio-only"></a>
 
-## Input Codecs and Containers Supported for Audio\-Only<a name="input-codecs-and-containers-supported-for-audio-only"></a>
+## Input codecs and containers supported for audio\-only<a name="input-codecs-and-containers-supported-for-audio-only"></a>
 
 MediaConvert supports the following combinations of input container and codec for audio\-only outputs\.
 
@@ -13,7 +13,7 @@ MediaConvert supports the following combinations of input container and codec fo
 | QuickTime \(\.mov\) | PCM | 
 | WAV \(\.wav\) | PCM | 
 
-## Output Codecs and Containers Supported for Audio\-Only<a name="output-codecs-and-containers-supported-for-audio-only"></a>
+## Output codecs and containers supported for audio\-only<a name="output-codecs-and-containers-supported-for-audio-only"></a>
 
 MediaConvert supports the following combinations of output container and codec for creating audio\-only outputs\.
 

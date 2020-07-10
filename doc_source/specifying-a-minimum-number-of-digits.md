@@ -1,4 +1,4 @@
-# Specifying a Minimum Number of Digits<a name="specifying-a-minimum-number-of-digits"></a>
+# Specifying a minimum number of digits<a name="specifying-a-minimum-number-of-digits"></a>
 
 For format identifiers that return a number, you can specify a minimum number of digits that the format identifier will resolve to\. When you do, the service adds padding zeros before any value that would return fewer digits\.
 

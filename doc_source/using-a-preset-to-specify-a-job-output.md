@@ -1,12 +1,12 @@
-# Using Output Presets to Specify the Outputs of Your AWS Elemental MediaConvert Job<a name="using-a-preset-to-specify-a-job-output"></a>
+# Using output presets to specify the outputs of your AWS Elemental MediaConvert job<a name="using-a-preset-to-specify-a-job-output"></a>
 
 When you specify the outputs of your MediaConvert job, you can use an output preset instead of choosing each output setting separately\.
 
 **To specify a job output using an output preset**
 
-1. Create a job in the usual way, as described in [Step 6: Create a Job](create-a-job.md)\.
+1. Create a job in the usual way, as described in [Step 6: Create a job](create-a-job.md)\.
 
-1. Create output groups as described in [Step 3: Create Output Groups](specify-output-groups.md)\.
+1. Create output groups as described in [Step 3: Create output groups](specify-output-groups.md)\.
 **Tip**  
 Many jobs have one output for each type of device that will play the video created by the job\.
 
@@ -20,4 +20,4 @@ The **Preset** dropdown list shows only the presets that work with the type of o
 
 1. Repeat these steps for each output in your job that you want to specify with a preset\.
 
-1. Finish creating the job as described in [Step 6: Create a Job](create-a-job.md)\.
+1. Finish creating the job as described in [Step 6: Create a job](create-a-job.md)\.

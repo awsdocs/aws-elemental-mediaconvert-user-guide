@@ -1,4 +1,4 @@
-# Example Inline Policy with kms:Decrypt and kms:GenerateDataKey<a name="example-inline-policy-kms-decrypt-generatedatakey"></a>
+# Example inline policy with kms:decrypt and kms:GenerateDataKey<a name="example-inline-policy-kms-decrypt-generatedatakey"></a>
 
 This policy grants permissions for both kms:Decrypt and kms:GenerateDataKey\.
 

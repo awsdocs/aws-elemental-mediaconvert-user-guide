@@ -1,10 +1,10 @@
-# Creating and Setting Up Outputs in File Output Groups<a name="create-outputs-in-file-output-groups"></a>
+# Creating and setting up outputs in File output groups<a name="create-outputs-in-file-output-groups"></a>
 
-With file output groups, each asset that the service creates corresponds to one output, rather than one output group\. Each asset contains all video, audio, and captions elements\. Therefore, it's simplest to set up by first creating the output, and then setting up all the output selectors\. 
+With **File** output groups, each asset that the service creates corresponds to one output, rather than one output group\. Each asset contains all video, audio, and captions elements\. Therefore, it's simplest to set up by first creating the output, and then setting up all the output selectors\. 
 
-## Create File Outputs<a name="create-file-outputs"></a>
+## Create File outputs<a name="create-file-outputs"></a>
 
-If you created a file output group in [Step 3: Create Output Groups](specify-output-groups.md), create and set up an output in the file output group for each standalone file that you intend to create, as shown in the following illustration\.
+If you created a **File** output group in [Step 3: Create output groups](specify-output-groups.md), create and set up an output in the file output group for each standalone file that you intend to create, as shown in the following illustration\.
 
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/Job_outputs-file.png)
 
@@ -18,9 +18,9 @@ If you created a file output group in [Step 3: Create Output Groups](specify-out
 
    1. In the **Outputs** pane, choose **Add output**\.
 
-## Set Up Output Selectors in File Outputs<a name="set-up-output-selectors-in-file-outputs"></a>
+## Set up output selectors in File outputs<a name="set-up-output-selectors-in-file-outputs"></a>
 
-Next, for each file output you just created, set up output selectors\. The following illustration shows the three types of output selectors, all contained in one output\.
+Next, for each **File** output you just created, set up output selectors\. The following illustration shows the three types of output selectors, all contained in one output\.
 
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/Job_output-selectors-file.png)
 
@@ -49,8 +49,8 @@ There is only one input video selector per job, so you don't need to explicitly 
 
    1. Choose **Audio 1** to display the group of encoding settings for the first audio asset\. **Audio 1** is located on the left side of the **Stream settings** pane, below **Video**\.
 
-   1. Under **Stream settings**, for **Audio source**, choose one of the audio selectors that you created in [Step 2: Create Input Selectors for Video, Audio, and Captions](create-selectors.md)\.
+   1. Under **Stream settings**, for **Audio source**, choose one of the audio selectors that you created in [Step 2: Create input selectors for video, audio, and captions](create-selectors.md)\.
 
    1. In the **Stream settings** section, specify values for audio encoding\. For more information about individual settings, choose the **Info** link next to each setting\.
 
-   1. To include captions in the output, choose **Add captions** to display a group of captions settings\. For more information about setting up captions, see [Setting Up Captions in AWS Elemental MediaConvert Jobs](including-captions.md)\.
+   1. To include captions in the output, choose **Add captions** to display a group of captions settings\. For more information about setting up captions, see [Setting up captions in MediaConvert jobs](including-captions.md)\.

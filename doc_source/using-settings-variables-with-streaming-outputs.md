@@ -1,4 +1,4 @@
-# Using Settings Variables with Streaming Outputs<a name="using-settings-variables-with-streaming-outputs"></a>
+# Using settings variables with streaming outputs<a name="using-settings-variables-with-streaming-outputs"></a>
 
 Variables in your job settings, also called *format identifiers*, function differently for outputs in Apple HLS and DASH ISO output groups\. Here are the differences:
 

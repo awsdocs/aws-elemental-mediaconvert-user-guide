@@ -1,4 +1,4 @@
-# Troubleshooting DRM Encryption<a name="troubleshooting-encryption"></a>
+# Troubleshooting DRM encryption<a name="troubleshooting-encryption"></a>
 
 If the DRM system key server is unavailable when AWS Elemental MediaConvert requests keys, the console displays the following message: Key Server Unavailable\. 
 

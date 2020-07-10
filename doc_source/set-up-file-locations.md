@@ -1,4 +1,4 @@
-# Step 2: Create Storage for Files<a name="set-up-file-locations"></a>
+# Step 2: Create storage for files<a name="set-up-file-locations"></a>
 
 AWS Elemental MediaConvert transcodes your input files to generate output files\. MediaConvert can take in your input files from Amazon S3 or from a server through HTTP or HTTPS\. For your output locations, MediaConvert works with Amazon S3 buckets\.<a name="create-s3-buckets-procedure"></a>
 

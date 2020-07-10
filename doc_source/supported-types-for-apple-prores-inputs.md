@@ -1,4 +1,4 @@
-# Supported Types for Apple ProRes Inputs<a name="supported-types-for-apple-prores-inputs"></a>
+# Supported types for Apple ProRes inputs<a name="supported-types-for-apple-prores-inputs"></a>
 
 AWS Elemental MediaConvert supports the following types of Apple ProRes inputs:
 + Apple ProRes 4444 XQ

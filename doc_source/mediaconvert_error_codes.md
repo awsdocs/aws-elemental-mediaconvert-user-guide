@@ -1,18 +1,18 @@
-# AWS Elemental MediaConvert Error Codes<a name="mediaconvert_error_codes"></a>
+# AWS Elemental MediaConvert error codes<a name="mediaconvert_error_codes"></a>
 
 MediaConvert returns error codes when transcoding jobs run into problems\. You can use CloudWatch Events to track the error codes that the service returns\.
 
 This table provides more detailed information about the error codes and messages that the MediaConvert encoding engine returns, with possible solutions\.
 
 
-| Error Code | Message | Details | 
+| Error code | Message | Details | 
 | --- | --- | --- | 
 |  1010  |  Input Error  |  The service can't open one or more of your input files\. Possible causes are as follows: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/mediaconvert_error_codes.html)  | 
 |  1020  |  Video Error  |  The service can't find any video in your input stream\. The service was able to open and read your input file, but couldn't find a video elementary stream\. Possible causes are as follows: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/mediaconvert_error_codes.html)  | 
 |  1021  |  Audio Error  |  The service can't find any audio in your input stream\. The service was able to open and read your input file, but couldn't find an audio elementary stream\. Possible causes are as follows: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/mediaconvert_error_codes.html)  | 
-|  1030  |  Unsupported Codec  |  The service doesn't support the codec or container of the input file\. See [Supported Input Codecs and Containers](reference-codecs-containers-input.md)\.  | 
+|  1030  |  Unsupported Codec  |  The service doesn't support the codec or container of the input file\. See [Supported input codecs and containers](reference-codecs-containers-input.md)\.  | 
 |  1040  |  Settings Error  |  One or more of the job's encoding settings aren't supported in the combination specified\. Or, the encoding settings aren't compatible with the input\.   | 
-| 1041 | Acceleration Settings Error | Your job settings aren't compatible with accelerated transcoding\. See [Job Limitations for Accelerated Transcoding in AWS Elemental MediaConvert](job-requirements.md)\. | 
+| 1041 | Acceleration Settings Error | Your job settings aren't compatible with accelerated transcoding\. See [Job limitations for accelerated transcoding in AWS Elemental MediaConvert](job-requirements.md)\. | 
 | 1042 | Job Doesn't Require Enough Processing Power for Accelerated Transcoding | This job doesn't require enough processing power to benefit from accelerated transcoding\. Consider using accelerated transcoding for jobs that would otherwise take 10 minutes or longer to run\. | 
 |  1050  |  Disk Full  |  Write error, disk full\. Try reducing the number of outputs in the job, or reducing the length of the output\.  | 
 |  1056  |  File Open Error  |  The service can't open an input or output file\. Possible causes are as follows: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/mediaconvert_error_codes.html)  | 
@@ -30,7 +30,7 @@ This table provides more detailed information about the error codes and messages
 |  1515  |  IAM Role Error  |  The role specified in your AWS Elemental MediaConvert job settings doesn't have the necessary permissions or is malformed\. Check that the job has the right IAM role specified and that the role has the correct permissions\. For more information about setting up this IAM role, see [Set Up IAM Permissions](iam-role.md) in this guide\.   | 
 | 1550 | Acceleration Fault | There is an unexpected error with the accelerated transcoding of this job\. Contact AWS Support\. | 
 |  1999  |  Unknown Error  |  There is an unexpected transcoding error\. Contact AWS Support\.  | 
-| 3401 | HTTP File Access Not Authorized |  You specified an HTTP\(S\) URL for an input file that requires authentication\. MediaConvert doesn't pass authentication credentials to the HTTP server\. Either change the permissions for your file on the HTTP server, or upload your file to Amazon S3 and specify the Amazon S3 location instead\. For more information, see [HTTP Input Requirements](upload-input-files.md#http-input-requirements)\.   | 
+| 3401 | HTTP File Access Not Authorized |  You specified an HTTP\(S\) URL for an input file that requires authentication\. MediaConvert doesn't pass authentication credentials to the HTTP server\. Either change the permissions for your file on the HTTP server, or upload your file to Amazon S3 and specify the Amazon S3 location instead\. For more information, see [HTTP input requirements](upload-input-files.md#http-input-requirements)\.   | 
 | 3403 | HTTP Access Forbidden |  You specified an HTTP URL for an input file, but the HTTP server refuses the request\. Check that you have specified the correct URL\. If you have, contact the team that is responsible for maintaining the HTTP server that hosts your file\.  | 
 | 3404 | HTTP File Not Found |  You specified an HTTP URL for an input file, but the HTTP server doesn't have the file\. Check that you have specified the correct URL\.  | 
 | 3408 | HTTP Upload Error |  You specified an HTTP URL for an input file, but the upload failed for a reason that is unrelated to errors 3401, 3403, and 3404\. Contact AWS Support\.  | 

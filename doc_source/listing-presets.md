@@ -1,4 +1,4 @@
-# Listing and Viewing Output Presets in MediaConvert<a name="listing-presets"></a>
+# Listing and viewing output presets in MediaConvert<a name="listing-presets"></a>
 
 You can list the system presets that are included with MediaConvert and the custom presets that you have added in an AWS Region\. You can also view the settings for an individual preset\. 
 

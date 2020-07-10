@@ -1,4 +1,4 @@
-# Creating Audio ABR Streaming Outputs<a name="audio-abr-streaming-outputs"></a>
+# Creating audio ABR streaming outputs<a name="audio-abr-streaming-outputs"></a>
 
 For each audio output that you include in your output group, AWS Elemental MediaConvert creates one audio rendition, or set of segmented video files\. The most common reason to include multiple audio renditions is to provide multiple language options\. If you provide only one language, you probably need only one audio output\.
 
@@ -29,7 +29,7 @@ If you are working in a CMAF output group, skip this step\. The first audio outp
 
    1. In the **Output settings** section, specify values for any remaining general settings\. For more information about individual settings, choose the **Info** link next to each setting\.
 
-   1. Under **Stream settings**, for **Audio source**, choose one of the audio selectors that you created in [Step 2: Create Input Selectors for Video, Audio, and Captions](create-selectors.md)\.
+   1. Under **Stream settings**, for **Audio source**, choose one of the audio selectors that you created in [Step 2: Create input selectors for video, audio, and captions](create-selectors.md)\.
 
    1. In the **Stream settings** section, specify values for audio encoding\. For more information about individual settings, choose the **Info** link next to each setting\.
 

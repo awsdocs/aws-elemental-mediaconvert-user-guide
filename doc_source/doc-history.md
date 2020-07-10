@@ -1,4 +1,4 @@
-# Document History for User Guide<a name="doc-history"></a>
+# Document history for User Guide<a name="doc-history"></a>
 
 The following table describes important additions to the AWS Elemental MediaConvert documentation\. We also update the documentation frequently to address the feedback that you send us\.
 + **API version: 2017\-08\-29** 
@@ -6,6 +6,7 @@ The following table describes important additions to the AWS Elemental MediaConv
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [New supported output formats](reference-codecs-containers.md#reference-codecs-containers-output-video) | Updated output codec and container reference table to reflect new format support\. MediaConvert now supports WebM as an output container with VP8 and VP9 video codecs and Opus and Vorbis audio codecs\. | June 3, 2020 | 
 | [Queue hopping](setting-up-queue-hopping-to-avoid-long-waits.md) | Learn about the AWS Elemental MediaConvert queue hopping feature\. This feature lets you set up a job to automatically move to a different queue after waiting a specified length of time in the queue that you originally submitted it to\. | April 8, 2020 | 
 | [You can now convert from HDR to SDR with automatic tone mapping](hdr-support.md#supported-color-space-conversions) | Learn about how AWS Elemental MediaConvert uses tone mapping to automatically convert from HDR formats to SDR color spaces\. | March 6, 2020 | 
 | [8k output support in AWS Elemental MediaConvert](supported-output-resolution-maximums-by-codec.md) | MediaConvert now supports up to 8k output resolution\. Find more information about resolution maximums by output codec\. | November 25, 2019 | 
@@ -28,7 +29,7 @@ The following table describes important additions to the AWS Elemental MediaConv
 | [Specify the priority of your jobs](setting-the-priority-of-a-job.md) | Learn how to set the relative priority of your jobs when you create them\. | July 30, 2019 | 
 | [Convert two SCC input files to embedded captions](converting-dual-scc-input-files-to-embedded-captions.md) | Learn about converting dual SCC input captions to embedded format\. | July 30, 2019 | 
 | [Create audio\-only outputs](audio-only.md) | Learn how to create MediaConvert outputs that contain only audio, without video\. | July 23, 2019 | 
-| [HTTP Inputs to AWS Elemental MediaConvert](upload-input-files.md#http-input-requirements) | You can now specify an HTTP\(S\) URL for your primary inputs to MediaConvert transcoding jobs\. Learn about HTTP\(S\) input requirements\. | July 12, 2019 | 
+| [HTTP inputs to AWS Elemental MediaConvert](upload-input-files.md#http-input-requirements) | You can now specify an HTTP\(S\) URL for your primary inputs to MediaConvert transcoding jobs\. Learn about HTTP\(S\) input requirements\. | July 12, 2019 | 
 | [Monitor output file upload progress](monitoring-overview.md) | Using CloudWatch Events, you can now monitor the progress of your job with finer granularity, because AWS Elemental MediaConvert now reports percentage completion of the job phases PROBING, UPLOADING, and TRANSCODING, in addition to reporting overall job progress in percent completion\. | May 7, 2019 | 
 | [Doc\-only update, format identifiers ](using-variables-in-your-job-settings.md) | Learn how to use format identifiers as variables in your job settings\. For example, you can use a format identifier to represent your input file name in a job template or output preset, so that AWS Elemental MediaConvert uses the input file name in the file path for your output\. | April 24, 2019 | 
 | [You can now cancel an in\-progress job\.](working-with-jobs.md) | AWS Elemental MediaConvert now allows you to cancel jobs that are already in progress\. | March 13, 2019 | 
@@ -48,7 +49,7 @@ The following table describes important additions to the AWS Elemental MediaConv
 | [Tagging AWS Elemental MediaConvert resources on the console](tagging-mediaconvert-resources.md) | You can now work with tags on existing AWS Elemental MediaConvert queues, job templates, and output presets in the MediaConvert console\. | July 31, 2018 | 
 | [CloudTrail changes](logging-using-cloudtrail.md) | Updated the MediaConvert documentation to reflect changes in AWS CloudTrail behavior\. | July 19, 2018 | 
 | [Tagging AWS Elemental MediaConvert resources initial release](tagging-mediaconvert-resources.md) | You can now tag MediaConvert resources when you create them using the MediaConvert console, the MediaConvert API, or the AWS CLI\. You can list the tags on an existing MediaConvert resource, and add and remove tags on existing MediaConvert resources, through the MediaConvert API and AWS CLI\. | July 16, 2018 | 
-| [Doc\-only update, Setting up a job](specify-output-groups.md) | Added step\-by\-step procedures for setting up a job to transcode input media files into files and packages for playing on multiple device types\. | June 20, 2018 | 
+| [Doc\-only update, setting up a job](specify-output-groups.md) | Added step\-by\-step procedures for setting up a job to transcode input media files into files and packages for playing on multiple device types\. | June 20, 2018 | 
 | [Doc\-only update, "working with" procedures](working-with-jobs.md) | Added step\-by\-step procedures for creating, listing, editing, and deleting templates, presets, queues, and jobs\. | May 29, 2018 | 
 | [CMAF support](structuring-complex-jobs.md) | MediaConvert adds support for common media application format \(CMAF\) outputs\. | May 4, 2018 | 
 | [New MediaConvert service release](what-is.md) | Initial documentation for the MediaConvert service\. | November 27, 2017 | 

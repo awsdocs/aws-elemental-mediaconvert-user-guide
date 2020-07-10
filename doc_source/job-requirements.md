@@ -1,8 +1,8 @@
-# Job Limitations for Accelerated Transcoding in AWS Elemental MediaConvert<a name="job-requirements"></a>
+# Job limitations for accelerated transcoding in AWS Elemental MediaConvert<a name="job-requirements"></a>
 
 Before you enable accelerated transcoding, make sure that your job conforms to the following requirements and limitations\.
 
-**Video Inputs Supported with Accelerated Transcoding**  
+**Video inputs supported with accelerated transcoding**  
 The following table shows the video input codecs and containers that MediaConvert supports with accelerated transcoding\.
 
 
@@ -14,7 +14,7 @@ The following table shows the video input codecs and containers that MediaConver
 | MXF | Apple ProRes, AVC Intra 50/100, AVC \(H\.264\), JPEG 2000 \(J2K\), MPEG\-2, SonyXDCam, SonyXDCam \(as an MPEG\-2 variant only\) | 
 | QuickTime | Apple ProRes, AVC Intra 50/100, AVC \(H\.264\), JPEG 2000 \(J2K\), MPEG\-2 | 
 
-**Video Outputs Supported with Accelerated Transcoding**  
+**Video outputs supported with accelerated transcoding**  
 The following table shows the video output codecs and containers that MediaConvert supports with accelerated transcoding\.
 
 
@@ -34,15 +34,15 @@ The following table shows the video output codecs and containers that MediaConve
 **Note**  
 For MPEG\-2 TS outputs, to use accelerated transcoding, you must change the default value of **CBR** for **Transport stream settings** > **Rate mode** to **VBR**\.
 
-**Output Restrictions**
+**Output restrictions**
 + Use only supported combinations of container and codec\. The preceding table shows the supported video output codecs and containers\.
 + Use only supported output captions formats\. For accelerated transcoding, MediaConvert doesn’t support the following output captions formats:
   + Not supported: Burn\-in
   + Not supported: SCTE\-20
 
-  For a list of supported captions formats, see [Captions Support Tables by Output Container Type](captions-support-tables-by-container-type.md)\.
+  For a list of supported captions formats, see [Captions support tables by output container type](captions-support-tables-by-container-type.md)\.
 
-**Transcoding Features Not Supported with Accelerated Transcoding**
+**Transcoding features not supported with accelerated transcoding**
 + Avail blanking
 + Motion image inserter \(Motion graphic overlay\)
 + Interpolated frame rate conversion

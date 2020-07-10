@@ -1,4 +1,4 @@
-# Creating Additional Manifests<a name="create-additional-manifests"></a>
+# Creating additional manifests<a name="create-additional-manifests"></a>
 
 By default, MediaConvert generates a single top\-level manifest for each of your CMAF, DASH ISO, Apple HLS, and Microsoft Smooth Streaming output groups\. This default manifest references all the outputs in the output group\. Optionally, you can create additional top\-level manifests that reference only a subset of the outputs in your output group\. For example, you might want to create a manifest that doesn't include HDR outputs, for viewers who don't have a subscription that includes HDR\.
 

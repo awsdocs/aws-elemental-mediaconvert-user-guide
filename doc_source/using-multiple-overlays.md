@@ -1,4 +1,4 @@
-# About Specifying the Overlay **Layer**<a name="using-multiple-overlays"></a>
+# About specifying the overlay **Layer**<a name="using-multiple-overlays"></a>
 
 The **Layer** setting specifies how overlapping graphic overlays appear in the video\. The service overlays graphics with higher values for **Layer** on top of overlays with lower values for **Layer**\. Each overlay must have a unique value for **Layer**; you can't assign the same layer number to more than one overlay\.
 
@@ -8,7 +8,7 @@ The following illustration shows how the value for **Layer** affects how a graph
 
 **To specify a value for the **Layer** setting**
 
-1. Set up your graphic overlay as described in [Still Graphic Overlay](setting-up-a-graphic-overlay.md)\.
+1. Set up your graphic overlay as described in [Still graphic overlay](setting-up-a-graphic-overlay.md)\.
 
 1. For **Layer**, enter a whole number from 0 to 99\. 
 **Note**  

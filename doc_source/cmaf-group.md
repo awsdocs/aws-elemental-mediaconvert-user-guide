@@ -1,4 +1,4 @@
-# CMAF Group<a name="cmaf-group"></a>
+# CMAF group<a name="cmaf-group"></a>
 
 The following example shows a CloudWatch Events `JobResult` notification, with output file path information, for a CMAF group\.
 

@@ -1,4 +1,4 @@
-# DASH ISO Group<a name="dash-iso-group"></a>
+# DASH ISO group<a name="dash-iso-group"></a>
 
 The following example shows a CloudWatch Events `JobResult` notification, with output file path information, for a DASH ISO group\.
 

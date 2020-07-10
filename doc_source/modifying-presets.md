@@ -1,6 +1,6 @@
-# Modifying Custom Presets in MediaConvert<a name="modifying-presets"></a>
+# Modifying custom presets in MediaConvert<a name="modifying-presets"></a>
 
-You can adjust the settings and field values in your custom presets\. You can't change system presets, but you can duplicate them and modify the duplicate, as described in [Creating a Custom Preset from a System Preset](create-custom-preset-from-system-preset.md)\.
+You can adjust the settings and field values in your custom presets\. You can't change system presets, but you can duplicate them and modify the duplicate, as described in [Creating a custom preset from a system preset](create-custom-preset-from-system-preset.md)\.
 
 After you modify a preset, jobs that use the preset will run with the new settings, including the following:
 + Jobs that directly specify the custom preset\.

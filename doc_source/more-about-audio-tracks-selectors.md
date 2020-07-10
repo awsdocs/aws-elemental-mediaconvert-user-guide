@@ -1,4 +1,4 @@
-# More About Audio Tracks and Audio Selectors<a name="more-about-audio-tracks-selectors"></a>
+# More about audio tracks and audio selectors<a name="more-about-audio-tracks-selectors"></a>
 
 You use audio selectors to associate input audio with output audio\. You can set up a single audio selector to represent one or more tracks from the input\. After that, you create audio tracks in the output and associate a single audio selector with each output track\.
 

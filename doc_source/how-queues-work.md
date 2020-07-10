@@ -1,4 +1,4 @@
-# How Queues Work in AWS Elemental MediaConvert<a name="how-queues-work"></a>
+# How queues work in AWS Elemental MediaConvert<a name="how-queues-work"></a>
 
 For both on\-demand and reserved queues, AWS Elemental MediaConvert processes the jobs that you submit to a queue in parallel until the resources that are available to the queue are used\. When MediaConvert is using all the transcoding resources that are available to the queue, it holds any more jobs that you send to the queue without processing them\. When MediaConvert finishes one of the jobs that it's currently processing, it begins processing the next job in the queue\. MediaConvert determines the next job by the priority value that you assign when you create the job\.
 
@@ -9,7 +9,7 @@ You can temporarily stop processing jobs by pausing the queue\. When you pause a
 You must submit all jobs to a queue\. If you don't specify the queue when you create the jobs, AWS Elemental MediaConvert sends them to the default queue\. The default queue is an on\-demand queue\. You can have up to 10 on\-demand queues, including your default queue\.
 
 **Topics**
-+ [About On\-Demand Queues](about-on-demand-queues.md)
-+ [About Reserved Queues](about-reserved-queues.md)
-+ [Setting the Priority of a Job](setting-the-priority-of-a-job.md)
-+ [Setting Up Queue Hopping to Avoid Long Waits](setting-up-queue-hopping-to-avoid-long-waits.md)
++ [About on\-demand queues](about-on-demand-queues.md)
++ [About reserved queues](about-reserved-queues.md)
++ [Setting the priority of a job](setting-the-priority-of-a-job.md)
++ [Setting up queue hopping to avoid long waits](setting-up-queue-hopping-to-avoid-long-waits.md)
