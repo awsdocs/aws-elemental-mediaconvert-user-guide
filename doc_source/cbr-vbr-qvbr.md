@@ -40,9 +40,9 @@ This section provides information about the QVBR settings\. The following table 
 | 1080p | 1920 | 1080 | 9 | 6000000 | 
 | 720p | 1280 | 720 | 8 | 4000000 | 
 | 720p | 1280 | 720 | 7 | 2000000 | 
-| 480p | 640 | 480 | 7 | 1000000 | 
-| 360p | 480 | 360 | 7 | 700000 | 
-| 240p | 352 | 240 | 7 | 350000 | 
+| 480p | 852 | 480 | 7 | 1000000 | 
+| 360p | 640 | 360 | 7 | 700000 | 
+| 288p | 512 | 288 | 7 | 350000 | 
 
 With all resolutions, don't specify a value for **Max average bitrate** unless you need to guarantee a total file size cap\. When you specify a maximum average bit rate, it reduces the benefit that QVBR provides in video quality to file size ratio\. To use **Max average bitrate**, you have to first set **Quality tuning level** to **Multi\-pass HQ**\. 
 
