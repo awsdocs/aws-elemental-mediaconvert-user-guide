@@ -35,7 +35,9 @@ The following table shows the video output codecs and containers that MediaConve
 For MPEG\-2 TS outputs, to use accelerated transcoding, you must change the default value of **CBR** for **Transport stream settings** > **Rate mode** to **VBR**\.
 
 **Output restrictions**
++ Your output must have a video component\. MediaConvert doesn't support accelerated transcoding with audio\-only outputs\.
 + Use only supported combinations of container and codec\. The preceding table shows the supported video output codecs and containers\.
++ Use any output audio codec other than Dolby Atmos\. MediaConvert doesn't support accelerated transcoding with Dolby Atmos\.
 + Use only supported output captions formats\. For accelerated transcoding, MediaConvert doesn’t support the following output captions formats:
   + Not supported: Burn\-in
   + Not supported: SCTE\-20

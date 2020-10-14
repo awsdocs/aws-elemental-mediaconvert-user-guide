@@ -14,13 +14,7 @@ MediaConvert doesn't stop the current job when you submit a job with a higher pr
 
 **To set the priority for a job \(API, SDK, and AWS CLI\)**
 
-1. Set up your JSON job specification\. Either manually edit your JSON file, or use the console to generate it as follows:
-
-   1. Follow the previous procedure for the console\.
-
-   1. In the **Job** pane on the left, under **Job settings**, choose **Show job JSON**\.
-
-   The JSON job specification has the value for the job's priority in the property `priority`\. This property is a direct child of `job`, which is the top level of the JSON job specification\. Set the value of `priority` to an integer in the range from \-50 to 50, inclusive\. The default value is 0\.
+1. The JSON job specification has the value for the job's priority in the property `priority`\. This property is a direct child of `job`, which is the top level of the JSON job specification\. Set the value of `priority` to an integer in the range from \-50 to 50, inclusive\. The default value is 0\.
 
 1. Submit your job according to the instructions in the *AWS Elemental MediaConvert API Reference\.*
    + If you're using one of the AWS SDKs or the AWS CLI, see [Getting started with MediaConvert using the AWS SDKs or the AWS CLI](https://docs.aws.amazon.com/mediaconvert/latest/apireference/custom-endpoints.html)\.

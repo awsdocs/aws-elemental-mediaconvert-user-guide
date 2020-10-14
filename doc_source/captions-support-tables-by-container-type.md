@@ -27,7 +27,7 @@ The following table lists supported output captions formats for this output cont
 |  Raw Container  |  IMSC1 text profile  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
 |   |  SRT  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
 |   |  TTML  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
-|   |  STL  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
+|   |  EBU STL  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
 |   |  SCC  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
 |   |  SMI  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
 |  MPEG2\-TS Container  |  Embedded  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
@@ -68,7 +68,7 @@ The following table lists supported output captions formats for this output cont
 |  Raw Container  |  IMSC1 text profile  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
 |  |  SRT  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
 |   |  TTML  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
-|   |  STL  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
+|   |  EBU STL  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
 |   |  SCC  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
 |   |  SMI  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
 
@@ -110,7 +110,7 @@ You can use only [Teletext level 1\.5](https://en.wikipedia.org/wiki/World_Syste
 |  Raw Container  |  IMSC1 text profile  |  Burn in WebVTT  | 
 |  |  SRT  |  Burn in WebVTT  | 
 |   |  TTML  |  Burn in WebVTT  | 
-|   |  STL  |  Burn in WebVTT  | 
+|   |  EBU STL  |  Burn in WebVTT  | 
 |   |  SCC  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
 |   |  SMI  |  Burn in WebVTT  | 
 |  MPEG2\-TS Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
@@ -148,7 +148,7 @@ The following table lists supported output captions formats for this output cont
 |  |  SRT  |  Burn in TTML  | 
 |   |  SMI  |  Burn in TTML  | 
 |   |  TTML  |  Burn in TTML  | 
-|   |  STL  |  Burn in TTML  | 
+|   |  EBU STL  |  Burn in TTML  | 
 |   |  SCC  |  Burn in TTML  | 
 |   |  SMI  |  Burn in TTML  | 
 |  MPEG2\-TS Container  |  Embedded  |  Burn in TTML  | 
@@ -185,7 +185,7 @@ The following table lists supported output captions formats for this output cont
 |  Raw Container  |  IMSC1 text profile  |  Burn in  | 
 |  |  SRT  |  Burn in  | 
 |   |  TTML  |  Burn in  | 
-|   |  STL  |  Burn in  | 
+|   |  EBU STL  |  Burn in  | 
 |   |  SCC  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
 |   |  SMI  |  Burn in  | 
 |  MPEG2\-TS Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
@@ -229,7 +229,7 @@ You can use only [Teletext level 1\.5](https://en.wikipedia.org/wiki/World_Syste
 |  |  SRT  |  Burn in Teletext  | 
 |   |  SMI  |  Burn in DVB\-Sub  | 
 |   |  TTML  |  Burn in Teletext DVB\-Sub  | 
-|   |  STL  |  Burn in Teletext DVB\-Sub  | 
+|   |  EBU STL  |  Burn in Teletext DVB\-Sub  | 
 |   |  SCC  |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
 |   |  SMI  |  Burn in DVB\-Sub  | 
 |  MPEG2\-TS Container  |  Embedded  |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
@@ -268,7 +268,7 @@ The following table lists supported output captions formats for this output cont
 |  Raw Container  |  IMSC1 text profile  |  Burn in  | 
 |  |  SRT  |  Burn in  | 
 |   |  TTML  |  Burn in  | 
-|   |  STL  |  Burn in  | 
+|   |  EBU STL  |  Burn in  | 
 |   |  SCC  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
 |   |  SMI  |  Burn in  | 
 
@@ -302,7 +302,7 @@ The following table lists supported output captions formats for this output cont
 |  Raw Container  |  IMSC1 text profile  |  Burn in  | 
 |  |  SRT  |  Burn in  | 
 |   |  TTML  |  Burn in  | 
-|   |  STL  |  Burn in  | 
+|   |  EBU STL  |  Burn in  | 
 |   |  SCC  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
 |   |  SMI  |  Burn in  | 
 |  MPEG2\-TS Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
@@ -342,7 +342,7 @@ You can create sidecar captions outputs only as part of a job that also generate
 |  Raw Container  |  IMSC1 text profile  |  IMSC \(as sidecar \.xml\) IMSC SRT SMI TTML WebVTT  | 
 |   |  SRT  |  IMSC \(as sidecar \.xml\) IMSC SRT SMI TTML WebVTT  | 
 |   |  TTML  |  IMSC \(as sidecar \.xml\) SRT SMI TTML WebVTT  | 
-|   |  STL  |  IMSC \(as sidecar \.xml\) SRT SMI TTML WebVTT  | 
+|   |  EBU STL  |  IMSC \(as sidecar \.xml\) SRT SMI TTML WebVTT  | 
 |   |  SCC  |  IMSC \(as sidecar \.xml\) SCC SRT SMI TTML WebVTT  | 
 |   |  SMI  |  IMSC \(as sidecar \.xml\) SRT SMI TTML WebVTT  | 
 |  MPEG2\-TS Container  |  Embedded  |  IMSC \(as sidecar \.xml\) SCC SRT SMI TTML WebVTT  | 

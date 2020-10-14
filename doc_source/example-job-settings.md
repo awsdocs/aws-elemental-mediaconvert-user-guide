@@ -1,6 +1,14 @@
-# Example job settings<a name="example-job-settings"></a>
+# Example AWS Elemental MediaConvert job settings in JSON<a name="example-job-settings"></a>
 
-The provided job settings are recommended values that should work well for most jobs\. Adapt them as necessary to suit your specific workflow\.
+The job settings in these examples represent the simplest valid jobs you can run\. They work well for experimenting with the service\. When you want to perform more complex transcodes or create different outputs, use the console to set up your job and to generate your JSON job specification\. To do so, in the **Job** pane on the left, under **Job settings**, choose **Show job JSON**\.
+
+For more information about submitting your job programmatically, see one of the introductory topics of the *AWS Elemental MediaConvert API Reference*:
++ [Getting started with AWS Elemental MediaConvert using the AWS SDKs or the AWS CLI](https://docs.aws.amazon.com/mediaconvert/latest/apireference/custom-endpoints.html)
++ [Getting started with AWS Elemental MediaConvert using the API](https://docs.aws.amazon.com/mediaconvert/latest/apireference/getting-started.html)
+
+**Important**  
+We recommend that you use the MediaConvert console to generate your production JSON job specification\.  
+Your job specification must conform to validation by the transcoding engine\. The transcoding engine validations represent complex dependencies among groups of settings and dependencies between your transcoding settings and properties of your input files\. The MediaConvert console functions as an interactive job builder to make it easy to create valid job JSON specifications\. You can use [job templates](using-a-job-template.md) and [output presets](using-a-preset-to-specify-a-job-output.md) to get started quickly\.
 
 To use these examples, replace the following placeholder values with actual values:
 + ROLE HERE

@@ -18,13 +18,7 @@ When you set up queue hopping, you specify the *submission queue*, the *wait tim
 
 **To set up queue hopping \(API, SDK, and AWS CLI\)**
 
-1. Set up your JSON job specification\. Either manually edit your JSON file, or use the console to generate it as follows:
-
-   1. Follow the previous procedure for the console\.
-
-   1. In the **Job** pane on the left, under **Job settings**, choose **Show job JSON**\.
-
-   In the MediaConvert job schema, you can find the settings for queueHopping under `hopDestinations`\.
+1. In the MediaConvert job schema, you can find the settings for queueHopping under `hopDestinations`\.
 
 1. Submit your job according to the instructions in the *AWS Elemental MediaConvert API Reference*:
    + If you're using one of the AWS SDKs or the AWS CLI, see [Getting started with MediaConvert using the AWS SDKs or the AWS CLI](https://docs.aws.amazon.com/mediaconvert/latest/apireference/custom-endpoints.html)\.

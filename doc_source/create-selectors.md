@@ -26,4 +26,4 @@ For most use cases, you associate one input track per input selector\. If your u
 
 1. If you have additional audio assets—for example, multiple language tracks—choose **Add audio selector** and provide information about the next asset as described in the preceding step of this procedure\.
 
-1. In the **Captions selectors** section, choose **Add captions selector** to create input captions selectors for any sets of captions that you plan to use in an output\. For more information about setting up captions for your job, see [Setting up captions in MediaConvert jobs](including-captions.md)\.
+1. In the **Captions selectors** section, choose **Add captions selector** to create input captions selectors for any sets of captions that you plan to use in an output\. For more information about setting up captions for your job, see [Setting up captions in AWS Elemental MediaConvert jobs](including-captions.md)\.

@@ -1,6 +1,6 @@
 # Creating captions ABR streaming outputs<a name="captions-abr-streaming-outputs"></a>
 
-Setting up captions can be complex\. For detailed information, see [Setting up captions in MediaConvert jobs](including-captions.md)\. For basic instructions, complete the following procedure\.
+Setting up captions can be complex\. For detailed information, see [Setting up captions in AWS Elemental MediaConvert jobs](including-captions.md)\. For basic instructions, complete the following procedure\.
 
 **To create and set up captions ABR streaming outputs**
 

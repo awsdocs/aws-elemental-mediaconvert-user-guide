@@ -53,4 +53,4 @@ There is only one input video selector per job, so you don't need to explicitly 
 
    1. In the **Stream settings** section, specify values for audio encoding\. For more information about individual settings, choose the **Info** link next to each setting\.
 
-   1. To include captions in the output, choose **Add captions** to display a group of captions settings\. For more information about setting up captions, see [Setting up captions in MediaConvert jobs](including-captions.md)\.
+   1. To include captions in the output, choose **Add captions** to display a group of captions settings\. For more information about setting up captions, see [Setting up captions in AWS Elemental MediaConvert jobs](including-captions.md)\.
