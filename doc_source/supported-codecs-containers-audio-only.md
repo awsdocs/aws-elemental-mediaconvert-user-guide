@@ -11,6 +11,7 @@ MediaConvert supports the following combinations of input container and codec fo
 | MPEG\-2 TS \(\.ts, m2ts\) | MP2, PCM | 
 | MPEG\-4 \(\.mp4\) | AAC | 
 | Matroska audio container \(\.mka\) | Opus | 
+| OGA \(\.oga\) | Opus, Vorbis | 
 | QuickTime \(\.mov\) | PCM | 
 | WAV \(\.wav\) | PCM | 
 

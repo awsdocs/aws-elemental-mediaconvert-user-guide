@@ -4,6 +4,8 @@ The following topics walk you through how to set up motion graphic overlays\. Mo
 
 By default, if you don't specify an overlay start time or set playback to repeat, the overlay begins at the start of the video and runs for the duration of the motion graphic that you provide\.
 
+
+
 ## Placing your motion graphic overlay<a name="placing-your-motion-graphic-overlay"></a>
 
 When you place a motion graphic overlay, you set up when it starts and how long it runs by specifying the **Start time** and **Playback**\. The following image shows how you would specify these settings if you wanted your overlay to start two minutes into the video and to continuously loop over the rest of the video\. If you keep **Start time** and **Playback** in their default state, the overlay will begin at the first frame of each output and remain on the video for the duration of the motion graphic played once\.

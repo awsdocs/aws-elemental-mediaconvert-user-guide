@@ -8,9 +8,9 @@ IAM policies define permissions for an action regardless of the method that you 
 
 The following policy types, listed in order of frequency, can affect whether a request is authorized\. For more details, see [Policy types](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#access_policy-types) in the *IAM User Guide*\.
 + **Identity\-based policies** – You can attach managed and inline policies to IAM identities \(users, groups to which users belong, and roles\)\.
-+ **Resource\-based policies** – You can attach inline policies to resources in some AWS services\. The most common examples of resource\-based policies are Amazon S3 bucket policies and IAM role trust policies\. AWS Elemental MediaConvert does not support resource\-based policies\. 
++ **Resource\-based policies** – You can attach inline policies to resources in some AWS services\. The most common examples of resource\-based policies are Amazon S3 bucket policies and IAM role trust policies\. MediaConvert does not support resource\-based policies\. 
 + **Organizations SCPs** – You can use an AWS Organizations service control policy \(SCP\) to apply a permissions boundary to an AWS Organizations organization or organizational unit \(OU\)\. Those permissions are applied to all entities within the member accounts\.
-+ **Access control lists \(ACLs\)** – You can use ACLs to control which principals can access a resource\. ACLs are similar to resource\-based policies, although they are the only policy type that does not use the JSON policy document structure\. AWS Elemental MediaConvert does not support ACLs\. 
++ **Access control lists \(ACLs\)** – You can use ACLs to control which principals can access a resource\. ACLs are similar to resource\-based policies, although they are the only policy type that does not use the JSON policy document structure\. MediaConvert does not support ACLs\. 
 
 These policies types can be categorized as *permissions policies* or *permissions boundaries*\.
 + **Permissions policies** – You can attach permissions policies to a resource in AWS to define the permissions for that object\. Within a single account, AWS evaluates all permissions policies together\. Permissions policies are the most common policies\. You can use the following policy types as permissions policies:
@@ -48,7 +48,7 @@ Resource\-based policies are JSON policy documents that you attach to a resource
 
 Granting permissions to members of other AWS accounts using a resource\-based policy has some advantages over an IAM role\. For more information, see [How IAM roles differ from resource\-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_compare-resource-policies.html) in the *IAM User Guide*\.
 
-AWS Elemental MediaConvert does not support resource\-based policies\.
+MediaConvert does not support resource\-based policies\.
 
 ## Policy access level classifications<a name="auth_access_policies-access-level"></a>
 

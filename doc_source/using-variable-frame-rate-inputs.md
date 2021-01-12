@@ -6,6 +6,8 @@ The default setting for output frame rate is **Follow source**\. **Follow source
 + For constant frame rate inputs, **Follow source** results in outputs that have the same frame rate as the input video\.
 + For variable frame rate inputs, **Follow source** results in outputs that have a constant frame rate output, with a frame rate that is the average of the input frame rates, rounded up to the nearest whole number standard frame rate: 1, 5, 10, 15, 24, 30, 50, or 60 fps\.
 
+
+
 **Feature restrictions**  
 MediaConvert support for variable frame rate video is limited in these ways:
 + Variable frame rates are supported as input only\. Outputs are only constant frame rate\.

@@ -17,4 +17,4 @@ The **Jobs** page shows successfully completed jobs and also those that ended in
 
 1. Optionally, filter the list by status and queue by choosing from the dropdown lists\.
 
-1. To see details for a job, choose the job ID\.
+1. To see details for a job, choose the job ID to view the **Job summary** page\.

@@ -6,6 +6,9 @@ The following table describes important additions to the AWS Elemental MediaConv
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [HTTP inputs to AWS Elemental MediaConvert can now use redirects](upload-input-files.md#http-input-requirements) | See the updated requirements for providing your inputs to MediaConvert through HTTP\. | January 7, 2021 | 
+| [AWS Elemental MediaConvert simplifies setting up permissions to use the service](iam-role.md) | You can now use the MediaConvert console to create your IAM role to grant permissions to the service\. Learn this simplified setup\. | January 7, 2021 | 
+| [Learn about using the new automated ABR feature\.](auto-abr.md) | With automated ABR, AWS Elemental MediaConvert sets up your adaptive bitrate \(ABR\) stack for you, based on your input\. The service creates the right number of renditions, at the appropriate resolutions and bitrates\. | November 11, 2020 | 
 | [Support for additional MXF profiles and automatic profile selection](mxf.md) | Learn about creating MXF outputs with AWS Elemental MediaConvert\. | October 7, 2020 | 
 | [New partner integration for Nielsen non\-linear watermarking](nielsen-watermarking.md) | Learn about using AWS Elemental MediaConvert to encode Nielsen audio watermarks\. | October 7, 2020 | 
 | [Documentation\-only update\. New topics about frame rate conversion, telecine and inverse telecine, and scan type](video-settings.md) | Learn about the AWS Elemental MediaConvert settings for converting frame rate, adding and removing telecine, and converting scan type between progressive and interlaced\. | October 7, 2020 | 
@@ -56,7 +59,7 @@ The following table describes important additions to the AWS Elemental MediaConv
 | [Tagging AWS Elemental MediaConvert resources initial release](tagging-mediaconvert-resources.md) | You can now tag MediaConvert resources when you create them using the MediaConvert console, the MediaConvert API, or the AWS CLI\. You can list the tags on an existing MediaConvert resource, and add and remove tags on existing MediaConvert resources, through the MediaConvert API and AWS CLI\. | July 16, 2018 | 
 | [Doc\-only update, setting up a job](specify-output-groups.md) | Added step\-by\-step procedures for setting up a job to transcode input media files into files and packages for playing on multiple device types\. | June 20, 2018 | 
 | [Doc\-only update, "working with" procedures](working-with-jobs.md) | Added step\-by\-step procedures for creating, listing, editing, and deleting templates, presets, queues, and jobs\. | May 29, 2018 | 
-| [CMAF support](structuring-complex-jobs.md) | MediaConvert adds support for common media application format \(CMAF\) outputs\. | May 4, 2018 | 
+| [CMAF support](creating-streaming-and-file-outputs.md) | MediaConvert adds support for common media application format \(CMAF\) outputs\. | May 4, 2018 | 
 | [New MediaConvert service release](what-is.md) | Initial documentation for the MediaConvert service\. | November 27, 2017 | 
 
 **Note**  

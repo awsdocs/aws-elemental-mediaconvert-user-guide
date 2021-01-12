@@ -4,7 +4,7 @@ Use these example IAM policies to grant access to your resources, or modify them
 
 ## Example policy: Basic MediaConvert user policy<a name="example-policy-basic-mediaconvert-user-policy"></a>
 
-The following example policy grants the basic permissions that a user needs to operate AWS Elemental MediaConvert\. If you are using encryption, or if your Amazon S3 buckets have default encryption enabled, you need additional permissions\. For more information, see [Data protection for AWS Elemental MediaConvert](using-encryption.md)\.
+The following example policy grants the basic permissions that a user needs to operate AWS Elemental MediaConvert\. If you are using encryption, or if your Amazon S3 buckets have default encryption enabled, you need additional permissions\. For more information, see [Protecting your media assets with encryption and DRM using AWS Elemental MediaConvert](using-encryption.md)\.
 
 ```
 {

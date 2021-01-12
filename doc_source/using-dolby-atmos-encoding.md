@@ -84,9 +84,9 @@ That is, if your input audio is in separate \.wav files, **Audio selector 1** mu
 
    1. For **Select audio selectors**, choose each audio selector that you created earlier in this procedure\. Choose them in order, starting with **Audio selector 1**\.
 
-1. Set up your output groups, outputs, and video output selectors as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring complex jobs in AWS Elemental MediaConvert](structuring-complex-jobs.md)\. Choose supported containers as listed in [Feature Restrictions for Dolby Atmos Encoding](#feature-restrictions-for-dolby-atmos-encoding)\.
+1. Set up your output groups, outputs, and video output selectors as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Creating outputs with AWS Elemental MediaConvert](creating-streaming-and-file-outputs.md)\. Choose supported containers as listed in [Feature Restrictions for Dolby Atmos Encoding](#feature-restrictions-for-dolby-atmos-encoding)\.
 
-1. Create audio output selectors as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring complex jobs in AWS Elemental MediaConvert](structuring-complex-jobs.md)\.
+1. Create audio output selectors as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Creating outputs with AWS Elemental MediaConvert](creating-streaming-and-file-outputs.md)\.
 
    Set them up as follows:
 
@@ -124,9 +124,9 @@ AWS Elemental MediaConvert automatically performs audio normalization on Dolby D
       + If the tracks of your input audio file are already in that order, then list them that way: **1, 2, 3, … 16**\. 
       + If the tracks of your input audio file are in a different order, list them according to the specified order\. For example, if your L channel is in track 3, then list **3** first\.
 
-1. Set up your output groups, outputs, and video output selectors as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring complex jobs in AWS Elemental MediaConvert](structuring-complex-jobs.md)\. Choose supported containers as listed in [Feature Restrictions for Dolby Atmos Encoding](#feature-restrictions-for-dolby-atmos-encoding)\.
+1. Set up your output groups, outputs, and video output selectors as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Creating outputs with AWS Elemental MediaConvert](creating-streaming-and-file-outputs.md)\. Choose supported containers as listed in [Feature Restrictions for Dolby Atmos Encoding](#feature-restrictions-for-dolby-atmos-encoding)\.
 
-1. Create audio output selectors as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring complex jobs in AWS Elemental MediaConvert](structuring-complex-jobs.md)\.
+1. Create audio output selectors as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Creating outputs with AWS Elemental MediaConvert](creating-streaming-and-file-outputs.md)\.
 
    Set them up as follows:
 

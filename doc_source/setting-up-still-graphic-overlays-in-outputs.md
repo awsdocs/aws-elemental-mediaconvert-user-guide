@@ -8,7 +8,7 @@ If you don't specify overlay start time and duration, the service puts the overl
 
 1. Open the AWS Elemental MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
-1. Set up your output groups and outputs for video and audio, as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring complex jobs in AWS Elemental MediaConvert](structuring-complex-jobs.md)\.
+1. Set up your output groups and outputs for video and audio, as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Creating outputs with AWS Elemental MediaConvert](creating-streaming-and-file-outputs.md)\.
 
 1. For each output that you want to have a graphic overlay, do the following:
 
@@ -25,5 +25,7 @@ If you don't specify overlay start time and duration, the service puts the overl
 For details about the more complex output graphic overlay settings, see the following topics:
 
 [About sizing your overlay to account for scaling](about-overlay-scaling.md)
+
+
 
 [About specifying **Layer**](using-multiple-overlays.md)

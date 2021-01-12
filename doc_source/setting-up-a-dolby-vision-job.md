@@ -16,7 +16,7 @@ You can use AWS Elemental MediaConvert to create profile 5 Dolby Vision outputs\
 
    Find the input color space setting as follows: On the **Create job** page, in the **Job** pane on the left, choose the input\. In the **Video selector** section on the right, find **Color space**\.
 
-1. Set up your output groups, outputs, and video output selectors as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring complex jobs in AWS Elemental MediaConvert](structuring-complex-jobs.md)\. 
+1. Set up your output groups, outputs, and video output selectors as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Creating outputs with AWS Elemental MediaConvert](creating-streaming-and-file-outputs.md)\. 
 
 1. For each output that you want processed with Dolby Vision, do the following:
    + Make sure that your output settings conform to the limitations listed in [Dolby Vision Job Limitations and Requirements](dolby-vision-job-limitations-and-requirements.md)\.

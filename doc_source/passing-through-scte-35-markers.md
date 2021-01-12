@@ -8,7 +8,7 @@ You can include time\_signal SCTE\-35 markers from your input in any output that
 
 1. Choose **Create job**\.
 
-1. Set up your input, output groups, and outputs for video and audio, as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring complex jobs in AWS Elemental MediaConvert](structuring-complex-jobs.md)\.
+1. Set up your input, output groups, and outputs for video and audio, as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Creating outputs with AWS Elemental MediaConvert](creating-streaming-and-file-outputs.md)\.
 
 1. Choose an output under either **File group**, **DASH ISO**, or **Apple HLS**\. 
 

@@ -20,7 +20,7 @@ If you choose to use an AWS KMS CMK, you can specify a customer managed CMK in y
 
 1. Choose **Create job**\.
 
-1. Set up your input, output groups, and outputs for video and audio, as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring complex jobs in AWS Elemental MediaConvert](structuring-complex-jobs.md)\.
+1. Set up your input, output groups, and outputs for video and audio, as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Creating outputs with AWS Elemental MediaConvert](creating-streaming-and-file-outputs.md)\.
 
 1. For each output group that has outputs that you want encrypted, set up server\-side encryption:
 
@@ -37,7 +37,7 @@ If you choose to use an AWS KMS CMK, you can specify a customer managed CMK in y
       If you don't specify a CMK for **AWS KMS**, Amazon S3 uses the [AWS managed CMK](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-managed-cmk) in your AWS account that is used exclusively for Amazon S3\.
 
    1. If you chose **AWS KMS** for **Encryption key management**, grant `kms:Encrypt` and `kms:GenerateDataKey` permissions to your AWS Elemental MediaConvert AWS Identity and Access Management \(IAM\) role\. This allows MediaConvert to encrypt your output files\. If you also want to be able to use these outputs as inputs to another MediaConvert job, also grant `kms:Decrypt` permissions\. To learn more, see these topics:
-      + For more information about setting up an IAM role for AWS Elemental MediaConvert to assume, see [Step 3: Set up IAM permissions ](iam-role.md) in the Getting Started chapter of this guide\.
+      + For more information about setting up an IAM role for AWS Elemental MediaConvert to assume, see [Step 4: Set up IAM permissions ](iam-role.md) in the Getting Started chapter of this guide\.
       + For more information about granting IAM permissions using an inline policy, see the procedure **To embed an inline policy for a user or role** in [Adding IAM identity permissions \(Console\)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console) in the *IAM User Guide*\. 
       + For examples of IAM policies that grant AWS KMS permissions, including decrypting encrypted content, see [Customer managed policy examples](https://docs.aws.amazon.com/kms/latest/developerguide/iam-policies.html#customer-managed-policies) in the *AWS Key Management Service Developer Guide*\.
 

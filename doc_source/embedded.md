@@ -26,3 +26,4 @@ For MXF inputs, your captions are most likely on the ancillary track\. Some thir
 
 **Note**  
 MediaConvert doesn't automatically detect which language is in each channel\. You can specify that when you set up the output captions, so that MediaConvert passes the language code metadata for the captions channel into the output for downstream use\.
+

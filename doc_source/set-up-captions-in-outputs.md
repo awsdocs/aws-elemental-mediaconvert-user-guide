@@ -8,7 +8,7 @@ The location of the captions in a job depends on your output captions format: Yo
 
 1. Choose **Create job**\.
 
-1. Set up your input, output groups, and outputs for video and audio, as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring complex jobs in AWS Elemental MediaConvert](structuring-complex-jobs.md)\.
+1. Set up your input, output groups, and outputs for video and audio, as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Creating outputs with AWS Elemental MediaConvert](creating-streaming-and-file-outputs.md)\.
 
 1. Create input captions selectors as described in [Creating input captions selectors](create-input-caption-selectors.md)\.
 
@@ -27,6 +27,8 @@ The location of the captions in a job depends on your output captions format: Yo
 1. Under **Destination type**, choose an output captions format\. Check [Captions support tables by output container type](captions-support-tables-by-container-type.md) to ensure that you are choosing a supported format\.
 
 1. Provide values for any additional fields as described in the relevant topic below\.
+
+
 
 **Topics**
 + [CEA/EIA\-608 and CEA/EIA\-708 \(embedded\) output captions](embedded-output-captions.md)

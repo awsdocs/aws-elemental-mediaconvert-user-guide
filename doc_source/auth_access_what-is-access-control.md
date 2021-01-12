@@ -45,6 +45,8 @@ Administrators can control access to resources using an identity\-based policy o
 **Note**  
 AWS Elemental MediaConvert doesn't support resource\-based policies\.
 
+ 
+
 For more information, see [Controlling access to resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_controlling.html#access_controlling-resources) in the *IAM User Guide*\.
 
 ### Resource creators do not automatically have permissions<a name="NoDefaultPermissions"></a>
@@ -60,7 +62,7 @@ Entities \(users or roles\) in your account must be granted access to create a r
 
 Administrators can use AWS resource\-based policies, IAM cross\-account roles, or the AWS Organizations service to allow principals in another account to access resources in your account\.
 
-For some AWS services, you can grant cross\-account access to your resources\. To do this, you attach a policy directly to the resource that you want to share, instead of using a role as a proxy\. If the service supports this policy type, then the resource that you want to share must also support resource\-based policies\. Unlike a user\-based policy, a resource\-based policy specifies who \(in the form of a list of AWS account ID numbers\) can access that resource\. AWS Elemental MediaConvert does not support resource\-based policies\.
+For some AWS services, you can grant cross\-account access to your resources\. To do this, you attach a policy directly to the resource that you want to share, instead of using a role as a proxy\. If the service supports this policy type, then the resource that you want to share must also support resource\-based policies\. Unlike a user\-based policy, a resource\-based policy specifies who \(in the form of a list of AWS account ID numbers\) can access that resource\. MediaConvert does not support resource\-based policies\.
 
 Cross\-account access with a resource\-based policy has some advantages over a role\. With a resource that is accessed through a resource\-based policy, the principal \(person or application\) still works in the trusted account and does not have to give up their user permissions in place of the role permissions\. In other words, the principal has access to resources in the trusted account *and* in the trusting account at the same time\. This is useful for tasks such as copying information from one account to another\. For more information about using cross\-account roles, see [Providing access to an IAM user in another AWS account that you own](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_common-scenarios_aws-accounts.html) in the *IAM User Guide*\.
 

@@ -20,6 +20,8 @@ To set up a job with an MXF output, you create the output in the **File group** 
    + When you keep the default value, **Auto**, for **MXF profile** then you can choose any video codec that is compatible with your output container\.
    + When you choose a specific profile for **MXF profile**, then your choices for **Video codec** include only the codecs that are valid with that profile\.
 
+   
+
 1. Optionally, specify your output video resolution for **Resolution \(w x h\)**\. This is the other setting that MediaConvert uses when automatically determining your MXF profile\.
 
    When you don't specify values for **Resolution \(w x h\)**, your output resolution is the same as your input resolution\.

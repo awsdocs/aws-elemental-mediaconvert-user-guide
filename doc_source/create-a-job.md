@@ -1,4 +1,4 @@
-# Step 6: Create a job<a name="create-a-job"></a>
+# Step 5: Create a job<a name="create-a-job"></a>
 
 A job does the work of transcoding\. You specify the name of the file that you want to transcode \(the input file\), the name that you want MediaConvert to give the transcoded file, the preset that you want MediaConvert to use, and a few other settings\. MediaConvert gets the input file from the Amazon S3 location that you specify in your job input settings, transcodes the file, and saves the transcoded file or files in the output location that you specify in the settings of the job output group\.
 
@@ -8,9 +8,7 @@ A job does the work of transcoding\. You specify the name of the file that you w
 
 1. Choose **Get started**\.
 
-1. Choose **Create job**\.
-
-1. Provide transcode instructions and job settings\. For more information, see [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md)\. 
+1. On the **Create job** page, provide transcode instructions and job settings\. For more information, see [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md)\. 
 
    Make sure that you pick the same Region for your job and your file storage\. 
 

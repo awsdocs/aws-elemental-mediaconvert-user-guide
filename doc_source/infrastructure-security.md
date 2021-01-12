@@ -6,4 +6,4 @@ You use AWS published API calls to access AWS Elemental MediaConvert through the
 
 Additionally, requests must be signed by using an access key ID and a secret access key that is associated with an IAM principal\. Or you can use the [AWS Security Token Service](https://docs.aws.amazon.com/STS/latest/APIReference/Welcome.html) \(AWS STS\) to generate temporary security credentials to sign requests\.
 
-You can call these API operations from any network location, but AWS Elemental MediaConvert does support resource\-based access policies, which can include restrictions based on the source IP address\. 
+You can call these API operations from any network location\. AWS Elemental MediaConvert doesn't support resource\-based access policies, which can include restrictions based on the source IP address\. 

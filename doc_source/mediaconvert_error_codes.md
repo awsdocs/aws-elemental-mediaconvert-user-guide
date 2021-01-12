@@ -4,6 +4,9 @@ MediaConvert returns error codes when transcoding jobs run into problems\. You c
 
 This table provides more detailed information about the error codes and messages that the MediaConvert encoding engine returns, with possible solutions\.
 
+**Note**  
+MediaConvert charges your account only when a job reaches the COMPLETED status\. You don't pay for jobs that end in an ERROR status\.
+
 
 | Error code | Message | Details | 
 | --- | --- | --- | 
@@ -21,6 +24,7 @@ This table provides more detailed information about the error codes and messages
 |  1076  |  Source Read Error  |  The transcoder couldn't read from one of the input files\. The file might have an unexpected end of file\. Verify that your input file is valid and that it's truncated properly\.  | 
 |  1080  |  MXF Output Error  |  There is a problem in the way the MXF output settings are configured in your job\. Check that these settings are correct and valid per specification\.  | 
 |  1091  |  Encryption Error  |  There was an error encrypting one or more of the job outputs\. Verify that the IAM role that you chose in your AWS Elemental MediaConvert job settings provides access to invoke API Gateway\.  For more information about setting up this IAM role, see [Set Up IAM Permissions](iam-role.md) in this guide\.  | 
+|  1092  |  Decode Audio Initialization Error  |  MediaConvert can't decode one or more of your input audio streams\. MediaConvert supports the codec and container, but there is a problem with the audio source that prevents the transcoder from reading it\.  | 
 |  1401  |  Permissions Issue  |  Amazon S3 denied access to a file or bucket\. Check the bucket policies on your input and output locations\. Also check that the job has the right IAM role specified and that the role has the necessary permissions\. For more information, see the following: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/mediaconvert_error_codes.html)  | 
 |  1404  |  File Open Error  |  AWS Elemental MediaConvert could not find a file or Amazon S3 bucket\. Check that the S3 bucket and input files exist and that they are specified correctly in the job\. Also check that MediaConvert has permissions to access them\. For more information, see the following: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/mediaconvert_error_codes.html)  | 
 |  1432  |  IAM Role Error  |  The role specified in your AWS Elemental MediaConvert job settings doesn't have the necessary permissions or has another problem\. Check that the job has the right IAM role specified and that the role has the correct permissions\. For more information about setting up this IAM role, see [Set Up IAM Permissions](iam-role.md) in this guide\.  | 

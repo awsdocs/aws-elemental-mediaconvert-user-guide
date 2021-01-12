@@ -18,7 +18,7 @@ For example, a job has the following three inputs: a five\-minute preroll, a one
 
 1. Choose **Create new job**\.
 
-1. Set up your input, output groups, and outputs for video and audio, as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring complex jobs in AWS Elemental MediaConvert](structuring-complex-jobs.md)\.
+1. Set up your input, output groups, and outputs for video and audio, as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Creating outputs with AWS Elemental MediaConvert](creating-streaming-and-file-outputs.md)\.
 
 1. In the **Job** pane on the left, in the **Job settings** section, choose **Settings**\.
 

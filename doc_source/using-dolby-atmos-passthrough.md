@@ -12,9 +12,9 @@ You set up your job to pass through Dolby Digital Plus with Atmos content in the
 
 1. Set up your input audio and video as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md)\.
 
-1. Set up your output groups, outputs, and video output selectors as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring complex jobs in AWS Elemental MediaConvert](structuring-complex-jobs.md)\. Choose supported containers as listed in [Supported output codecs and containers](reference-codecs-containers.md)\.
+1. Set up your output groups, outputs, and video output selectors as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Creating outputs with AWS Elemental MediaConvert](creating-streaming-and-file-outputs.md)\. Choose supported containers as listed in [Supported output codecs and containers](reference-codecs-containers.md)\.
 
-1. Create audio output selectors as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Structuring complex jobs in AWS Elemental MediaConvert](structuring-complex-jobs.md)\.
+1. Create audio output selectors as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Creating outputs with AWS Elemental MediaConvert](creating-streaming-and-file-outputs.md)\.
 
    Set them up as follows:
 

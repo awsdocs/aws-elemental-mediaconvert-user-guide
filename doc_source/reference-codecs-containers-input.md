@@ -55,6 +55,8 @@ For outputs that contain only audio inside the output container, MediaConvert su
 | MPEG\-1 Layer 3 \(MP3\) | MP3 | 
 | MPEG\-4 | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), PCM, WMA, WMA2 | 
 | MXF | AAC, AIFF, Dolby E frames carried in PCM streams, MPEG Audio, PCM | 
+| OGA | Opus, Vorbis | 
+| OGG | Opus, Vorbis | 
 | QuickTime | AAC, MP3, PCM | 
 | WebM | Opus, Vorbis | 
 | WMV/ASF | WMA, WMA2 | 
@@ -70,5 +72,6 @@ MediaConvert supports the following combinations of input container and codec fo
 | MPEG\-2 TS \(\.ts, m2ts\) | MP2, PCM | 
 | MPEG\-4 \(\.mp4\) | AAC | 
 | Matroska audio container \(\.mka\) | Opus | 
+| OGA \(\.oga\) | Opus, Vorbis | 
 | QuickTime \(\.mov\) | PCM | 
 | WAV \(\.wav\) | PCM | 

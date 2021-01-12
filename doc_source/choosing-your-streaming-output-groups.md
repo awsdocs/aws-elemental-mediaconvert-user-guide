@@ -10,7 +10,7 @@ The following table summarizes the relationships between output groups and media
 
 | For playing on\.\.\. | Use this output group\.\.\. | 
 | --- | --- | 
-| Apple devices, older | Apple HLS | 
+| Apple devices, older than approximately 2013 | Apple HLS | 
 | Apple devices, newer | CMAF | 
 | Android devices, most smart TVs | CMAF or DASH ISO | 
 | Microsoft devices | Microsoft Smooth Streaming | 

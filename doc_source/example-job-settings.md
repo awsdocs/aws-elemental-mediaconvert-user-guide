@@ -18,6 +18,7 @@ To use these examples, replace the following placeholder values with actual valu
 **Topics**
 + [Example—mp4 output](#mp4-example)
 + [Example—ABR output](#HLS-ABR-example)
++ [Example—automated ABR](#auto-abr-example)
 
 ## Example—mp4 output<a name="mp4-example"></a>
 
@@ -157,6 +158,8 @@ To use these examples, replace the following placeholder values with actual valu
   }
 }
 ```
+
+
 
 ## Example—ABR output<a name="HLS-ABR-example"></a>
 
@@ -540,3 +543,238 @@ To use these examples, replace the following placeholder values with actual valu
   }
 }
 ```
+
+
+
+## Example—automated ABR<a name="auto-abr-example"></a>
+
+This example JSON job specification specifies an automated ABR stack in Apple HLS\. In addition to specifying the automated ABR settings, it explicitly sets these values:
++ Accelerated transcoding `Mode` to `PREFERRED`
++ `rateControlMode` to `QVBR`
++ `qualityTuningLevel` to `MULTI_PASS_HQ`
+
+For information about the automated ABR settings, see [Using automated ABR](auto-abr.md)\.
+
+```
+{
+  "UserMetadata": {},
+  "Role": "ROLE ARN",
+  "Settings": {
+    "TimecodeConfig": {
+      "Source": "ZEROBASED"
+    },
+    "OutputGroups": [
+      {
+        "Name": "Apple HLS",
+        "Outputs": [
+          {
+            "ContainerSettings": {
+              "Container": "M3U8",
+              "M3u8Settings": {
+                "AudioFramesPerPes": 4,
+                "PcrControl": "PCR_EVERY_PES_PACKET",
+                "PmtPid": 480,
+                "PrivateMetadataPid": 503,
+                "ProgramNumber": 1,
+                "PatInterval": 0,
+                "PmtInterval": 0,
+                "Scte35Source": "NONE",
+                "NielsenId3": "NONE",
+                "TimedMetadata": "NONE",
+                "VideoPid": 481,
+                "AudioPids": [
+                  482,
+                  483,
+                  484,
+                  485,
+                  486,
+                  487,
+                  488,
+                  489,
+                  490,
+                  491,
+                  492
+                ]
+              }
+            },
+            "VideoDescription": {
+              "ScalingBehavior": "DEFAULT",
+              "TimecodeInsertion": "DISABLED",
+              "AntiAlias": "ENABLED",
+              "Sharpness": 50,
+              "CodecSettings": {
+                "Codec": "H_264",
+                "H264Settings": {
+                  "InterlaceMode": "PROGRESSIVE",
+                  "NumberReferenceFrames": 3,
+                  "Syntax": "DEFAULT",
+                  "Softness": 0,
+                  "FramerateDenominator": 1,
+                  "GopClosedCadence": 1,
+                  "GopSize": 60,
+                  "Slices": 2,
+                  "GopBReference": "DISABLED",
+                  "EntropyEncoding": "CABAC",
+                  "FramerateControl": "SPECIFIED",
+                  "RateControlMode": "QVBR",
+                  "CodecProfile": "MAIN",
+                  "Telecine": "NONE",
+                  "FramerateNumerator": 30,
+                  "MinIInterval": 0,
+                  "AdaptiveQuantization": "AUTO",
+                  "CodecLevel": "AUTO",
+                  "FieldEncoding": "PAFF",
+                  "SceneChangeDetect": "ENABLED",
+                  "QualityTuningLevel": "MULTI_PASS_HQ",
+                  "FramerateConversionAlgorithm": "DUPLICATE_DROP",
+                  "UnregisteredSeiTimecode": "DISABLED",
+                  "GopSizeUnits": "FRAMES",
+                  "ParControl": "INITIALIZE_FROM_SOURCE",
+                  "NumberBFramesBetweenReferenceFrames": 2,
+                  "RepeatPps": "DISABLED",
+                  "DynamicSubGop": "STATIC"
+                }
+              },
+              "AfdSignaling": "NONE",
+              "DropFrameTimecode": "ENABLED",
+              "RespondToAfd": "NONE",
+              "ColorMetadata": "INSERT"
+            },
+            "OutputSettings": {
+              "HlsSettings": {
+                "AudioGroupId": "program_audio",
+                "AudioRenditionSets": "program_audio",
+                "AudioOnlyContainer": "AUTOMATIC",
+                "IFrameOnlyManifest": "EXCLUDE"
+              }
+            },
+            "NameModifier": "video"
+          },
+          {
+            "ContainerSettings": {
+              "Container": "M3U8",
+              "M3u8Settings": {
+                "AudioFramesPerPes": 4,
+                "PcrControl": "PCR_EVERY_PES_PACKET",
+                "PmtPid": 480,
+                "PrivateMetadataPid": 503,
+                "ProgramNumber": 1,
+                "PatInterval": 0,
+                "PmtInterval": 0,
+                "Scte35Source": "NONE",
+                "NielsenId3": "NONE",
+                "TimedMetadata": "NONE",
+                "TimedMetadataPid": 502,
+                "VideoPid": 481,
+                "AudioPids": [
+                  482,
+                  483,
+                  484,
+                  485,
+                  486,
+                  487,
+                  488,
+                  489,
+                  490,
+                  491,
+                  492
+                ]
+              }
+            },
+            "AudioDescriptions": [
+              {
+                "AudioTypeControl": "FOLLOW_INPUT",
+                "AudioSourceName": "Audio Selector 1",
+                "CodecSettings": {
+                  "Codec": "AAC",
+                  "AacSettings": {
+                    "AudioDescriptionBroadcasterMix": "NORMAL",
+                    "Bitrate": 96000,
+                    "RateControlMode": "CBR",
+                    "CodecProfile": "LC",
+                    "CodingMode": "CODING_MODE_2_0",
+                    "RawFormat": "NONE",
+                    "SampleRate": 48000,
+                    "Specification": "MPEG4"
+                  }
+                },
+                "LanguageCodeControl": "FOLLOW_INPUT"
+              }
+            ],
+            "OutputSettings": {
+              "HlsSettings": {
+                "AudioGroupId": "program_audio",
+                "AudioTrackType": "ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT",
+                "AudioOnlyContainer": "AUTOMATIC",
+                "IFrameOnlyManifest": "EXCLUDE"
+              }
+            },
+            "NameModifier": "audio"
+          }
+        ],
+        "OutputGroupSettings": {
+          "Type": "HLS_GROUP_SETTINGS",
+          "HlsGroupSettings": {
+            "ManifestDurationFormat": "FLOATING_POINT",
+            "SegmentLength": 10,
+            "TimedMetadataId3Period": 10,
+            "CaptionLanguageSetting": "OMIT",
+            "Destination": "s3://DOC-EXAMPLE-BUCKET1/main",
+            "TimedMetadataId3Frame": "PRIV",
+            "CodecSpecification": "RFC_4281",
+            "OutputSelection": "MANIFESTS_AND_SEGMENTS",
+            "ProgramDateTimePeriod": 600,
+            "MinSegmentLength": 0,
+            "MinFinalSegmentLength": 0,
+            "DirectoryStructure": "SINGLE_DIRECTORY",
+            "ProgramDateTime": "EXCLUDE",
+            "SegmentControl": "SEGMENTED_FILES",
+            "ManifestCompression": "NONE",
+            "ClientCache": "ENABLED",
+            "AudioOnlyHeader": "INCLUDE",
+            "StreamInfResolution": "INCLUDE"
+          }
+        },
+        "AutomatedEncodingSettings": {
+          "AbrSettings": {
+            "MaxRenditions": 6,
+            "MaxAbrBitrate": 5000000,
+            "MinAbrBitrate": 300000
+          }
+        }
+      }
+    ],
+    "AdAvailOffset": 0,
+    "Inputs": [
+      {
+        "AudioSelectors": {
+          "Audio Selector 1": {
+            "Offset": 0,
+            "DefaultSelection": "DEFAULT",
+            "ProgramSelection": 1
+          }
+        },
+        "VideoSelector": {
+          "ColorSpace": "FOLLOW",
+          "Rotate": "DEGREE_0",
+          "AlphaBehavior": "DISCARD"
+        },
+        "FilterEnable": "AUTO",
+        "PsiControl": "USE_PSI",
+        "FilterStrength": 0,
+        "DeblockFilter": "DISABLED",
+        "DenoiseFilter": "DISABLED",
+        "InputScanType": "AUTO",
+        "TimecodeSource": "ZEROBASED",
+        "FileInput": "s3://DOC-EXAMPLE-BUCKET/test.mov"
+      }
+    ]
+  },
+  "AccelerationSettings": {
+    "Mode": "PREFERRED"
+  },
+  "StatusUpdateInterval": "SECONDS_60",
+  "Priority": 0
+}
+```
+

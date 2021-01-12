@@ -9,7 +9,8 @@ Security is a shared responsibility between AWS and you\. The [shared responsibi
 This documentation helps you understand how to apply the shared responsibility model when using MediaConvert\. The following topics show you how to configure MediaConvert to meet your security and compliance objectives\. You also learn how to use other AWS services that help you to monitor and secure your MediaConvert resources\. 
 
 **Topics**
-+ [Data protection for AWS Elemental MediaConvert](using-encryption.md)
++ [General AWS data protection](data-protection-aws-general.md)
++ [Protecting your media assets with encryption and DRM using AWS Elemental MediaConvert](using-encryption.md)
 + [Authentication and access control for AWS Elemental MediaConvert](auth-and-access-control.md)
 + [Learning more about AWS Identity and Access Management](learn-more-iam.md)
 + [Compliance validation for AWS Elemental MediaConvert](mediaconvert-compliance.md)
