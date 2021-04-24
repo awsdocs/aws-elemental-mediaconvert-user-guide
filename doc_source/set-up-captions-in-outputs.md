@@ -24,7 +24,7 @@ The location of the captions in a job depends on your output captions format: Yo
 
 1. Under **Captions source**, choose a captions selector\. This selects the track or tracks that you associated with the selector when you set up your input, so that AWS Elemental MediaConvert will include those captions in this output\.
 
-1. Under **Destination type**, choose an output captions format\. Check [Captions support tables by output container type](captions-support-tables-by-container-type.md) to ensure that you are choosing a supported format\.
+1. Under **Destination type**, choose an output captions format\. Check [Supported captions workflows, input captions in the same file as video](captions-support-tables-by-container-type.md) to ensure that you are choosing a supported format\.
 
 1. Provide values for any additional fields as described in the relevant topic below\.
 

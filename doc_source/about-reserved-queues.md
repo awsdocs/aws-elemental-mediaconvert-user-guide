@@ -28,3 +28,6 @@ When your pricing plan term expires, your reserved queue persists\. You can stil
 You can set your pricing plan to auto renew\. When your pricing plan term ends, AWS Elemental MediaConvert checks the auto renew status\. If auto renew is enabled at that time, you automatically commit to another 12\-month term for the same number of RTS at the same price\. You can change the auto renew status at any time\.
 
 You can choose auto renew when you set up your queue\. Anytime after that, you can change the auto renew status on the **Edit** page for the queue\. For more information, see [Creating a reserved queue](creating-a-reserved-queue.md) and [Editing reserved queues](editing-reserved-queues.md)\.
+
+**About billing when jobs hop queues**  
+When you set up [queue hopping](setting-up-queue-hopping-to-avoid-long-waits.md) between a reserved queue and an on\-demand queue, MediaConvert bills you according to the queue that it runs your job from\. That is, if the job runs from your reserved queue, MediaConvert doesn't bill you for the job\. If the job runs from your on\-demand queue, MediaConvert bills you for the job at the on\-demand rate\.

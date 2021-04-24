@@ -1,18 +1,34 @@
-# Teletext<a name="teletext"></a>
+# Teletext input captions<a name="teletext"></a>
 
-You can use teletext captions in one of the following ways:
-+ Teletext can include more data than just captions\. If you want to include the entire teletext input, your input and output captions format must be teletext\. You can't convert the entire set of teletext data to another captions format\. 
+How you set up your Teletext input captions selectors depends on how you plan to use the captions in your output\. You can use Teletext captions in one of the following ways:
++ [Teletext to Teletext passthrough](#input-teletext-to-output-teletext-passthrough)
 
-  MediaConvert supports teletext\-to\-teletext only in MPEG\-2 outputs\.
-+ You can extract and convert individual captions pages to another captions format\. You can't extract individual captions pages and keep them in teletext format\. If you want to extract individual captions pages, you must convert them to another format\.
+  With Teletext passthrough, MediaConvert passes through your input captions unchanged from the input to the output\. Captions styling, Teletext page numbers, and non\-caption Teletext data appear in your outputs exactly the same as in the input\.
 
-## Number of captions selectors for teletext<a name="how-many-caption-selectors-2"></a>
-+ If you are doing teletext\-to\-teletext captions, create only one captions selector, even if you want to include multiple tracks in the output\. In this case, MediaConvert automatically extracts all tracks and includes them in the output\. 
-+ If you are doing teletext\-to\-other, create one captions selector for each track that you want to include in the output\.
-+ If you are doing teletext\-to\-teletext in some outputs and teletext\-to\-other in other outputs, create one captions selector for the teletext\-to\-teletext, and then create individual selectors for the teletext\-to\-other, one for each track that MediaConvert converts\.
+  Teletext passthrough is the only way to include Teletext data that isn't captions in your output\.
++ [Teletext to Teletext, page remapping](#input-teletext-to-output-teletext-with-page-remapping)
 
-## Captions selector fields for teletext captions<a name="caption-selector-fields-teletext"></a>
-+ **Source**: Choose **Teletext**\.
-+ **Page**: This field specifies the captions page that you want\. Complete as follows: 
-  + If you are doing teletext\-to\-teletext captions \(that is, you create only one captions selector for the input embedded captions\), keep this field blank\. MediaConvert ignores any value that you provide\.
-  + If you are converting teletext to another format \(that is, you create several captions selectors, one for each output captions track you want to create\), then specify the captions page that you want for each selector\. If you keep this field blank, you will get a validation error when you submit the job\. 
+  If you want the Teletext page numbers on your output to differ from the page numbers on the input, you can remap the content\. When you do this, your output captions have plain styling and you lose any Teletext data that isn't captions\.
++ [Teletext to other captions formats](#input-teletext-to-other-format-output-captions)
+
+  You can use Teletext input captions to generate output captions in some other formats\. To look up which captions you can generate from Teletext inputs, see [Captions supported by AWS Elemental MediaConvert](captions-support-tables.md)\.
+
+For information on setting up captions for each of these workflows, see the following topics\.
+
+## Teletext to Teletext passthrough<a name="input-teletext-to-output-teletext-passthrough"></a>
+
+When you're doing Teletext to Teletext passthrough, create one input captions selector for the whole set of input captions\. Don't specify a value for **Page number**\.
+
+For information about setting up the output of this captions workflow, see [Teletext to Teletext passthrough](teletext-output-captions.md#teletext-to-teletext-passthrough)\.
+
+## Teletext to Teletext, page remapping<a name="input-teletext-to-output-teletext-with-page-remapping"></a>
+
+When the captions format for both your input and output captions is Teletext, and you want your output Teletext page numbers to be different from the input page numbers, create a separate input captions selector for each Teletext page of your input\. Specify the input Teletext page number for **Page number**\.
+
+For information about setting up the output of this captions workflow, see [Teletext to Teletext, page remapping](teletext-output-captions.md#teletext-to-teletext-page-remapping)\.
+
+## Teletext to other captions formats<a name="input-teletext-to-other-format-output-captions"></a>
+
+When your input captions are Teletext and your output captions are another format, set up one input captions selector for each input Teletext page\. Specify the input Teletext page number for **Page number**\.
+
+For information about setting up the output of this captions workflow, see the section on your output format in [Setting up captions in outputs](set-up-captions-in-outputs.md)\.

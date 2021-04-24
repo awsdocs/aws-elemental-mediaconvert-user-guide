@@ -6,5 +6,5 @@ Before you set up captions in your job, note the following information:
 + The *output packages and files* that you intend to create with the job\. For information about specifying the output package or file type, see [Creating outputs with AWS Elemental MediaConvert](creating-streaming-and-file-outputs.md)\.
 + The *output captions format* that you intend to use in each output\.
 
-  For supported output captions based on your input container, input captions format, and output container, see [Captions support tables by output container type](captions-support-tables-by-container-type.md)\. 
+  For supported output captions based on your input container, input captions format, and output container, see [Supported captions workflows, input captions in the same file as video](captions-support-tables-by-container-type.md)\. 
 + The *output captions tracks* that you intend to include for each output\. If you pass through teletext\-to\-teletext, all tracks in the input are available in the output\. Otherwise, the tracks that you include in an output might be a subset of the tracks that are available in the input\.

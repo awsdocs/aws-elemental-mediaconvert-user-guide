@@ -1,6 +1,6 @@
-# IMSC \(as part of an IMF source\)<a name="IMSC-in-MXF"></a>
+# IMSC input captions \(as part of an IMF source\)<a name="IMSC-in-MXF"></a>
 
-AWS Elemental MediaConvert supports IMSC as an input captions format either as a sidecar file or as part of an IMF source\. If your input IMSC captions are in a sidecar file, see [IMSC, SCC, SRT, STL, TTML \(sidecar\)](sidecar-input.md)\.
+AWS Elemental MediaConvert supports IMSC as an input captions format either as a sidecar file or as part of an IMF source\. If your input IMSC captions are in a sidecar file, see [IMSC, SCC, SMPTE\-TT, SRT, STL, TTML \(sidecar\) input captions](sidecar-input.md)\.
 
 When your input IMSC captions are part of an IMF source, you don't specify the source file for IMSC captions\. That information is in the CPL file that you specify for your job input\. For restrictions on IMSC support, see [IMSC captions support in AWS Elemental MediaConvert](imsc-captions-support.md)\.
 

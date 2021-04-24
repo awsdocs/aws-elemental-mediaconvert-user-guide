@@ -7,6 +7,7 @@ MediaConvert supports the following combinations of input container and codec fo
 
 | Container | Audio Codecs | 
 | --- | --- | 
+| Advanced Systems Format \(ASF, also known as WMA, WMV\) \(\.asf, \.wma, \.wmv\) | WMA, WMA2, WMA Pro | 
 | MPEG\-1 Layer 3 \(\.mp3\) | MP3 | 
 | MPEG\-2 TS \(\.ts, m2ts\) | MP2, PCM | 
 | MPEG\-4 \(\.mp4\) | AAC | 

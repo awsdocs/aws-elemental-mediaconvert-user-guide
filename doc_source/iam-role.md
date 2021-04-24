@@ -1,4 +1,4 @@
-# Step 4: Set up IAM permissions<a name="iam-role"></a>
+# Step 5: Set up IAM permissions<a name="iam-role"></a>
 
 To run transcoding jobs with AWS Elemental MediaConvert, you need an AWS Identity and Access Management \(IAM\) service role to allow MediaConvert access to your resources, such as your input files and the locations where your output files are stored\. 
 

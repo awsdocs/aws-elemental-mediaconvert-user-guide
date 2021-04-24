@@ -17,9 +17,9 @@ In jobs with multiple inputs, each input must have the same number of captions s
 1. Create more captions selectors as necessary\. The number of captions selectors that you need depends on your input captions format\. Choose the appropriate topic from the list that follows this procedure\.
 
 **Topics**
-+ [QuickTime captions track or captions in MXF VANC data \(ancillary\)](ancillary.md)
-+ [Embedded \(CEA/EIA\-608, CEA/EIA\-708\), embedded\+SCTE\-20, and SCTE\-20\+embedded](embedded.md)
-+ [DVB\-Sub](dvb-sub-or-scte-27.md)
-+ [Teletext](teletext.md)
-+ [IMSC, SCC, SRT, STL, TTML \(sidecar\)](sidecar-input.md)
-+ [IMSC \(as part of an IMF source\)](IMSC-in-MXF.md)
++ [QuickTime captions track or captions in MXF VANC data \(ancillary\) input captions](ancillary.md)
++ [Embedded \(CEA/EIA\-608, CEA/EIA\-708\), embedded\+SCTE\-20, and SCTE\-20\+embedded input captions](embedded.md)
++ [DVB\-Sub input captions](dvb-sub-or-scte-27.md)
++ [Teletext input captions](teletext.md)
++ [IMSC, SCC, SMPTE\-TT, SRT, STL, TTML \(sidecar\) input captions](sidecar-input.md)
++ [IMSC input captions \(as part of an IMF source\)](IMSC-in-MXF.md)

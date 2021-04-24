@@ -8,3 +8,4 @@ From the following list, choose the procedures that correspond to the output gro
 
 **Topics**
 + [Creating outputs in ABR streaming output groups](create-outputs-in-abr-streaming-output-groups.md)
++ [Creating and setting up outputs in File output groups](create-outputs-in-file-output-groups.md)

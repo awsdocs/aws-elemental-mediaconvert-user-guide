@@ -11,7 +11,9 @@ Choose the method that you want MediaConvert to use when increasing or decreasin
 When you use **Drop duplicate**, MediaConvert copies or deletes frames but doesn't alter them\. This preserves the picture quality of each individual frame, but might introduce stuttering in some conversions\. For numerically simple conversions, such as 60 fps to 30 fps, Drop duplicate is often the best choice\.   
 When you use **Interpolate**, MediaConvert blends frames together to avoid the need to repeat or remove frames\. This results in smooth motion, but might introduce undesirable video artifacts\. For numerically complex conversions, Interpolate is likely to provide better results than Drop duplicate\.   
 When you use **FrameFormer**, MediaConvert uses the InSync FrameFormer library\. The conversion uses motion\-compensated interpolation based on the content of your input video\. FrameFormer performs various frame rate conversion techniques on a scene\-by\-scene basis and can use different techniques on different regions of each frame\. FrameFormer does the conversion based on automatic detection of your source video's underlying cadence, rather than relying on the frame rate reported in the file's metadata\.  
-**Feature limitation:** You can use FrameFormer with inputs that have resolutions up to 4K only\. MediaConvert doesn't support FrameFormer conversion with 8K inputs\.  
+**Feature limitations:**   
++ You can use FrameFormer with inputs that have resolutions up to 4K only\. MediaConvert doesn't support FrameFormer conversion with 8K inputs\.
++ You can use FrameFormer only with jobs that you run through an on\-demand queue\. You can't use reserved queues with FrameFormer\.
 Using FrameFormer increases the transcoding time and incurs a significant add\-on cost\. For more information, see the [MediaConvert pricing page](https://aws.amazon.com/mediaconvert/pricing/)\.
 
 Depending on the conversion, you might also use these settings:

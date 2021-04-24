@@ -22,6 +22,8 @@ You can use Amazon CloudWatch Events to monitor your AWS Elemental MediaConvert 
   + For experienced cloud architects, see the [Video on demand on AWS](https://aws.amazon.com/solutions/video-on-demand-on-aws/) post on the *AWS Answers* blog\.
   + For developers new to MediaConvert and Lambda, see the [Automating MediaConvert jobs with Lambda](https://github.com/aws-samples/aws-media-services-simple-vod-workflow/blob/master/7-MediaConvertJobLambda/README.md) tutorial on GitHub\. This tutorial is part of the Simple VOD Workflow series of tutorials on using MediaConvert to create video on demand \(VOD\)\.
 
+MediaConvert ensures that CloudWatch Events delivers each event from the MediaConvert event stream at least once\.
+
 **Topics**
 + [Setting up CloudWatch Events rules](setting-up-cloudwatch-event-rules.md)
 + [Tutorial: Setting up email notifications for failed jobs](mediaconvert_sns_tutorial.md)

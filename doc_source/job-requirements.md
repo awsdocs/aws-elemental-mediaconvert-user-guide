@@ -8,11 +8,15 @@ The following table shows the video input codecs and containers that MediaConver
 
 | Container | Video Codecs Supported with Container | 
 | --- | --- | 
+| HLS \(MPEG\-2 TS segments\) | AVC \(H\.264\), HEVC \(H\.265\) | 
 | IMF | JPEG 2000 \(J2K\) | 
 | MPEG Transport Streams | AVC \(H\.264\), HEVC \(H\.265\), MPEG\-2, VC\-1 | 
 | MPEG\-4 | AVC Intra 50/100, AVC \(H\.264\), HEVC \(H\.265\), MPEG\-2 | 
 | MXF | Apple ProRes, AVC Intra 50/100, AVC \(H\.264\), JPEG 2000 \(J2K\), MPEG\-2, SonyXDCam, SonyXDCam \(as an MPEG\-2 variant only\) | 
 | QuickTime | Apple ProRes, AVC Intra 50/100, AVC \(H\.264\), JPEG 2000 \(J2K\), MPEG\-2 | 
+
+**Note**  
+For HLS inputs, your package must conform to the requirements listed in [HLS input package requirements](using-hls-inputs.md#hls-input-package-requirements)\.
 
 **Video outputs supported with accelerated transcoding**  
 The following table shows the video output codecs and containers that MediaConvert supports with accelerated transcoding\.
@@ -42,7 +46,7 @@ For MPEG\-2 TS outputs, to use accelerated transcoding, you must change the defa
   + Not supported: Burn\-in
   + Not supported: SCTE\-20
 
-  For a list of supported captions formats, see [Captions support tables by output container type](captions-support-tables-by-container-type.md)\.
+  For a list of supported captions formats, see [Supported captions workflows, input captions in the same file as video](captions-support-tables-by-container-type.md)\.
 
 **Transcoding features not supported with accelerated transcoding**
 + Avail blanking

@@ -13,7 +13,7 @@ The following example policy grants the basic permissions that a user needs to o
       "Sid": "mediaconvertActions",
       "Effect": "Allow",
       "Action": [
-        "mediaconvert:*",
+        "mediaconvert:*"
       ],
       "Resource": "arn:aws:mediaconvert:*:*:*"
     },

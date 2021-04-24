@@ -17,4 +17,4 @@ The easiest, fastest route to getting a job running with AWS Elemental MediaConv
 
 1. For **New role name**, we suggest that you keep the default value **MediaConvert\_Default\_Role**\. When you do, MediaConvert uses this role by default for your future jobs\.
 
-1. Continue to the next step of this tutorial, [Step 5: Create a job](create-a-job.md)\.
+1. Continue to the next step of this tutorial, [Step 6: Create a job](create-a-job.md)\.

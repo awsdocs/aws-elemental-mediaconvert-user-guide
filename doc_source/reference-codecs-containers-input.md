@@ -15,10 +15,12 @@ MediaConvert supports the following combinations of input containers and video c
 | No Container | DV/DVCPRO, AVC \(H\.264\), HEVC \(H\.265\), MPEG\-1, MPEG\-2 | 
 | 3G2 | AVC \(H\.264\), H\.263, MPEG\-4 part 2 | 
 | 3GP | AVC \(H\.264\), H\.263, MPEG\-4 part 2 | 
+| Advanced Systems Format \(ASF, also known as WMV\) | VC\-1 | 
 | Audio Video Interleave \(AVI\) | Uncompressed, Canopus HQ, DivX/Xvid, DV/DVCPRO | 
 | Adobe Flash | AVC \(H\.264\), Flash 9 File, H\.263 | 
-| Matroska | AVC \(H\.264\), PCM, MPEG\-2, MPEG\-4 part 2, VC\-1 | 
+| HLS \(MPEG\-2 TS segments\) | AVC \(H\.264\), HEVC \(H\.265\), MPEG\-2 | 
 | IMF | Apple ProRes, JPEG 2000 \(J2K\) | 
+| Matroska | AVC \(H\.264\), PCM, MPEG\-2, MPEG\-4 part 2, VC\-1 | 
 | MPEG Program Streams \(MPEG\-PS\) | MPEG\-2 | 
 | MPEG Transport Streams \(MPEG\-TS\) | AVC \(H\.264\), HEVC \(H\.265\), MPEG\-2, VC\-1 | 
 | MPEG\-1 System Streams |  MPEG\-1, MPEG\-2 | 
@@ -26,11 +28,10 @@ MediaConvert supports the following combinations of input containers and video c
 | MXF | Uncompressed, Apple ProRes \([supported types](supported-types-for-apple-prores-inputs.md)\), AVC Intra 50/100, VC\-3, DV/DVCPRO, DV25, DV50, DVCPro HD, AVC \(H\.264\), JPEG 2000 \(J2K\), MPEG\-2, Panasonic P2, SonyXDCam, SonyXDCam MPEG\-4 Proxy | 
 | QuickTime | Uncompressed, Apple ProRes \([supported types](supported-types-for-apple-prores-inputs.md)\), AVC Intra 50/100, DivX/Xvid, DV/DVCPRO, H\.261, H\.262, H\.263, AVC \(H\.264\), HEVC \(H\.265\), JPEG 2000 \(J2K\), MJPEG, MPEG\-2, MPEG\-4 part 2, QuickTime Animation \(RLE\) | 
 | WebM | VP8, VP9 | 
-| WMV/ASF | VC\-1 | 
 
 **Note**  
 MediaConvert doesn't support external reference MOV or MXF input files\. That is, your MOV and MXF inputs must be self\-contained; they can't point to other files\.  
-MediaConvert doesn't currently support HLS inputs\.
+MediaConvert supports HLS inputs that conform to specific requirements\. For more information, see [Using HLS inputs](using-hls-inputs.md)\.
 
 ## Audio<a name="reference-codecs-containers-input-audio"></a>
 
@@ -43,10 +44,12 @@ For outputs that contain only audio inside the output container, MediaConvert su
 | Container | Audio codecs | 
 | --- | --- | 
 | No Container | PCM | 
-| 3G2 | AAC | 
-| 3GP | AAC | 
+| 3G2 | AAC, AMR\-NB, AMR\-WB | 
+| 3GP | AAC, AMR\-NB, AMR\-WB | 
+| Advanced Systems Format \(ASF, also known as WMA or WMV\) | WMA, WMA2, WMA Pro | 
 | Audio Video Interleave \(AVI\) | Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), Dolby E frames carried in PCM streams, MP3, MPEG Audio, PCM | 
 | Adobe Flash | AAC | 
+| HLS \(MPEG\-2 TS segments\) | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\) | 
 | IMF | PCM | 
 | Matroska | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), Opus, WMA, WMA2 | 
 | MPEG Program Streams \(MPEG\-PS\) | MPEG audio | 
@@ -58,8 +61,8 @@ For outputs that contain only audio inside the output container, MediaConvert su
 | OGA | Opus, Vorbis | 
 | OGG | Opus, Vorbis | 
 | QuickTime | AAC, MP3, PCM | 
+| WAV | PCM | 
 | WebM | Opus, Vorbis | 
-| WMV/ASF | WMA, WMA2 | 
 
 ## Audio\-only<a name="reference-codecs-containers-input-audio-only"></a>
 
@@ -68,6 +71,7 @@ MediaConvert supports the following combinations of input container and codec fo
 
 | Container | Audio Codecs | 
 | --- | --- | 
+| Advanced Systems Format \(ASF, also known as WMA, WMV\) \(\.asf, \.wma, \.wmv\) | WMA, WMA2, WMA Pro | 
 | MPEG\-1 Layer 3 \(\.mp3\) | MP3 | 
 | MPEG\-2 TS \(\.ts, m2ts\) | MP2, PCM | 
 | MPEG\-4 \(\.mp4\) | AAC | 

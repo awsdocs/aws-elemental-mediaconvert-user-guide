@@ -10,6 +10,6 @@ This bucket is different from the one that you set up for the media asset output
   This should result in a REST endpoint that you provide for the setting **TIC server REST endpoint** \(`[ticServerUrl](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-nielsennonlinearwatermarksettings-ticserverurl)`\) when you set up your job\.
 + Use AWS Identity and Access Management \(IAM\) to manage access and authentication between MediaConvert, your API gateway, and your SID/TIC server\.
 **Note**  
-The roles and access you set up for this data sharing is different from the IAM permissions you set up to allow MediaConvert to access your input and output Amazon S3 buckets\. For information about that setup, see [Step 4: Set up IAM permissions ](iam-role.md), which is a sub\-topic of the Getting started chapter of this guide\.
+The roles and access you set up for this data sharing is different from the IAM permissions you set up to allow MediaConvert to access your input and output Amazon S3 buckets\. For information about that setup, see [Step 5: Set up IAM permissions ](iam-role.md), which is a sub\-topic of the Getting started chapter of this guide\.
 
 ![\[The video is rotated so that the top of the pre-rotation image is parallel to the right edge of the post-rotation video frame. Black vertical bars on the right and left accommodate the difference between the aspect ratio of the original video and the rotated video.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/NielsenWatermarking.png)

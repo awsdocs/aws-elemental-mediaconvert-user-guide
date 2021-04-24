@@ -15,7 +15,7 @@ The following sample policy grants the IAM user permissions to all AWS Elemental
       "Sid": "mediaconvertActions",
       "Effect": "Allow",
       "Action": [
-        "mediaconvert:*",
+        "mediaconvert:*"
       ],
       "Resource": "arn:aws:mediaconvert:*:*:*"
     },

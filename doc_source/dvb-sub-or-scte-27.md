@@ -1,4 +1,4 @@
-# DVB\-Sub<a name="dvb-sub-or-scte-27"></a>
+# DVB\-Sub input captions<a name="dvb-sub-or-scte-27"></a>
 
 MediaConvert supports DVB\-Sub  only in TS inputs\.
 

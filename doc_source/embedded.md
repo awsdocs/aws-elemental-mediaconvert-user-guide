@@ -1,4 +1,4 @@
-# Embedded \(CEA/EIA\-608, CEA/EIA\-708\), embedded\+SCTE\-20, and SCTE\-20\+embedded<a name="embedded"></a>
+# Embedded \(CEA/EIA\-608, CEA/EIA\-708\), embedded\+SCTE\-20, and SCTE\-20\+embedded input captions<a name="embedded"></a>
 
 If your input captions are in any of the following formats, the service handles them as "embedded":
 + CEA\-608
@@ -9,7 +9,7 @@ If your input captions are in any of the following formats, the service handles 
 If your input captions have both embedded captions and SCTE\-20 captions, and you want both types in your outputs, set up separate input captions selectors for the SCTE\-20 and the embedded captions tracks\. Set up the SCTE\-20 captions selectors the same way that you set up the embedded selectors\.
 
 **Note**  
-For MXF inputs, your captions are most likely on the ancillary track\. Some third\-party media analysis tools incorrectly report these captions as 608/708 embedded\. For information on setting up ancillary captions, see [QuickTime captions track or captions in MXF VANC data \(ancillary\)](ancillary.md)\.
+For MXF inputs, your captions are most likely on the ancillary track\. Some third\-party media analysis tools incorrectly report these captions as 608/708 embedded\. For information on setting up ancillary captions, see [QuickTime captions track or captions in MXF VANC data \(ancillary\) input captions](ancillary.md)\.
 
 ## Number of captions selectors for embedded captions<a name="embedded-how-many-caption-selectors"></a>
 + If all of your output captions are also an embedded format, create only one captions selector, even if you want to include multiple tracks in the output\. With this setup, MediaConvert automatically extracts all tracks and includes them in the output\.

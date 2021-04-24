@@ -1,4 +1,4 @@
-# Step 3: Upload files for transcoding<a name="upload-input-files"></a>
+# Step 4: Upload files for transcoding<a name="upload-input-files"></a>
 
 AWS Elemental MediaConvert can take in your input files from Amazon S3 or from a server through HTTP or HTTPS\. To provide your files from Amazon S3, upload them to your S3 bucket\.<a name="upload-with-s3"></a>
 
