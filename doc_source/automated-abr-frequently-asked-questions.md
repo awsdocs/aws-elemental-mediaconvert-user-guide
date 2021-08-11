@@ -6,7 +6,7 @@ You can see the properties of the outputs in your ABR stack in these places:
 + The **Job summary** page on the MediaConvert console\. For more information, see [Viewing your AWS Elemental MediaConvert job history](viewing-job-history.md)\.
 
 **Will my automated ABR job take a long time to run?**  
-We recommend that you always use [accelerated transcoding](accelerated-transcoding.md) with automated ABR\. When you do, your job should take only slightly longer than an accelerated transcoding job for a manually specified ABR stack with similar outputs\. You don't pay more for enabling accelerated transcoding because automated ABR is already billed at the 2 Pass \(Quality Optimized\) professional tier rate\.
+We recommend that you always use [accelerated transcoding](accelerated-transcoding.md) with automated ABR\. Without accelerated transcoding, your job should take only slightly longer for a manually specified ABR stack with similar outputs\. You don't pay more for enabling accelerated transcoding because automated ABR is already billed at the 2 Pass \(Quality Optimized\) professional tier rate\.
 
 When you run an automated ABR job without accelerated transcoding, it takes much longer to run than a job with a manually specified ABR stack with similar outputs\.\.
 
