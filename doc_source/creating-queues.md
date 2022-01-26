@@ -6,7 +6,7 @@ AWS Elemental MediaConvert provides a default queue, which is an on\-demand queu
 
 1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\. 
 
-1. On the navigation bar of the AWS Elemental MediaConvert console, choose the Region where you want to create the queue\.
+1. On the navigation bar of the AWS Elemental MediaConvert console, choose the AWS Region where you want to create the queue\.
 
    A default queue is available in all Regions\. Other queues appear only in the Region where they are created\.  
 ![\[Choose a Region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)

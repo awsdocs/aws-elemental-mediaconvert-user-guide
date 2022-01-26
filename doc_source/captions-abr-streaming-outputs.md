@@ -18,7 +18,7 @@ Setting up captions can be complex\. For detailed information, see [Setting up c
 
 1. In the **Output settings** pane, for **Name modifier**, enter a value\.
 
-   AWS Elemental MediaConvert appends the name modifier to the file names that it assigns to the files it creates for this output\. Enter a name modifier that will make it easy to identify which files came from which output, such as `-captions-english`\.
+   MediaConvert appends the name modifier to the file names that it creates for this output\. Enter a name modifier that will make it easy to identify which files came from which output, such as `-captions-english`\.
 
 1. Specify your captions settings as follows:
 

@@ -1,7 +1,7 @@
 # MediaConvert User Guide
 
 -----
-*****Copyright &copy;  Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -112,7 +112,6 @@ Amazon's trademarks and trade dress may not be used in
    + [Setting up accelerated transcoding in AWS Elemental MediaConvert](setting-up-accelerated-transcoding.md)
    + [Job limitations for accelerated transcoding in AWS Elemental MediaConvert](job-requirements.md)
    + [Example accelerated transcoding JSON job for AWS Elemental MediaConvert](sample-acceleration-job-settings-in-json.md)
-+ [Using the QVBR rate control mode](cbr-vbr-qvbr.md)
 + [Foundational video concepts and related AWS Elemental MediaConvert settings](video-settings.md)
    + [Working with video frame rates in AWS Elemental MediaConvert](working-with-video-frame-rates.md)
       + [Settings for frame rate conversion](settings-for-frame-rate-conversion.md)
@@ -124,6 +123,9 @@ Amazon's trademarks and trade dress may not be used in
       + [Settings for scan type conversion](settings-for-scan-type-conversion.md)
       + [Valid settings combinations](valid-settings-combinations.md)
       + [Converting the scan type of your video](converting-scan-type.md)
++ [Encoding settings for video quality](video-quality.md)
+   + [Using the QVBR rate control mode](cbr-vbr-qvbr.md)
+   + [Settings for GOP structure](gop-structure.md)
 + [Setting up captions in AWS Elemental MediaConvert jobs](including-captions.md)
    + [Specifying the timecode source](set-the-timecode-source-settings.md)
    + [Gathering required captions information](gather-required-captions-information.md)
@@ -136,7 +138,9 @@ Amazon's trademarks and trade dress may not be used in
          + [Input timecode source and captions alignment](about-input-timecode-source-and-captions-alignment.md)
          + [Use cases for time delta](time-delta-use-cases.md)
          + [Converting dual SCC input files to embedded captions](converting-dual-scc-input-files-to-embedded-captions.md)
+         + [TTML style formatting](ttml-style-formatting.md)
       + [IMSC input captions (as part of an IMF source)](IMSC-in-MXF.md)
+      + [WebVTT input captions (as part of an HLS source)](WebVTT-in-HLS.md)
    + [Setting up captions in outputs](set-up-captions-in-outputs.md)
       + [CEA/EIA-608 and CEA/EIA-708 (embedded) output captions](embedded-output-captions.md)
       + [DVB-Sub output captions](dvb-sub-output-captions.md)
@@ -144,6 +148,7 @@ Amazon's trademarks and trade dress may not be used in
       + [SCC, SRT (sidecar) output captions](scc-srt-output-captions.md)
       + [Teletext output captions](teletext-output-captions.md)
       + [Burn-in output captions](burn-in-output-captions.md)
+      + [Settings for accessibility](accessibility-captions.md)
    + [IMSC captions support in AWS Elemental MediaConvert](imsc-captions-support.md)
 + [Using video rotation in AWS Elemental MediaConvert](auto-rotate.md)
    + [Specified rotation](manually-specified-rotation.md)
@@ -193,6 +198,11 @@ Amazon's trademarks and trade dress may not be used in
    + [Setting up your MediaConvert job for PCM to ID3 metadata](setting-up-pcm-to-id3-metadata.md)
    + [Setting up your MediaConvert job for non-linear watermarking](setting-up-non-linear-watermarking.md)
    + [How AWS Elemental MediaConvert interacts with your Nielsen SID/TIC server in the AWS Cloud](how-mediaconvert-interacts-with-your-nielsen-sid-tic-server-in-the-aws-cloud.md)
++ [Using Kantar for audio watermarking in AWS Elemental MediaConvert outputs](kantar-watermarking.md)
+   + [Getting a Kantar watermarking license](getting-a-kantar-watermarking-license.md)
+   + [Storing your Kantar credentials in AWS Secrets Manager](storing-your-kantar-credentials-in-secrets-manager.md)
+   + [Granting IAM permissions to your Kantar credentials](granting-permissions-for-mediaconvert-to-access-secrets-manager-secret.html.md)
+   + [Setting up your MediaConvert job for Kantar watermarking](setting-up-your-job-for-kantar-watermarking.md)
 + [Supported input codecs and containers](reference-codecs-containers-input.md)
    + [Supported types for Apple ProRes inputs](supported-types-for-apple-prores-inputs.md)
    + [Using HLS inputs with AWS Elemental MediaConvert](using-hls-inputs.md)
@@ -246,8 +256,10 @@ Amazon's trademarks and trade dress may not be used in
       + [Introduction to authorization and access control](auth_access_introduction.md)
       + [Permissions required](auth_access_required-permissions.md)
       + [Understanding how AWS Elemental MediaConvert works with IAM](auth_access_service-with-iam.md)
+      + [Cross-service confused deputy prevention](cross-service-confused-deputy-prevention.md)
       + [Troubleshooting authentication and access control](auth_access_troubleshoot.md)
       + [Example policies](example-policies.md)
+   + [How to allow or disallow input location types using a policy](input-policies.md)
    + [Learning more about AWS Identity and Access Management](learn-more-iam.md)
       + [What is authentication?](auth_access_what-is-authentication.md)
       + [What is access control?](auth_access_what-is-access-control.md)

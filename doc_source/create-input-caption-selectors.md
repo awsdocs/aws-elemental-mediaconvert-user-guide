@@ -23,3 +23,4 @@ In jobs with multiple inputs, each input must have the same number of captions s
 + [Teletext input captions](teletext.md)
 + [IMSC, SCC, SMPTE\-TT, SRT, STL, TTML \(sidecar\) input captions](sidecar-input.md)
 + [IMSC input captions \(as part of an IMF source\)](IMSC-in-MXF.md)
++ [WebVTT input captions \(as part of an HLS source\)](WebVTT-in-HLS.md)

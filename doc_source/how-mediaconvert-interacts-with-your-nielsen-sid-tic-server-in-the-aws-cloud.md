@@ -1,6 +1,8 @@
 # How AWS Elemental MediaConvert interacts with your Nielsen SID/TIC server in the AWS Cloud<a name="how-mediaconvert-interacts-with-your-nielsen-sid-tic-server-in-the-aws-cloud"></a>
 
-The following diagram shows, at a high level, how MediaConvert interacts with the other parts of the system\. There are four major parts of the system that you set up by following instructions from Nielsen:
+The following diagram shows, at a high level, how MediaConvert interacts with the other parts of the system\.
+
+There are four major parts of the system that you set up by following instructions from Nielsen:
 + Transfer your Nielsen metadata \.zip file\. MediaConvert writes this file to the Amazon S3 bucket that you create\. You provide this bucket URL for the setting **Metadata destination** \(`[metadataDestination](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-nielsennonlinearwatermarksettings-metadatadestination)`\) when you set up your job\.
 **Note**  
 This bucket is different from the one that you set up for the media asset outputs of your job\. For information about that bucket, see [Step 2: Create storage for files](set-up-file-locations.md), which is a sub\-topic of the Getting started chapter of this guide\.

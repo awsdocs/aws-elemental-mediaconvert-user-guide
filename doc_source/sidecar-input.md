@@ -11,25 +11,25 @@ You can use SMPTE\-TT input captions that are text\-only, that have captions ima
 When your captions use external references to images, those images must be located in the same Amazon S3 bucket and folder as your captions file\. For example, say this is the S3 path to your SMPTE\_TT file: `AWSDOC-EXAMPLE-BUCKET/mediaconvert-input/captions/my-captions-spanish.ttml`\. Then you must store the image files that the captions file references here: `s3://AWSDOC-EXAMPLE-BUCKET/mediaconvert-input/captions/`\.
 
 **All sidecar captions**  
-In all cases, you create one captions selector for each input captions file\.
+In all cases, create one captions selector for each input captions file\.
 
-Provide the following values for the captions selector fields:
-+ **External captions file**: The URI to the captions input file that is stored in Amazon S3 or on an HTTP\(S\) server\. For Amazon S3 inputs, you can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\. For HTTP\(S\) inputs, provide the URL to your input video file\. For more information, see [HTTP input requirements](upload-input-files.md#http-input-requirements)\. 
-+ **Time delta**: \(Optional\) Use this setting if you need to adjust the sync between the captions and the video\. For more information, see [Use cases for time delta](time-delta-use-cases.md)\.
-
-  Enter a positive or negative number to modify the times in the captions file\. For example, type **15** to add 15 seconds to all the times in the captions file\. Type **\-5** to subtract 5 seconds from the times in the captions file\.
-
-  Enter the time delta in seconds, regardless of the format used in your captions file to specify start and end times\. The number that you enter for **Time delta** simply delays the captions or makes the captions play earlier, regardless of the timecode formats\.
+In **Source file**, enter the URI to the captions input file that is stored in Amazon S3 or on an HTTP\(S\) server\. For Amazon S3 inputs, you can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\. For HTTP\(S\) inputs, provide the URL to your input video file\. For more information, see [HTTP input requirements](upload-input-files.md#http-input-requirements)\. 
 
 **Synchronizing sidecar captions and video**  
-To make sure that your captions are properly synchronized with your video, check that the value for **Timecode source** in the **Video selector** section matches the timecodes in your captions file\. For example, if the timecodes in your captions file start at zero but your video has embedded timecodes starting at 01:00:00:00, change the default value for **Timecode source** from **Embedded** to **Start at 0**\. If other aspects of your job prevent that, use the **Time delta** setting to adjust your captions, as described in [Use cases for time delta](time-delta-use-cases.md)\.
-
-If you use the API or an SDK, you can find this setting in the JSON file of your job\. The setting name is `TimecodeSource`, located in `Settings`, `Inputs`\. 
+To make sure that your captions are properly synchronized with your video, check that the value for **Timecode source** in the **Video selector** section matches the timecodes in your captions file\. For example, if your video has embedded timecodes starting at 01:00:00:00, but the timecodes in your captions file start at zero, change the default value for the video selector **Timecode source** from **Embedded** to **Start at 0**\. If other aspects of your job prevent that, use the **Time delta** setting to adjust your captions, as described in [Use cases for time delta](time-delta-use-cases.md)\.
 
 **Note**  
 MediaConvert handles the alignment of captions with video differently depending on whether the caption format is timecode\-based or timestamp\-based\. For more information, see [Input timecode source and captions alignment](about-input-timecode-source-and-captions-alignment.md)\.
+
+Enter a positive or negative number in **Time delta** to modify the time values in the captions file\. By default, time delta is measured in seconds\. For example, enter **15** to add 15 seconds to all the time values in the captions file\. Or, enter **\-5** to subtract 5 seconds from the time values in the captions file\. To specify in milliseconds instead, set **Time delta units** to **Milliseconds**\.
+
+If the value you enter for **Time delta** would result in captions before or after your video, those captions will not be present in your output\.
+
+**Note**  
+When converting from SCC to SRT, MediaConvert first rounds the value you set for **Time delta** to the nearest input frame\. MediaConvert uses this rounded value when calculating output SRT timings\.
 
 **Topics**
 + [Input timecode source and captions alignment](about-input-timecode-source-and-captions-alignment.md)
 + [Use cases for time delta](time-delta-use-cases.md)
 + [Converting dual SCC input files to embedded captions](converting-dual-scc-input-files-to-embedded-captions.md)
++ [TTML style formatting](ttml-style-formatting.md)

@@ -16,7 +16,7 @@ Next, create input selectors to flag the video, audio, and captions elements fro
 **Note**  
 An *audio asset* is often dialogue, background sound, and music together in one track\. Tracks often consist of multiple channels\. For example, Dolby 5\.1 sound has six channels per track\.
 
-   1. For **Selector type**, choose the way that your audio assets are identified\. Often, this is by track\.
+   1. For **Selector type**, choose the way that your audio assets are identified\. Often, this is by track\. If you are using an HLS input, and would like to select an alternate audio rendition, see [Using alternate audio renditions](using-hls-inputs.md#using-alternate-audio-renditions)\.
 
    1. Provide the identifier \(that is, track number, PID, or language code\) for your primary audio asset\. Your primary audio asset is likely to be track 1\.
 **Note**  

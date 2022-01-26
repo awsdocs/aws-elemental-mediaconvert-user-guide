@@ -16,7 +16,7 @@ MediaConvert supports the following combinations of input containers and video c
 | 3G2 | AVC \(H\.264\), H\.263, MPEG\-4 part 2 | 
 | 3GP | AVC \(H\.264\), H\.263, MPEG\-4 part 2 | 
 | Advanced Systems Format \(ASF, also known as WMV\) | VC\-1 | 
-| Audio Video Interleave \(AVI\) | Uncompressed, Canopus HQ, DivX/Xvid, DV/DVCPRO | 
+| Audio Video Interleave \(AVI\) | Uncompressed, Canopus HQ, DivX/Xvid, DV/DVCPRO, MJPEG | 
 | Adobe Flash | AVC \(H\.264\), Flash 9 File, H\.263 | 
 | HLS \(MPEG\-2 TS segments\) | AVC \(H\.264\), HEVC \(H\.265\), MPEG\-2 | 
 | IMF | Apple ProRes, JPEG 2000 \(J2K\) | 

@@ -5,8 +5,11 @@ When you choose MXF as your video output container and you keep the default valu
 **Note**  
 MediaConvert supports more MXF profiles through automatic profile selection than it does with manual selection\.
 
-**AVC Intra and VC3**  
-For AVC Intra and VC3, MediaConvert selects the Generic OP1a profile, without regard for your output encoding settings\.
+**AVC \(H\.264\), AVC Intra, and VC3**  
+For AVC \(H\.264\), AVC Intra, and VC3, MediaConvert selects the Generic OP1a profile, without regard for your output encoding settings\.
+
+**XAVC**  
+For XAVC, MediaConvert selects the XAVC profile, without regard for your output encode settings\.
 
 **MPEG\-2**  
 For MPEG\-2, MediaConvert chooses SMPTE\-386 D10 when your output encoding characteristics conform to the D10 specification\. Otherwise, MediaConvert selects the XDCAM RDD9 profile\. The following table details the relevant encoding settings and the values that you must set to have MediaConvert automatically select the D10 profile\.

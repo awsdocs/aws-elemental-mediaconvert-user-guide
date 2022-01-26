@@ -11,5 +11,6 @@ In the console, this means that you must delete the **Audio 1** tab that MediaCo
 | MXF profile | Output audio requirements | 
 | --- | --- | 
 |  Generic OP1a  |  Audio codec: Uncompressed WAV  | 
+|  Sony XAVC \(RDD32\)  |   Audio codec: Uncompressed WAV  Number of channels per track 1  Number of tracks per output: Any even number from 2 through 16  Bit depth: 24 bits  Sample rate: 48 kHz  | 
 | Sony XDCAM \(RDD9\) |  Audio codec: Uncompressed WAV Number of channels per track: 1 Number of tracks per output: Any even number from 2 through 16, or no audio at all Bit depth: 16 bits or 24 bits; you must choose the same value for all audio tracks in the output Sample rate: 48 kHz  | 
 | D10 \(SMPTE\-386\) |  Audio codec: Uncompressed WAV Number of channels per track: 4 or 8 Number of tracks per output: 1, or no audio at all Bit depth: 16 bits or 24 bits; you must choose the same value for all audio tracks in the output Sample rate: 48 kHz  | 

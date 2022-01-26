@@ -6,7 +6,7 @@ After your initial pricing plan term for reserved transcode slots \(RTS\) expire
 
 1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
-1. On the navigation bar of the MediaConvert console, choose the Region where you created the reserved queue\.  
+1. On the navigation bar of the MediaConvert console, choose the AWS Region where you created the reserved queue\.  
 ![\[Choose a Region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)
 
 1. Choose the three\-bar icon on the left to access the left navigation pane\.

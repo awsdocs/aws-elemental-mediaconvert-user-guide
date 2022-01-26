@@ -6,29 +6,29 @@ To use AWS Elemental MediaConvert or to manage authorization and access control 
 
 To access the AWS Elemental MediaConvert console, you must have a minimum set of permissions that allows you to list and view details about the AWS Elemental MediaConvert resources in your AWS account\. If you create an identity\-based permissions policy that is more restrictive than the minimum required permissions, the console won't function as intended for entities with that policy\.
 
-The following sample policy grants the IAM user permissions to all AWS Elemental MediaConvert actions \(such as `ListJobs`, `CreateJob`, and so on\) on all MediaConvert resources \(such as jobs, queues, and output presets\)\. It also grants the IAM actions required for the user to specify the service role that MediaConvert will assume in order to run the job\. It also grants Amazon S3 actions that allow the user to use the **Browse** button to choose input and output locations\. The Amazon S3 permissions aren't required to run the job; without them, the user can specify the URL of the bucket instead\. You can attach this policy to a user as described in the [Creating policies on the JSON tab](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html#access_policies_create-json-editor) topic of the *IAM User Guide*\.
+The following sample policy grants the IAM user permissions to all AWS Elemental MediaConvert actions \(such as `ListJobs`, `CreateJob`, and so on\) on all MediaConvert resources \(such as jobs, queues, and output presets\)\. It also grants the IAM actions required for the user to specify the service role that MediaConvert will assume in order to run the job\. It also grants Amazon S3 actions that allow the user to use the **Browse** button to choose input and output locations\. The Amazon S3 permissions aren't required to run the job; without them, the user can specify the URL of the bucket instead\. In this example, the account number is *111122223333* and the role name is *MediaConvertRole*\. You can attach this policy to a user as described in the [Creating policies on the JSON tab](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html#access_policies_create-json-editor) topic of the *IAM User Guide*\.
 
 ```
 {
   "Version": "2012-10-17",
-  "Statement": [{
+  "Statement": [
+    {
       "Sid": "mediaconvertActions",
       "Effect": "Allow",
-      "Action": [
-        "mediaconvert:*"
-      ],
-      "Resource": "arn:aws:mediaconvert:*:*:*"
+      "Action": "mediaconvert:*",
+      "Resource": "*"
     },
     {
-      "Sid": "iamActions",
+      "Sid": "iamListRoles",
       "Effect": "Allow",
-      "Action": [
-        "iam:PassRole",
-        "iam:ListRoles"
-      ],
-      "Resource": [
-        "arn:aws:iam::*:role/*"
-      ]
+      "Action": "iam:ListRoles",
+      "Resource": "*"
+    },
+    {
+      "Sid": "iamPassRole",
+      "Effect": "Allow",
+      "Action": "iam:PassRole",
+      "Resource": "arn:aws:iam::111122223333:role/MediaConvertRole"
     },
     {
       "Sid": "s3Actions",
@@ -38,9 +38,7 @@ The following sample policy grants the IAM user permissions to all AWS Elemental
         "s3:GetBucketLocation",
         "s3:ListAllMyBuckets"
       ],
-      "Resource": [
-        "arn:aws:s3:::*"
-      ]
+      "Resource": "*"
     }
   ]
 }

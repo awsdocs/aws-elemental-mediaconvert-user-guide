@@ -6,7 +6,7 @@ Reserved queues allow you to purchase transcoding capacity for a 12\-month perio
 
 1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\. 
 
-1. On the navigation bar of the AWS Elemental MediaConvert console, choose the Region where you want to create the queue\.
+1. On the navigation bar of the AWS Elemental MediaConvert console, choose the AWS Region where you want to create the queue\.
 
    A default, on\-demand queue is available in all Regions\. Other queues appear only in the Region where you create them\.  
 ![\[Choose a Region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)

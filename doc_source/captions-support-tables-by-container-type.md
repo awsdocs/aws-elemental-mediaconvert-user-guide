@@ -23,6 +23,7 @@ If your input captions are in a sidecar format, see [Sidecar captions supported 
 |  Input captions container  |  Input captions format  |  Supported output captions formats  | 
 | --- | --- | --- | 
 |  HLS Container  |  Embedded  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
+|    |  WebVTT  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
 |  MP4 Container  |  Embedded  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
 |    |  SCTE\-20  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
 |  MPEG2\-TS Container  |  Embedded  |  IMSC \(as sidecar \.fmp4\) WebVTT  | 
@@ -55,6 +56,7 @@ If your input captions are in a sidecar format, see [Sidecar captions supported 
 |  Input captions container  |  Input captions format  |  Supported output captions formats  | 
 | --- | --- | --- | 
 |  HLS Container  |  Embedded  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) WebVTT  | 
+|    |  WebVTT  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) WebVTT  | 
 |  IMF Container  Specify the CPL to define your input\.   |  IMSC1 text profile  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
 |  MP4 Container  |  Embedded  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\) WebVTT  | 
 |    |  SCTE\-20  |  Burn in IMSC \(as sidecar \.fmp4\) IMSC \(as sidecar \.xml\) TTML \(as sidecar \.fmp4\) TTML \(as sidecar \.ttml\)  | 
@@ -97,6 +99,7 @@ You can use only [Teletext level 1\.5](https://en.wikipedia.org/wiki/World_Syste
 |  Input captions container  |  Input captions format  |  Supported output captions formats  | 
 | --- | --- | --- | 
 |  HLS Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
+|    |  WebVTT  |  Burn in WebVTT  | 
 |  IMF Container  Specify the CPL to define your input\.   |  IMSC1 text profile  |  WebVTT  | 
 |  MP4 Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
 |    |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded WebVTT  | 
@@ -136,6 +139,7 @@ If your input captions are in a sidecar format, see [Sidecar captions supported 
 |  Input captions container  |  Input captions format  |  Supported output captions formats  | 
 | --- | --- | --- | 
 |  HLS Container  |  Embedded  |  Burn in TTML  | 
+|    |  WebVTT  |  Burn in TTML \(as sidecar \.ttml\)  | 
 |  MP4 Container  |  Embedded  |  Burn in TTML  | 
 |    |  SCTE\-20  |  Burn in TTML  | 
 |  MPEG2\-TS Container  |  Embedded  |  Burn in TTML  | 
@@ -172,6 +176,7 @@ If your input captions are in a sidecar format, see [Sidecar captions supported 
 |  Input captions container  |  Input captions format  |  Supported output captions formats  | 
 | --- | --- | --- | 
 |  HLS Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|    |  WebVTT  |  Burn in  | 
 |  MP4 Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
 |    |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
 |  MPEG2\-TS Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
@@ -215,6 +220,7 @@ You can use only [Teletext level 1\.5](https://en.wikipedia.org/wiki/World_Syste
 |  Input captions container  |  Input captions format  |  Supported output captions formats  | 
 | --- | --- | --- | 
 |  HLS Container  |  Embedded  |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
+|    |  WebVTT  |  Burn in Teletext DVB\-Sub  | 
 |  IMF Container  Specify the CPL to define your input\.   |  IMSC1 text profile  |  Burn in DVB\-Sub Teletext  | 
 |  MPEG2\-TS Container  |  Embedded  |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded Teletext  | 
 |    |  SCTE\-20  |  Burn in DVB\-Sub Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
@@ -257,6 +263,7 @@ You can use only [Teletext level 1\.5](https://en.wikipedia.org/wiki/World_Syste
 |  Input captions container  |  Input captions format  |  Supported output captions formats  | 
 | --- | --- | --- | 
 |  HLS Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded   | 
+|    |  WebVTT  |  Burn in Teletext  | 
 |  IMF Container  Specify the CPL to define your input\.   |  IMSC1 text profile  |  Burn in  | 
 |  MP4 Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded Teletext  | 
 |    |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded  | 
@@ -292,6 +299,7 @@ If your input captions are in a sidecar format, see [Sidecar captions supported 
 |  Input captions container  |  Input captions format  |  Supported output captions formats  | 
 | --- | --- | --- | 
 |  HLS Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded   | 
+|    |  WebVTT  |  Burn in  | 
 |  IMF Container  Specify the CPL to define your input\.   |  IMSC1 text profile  |  Burn in  | 
 |  MP4 Container  |  Embedded  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded   | 
 |    |  SCTE\-20  |  Burn in Embedded Embedded plus SCTE\-20 SCTE\-20 plus embedded   | 

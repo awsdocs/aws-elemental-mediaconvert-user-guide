@@ -10,7 +10,7 @@ Run AWS Certificate Manager in the same Region as you run AWS Elemental MediaCon
 
 1. Open the ACM console at [https://console\.aws\.amazon\.com/acm/](https://console.aws.amazon.com/acm/)\.
 
-1. Import the certificate into ACM according to the instructions at [Importing certificates into AWS certificate manager](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate.html)\. Note the resulting certificate ARN because you will need it later\.
+1. Import the certificate into ACM according to the instructions at [Importing certificates into AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate.html)\. Note the resulting certificate ARN because you will need it later\.
 
    For use in DRM encryption, your certificate must have a status of **Issued** in ACM\.
 

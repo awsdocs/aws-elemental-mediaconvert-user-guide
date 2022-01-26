@@ -22,13 +22,11 @@ When your input is an HLS package, your job is restricted in these ways:
 Your input HLS package must conform to the following requirements:
 + The video container for your media segments must be MPEG\-2 TS\.
 + The compatibility version of the manifest file \(specified by `EXT-X-VERSION`\) must be 4 or smaller\.
-+ The manifest file must stay the same after you submit your job\. That is, the manifest must have the tag `EXT-X-ENDLIST` or it must have the `EXT-X-PLAYLIST-TYPE` value set to Video On Demand \(VOD\)\.
++ The manifest file must stay the same after you submit your job\. That is, the manifest must have the tag `EXT-X-ENDLIST` or it must have the `EXT-X-PLAYLIST-TYPE` value set to VOD\.
 + If the manifest uses `EXT-X-BYTERANGE`, the start of the first subrange must be 0 and the following subrange segments must continue the former one\.
 + If the input has discontinuities, they must start at the beginning of a segment\. That is, the input can't have discontinuities in the subrange of a segment\.
-+ The package must not use alternative renditions\. That is, the manifest can't use the `EXT-X-MEDIA` tag, and any audio in your input must be in the same media segments as the video\.
 + The manifest can't use any of the following tags:
   + `EXT-X-KEY`
-  + `EXT-X-MEDIA`
   + `EXT-X-PROGRAM-DATE-TIME`
   + `EXT-X-DATERANGE`
   + `EXT-X-I-FRAMES-ONLY`
@@ -38,3 +36,23 @@ Your input HLS package must conform to the following requirements:
   + `EXT-X-INDEPENDENT-SEGMENTS`
   + `EXT-X-START`
 + When your job uses accelerated transcoding, your input HLS package must conform to this additional requirement: The duration in `EXTINF` must be specified using a decimal floating\-point, with enough accuracy to avoid perceptible errors when segment durations are accumulated\.
+
+## Using alternate audio renditions<a name="using-alternate-audio-renditions"></a>
+
+With HLS rendition groups, you can use the audio selector settings to indicate which alternate audio rendition you want MediaConvert to use\. To be eligible for selection, your alternate audio renditions must conform to the following requirements:
++ The renditions must be included in `EXT-X-MEDIA` tags in the input parent manifest\.
++ The `EXT-X-MEDIA` tags must contain a unique combination of GROUP\-ID, NAME, and LANGUAGE values\.\.
++ Audio must be in one of the following supported audio codecs: AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), or MP3\.
++ The child mainfest for your alternate audio rendition must be included in the parent manifest that you used for your Input file URL \(FileInput\)
+
+ When you specify audio selector settings to identify an alternate audio rendition, the audio selector looks for a matching `EXT-X-MEDIA` tag in the parent manifest\.
+
+You can use one or more selector settings at a time\. For example, given the following `EXT-X-MEDIA` tags, you can identify the audio rendition by the name \(RenditionName\) or language \(RenditionLangageCode\) because these are both unique values across the tags\.
+
+`#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",CHANNELS="2",NAME="English",LANGUAGE="eng",DEFAULT=YES,AUTOSELECT=YES,URI="english_audio.m3u8"` 
+
+`#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",CHANNELS="2",NAME="Japanese",LANGUAGE="jpn",DEFAULT=NO,AUTOSELECT=NO,URI="japanese_audio.m3u8"`
+
+However, because the group ID \(RenditionGroupID\) is the same for both tags, you can't use that alone to identify an audio rendition\. You must use the group ID in combination with another value from the `EXT-X-MEDIA` tag to identify the audio rendition that you want MediaConvert to use\.
+
+If you don't specify audio selector settings, the audio selector looks for audio that's muxed into the video segments\. If the video segments don't contain audio, the audio selector uses the first alternate audio rendition from the input parent manifest\.

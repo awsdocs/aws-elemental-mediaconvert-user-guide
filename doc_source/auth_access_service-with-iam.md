@@ -48,7 +48,7 @@ arn:partition:mediaconvert:account:resource/ID
 ```
 
 Replace the *partition*, *account*, *resource*, and *ID* variables with valid values\. Valid values can be the following:
-+ *partition*: The partition for your AWS Region\. For most Regions, the partition is "aws\."
++ *partition*: The partition for your AWS Region\. For most Regions, the partition is `aws`\.
 + *account*: The ID of your AWS account\. This must be the same account that you used to create the IAM user to sign on to AWS Elemental MediaConvert\.
 + *resource*: The type of AWS Elemental MediaConvert resource\. 
 + *ID*: The ID of the AWS Elemental MediaConvert resource\.

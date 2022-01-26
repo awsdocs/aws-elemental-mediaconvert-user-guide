@@ -2,7 +2,7 @@
 
 Suppose that you want the outputs of your MediaConvert jobs to reside in an Amazon S3 bucket that you own, but you want users that belong to another AWS account to have access to them\. To grant access, you can add an Amazon S3 bucket policy to your output bucket\.
 
-For a tutorial about how to grant this access, see [Example 2: Bucket owner granting cross\-account bucket permissions](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-walkthroughs-managing-access-example2.html) in the *Amazon Simple Storage Service Developer Guide*\.
+For a tutorial about how to grant this access, see [Example 2: Bucket owner granting cross\-account bucket permissions](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-walkthroughs-managing-access-example2.html) in the *Amazon Simple Storage Service User Guide*\.
 
 The following example bucket policy grants access to your output bucket:
 

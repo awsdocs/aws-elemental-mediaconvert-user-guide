@@ -20,5 +20,6 @@ To use AWS Elemental MediaConvert, you must set up a minimum of two IAM entities
 + [Introduction to authorization and access control](auth_access_introduction.md)
 + [Permissions required](auth_access_required-permissions.md)
 + [Understanding how AWS Elemental MediaConvert works with IAM](auth_access_service-with-iam.md)
++ [Cross\-service confused deputy prevention](cross-service-confused-deputy-prevention.md)
 + [Troubleshooting authentication and access control](auth_access_troubleshoot.md)
 + [Example policies](example-policies.md)

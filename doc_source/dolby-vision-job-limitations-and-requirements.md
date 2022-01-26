@@ -8,8 +8,8 @@ Job limitations:
 + You can send Dolby Vision jobs only to on\-demand queues\. You can't send them to reserved queues\.
 
 Input requirements:
-+ Your input format must be IMF or MXF\.
-+ Your input must contain frame\-interleaved Dolby Vision metadata\.
++ Your input format must be either IMF or MXF with JPEG 2000, or Quicktime with Apple ProRes\.
++ Your input must contain frame\-interleaved Dolby Vision metadata, or you must include a Dolby Vision studio metadata XML\.
 + All of your inputs must have the same frame rate\. Frame rate conversion is not supported\.
 + You must keep **Image inserter** disabled\.
 

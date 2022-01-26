@@ -1,6 +1,8 @@
 # Use cases for time delta<a name="time-delta-use-cases"></a>
 
-How you use **Time delta** depends on the problem you're trying to solve and the captions format that you're working with\.
+How you use **Time delta \(TimeDelta\)** depends on the problem you're trying to solve and the captions format that you're working with\.
+
+ By default, you specify the time delta in seconds\. If you want to specify it in milliseconds instead, set **Time delta units \(TimeDeltaUnits\)** to **Milliseconds \(MILLISECONDS\)**\.
 
 ## Adjusting for different timecodes between video and captions files<a name="adjusting-for-different-timecodes-between-video-and-captions-files"></a>
 

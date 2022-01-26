@@ -10,7 +10,7 @@ Quality\-Defined Variable Bitrate \(QVBR\) Mode
 Choose this mode for distribution over the internet \(OTT\) and for video on\-demand \(VOD\) download\. For best video quality for your file size, always choose this mode except in the following cases:  
 + You need your bit rate to be constant, for example, for distribution over fixed\-bandwidth networks
 + You need your total file size to not drop below the size that you specify, for example, to comply with contractual or regulatory requirements
-When you choose QVBR, the encoder determines the right number of bits to use for each part of the video to maintain the video quality that you specify\. You can use the same QVBR settings for all your assets; the encoder automatically adjusts the file size to suit the complexity of the video\. For more information, see [Guidelines for using QVBR](#qvbr-guidelines)\.
+When you choose QVBR, the encoder determines the right number of bits to use for each part of the video to maintain the video quality that you specify\. You can leave the QVBR quality level blank to let the encoder determine the appropriate quality level based on the input video frames\. You can use the same QVBR settings for all your assets; the encoder automatically adjusts the file size to suit the complexity of the video\. For more information, see [Guidelines for using QVBR](#qvbr-guidelines)\.
 
 Constant Bitrate \(CBR\) Mode  
 Choose CBR only if you need the asset's bit rate to remain constant over time\. For example, you might need a constant bit rate if you distribute your assets over limited, fixed bandwidth networks\.  
@@ -30,7 +30,7 @@ In the parts of the graph where the QVBR line is above the CBR line, as in the p
 
 ## Guidelines for using quality\-defined variable bitrate mode<a name="qvbr-guidelines"></a>
 
-When you use QVBR, you specify the quality level for your output and the maximum peak bit rate\. For reasonable values of those settings, the encoder chooses how many bits to use for each part of the video\. When you apply the same settings to several assets, your job outputs for simpler assets \(such as cartoons\) have smaller file sizes than your outputs for visually complex assets \(such as high\-motion sports with brightly dressed crowds in the background\)\.
+When you use QVBR, you can specify the quality level for your output and the maximum peak bit rate\. For reasonable values of those settings, the encoder chooses how many bits to use for each part of the video\. When you apply the same settings to several assets, your job outputs for simpler assets \(such as cartoons\) have smaller file sizes than your outputs for visually complex assets \(such as high\-motion sports with brightly dressed crowds in the background\)\.
 
 This section provides information about the QVBR settings\. The following table provides a set of recommended values to get started with\. Specify your values for these settings when you create your outputs, as described in [Setting up a job](setting-up-a-job.md)\. For more information about each setting, choose a topic from the list that follows the table\.
 
@@ -52,6 +52,12 @@ If you aren't using **Max average bitrate**, and you don't need multi\-pass enco
 Multi\-pass encoding is a professional tier feature\. For more information about MediaConvert pricing tiers, see [MediaConvert pricing](https://aws.amazon.com/mediaconvert/pricing/)\.
 
 ### Setting QVBR quality tuning level<a name="qvbr-quality"></a>
+
+#### Default QVBR quality level<a name="default-qvbr-quality-level"></a>
+
+You can leave the QVBR quality level blank to let the encoder automatically determine the appropriate quality level based on the input video frames\. When you choose the default option, the encoder produces a more consistent quality across the entire video instead of a specified target quality level\. Note that if you choose this option, you can’t maintain a differentiated quality level based on the intended viewing device \(for example, large\-screen TV, PC or tablet, or smartphone\.\) The encoder determines the appropriate quality level for you, based on the characteristics of your input video, to maintain a consistent video quality\. 
+
+#### Custom QVBR quality level<a name="custom-qvbr-quality-level"></a>
 
 You can specify the **QVBR quality level** on a scale between 1 and 10\. The encoder determines the right number of bits to use for each part of the video to maintain the video quality that you specify\. 
 

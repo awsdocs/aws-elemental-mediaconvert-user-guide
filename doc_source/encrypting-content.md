@@ -2,7 +2,17 @@
 
 Use the following procedure to enable content encryption in **CMAF**, **DASH ISO**, **Apple HLS**, and **MS Smooth** output groups\.
 
- To use this procedure, you should be comfortable working with output groups\. For more information, see [Step 3: Create output groups](specify-output-groups.md)\.
+AWS Elemental MediaConvert supports the following combinations of output groups and DRM systems, with SPEKE v1\.0\.
+
+
+| Output Group | Microsoft PlayReady | Google Widevine | Apple FairPlay | 
+| --- | --- | --- | --- | 
+| DASH | √ | √ |  | 
+| Apple HLS |  |  | √ | 
+| Microsoft Smooth | √ |  |  | 
+| CMAF | √ | √ | √ | 
+
+To use this procedure, you should be comfortable working with output groups\. For more information, see [Step 3: Create output groups](specify-output-groups.md)\.
 
 **To encrypt content**
 
