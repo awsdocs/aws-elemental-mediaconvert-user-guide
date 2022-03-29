@@ -20,7 +20,7 @@ If you don't specify overlay start time and duration, the service puts the overl
 
    1. For each graphic overlay that you want to include in the output, choose **Add image**, and then specify the overlay settings\.
 
-      For **Image location**, specify an input file that is stored in Amazon S3 or on an HTTP\(S\) server\. For Amazon S3 inputs, you can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\. For HTTP\(S\) inputs, provide the URL to your input video file\. For more information, see [HTTP input requirements](upload-input-files.md#http-input-requirements)\. 
+      For **Image location**, specify an input file that is stored in Amazon S3 or on an HTTP\(S\) server\. For Amazon S3 inputs, you can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\. For HTTP\(S\) inputs, provide the URL to your input image file (Accepted extensions are .png and .tga)\. For more information, see [HTTP input requirements](upload-input-files.md#http-input-requirements)\. 
 
 For details about the more complex output graphic overlay settings, see the following topics:
 
