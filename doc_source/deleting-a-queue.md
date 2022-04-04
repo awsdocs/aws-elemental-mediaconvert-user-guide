@@ -19,3 +19,6 @@ You can't delete a queue that contains unprocessed jobs\.
 1. On the **Queues** page, in the **On\-demand queues** section, choose the name of the queue that you want to delete\.
 
 1. On the queue's page, choose the **Delete queue** button\.
+
+**Note**  
+For information about deleting queues using the AWS CLI, see the [AWS CLI command reference](https://docs.aws.amazon.com/en_us/mediaconvert/latest/ug/deleting-a-queue.html) documentation\.

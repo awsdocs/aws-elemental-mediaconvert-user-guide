@@ -32,6 +32,9 @@ To use this procedure, you should be comfortable working with output groups\. Fo
    + For **SPEKE**, fill in the encryption parameter fields\. For more information, see [SPEKE encryption parameters](#speke-encryption-parameters)\. 
    + For **Static Key**, see [Static key encryption parameters](#static-key-encryption-parameters)\.
 
+**Note**  
+MediaConvert does not support DRM content encryption for the following output video codecs: AV1, VP8, and VP9\.
+
 ## SPEKE encryption parameters<a name="speke-encryption-parameters"></a>
 
 When you request encryption, you provide input parameters that allow the service to locate your DRM solution provider's key server, to authenticate you as a user and to request the proper encoding keys\. Some options are available only for particular output groups\.

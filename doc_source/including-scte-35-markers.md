@@ -1,6 +1,6 @@
 # Including SCTE\-35 markers in AWS Elemental MediaConvert outputs<a name="including-scte-35-markers"></a>
 
-SCTE\-35 markers indicate where downstream systems can insert other content \(usually advertisements or local programs\)\. You can include SCTE\-35 markers in transport stream \(TS\), DASH, and HLS outputs\.
+SCTE\-35 markers indicate where downstream systems can insert other content \(usually advertisements or local programs\)\. You can include SCTE\-35 markers in transport stream \(TS\), DASH, HLS, and CMAF outputs\.
 
 AWS Elemental MediaConvert puts SCTE\-35 markers into your outputs in one of two ways:
 + The service passes markers through from your input to the output\. For more information, see [Passing through SCTE\-35 markers from your input](passing-through-scte-35-markers.md)\.
@@ -24,9 +24,11 @@ Limitations to SCTE\-35 support are as follows:
     Set the container for each output under **Output settings**, **Container**\.
   + Outputs in **DASH ISO** output groups\.
   + Outputs in **Apple HLS** output groups\.
-+ The service forces IDR \(Instantaneous Decoder Refresh\) frames at the insertion points specified in your ESAM XML document only in outputs that are encoded with one of the following codecs: MPEG\-2, MPEG\-4 AVC \(H\.264\), or HEVC \(H\.265\)\. 
+  + Outputs in **CMAF** output groups\.
++ The service forces Instantaneous Decoder Refresh \(IDR\) frames at the insertion points specified in your ESAM XML document for the following output codecs: MPEG\-2, MPEG\-4 AVC \(H\.264\), or HEVC \(H\.265\)\. 
 
-  Set the codec for each output under **Encoding settings**, **Video**, **Video codec**\.
+  In the [MediaConvert console](https://console.aws.amazon.com/mediaconvert/), go to **Encoding settings**, **Video**, and then set the codec for each output in the **Video codec** section\.
++ **DASH ISO** and **CMAF DASH** output groups only support single\-period manifest outputs\.
 
 **Topics**
 + [Passing through SCTE\-35 markers from your input](passing-through-scte-35-markers.md)

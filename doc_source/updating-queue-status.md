@@ -24,3 +24,6 @@ The following procedure explains how to pause and reactivate a queue using the c
 1. On the **Edit queue** page, for **Status**, choose **Paused** or **Active**\.
 
 1. Choose **Save queue**\.
+
+**Note**  
+For information about pausing queues using the AWS CLI, see the [AWS CLI command reference](https://docs.aws.amazon.com/en_us/mediaconvert/latest/ug/updating-queue-status.html) documentation\.

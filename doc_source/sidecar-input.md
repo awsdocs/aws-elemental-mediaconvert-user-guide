@@ -2,6 +2,11 @@
 
 IMSC, SCC, SMPTE\-TT, SRT, STL, and TTML are sidecar captions formats\. With these formats, you provide input captions as a separate file\. Depending on your output captions settings, AWS Elemental MediaConvert passes them through to the output in the same format or converts them into another sidecar format\.
 
+**All sidecar captions**  
+In all cases, create one captions selector for each input captions file\.
+
+In **Source file**, enter the URI to the captions input file that is stored in Amazon S3 or on an HTTP\(S\) server\. For Amazon S3 inputs, you can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\. For HTTP\(S\) inputs, provide the URL to your input video file\. For more information, see [HTTP input requirements](upload-input-files.md#http-input-requirements)\. 
+
 **IMSC captions**  
 MediaConvert supports IMSC as an input captions format either as a sidecar file or as part of an IMF source\. If your input IMSC captions are part of an IMF package, see [IMSC input captions \(as part of an IMF source\)](IMSC-in-MXF.md)\. For restrictions on IMSC support, see [IMSC captions support in AWS Elemental MediaConvert](imsc-captions-support.md)\.
 
@@ -10,10 +15,8 @@ You can use SMPTE\-TT input captions that are text\-only, that have captions ima
 
 When your captions use external references to images, those images must be located in the same Amazon S3 bucket and folder as your captions file\. For example, say this is the S3 path to your SMPTE\_TT file: `AWSDOC-EXAMPLE-BUCKET/mediaconvert-input/captions/my-captions-spanish.ttml`\. Then you must store the image files that the captions file references here: `s3://AWSDOC-EXAMPLE-BUCKET/mediaconvert-input/captions/`\.
 
-**All sidecar captions**  
-In all cases, create one captions selector for each input captions file\.
-
-In **Source file**, enter the URI to the captions input file that is stored in Amazon S3 or on an HTTP\(S\) server\. For Amazon S3 inputs, you can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\. For HTTP\(S\) inputs, provide the URL to your input video file\. For more information, see [HTTP input requirements](upload-input-files.md#http-input-requirements)\. 
+**SRT captions**  
+MediaConvert supports SRT input captions with UTF\-8 character encoding\.
 
 **Synchronizing sidecar captions and video**  
 To make sure that your captions are properly synchronized with your video, check that the value for **Timecode source** in the **Video selector** section matches the timecodes in your captions file\. For example, if your video has embedded timecodes starting at 01:00:00:00, but the timecodes in your captions file start at zero, change the default value for the video selector **Timecode source** from **Embedded** to **Start at 0**\. If other aspects of your job prevent that, use the **Time delta** setting to adjust your captions, as described in [Use cases for time delta](time-delta-use-cases.md)\.

@@ -21,9 +21,9 @@ When your MediaConvert job has outputs with 8k \(8192x4320\) resolutions, your j
 + You can't create Dolby Vision outputs\.
 + You must send your job to an on\-demand queue\. Reserved queues can't run 8k jobs\.
 
-## Preserving 4:4:4 Choma sampling<a name="apple-prores-4444-preserve"></a>
+## Preserving 4:4:4 Chroma sampling<a name="apple-prores-4444-preserve"></a>
 
-When your MediaConvert job has Apple ProRes outputs that need to have 4:4:4 choma subsampling preserved, your job is restricted in these ways:
+When your MediaConvert job has Apple ProRes outputs that need to have 4:4:4 chroma subsampling preserved, your job is restricted in these ways:
 + You can only use the NexGuard File Maker preprocessor\.
 +  You must use the Duplicate Drop as the frame rate conversion algorithm when using frame rate convesion\. 
 + You cannot mix RGB and non RGB inputs\.

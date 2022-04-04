@@ -1,6 +1,6 @@
 # Setting up still graphic overlays in outputs<a name="setting-up-still-graphic-overlays-in-outputs"></a>
 
-Because you are setting up an output overlay, set up image insertion in each output where you want the service to overlay graphics on your video\. For information about setting up an overlay that appears on all outputs or on portions that correspond to only one input, see [Choosing between input overlay and output overlay](choosing-between-input-overlay-and-output-overlay.md)\.
+Because you're setting up an output overlay, set up image insertion in each output where you want the service to overlay graphics on your video\. For information about setting up an overlay that appears on all outputs, or on portions that correspond to only one input, see [Choosing between input overlay and output overlay](choosing-between-input-overlay-and-output-overlay.md)\.
 
 If you don't specify overlay start time and duration, the service puts the overlay on the entire output\.
 
@@ -20,11 +20,11 @@ If you don't specify overlay start time and duration, the service puts the overl
 
    1. For each graphic overlay that you want to include in the output, choose **Add image**, and then specify the overlay settings\.
 
-      For **Image location**, specify an input file that is stored in Amazon S3 or on an HTTP\(S\) server\. For Amazon S3 inputs, you can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\. For HTTP\(S\) inputs, provide the URL to your input video file\. For more information, see [HTTP input requirements](upload-input-files.md#http-input-requirements)\. 
+      For **Image location**, specify an input file that is stored in Amazon S3 or on an HTTP\(S\) server\. For Amazon S3 inputs, you can specify the URI directly or choose **Browse** to select from your Amazon S3 buckets\. For HTTP\(S\) inputs, provide the URL to your input file\. For more information, see [HTTP input requirements](upload-input-files.md#http-input-requirements)\.
 
 For details about the more complex output graphic overlay settings, see the following topics:
 
-[About sizing your overlay to account for scaling](about-overlay-scaling.md)
+[Sizing overlay for scaling](about-overlay-scaling.md)
 
 
 

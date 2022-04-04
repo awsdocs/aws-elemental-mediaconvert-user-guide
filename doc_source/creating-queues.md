@@ -1,6 +1,6 @@
 # Creating an on\-demand queue in AWS Elemental MediaConvert<a name="creating-queues"></a>
 
-AWS Elemental MediaConvert provides a default queue, which is an on\-demand queue\. But you can choose to create your own on\-demand queues to manage the resources that are available to your account\. For information about how queues affect the way that MediaConvert allocates the processing of resources, see [How MediaConvert allocates >resources and prioritizes jobs >with on\-demand queues](about-on-demand-queues.md#about-resource-allocation-and-job-prioritization)\.
+AWS Elemental MediaConvert provides a default queue, which is an on\-demand queue\. However, you can choose to create your own on\-demand queues to manage the resources that are available to your account\. For information about how queues affect the way that MediaConvert allocates the processing of resources, see [How MediaConvert allocates resources and prioritizes jobs with on\-demand queues](about-on-demand-queues.md#about-resource-allocation-and-job-prioritization)\.
 
 **To create an on\-demand queue**
 
@@ -20,3 +20,6 @@ AWS Elemental MediaConvert provides a default queue, which is an on\-demand queu
 1. Enter a name and a description for the new queue\.
 
 1. Choose **Create queue**\.
+
+**Note**  
+For information about creating queues using the AWS CLI, see the [AWS CLI command reference](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediaconvert/create-queue.html) documentation\.

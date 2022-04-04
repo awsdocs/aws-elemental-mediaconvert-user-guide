@@ -10,9 +10,9 @@ You can include time\_signal SCTE\-35 markers from your input in any output that
 
 1. Set up your input, output groups, and outputs for video and audio, as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md) and [Creating outputs with AWS Elemental MediaConvert](creating-streaming-and-file-outputs.md)\.
 
-1. Choose an output under either **File group**, **DASH ISO**, or **Apple HLS**\. 
+1. Choose an output under either **File group**, **DASH ISO**, **Apple HLS**, or **CMAF**\. 
 
-1. Under **Container settings** \(for **File group** outputs\), **Container settings** \(for **DASH ISO** outputs\), or **Transport stream settings** \(for **Apple HLS** outputs\), find **SCTE\-35 source**, and then choose **Passthrough**\.
+1. Under **Container settings** \(for **File group**, **DASH ISO**, or **CMAF** outputs\), or **Transport stream settings** \(for **Apple HLS** outputs\), find **SCTE\-35 source**, and then choose **Passthrough**\.
 
 1. Optional\. For outputs in a **File group** output group, when you set **Output settings**, **Container** to **MPEG\-2 Transport Stream** \(M2TS\), you can enter a value for **SCTE\-35 PID** that is different from the default **500**\. 
 

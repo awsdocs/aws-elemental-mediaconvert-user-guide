@@ -37,4 +37,4 @@ The location of the captions in a job depends on your output captions format: Yo
 + [SCC, SRT \(sidecar\) output captions](scc-srt-output-captions.md)
 + [Teletext output captions](teletext-output-captions.md)
 + [Burn\-in output captions](burn-in-output-captions.md)
-+ [Settings for accessibility](accessibility-captions.md)
++ [Settings for accessibility captions](accessibility-captions.md)

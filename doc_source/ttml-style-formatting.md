@@ -1,6 +1,6 @@
 # TTML style formatting<a name="ttml-style-formatting"></a>
 
-AWS Elemental MediaConvert reads the style formatting of your input captions when your job runs\. If you notice issues with the style formatting of your output, we recommend checking the formatting of your input captions\. The following topics provide guidance for using fonts, heritable and non\-heritable attributes, and right to left languages\.
+AWS Elemental MediaConvert reads the style formatting of your input captions when your job runs\. If you notice issues with the style formatting of your output, we recommend checking the formatting of your input captions\. The following topics provide guidance for using fonts, heritable and non\-heritable attributes, and right to left languages in your TTML input captions\.
 
 **Specifying fonts** 
 
@@ -13,6 +13,8 @@ MediaConvert supports the following generic font families listed in the [TTML2 W
 + monospaceSerif
 + proportionalSansSerif
 + proportionalSerif
+
+For the best results, specify a generic font family within your TTML input captions\. If you specify an individual font instead, MediaConvert will map the font to one of the generic font families listed above\.
 
 **Heritable and non\-heritable attributes** 
 

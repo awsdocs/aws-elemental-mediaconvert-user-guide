@@ -27,13 +27,14 @@ The following table shows the video output codecs and containers that MediaConve
 | CMAF | AV1, AVC \(H\.264\), HEVC \(H\.265\) | 
 | DASH | AV1, AVC \(H\.264\), HEVC \(H\.265\) | 
 | HLS | AVC \(H\.264\), HEVC \(H\.265\) | 
-| MPEG\-2 TS | AVC \(H\.264\), HEVC \(H\.265\), MPEG\-2 | 
+| MPEG\-2 TS | AVC \(H\.264\), HEVC \(H\.265\) | 
 | MPEG\-4 \(\.mp4\) | AV1, AVC \(H\.264\), HEVC \(H\.265\) | 
 | MPEG\-4 Flash \(\.f4v\) | AVC \(H\.264\) | 
-| MXF \(\.mxf\) | MPEG\-2 | 
-| QuickTime | AVC \(H\.264\), MPEG\-2 | 
+| MXF | AVC \(H\.264\) | 
+| QuickTime | AVC \(H\.264\) | 
 | Smooth \(ISMV\) | AVC \(H\.264\) | 
-| Raw \(no container\) | AVC \(H\.264\), HEVC \(H\.265\), MPEG\-2 | 
+| WebM | VP8, VP9 | 
+| Raw \(no container\) | AVC \(H\.264\), HEVC \(H\.265\) | 
 
 **Note**  
 For MPEG\-2 TS outputs, to use accelerated transcoding, you must change the default value of **CBR** for **Transport stream settings** > **Rate mode** to **VBR**\.
@@ -58,10 +59,8 @@ For MPEG\-2 TS outputs, to use accelerated transcoding, you must change the defa
 + Timecode anchor
 + Telecine output
 + Inverse telecine output
-+ Open GOP outputs
 + Embedded timecode source
 **Note**  
 With accelerated transcoding, you can set the input setting **Timecode source** to **Embedded**, but not the job\-wide setting **Source** under **Timecode configuration**\.
-+ Values for Min\-I interval other than the default of 0
 + ESAM
 + SCTE\-35 passthrough

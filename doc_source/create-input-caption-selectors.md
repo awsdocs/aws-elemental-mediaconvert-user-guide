@@ -6,7 +6,7 @@ When you set up captions, you begin by creating captions selectors\. Captions se
 
 1. On the **Create job** page, in the **Job** pane on the left, choose an input\. 
 **Note**  
-In jobs with multiple inputs, each input must have the same number of captions selectors\. For inputs that don't have captions, create empty captions selectors\. For these selectors, for **Source**, choose **Empty captions track**\.
+In jobs with multiple inputs, each input must have the same number of captions selectors\. For inputs that don't have captions, create empty captions selectors\. For these selectors, for **Source**, choose **Null source**\.
 
 1. In the **Captions selectors** section, near the bottom of the page, choose **Add captions selector**\. 
 

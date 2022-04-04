@@ -16,3 +16,6 @@ You can list the AWS Elemental MediaConvert queues that are associated with your
 1. Choose **Queues**\. The **Queues** page lists the on\-demand and reserved queues that you have in the Region that you chose at the beginning of this procedure\.
 
 1. To display detailed information about a queue, choose a queue name from the list\.
+
+**Note**  
+For information about listing and viewing queues using the AWS CLI, see the [AWS CLI command reference](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediaconvert/list-queues.html) documentation\.

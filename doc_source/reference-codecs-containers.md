@@ -9,7 +9,7 @@ MediaConvert supports the following combinations of output containers and video 
 
 | Container | Codecs supported with container | 
 | --- | --- | 
-| CMAF | AV1, AVC \(H\.264\), HEVC \(H\.265\) | 
+| CMAF |   DASH: AV1, AVC \(H\.264\), HEVC \(H\.265\) HLS: AVC \(H\.254\), HEVC \(H\.265\)  | 
 | DASH | AV1, AVC \(H\.264\), HEVC \(H\.265\), VP8, VP9 | 
 | HLS | AVC \(H\.264\), HEVC \(H\.265\) | 
 | MPEG\-2 TS | AVC \(H\.264\), HEVC \(H\.265\), MPEG\-2 | 
@@ -20,9 +20,6 @@ MediaConvert supports the following combinations of output containers and video 
 | Smooth \(ISMV\) | AVC \(H\.264\) | 
 | WebM | VP8, VP9 | 
 | Raw \(no container\) | AVC\-Intra, AVC \(H\.264\), HEVC \(H\.265\), MPEG\-2, VC\-3, XAVC | 
-
-**Note**  
-MediaConvert doesn't support external reference MOV or MXF input files\.
 
 ## Audio<a name="reference-codecs-containers-output-audio"></a>
 
@@ -54,9 +51,10 @@ MediaConvert supports the following combinations of output container and codec f
 | Container | Audio Codecs | 
 | --- | --- | 
 | HLS \(\.ts\) | AAC, Dolby Digital \(AC3\) | 
-| MPEG\-1 Layer 3 \(\.mp3\) | MP3 | 
 | MPEG\-2 TS \(\.ts, \.m2ts\) | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), MP2 | 
 | MPEG\-4 \(\.mp4\) | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\) | 
+| Quicktime \(\.mov\) | WAV | 
+| Raw \(no container\) | AAC, MPEG\-1 Layer II \(MP2\), MPEG\-1 Layer III \(MP3\), WAV, AIFF, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\) | 
 
 ## Codecs supported with each MXF profile<a name="reference-codecs-supported-with-each-mxf-profile"></a>
 

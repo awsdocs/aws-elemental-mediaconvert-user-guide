@@ -1,55 +1,57 @@
 # Motion image inserter \(graphic overlay\) in AWS Elemental MediaConvert<a name="motion-graphic-overlay"></a>
 
-The following topics walk you through how to set up motion graphic overlays\. Motion graphic overlays appear in all outputs\. 
+In this guide, you'll learn how to set up motion graphic overlays with AWS Elemental MediaConvert\. Motion graphic overlays appear in all outputs\. 
 
-By default, if you don't specify an overlay start time or set playback to repeat, the overlay begins at the start of the video and runs for the duration of the motion graphic that you provide\.
+In the default setting for **Start time**, the overlay starts at the first frame of each output\. In the default setting for **Playback**, the overlay remains on the video for the duration of the motion graphic \(played once\)\. However, you can change the default setting by specifying an overlay start time, or by setting playback to repeat\. This guide shows you how\.
 
 
 
-## Placing your motion graphic overlay<a name="placing-your-motion-graphic-overlay"></a>
+## Specify motion graphic overlay start time and playback<a name="placing-your-motion-graphic-overlay"></a>
 
-When you place a motion graphic overlay, you set up when it starts and how long it runs by specifying the **Start time** and **Playback**\. The following image shows how you would specify these settings if you wanted your overlay to start two minutes into the video and to continuously loop over the rest of the video\. If you keep **Start time** and **Playback** in their default state, the overlay will begin at the first frame of each output and remain on the video for the duration of the motion graphic played once\.
+You can specify motion graphic overlay **Start time** and **Playback** settings instead of using the default setting\. The following information shows how to specify overlay start time for a video and to repeat it continuously \(loop\)\. 
 
-**Note**  
-In this example, the motion graphic is three minutes long, but the overlay is set to continue to repeat the motion graphic until the end of the output\.
 
-![\[The overlay is represented in this image as a rectangle above a number line. The number line is marked with timecodes at one minute apart. The left edge of the rectangle is aligned with the second mark, at 00:00:02:00. The right edge of the rectangle is aligned with the fourth mark, at 00:00:04:00.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/MotionOverlayStartDuration.png)
 
-**Start time**  
-Provide the timecode for the first frame that you want to have the motion overlay appear on\. This timecode is relative to your input timeline\. For input overlays, **Start time** is relative to the input timeline\. This timeline is affected by the input **Timecode source** setting\.
+In the following image, the motion graphic overlay setting is three minutes long\. The motion graphic playback is set to repeat until the end of the output\.
+
+![\[Motion graphic overlay setting at three minutes with playback set to repeat until the end of output.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/MotionOverlayStartDuration.png)
+
+**Start time settings for motion overlays**  
+Provide the timecode for the first frame where you want the motion overlay to appear\. This timecode is relative to your input timeline\. 
+
+## Storage management<a name="specifying-overlay-start-time"></a>
 
 For input overlays, **Start time** is relative to the input timeline\. This timeline is affected by the input **Timecode source** setting\.
 
-For more information about the input and output timelines, and the timecode settings that affect them, see [How MediaConvert uses timelines to assemble jobs](how-mediaconvert-uses-timelines-to-assemble-jobs.md)\. For jobs with multiple inputs, MediaConvert places the motion overlay on each input, according to the input timeline for that input\. You specify **Start time** once, and MediaConvert applies that value to all inputs\.
+For more information about the input and output timelines, and the timecode settings that affect them, see [How MediaConvert uses timelines to assemble jobs](how-mediaconvert-uses-timelines-to-assemble-jobs.md)\. For jobs with multiple inputs, MediaConvert places the motion overlay on each input, according to the input timeline for that input\. After you specify **Start time** once, MediaConvert applies that value to all inputs\.
 
 **Tip**  
-For simplest setup, specify **Start time** counting from 00:00:00:00 as the first frame, and set both of the following settings to **Start at 0**:  
+To simplify setup, specify **Start time** counting from 00:00:00:00 as the first frame, and set both of the following settings to **Start at 0**:  
 **Timecode configuration**, **Source**, under the job\-wide settings\.
 **Timecode source**, in the **Video selector** settings for each input\.
 
-****Playback****  
-You can set your overlay to last the duration of the motion graphic played through once, or you can set it to loop the motion graphic continuously from the start time to the end of the output\. The duration of a \.mov motion graphic is built into the \.mov file, which has a set number of frames and a defined frame rate\. If your motion graphic is a set of \.png images, you determine the duration of the overlay by how many images you provide and the frame rate that you specify\. The duration in seconds is the number of frames divided by the frame rate in frames per second\. For example, if your frame rate is 30 fps and you provide 600 images, the duration of the motion overlay is 20 seconds\.
+**Playback settings for motion graphic overlays**  
+For playback settings on motion graphic overlays, you have two options\. You can set your overlay to play once through the duration of the motion graphic or to loop from the start time to the end of the output\. The duration of a \.mov motion graphic is built into the \.mov file, which has a set number of frames and a defined frame rate\. 
 
-For jobs with multiple inputs, MediaConvert places the motion overlay on each input at the time that you specify for **Start time**, and then either plays the overlay once or until the end of the input, depending on what you choose for **Playback**\. You specify **Playback** once, and MediaConvert applies that value to all inputs\.
+When a motion graphic is a set of \.png images, determine the duration of the overlay by how many images you provide and the frame rate that you specify\. The duration in seconds is the number of frames divided by the frame rate, in frames per second\. For example, if your frame rate is 30 fps and you provide 600 images, the duration of the motion overlay is 20 seconds\.
 
-## Requirements for the motion overlay file<a name="requirements-for-the-motion-overlay-file"></a>
+For jobs with multiple inputs, MediaConvert places the motion overlay on each input at the time that you specify for **Start time**\. Depending on what you choose for **Playback**, MediaConvert either plays the overlay once or until the end of the input\. When you specify **Playback** once, MediaConvert applies that value to all inputs\.
 
-**General requirements for motion graphic files**  
-Set up the files for your motion graphic as follows:
-+ **File type**: Use \.mov or a set of sequential \.png files\.
-+ **Frame rate**: Use any frame rate; it doesn't have to match the frame rate of the underlying video\. Frame rate is embedded in \.mov files; with a set of \.png files you specify the frame rate when you set up the overlay\.
-+ **Aspect ratio**: Use any aspect ratio; it doesn't have to match the aspect ratio of the underlying video\.
-+ **Size in pixels**: Use any size\. AWS Elemental MediaConvert scales the motion graphic with any outputs that have video scaling\.
+## Requirements to set up motion graphic overlay files<a name="requirements-for-the-motion-overlay-file"></a>
 
-**Additional requirements for sets of sequential \.png files**  
-Set up your \.png motion image files follows:
-+ Make sure that the names of the \.png files end with sequential numbers that specify the order that they are played in\. For example, overlay\_000\.png, overlay\_001\.png, overlay\_002\.png, and so on\.
-+ Pad your initial file name with enough zeros to complete the sequence\. For example, if the first image is overlay\_0\.png, there can be only 10 images in the sequence, with the last image being overlay\_9\.png\. But if the first image is overlay\_00\.png, there can be 100 images in the sequence\.
-+ Make sure that the number of images in your series matches the frame rate and your intended overlay duration\. For example, if you want a 30\-second overlay at 30 fps, you should have 900 \.png images\.
+The following table describes how to set up motion graphic overlay files\.
+
+
+| Motion graphic file requirement | Description | 
+| --- | --- | 
+| File type |  QuickTime \(\.mov\) [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/motion-graphic-overlay.html) Sequential PNG \(\.png\) [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/motion-graphic-overlay.html)  | 
+| Frame rate |  QuickTime \(\.mov\) [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/motion-graphic-overlay.html) Sequential PNG \(\.png\) [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/motion-graphic-overlay.html)  | 
+| Aspect ratio | Use any aspect ratio\. It doesn't have to match the aspect ratio of the underlying video\. | 
+| Size in pixels | Use any size\. MediaConvert scales the motion graphic with any outputs that have video scaling\. | 
 
 ## Setting up motion graphic overlays<a name="setting-up-motion-graphic-overlays"></a>
 
-Because motion graphic overlays apply to every output in the job, you set them up as a processor in the settings that apply to the entire job\.
+Motion graphic overlays apply to every output in the job\. Therefore, set them up as a processor in the settings that apply to the entire job\.
 
 You can set up still graphic overlays that appear only on individual outputs\. For information, see [Choosing between input overlay and output overlay](choosing-between-input-overlay-and-output-overlay.md)\.
 

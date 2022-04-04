@@ -12,6 +12,9 @@ AWS Elemental MediaConvert can take in your input files from Amazon S3 or from a
 
 1. Choose **Upload**\.
 
+**Note**  
+For information about supported input files, see [Supported input codecs and containers](reference-codecs-containers-input.md)\. 
+
 ## HTTP input requirements<a name="http-input-requirements"></a>
 
 When your input file source is HTTP\(S\), you specify the URL rather than an Amazon S3 path\. Requirements for using HTTP\(S\) for input are as follows:
