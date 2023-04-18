@@ -229,6 +229,7 @@ sponsored by Amazon.
                + [DASH ISO group](dash-iso-group.md)
                + [CMAF group](cmaf-group.md)
                + [Microsoft Smooth Streaming group](microsoft-smooth-streaming-group.md)
+         + [Events with CANCELED status](ev_status_canceled.md)
          + [Events with ERROR status](ev_status_error.md)
          + [Events with NEW_WARNING status](ev_status_new_warning.md)
          + [Events with QUEUE_HOP status](ev_status_queue_hop.md)
