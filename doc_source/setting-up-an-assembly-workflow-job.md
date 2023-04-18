@@ -2,9 +2,6 @@
 
 Follow these steps to set up a job that combines assembly workflow features such as input clipping, input stitching, graphic overlay, and sidecar captions sync\. Doing these tasks in this order can make setup easier\. In particular, we recommend that you specify your input clips last\. This is because each input timeline counts frames from the entire input, not from each individual clip\.
 
-**Note**  
-You can’t use input clipping for audio\-only jobs\. All job outputs must have video\.
-
 This procedure relies on the concept of input and output timelines\. For more information, see [How MediaConvert uses timelines to assemble jobs](how-mediaconvert-uses-timelines-to-assemble-jobs.md)\.
 
 **To set up an assembly workflow job \(console\)**
@@ -58,11 +55,14 @@ This procedure relies on the concept of input and output timelines\. For more in
 
    1. Enter the starting and ending timecodes for the first clip that you want to include\. Use the following 24\-hour format with a frame number: HH:MM:SS:FF\.
 
+      When you specify an input clip for an audio\-only input, the last numbers in the timecode that you enter correspond to hundredths of a second\. For example, 00:00:30:75 is the same as 30\.75 seconds\.
+
       Make sure that you provide timecodes that align with your input timeline\. By default, MediaConvert bases input clipping on timecodes that are embedded in your input video\. How you align your timecodes depends on whether your input video has embedded timecodes:
       + If your input doesn't have embedded timecodes, you must set **Timecode source** to **Start at 0** or **Specified start**\.
       + If your input *does* have embedded timecodes and you want MediaConvert to use them, for **Timecode source**, keep the default value, **Embedded**\. Specify your clip start and end times accordingly\.
 
         For example, if your input **Timecode source** is set to **Embedded** and your video has embedded timecodes that start at 01:00:00:00, define the start timecode for a clip thirty seconds in as 01:00:30:00, not 00:00:30:00\. By default, the input timeline is the same as the timecodes embedded in the video\. You can change what determines the input timeline by adjusting the input **Timecode source** setting\.
+      + Specify an input clip duration that is less than 12 hours long\.
 
       For more information, see [Adjusting the input timeline with the input timecode source](timecode-input.md)\.
 

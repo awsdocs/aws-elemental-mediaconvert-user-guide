@@ -1,16 +1,10 @@
-# Step 5: Set up IAM permissions<a name="iam-role"></a>
+# Set up IAM permissions<a name="iam-role"></a>
 
-To run transcoding jobs with AWS Elemental MediaConvert, you need an AWS Identity and Access Management \(IAM\) service role to allow MediaConvert access to your resources, such as your input files and the locations where your output files are stored\. 
+To run transcoding jobs with AWS Elemental MediaConvert, you need an IAM service role to allow MediaConvert access to your resources, such as your input files and the locations where your output files are stored\. 
 
-**Note**  
-This service role is different from an IAM role that might grant permissions to you as an IAM user\. Instead, this role grants permissions to the MediaConvert service\.
+Regardless of how you initially create your IAM service role, you can refine this role at any time using IAM\. For more information, see [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console) in the *IAM User Guide*\.
 
-Regardless of how you initially create your IAM role, you can refine this role at any time using IAM\. For more information, see [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console) in the *IAM User Guide*\.
-
-You can create your IAM role in one of these ways:
-+ In the MediaConvert console, with full permissions\. For instructions, see [Creating a role in MediaConvert, full permissions](creating-the-iam-role-in-mediaconvert-full.md)\.
-
-  This is the fastest, easiest way to set up your role\.
+You can create your IAM service role in one of these ways:
 + In the MediaConvert console, with some restrictions on the permissions you grant\. For instructions, see [Creating a role in MediaConvert, configured](creating-the-iam-role-in-mediaconvert-configured.md)\.
 
   From the MediaConvert console, you can take the time to configure your role to allow MediaConvert access to only some of your Amazon S3 buckets and you can choose whether to grant invoke access to your API Gateway endpoints\.

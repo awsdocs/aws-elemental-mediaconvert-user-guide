@@ -64,3 +64,5 @@ For MPEG\-2 TS outputs, to use accelerated transcoding, you must change the defa
 With accelerated transcoding, you can set the input setting **Timecode source** to **Embedded**, but not the job\-wide setting **Source** under **Timecode configuration**\.
 + ESAM
 + SCTE\-35 passthrough
++ Black video generator
++ Pad video

@@ -6,7 +6,7 @@ You can delete any custom job template\. You can't delete system job templates\.
 
 1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
-1. On the navigation bar of the MediaConvert console, choose the region where the queue you want to delete was created\.  
+1. On the navigation bar of the MediaConvert console, choose the AWS Region where the template you want to delete was created\.  
 ![\[Choose a region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)
 
 1. Choose the three\-bar icon on the left to access the left navigation pane\.

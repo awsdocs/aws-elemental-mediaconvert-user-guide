@@ -34,7 +34,7 @@ The location of the captions in a job depends on your output captions format: Yo
 + [CEA/EIA\-608 and CEA/EIA\-708 \(embedded\) output captions](embedded-output-captions.md)
 + [DVB\-Sub output captions](dvb-sub-output-captions.md)
 + [IMSC, TTML, and WebVTT \(sidecar\) output captions](ttml-and-webvtt-output-captions.md)
-+ [SCC, SRT \(sidecar\) output captions](scc-srt-output-captions.md)
++ [SCC, SRT, and SMI \(sidecar\) output captions](scc-srt-output-captions.md)
 + [Teletext output captions](teletext-output-captions.md)
 + [Burn\-in output captions](burn-in-output-captions.md)
 + [Settings for accessibility captions](accessibility-captions.md)

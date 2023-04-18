@@ -1,6 +1,6 @@
 # Default automatic selection of MXF profiles<a name="default-automatic-selection-of-mxf-profiles"></a>
 
-When you choose MXF as your video output container and you keep the default value **Auto** for **MXF profile**, MediaConvert automatically chooses your MXF profile for you and creates your output accordingly\. How MediaConvert makes the MXF profile selection depends on your output video codec\.
+When you choose MXF as your output video container and leave **MXF profile** out of your job settings, MediaConvert automatically chooses your MXF profile for you and creates your output accordingly\. How MediaConvert makes the MXF profile selection depends on your output video codec\.
 
 **Note**  
 MediaConvert supports more MXF profiles through automatic profile selection than it does with manual selection\.

@@ -23,7 +23,7 @@ MediaConvert doesn't allow you to modify system presets\. If you want a preset t
 
 1. On the **Create preset** page, specify a name for the new preset\. Optionally, modify the description and category\.
 
-   These values help you find the custom preset later if you [list your presets](listing-presets.md) and use the search function on the **Output presets** pane\.
+   These values help you find the custom preset later\. For more information see [Listing and viewing output presets](listing-presets.md)\.
 
 1. Modify any output settings\.
 

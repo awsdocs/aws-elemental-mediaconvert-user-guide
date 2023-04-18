@@ -4,6 +4,7 @@ With automated ABR, AWS Elemental MediaConvert sets up your adaptive bitrate \(A
 
 **Topics**
 + [How automated ABR works](how-automated-abr-works.md)
++ [Automated ABR rules](automated-abr-rules.md)
 + [Automated ABR frequently asked questions](automated-abr-frequently-asked-questions.md)
 + [Feature restrictions for automated ABR](feature-restrictions-for-automated-abr.md)
 + [Creating an automated ABR stack](creating-an-automated-abr-stack.md)

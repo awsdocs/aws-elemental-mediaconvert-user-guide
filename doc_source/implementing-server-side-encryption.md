@@ -37,7 +37,7 @@ If you choose to use an AWS KMS key, you can specify a customer managed key in y
       If you don't specify a key for **AWS KMS**, Amazon S3 uses the [AWS managed key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-managed-cmk) in your AWS account that is used exclusively for Amazon S3\.
 
    1. If you chose **AWS KMS** for **Encryption key management**, grant `kms:Encrypt` and `kms:GenerateDataKey` permissions to your AWS Elemental MediaConvert AWS Identity and Access Management \(IAM\) role\. This allows MediaConvert to encrypt your output files\. If you also want to be able to use these outputs as inputs to another MediaConvert job, also grant `kms:Decrypt` permissions\. To learn more, see these topics:
-      + For more information about setting up an IAM role for AWS Elemental MediaConvert to assume, see [Step 5: Set up IAM permissions ](iam-role.md) in the Getting Started chapter of this guide\.
+      + For more information about setting up an IAM role for AWS Elemental MediaConvert to assume, see [Set up IAM permissions ](iam-role.md) in the Getting Started chapter of this guide\.
       + For more information about granting IAM permissions using an inline policy, see the procedure **To embed an inline policy for a user or role** in [Adding IAM identity permissions \(Console\)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console) in the *IAM User Guide*\. 
       + For examples of IAM policies that grant AWS KMS permissions, including decrypting encrypted content, see [Customer managed policy examples](https://docs.aws.amazon.com/kms/latest/developerguide/iam-policies.html#customer-managed-policies) in the *AWS Key Management Service Developer Guide*\.
 

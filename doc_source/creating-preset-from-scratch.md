@@ -21,7 +21,7 @@ You can create a custom preset by individually specifying the settings, as descr
 
 1. In the **Preset settings** pane, specify at a minimum the name of the new preset\. Optionally, provide a description and a category\.
 
-   These values help you find the custom preset later if you [list your presets](listing-presets.md) and use the search function on the **Output presets** pane\.
+   These values help you find the custom preset later\. For more information see [Listing and viewing output presets](listing-presets.md)\.
 
 1. In the **Preset settings** pane, choose the container for the output\.
 **Tip**  

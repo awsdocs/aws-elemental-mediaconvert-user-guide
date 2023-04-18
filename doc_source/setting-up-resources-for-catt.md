@@ -8,9 +8,9 @@ For all outputs that you produce using an on\-demand queue, you can use the AWS 
 
 1. Create your transcoding jobs, specifying how you want your costs allocated as follows:
 
-   1. On the **Create job** page, in the **Job** pane on the left, under **Job settings**, choose **Settings**\.
+   1. On the **Create job** page, in the **Job** pane on the left, under **Job settings**, choose **AWS integration**\.
 
-   1. In the **Job settings** section on the right, for **Billing tag source**, choose which tags you want to use to sort the job's outputs\. You can choose to sort by tags on a resource that you use to create the job—job template, output preset, or queue\. Or you can choose **Job** to sort by the tags on the job itself\.
+   1. In the **Job settings** section on the right, under **AWS integration**, for **Billing tag source**, choose which tags you want to use to sort the job's outputs\. You can choose to sort by tags on a resource that you use to create the job—job template, output preset, or queue\. Or you can choose **Job** to sort by the tags on the job itself\.
 **Note**  
 Jobs, and the tags on them, persist for only 90 days\. If your workflow references tags over longer periods of time, use tags on the queue, job template, or output preset rather than tags on the job\.
 

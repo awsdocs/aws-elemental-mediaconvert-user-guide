@@ -8,7 +8,7 @@ Global job settings apply to every output that the job creates, as shown in the 
 
 1. In the **Job** pane, in the **Job settings** section, choose **Settings**\.
 
-1. For **IAM role**, choose an IAM role that has permissions to access the Amazon S3 buckets that hold your input and output files\. The IAM role must have a trusted relationship with AWS Elemental MediaConvert\. For information about creating this role, see [Step 5: Set up IAM permissions ](iam-role.md)\.
+1. For **IAM role**, choose an IAM role that has permissions to access the Amazon S3 buckets that hold your input and output files\. The IAM role must have a trusted relationship with AWS Elemental MediaConvert\. For information about creating this role, see [Set up IAM permissions ](iam-role.md)\.
 
 1. Optionally, specify job\-wide timecode settings in the **Timecode configuration** pane\.
 **Note**  

@@ -10,3 +10,4 @@ For some of the MediaConvert transcoding settings, the following topics provide 
 + [Working with video frame rates](working-with-video-frame-rates.md)
 + [Working with telecine](working-with-telecine-and-inverse-telecine.md)
 + [Working with progressive and interlaced scan types](working-with-scan-type.md)
++ [Black video padding](video-padding.md)

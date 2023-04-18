@@ -6,7 +6,7 @@ Job templates apply to an entire transcoding job and provide values for settings
 
 1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
-1. On the navigation bar of the MediaConvert console, choose the region where you want to create your job\. This is almost always the region where your input files are stored\.  
+1. On the navigation bar of the MediaConvert console, choose the AWS Region where you want to create your job\. This is almost always the AWS Region where your input files are stored\.  
 ![\[Choose a region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)
 
 1. Choose the three\-bar icon on the left to access the left navigation pane\.
@@ -15,7 +15,7 @@ Job templates apply to an entire transcoding job and provide values for settings
 
 1. In the **Job templates** pane, from the **Templates** dropdown list, choose **Custom job templates** or **System job templates**\.
 **Note**  
-Custom job templates appear only in the region where they are created\. When you choose **Custom job templates**, you see only the job templates created in the region you chose at the beginning of this procedure\.
+Custom job templates appear only in the AWS Region where they are created\. When you choose **Custom job templates**, you see only the job templates created in the AWS Region you chose at the beginning of this procedure\.
 
 1. Choose the name of the job template that you want to use\.
 

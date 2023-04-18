@@ -1,4 +1,4 @@
-# Step 6: Create a job<a name="create-a-job"></a>
+# Create a job<a name="create-a-job"></a>
 
 A job does the work of transcoding\. You specify the name of the file that you want to transcode \(the input file\), the name that you want MediaConvert to give the transcoded file, the preset that you want MediaConvert to use, and a few other settings\. MediaConvert gets the input file from the Amazon S3 location that you specify in your job input settings, transcodes the file, and saves the transcoded file or files in the output location that you specify in the settings of the job output group\.
 
@@ -14,7 +14,7 @@ A job does the work of transcoding\. You specify the name of the file that you w
 
 1. Choose **Create**\.
 
-   For information about tracking the status of your job, see [Using CloudWatch Events with AWS Elemental MediaConvert](cloudwatch_events.md)\.
+   For information about tracking the status of your job, see [Using EventBridge with AWS Elemental MediaConvert](eventbridge_events.md)\.
 
    For information about the file names and paths for your job outputs, see [Output file names and paths](output-file-names-and-paths.md)\.
 

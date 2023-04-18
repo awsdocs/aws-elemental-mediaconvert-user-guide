@@ -18,6 +18,7 @@ MediaConvert supports the following combinations of input containers and video c
 | Advanced Systems Format \(ASF, also known as WMV\) | VC\-1 | 
 | Audio Video Interleave \(AVI\) | Uncompressed, Canopus HQ, DivX/Xvid, DV/DVCPRO, MJPEG | 
 | Adobe Flash | AVC \(H\.264\), Flash 9 File, H\.263 | 
+| GIF | GIF | 
 | HLS \(MPEG\-2 TS segments\) | AVC \(H\.264\), HEVC \(H\.265\), MPEG\-2 | 
 | IMF | Apple ProRes, JPEG 2000 \(J2K\) | 
 | Matroska | AVC \(H\.264\), PCM, MPEG\-2, MPEG\-4 part 2, VC\-1 | 
@@ -30,7 +31,7 @@ MediaConvert supports the following combinations of input containers and video c
 | WebM | VP8, VP9 | 
 
 **Note**  
-MediaConvert doesn't support external reference MOV or MXF input files\. That is, your MOV and MXF inputs must be self\-contained; they can't point to other files\.  
+MediaConvert doesn't support external reference MOV, external reference MXF, or fragmented MP4 initialization segments\. That is, your MOV, MXF, or MP4 inputs must be self\-contained\.  
 MediaConvert supports HLS inputs that conform to specific requirements\. For more information, see [Using HLS inputs](using-hls-inputs.md)\.
 
 ## Audio<a name="reference-codecs-containers-input-audio"></a>
@@ -43,7 +44,7 @@ For outputs that contain only audio inside the output container, MediaConvert su
 
 | Container | Audio codecs | 
 | --- | --- | 
-| No Container | PCM | 
+| No Container | PCM, FLAC | 
 | 3G2 | AAC, AMR\-NB, AMR\-WB | 
 | 3GP | AAC, AMR\-NB, AMR\-WB | 
 | Advanced Systems Format \(ASF, also known as WMA or WMV\) | WMA, WMA2, WMA Pro | 
@@ -51,15 +52,15 @@ For outputs that contain only audio inside the output container, MediaConvert su
 | Adobe Flash | AAC | 
 | HLS \(MPEG\-2 TS segments\) | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\) | 
 | IMF | PCM | 
-| Matroska | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), Opus, WMA, WMA2 | 
+| Matroska | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), Opus, WMA, WMA2, FLAC | 
 | MPEG Program Streams \(MPEG\-PS\) | MPEG audio | 
 | MPEG Transport Streams \(MPEG\-TS\) | AAC, AIFF, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), Dolby E frames carried in PCM streams, MPEG Audio, PCM, WMA, WMA2 | 
 | MPEG\-1 System Streams | AAC, AIFF, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), MPEG, Audio PCM | 
 | MPEG\-1 Layer 3 \(MP3\) | MP3 | 
 | MPEG\-4 | AAC, Dolby Digital \(AC3\), Dolby Digital Plus \(EAC3\), PCM, WMA, WMA2 | 
 | MXF | AAC, AIFF, Dolby E frames carried in PCM streams, MPEG Audio, PCM | 
-| OGA | Opus, Vorbis | 
-| OGG | Opus, Vorbis | 
+| OGA | Opus, Vorbis, FLAC | 
+| OGG | Opus, Vorbis, FLAC | 
 | QuickTime | AAC, MP3, PCM | 
 | WAV | PCM | 
 | WebM | Opus, Vorbis | 
@@ -72,10 +73,11 @@ MediaConvert supports the following combinations of input container and codec fo
 | Container | Audio Codecs | 
 | --- | --- | 
 | Advanced Systems Format \(ASF, also known as WMA, WMV\) \(\.asf, \.wma, \.wmv\) | WMA, WMA2, WMA Pro | 
+| FLAC \(\.fla, \.flac\) | FLAC | 
 | MPEG\-1 Layer 3 \(\.mp3\) | MP3 | 
 | MPEG\-2 TS \(\.ts, m2ts\) | MP2, PCM | 
 | MPEG\-4 \(\.mp4\) | AAC | 
-| Matroska audio container \(\.mka\) | Opus | 
-| OGA \(\.oga\) | Opus, Vorbis | 
+| Matroska audio container \(\.mka\) | Opus, FLAC | 
+| OGA \(\.oga\) | Opus, Vorbis, FLAC | 
 | QuickTime \(\.mov\) | PCM | 
 | WAV \(\.wav\) | PCM | 

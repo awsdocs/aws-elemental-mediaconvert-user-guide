@@ -6,6 +6,7 @@ You can use AWS Elemental MediaConvert to create outputs that contain only audio
 The restrictions and procedures in this chapter apply to outputs that don't have video in the container\. This includes the following:  
 Outputs in **File** output groups that don't have video included
 Streaming **HLS** output groups that contain only audio outputs
+Streaming **DASH** output groups that contain only audio outputs
 When you set up streaming output packages that contain audio, video, and captions, you create separate outputs for each element inside the output package\. These are not audio\-only outputs as described in this chapter\. For more information about setting up streaming outputs, see [Creating outputs in ABR streaming output groups](create-outputs-in-abr-streaming-output-groups.md)\.
 
 **Topics**

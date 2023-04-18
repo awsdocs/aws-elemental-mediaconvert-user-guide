@@ -55,6 +55,6 @@ You must provide your initialization vector encoded in base64\. You can do base6
    1. If the AWS Region that you used for AWS KMS when you generated your data key is different from the Region that you are currently using to run your AWS Elemental MediaConvert job, specify that Region for **AWS Region for decryption key**\.
 
 1. Grant `kms:Decrypt` permissions to your AWS Elemental MediaConvert AWS Identity and Access Management \(IAM\) role\. Use an IAM inline policy\. To learn more, see these topics:
-   + For more information about setting up an IAM role for AWS Elemental MediaConvert to assume, see [Step 5: Set up IAM permissions ](iam-role.md) in the Getting Started chapter of this guide\.
+   + For more information about setting up an IAM role for AWS Elemental MediaConvert to assume, see [Set up IAM permissions ](iam-role.md) in the Getting Started chapter of this guide\.
    + For more information about granting IAM permissions using an inline policy, see the procedure **To embed an inline policy for a user or role** in [Adding IAM identity permissions \(console\)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console) in the *IAM User Guide*\. 
    + For examples of IAM policies that grant AWS KMS permissions, including decrypting encrypted content, see [Customer managed policy examples](https://docs.aws.amazon.com/kms/latest/developerguide/iam-policies.html#customer-managed-policies) in the *AWS Key Management Service Developer Guide*\.

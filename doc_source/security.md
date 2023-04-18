@@ -11,9 +11,8 @@ This documentation helps you understand how to apply the shared responsibility m
 **Topics**
 + [General AWS data protection](data-protection-aws-general.md)
 + [Protecting your media assets with encryption and DRM using AWS Elemental MediaConvert](using-encryption.md)
-+ [Authentication and access control for AWS Elemental MediaConvert](auth-and-access-control.md)
++ [Identity and Access Management for AWS Elemental MediaConvert](security-iam.md)
 + [How to allow or disallow input location types using a policy](input-policies.md)
-+ [Learning more about AWS Identity and Access Management](learn-more-iam.md)
 + [Compliance validation for AWS Elemental MediaConvert](mediaconvert-compliance.md)
 + [Resilience in AWS Elemental MediaConvert](disaster-recovery-resiliency.md)
 + [Infrastructure security in AWS Elemental MediaConvert](infrastructure-security.md)

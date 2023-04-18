@@ -39,10 +39,10 @@ You can set the following limits that relate to properties of the renditions in 
 For these settings, MediaConvert determines these values for each rendition automatically:
 + **Quality tuning level**: MediaConvert encodes all renditions with **Multi pass HQ**\.
 
-  This behavior is automatic in the console but not when you submit your job programmatically\. When you set up your JSON job specifcation without using the console, you must explicitly set `qualityTuningLevel` to `MULTI_PASS_HQ`\.
+  This behavior is automatic in the console but not when you submit your job programmatically\. When you set up your JSON job specification without using the console, you must explicitly set `qualityTuningLevel` to `MULTI_PASS_HQ`\.
 + **Rate control mode**: MediaConvert encodes all renditions with [QVBR](cbr-vbr-qvbr.md) rate control mode\.
 
-  This behavior is automatic in the console but not when you submit your job programmatically\. When you set up your JSON job specifcation without using the console, you must explicitly set `rateControlMode` to `QVBR`\.
+  This behavior is automatic in the console but not when you submit your job programmatically\. When you set up your JSON job specification without using the console, you must explicitly set `rateControlMode` to `QVBR`\.
 + These QVBR required settings:
   + **QVBR quality level**:
   + **Max bitrate**

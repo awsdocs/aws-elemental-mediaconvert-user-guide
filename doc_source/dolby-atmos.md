@@ -2,9 +2,7 @@
 
 Dolby Atmos provides an immersive audio experience in cinemas and home theaters\. With the right audio input files, you can use AWS Elemental MediaConvert to create Dolby Atmos outputs\. You can create streaming outputs that end viewers can experience in their home theaters or file outputs that you can use in your professional workflows\.
 
-AWS Elemental MediaConvert can create Dolby Digital Plus with Atmos outputs by either encoding channel\-based immersive audio content that you provide as 9\.1\.6, 7\.1\.1, or 5\.1\.4 PCM mono channels, or by passing through already encoded Dolby Digital Plus with Atmos content\.
-
-
+AWS Elemental MediaConvert can create Dolby Digital Plus with Atmos outputs by either encoding channel\-based immersive audio content that you provide as 9\.1\.6, 7\.1\.4, or 5\.1\.4 PCM mono channels, or by passing through already encoded Dolby Digital Plus with Atmos content\.
 
 **Topics**
 + [Using Dolby Atmos passthrough with AWS Elemental MediaConvert](using-dolby-atmos-passthrough.md)

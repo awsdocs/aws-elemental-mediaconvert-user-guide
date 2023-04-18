@@ -2,7 +2,7 @@
 
 When you [enable Amazon S3 default encryption](https://docs.aws.amazon.com/AmazonS3/latest/dev/bucket-encryption.html#bucket-encryption-how-to-set-up), Amazon S3 automatically encrypts your objects as you upload them\. You can optionally choose to use AWS Key Management Service \(KMS\) to manage the master key\. This is called SSE\-KMS encryption\.
 
-If you enable SSE\-KMS default encryption on the buckets that hold your AWS Elemental MediaConvert input or output files, you must [add inline policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console) to your MediaConvert service role\. Otherwise, MediaConvert can't read your input files or write your output files\. Grant these permissions:
+If you enable SSE\-KMS default encryption on the buckets that hold your AWS Elemental MediaConvert input or output files, you must [add inline policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console) to your IAM service role\. Otherwise, MediaConvert can't read your input files or write your output files\. Grant these permissions:
 + If your input bucket has SSE\-KMS default encryption, grant `kms:Decrypt`\.
 + If your output bucket has SSE\-KMS default encryption, grant `kms:GenerateDataKey`\.
 
@@ -26,7 +26,7 @@ This policy grants permissions for both kms:Decrypt and kms:GenerateDataKey\.
       "Condition": {
         "StringLike":
 
-{           "kms:ViaService": "s3.*amazonaws.com"         }
+{           "kms:ViaService": "s3.*.amazonaws.com"         }
       }
     }
   ]

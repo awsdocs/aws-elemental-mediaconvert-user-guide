@@ -1,3 +1,0 @@
-# Prerequisites<a name="mediaconvert_sns_prereq"></a>
-
-This tutorial assumes that you already know how to create AWS Elemental MediaConvert transcoding jobs\. For information about creating jobs, see [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md)\. At the end of this tutorial, you can submit a job that you designed to fail, to test that you configured your Amazon SNS email notifications correctly\.

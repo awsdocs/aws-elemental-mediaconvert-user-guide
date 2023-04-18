@@ -1,6 +1,6 @@
 # Adding tags to an existing AWS Elemental MediaConvert resource<a name="add-tags-to-existing"></a>
 
-The following procedure shows you how to add tags to existing job templates, output presets, or queues using the AWS Elemental MediaConvert console\. To add tags to existing jobs, use the `tagResource` API\. You can't use the console to add tags to existing jobs\.
+The following procedure shows you how to add tags to existing job templates, output presets, or queues using the AWS Elemental MediaConvert console\. You can't use the console to add tags to existing jobs\.
 
 For information about adding tags using the API, see the `POST` method in the [Tags](https://docs.aws.amazon.com/mediaconvert/latest/apireference/tags.html) endpoint section of the *MediaConvert API Reference*\.
 

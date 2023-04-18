@@ -1,4 +1,4 @@
-# Step 3: \(Optional\) Get set up to use DRM encryption<a name="set-up-encryption"></a>
+# \(Optional\) Get set up to use DRM encryption<a name="set-up-encryption"></a>
 
 Protect your content from unauthorized use through encryption\. Digital rights management \(DRM\) systems provide keys to AWS Elemental MediaConvert for content encryption, and licenses to supported players and other consumers for decryption\.
 

@@ -1,6 +1,6 @@
 # Creating the IAM role in MediaConvert with configured permissions<a name="creating-the-iam-role-in-mediaconvert-configured"></a>
 
-This approach allows you to restrict the access that you grant MediaConvert to only specific S3 buckets, and to specify whether to alllow invoke access to your Amazon API Gateway endpoints\.
+This approach allows you to restrict the access that you grant MediaConvert to only specific S3 buckets, and to specify whether to allow invoke access to your Amazon API Gateway endpoints\.
 
 **To set up your MediaConvert role in MediaConvert, configured permissions**
 
@@ -14,7 +14,7 @@ This approach allows you to restrict the access that you grant MediaConvert to o
 
 1. For **New role name**, we suggest that you keep the default value **MediaConvert\_Default\_Role**\. When you do, MediaConvert uses this role by default for your future jobs\.
 
-1. For **Input S3 locations** and **Output S3 locations**, choose **Add location**\. Select the S3 buckets that you created in the previous step of this tutorial, [Step 2: Create storage for files](set-up-file-locations.md)\.
+1. For **Input S3 locations** and **Output S3 locations**, choose **Add location**\. Select the S3 buckets that you created in the previous step of this tutorial, [Create storage for files](set-up-file-locations.md)\.
 
 1. Optional\. If you use features that require it, for **API Gateway enpoint invocation**, choose allow\.
 

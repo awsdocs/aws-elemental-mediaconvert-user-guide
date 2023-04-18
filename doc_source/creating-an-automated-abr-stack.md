@@ -16,13 +16,15 @@ When you know whether you want to specify values for the optional limits, use on
 
 1. Below the **Group settings** section, enable **Automated ABR**\.
 
+1. Optionally, specify any [Automated ABR rules](automated-abr-rules.md)\.
+
 1. For the settings in the **Automated ABR** section, optionally specify values\. These are the settings that specify limits that relate to the whole ABR stack\. If you choose to keep the default values, you should get good results\.
 
    For more information, see [How automated ABR works](how-automated-abr-works.md)\.
 
 1. From the **Job** pane on the left, just below your output group, choose **Automated ABR base output**\. 
 
-1. On the right, in the **Base encoding settings for auto\-generated ABR renditions** section, optionally specify values for the limits that relate to properties of the renditions in the stack\.  If you choose to keep the default values, you should get good results\.
+1. On the right, in the **Base encoding settings for auto\-generated ABR renditions** section, optionally specify values for the limits that relate to properties of the renditions in the stack\. If you choose to keep the default values, you should get good results\.
 
    For more information, see [How automated ABR works](how-automated-abr-works.md)\.
 
@@ -30,7 +32,7 @@ When you know whether you want to specify values for the optional limits, use on
 
    For information about each individual setting, choose the **Info** link next to the setting in the console to view the setting description\.
 
-1. If a default **Audio 1** tab is present in the **Base encoding settings for auto\-generated ABR renditions** section, remove it\.
+1. If your workflow requires video and audio in separate unmuxed outputs, remove **Audio 1** from **Base encoding settings for auto\-generated ABR renditions**\. If you require video and audio to be in the same muxed output, skip this step\.
 
    1. Choose the **Audio 1** tab\.
 
@@ -81,7 +83,7 @@ If you set up automated ABR by manually editing your JSON job specification, rat
     + AVC \(H\.264\): `[rateControlMode](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-h264settings-ratecontrolmode) in the H264Settings properties table`
     + HEVC \(H\.265\): `[rateControlMode](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-h265settings-ratecontrolmode) in the H265Settings properties table`
 + Set the accelerated transcoding [mode](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-model-accelerationsettings) to `PREFERRED` or `ENABLED`\. This is optional, but we strongly recommend it\.
-+ Optionally, specify thses limits that relate to the whole ABR stack:
++ Optionally, specify these limits that relate to the whole ABR stack:
   + **Automated ABR** : `[abrSettings](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-automatedencodingsettings-abrsettings)`
     + **Max renditions**: `[maxRenditions](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-automatedabrsettings-maxrenditions)` in the AutomatedAbrSettings properties table
     + **Max ABR bitrate**: `[maxAbrBitrate](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-automatedabrsettings-maxabrbitrate)` in the AutomatedAbrSettings properties table

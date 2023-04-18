@@ -2,7 +2,10 @@
 
 You set up an audio\-only output in the same way that you set up an output that contains video, except that you don't include video or captions\. 
 
-For jobs with audio\-only outputs in a **File** output group, MediaConvert generates one separate audio\-only file for each output\. For jobs with audio\-only outputs in an **HLS** output group, MediaConvert creates a single rendition in the ABR stack for each output\.
+MediaConvert generates the following files for audio\-only outputs:
++ **File** output groups: One separate audio\-only file for each output\.
++ **HLS** output groups: A single rendition in the ABR stack for each output\.
++ **DASH ISO** output groups: A single rendition in the ABR stack for each output\.
 
 **Note**  
 For AAC streaming outputs, the initial segment is longer in duration than the others\. This is because, with AAC, the initial segment must contain silent AAC pre\-roll samples before the audible part of the segment\. MediaConvert accounts for these extra samples in the timestamps, so the audio plays back correctly\. 
@@ -12,7 +15,6 @@ For AAC streaming outputs, the initial segment is longer in duration than the ot
 1. To confirm that MediaConvert supports your input files, consult the input table in [Supported codecs and containers for audio\-only outputs](supported-codecs-containers-audio-only.md)\.
 
 1. Set up your job as described in [Setting up a job in AWS Elemental MediaConvert](setting-up-a-job.md), but with the following differences:
-   + Put all of your outputs in a **File** output group, or put all of your outputs in an **HLS** output group\.
    + Remove the **Video** tab in the **Encoding settings** section of your output\.
    + Choose a supported output container and audio codec from the output table in [Supported codecs and containers for audio\-only outputs](supported-codecs-containers-audio-only.md)\.
    + Include only one group of audio settings per output\. That is, don't choose **Add audio** to create an **Audio 2** tab under **Encoding settings**\.

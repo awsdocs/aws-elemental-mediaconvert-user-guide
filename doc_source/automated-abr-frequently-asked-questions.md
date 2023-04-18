@@ -2,7 +2,7 @@
 
 **How can I see what renditions AWS Elemental MediaConvert created for me?**  
 You can see the properties of the outputs in your ABR stack in these places:
-+ The job completion event from Amazon CloudWatch Events\. For more information, see [Using CloudWatch Events with AWS Elemental MediaConvert](cloudwatch_events.md)\.
++ The job completion event from Amazon EventBridge\. For more information, see [Using EventBridge with AWS Elemental MediaConvert](eventbridge_events.md)\.
 + The **Job summary** page on the MediaConvert console\. For more information, see [Viewing your AWS Elemental MediaConvert job history](viewing-job-history.md)\.
 
 **Will my automated ABR job take a long time to run?**  
@@ -23,7 +23,7 @@ You can use the optional limits settings to make sure that the number of renditi
 **How will I be billed for an automated ABR stack?**  
 MediaConvert bills you for only the renditions that it writes to your output location\. For example, you might set **Max renditions** to 12, but MediaConvert might determine that there is no advantage to creating more than eight renditions\. In this case, MediaConvert would bill you for only eight renditions\.
 
-Automated ABR is a professional\-tier feature and also requires 2 pass encoding\.  Every rendition is billed per\-minute at the 2 Pass \(Quality Optimized\) rate\. For example, say your automated ABR stack ends up with 10 renditions, each of them being 60 minutes long\. You would then be charged for 600 minutes\. For rates, see [AWS Elemental MediaConvert Pricing](https://aws.amazon.com/mediaconvert/pricing/) in the *AWS Cloud Products* website\.
+Automated ABR is a professional\-tier feature and also requires 2 pass encoding\. Every rendition is billed per\-minute at the 2 Pass \(Quality Optimized\) rate\. For example, say your automated ABR stack ends up with 10 renditions, each of them being 60 minutes long\. You would then be charged for 600 minutes\. For rates, see [AWS Elemental MediaConvert Pricing](https://aws.amazon.com/mediaconvert/pricing/) in the *AWS Cloud Products* website\.
 
 **What about audio?**  
 Automated ABR does the set up for your video renditions only\. You add audio renditions as audio\-only outputs inside of your automated ABR output group\. For instructions, see [Creating an automated ABR stack](creating-an-automated-abr-stack.md)\.

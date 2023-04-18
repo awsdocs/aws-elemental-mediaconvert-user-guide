@@ -2,7 +2,7 @@
 
 Unless you have existing integrations or workflows that rely on metadata \(`userMetadata`\) tags, we recommend that you use standard AWS tags for both automatic integration with AWS services and for custom integrations and workflows\. For more information, see [Tagging AWS Elemental MediaConvert resources](tagging-mediaconvert-resources.md)\.
 
-A *tag* is a label that you assign or that AWS assigns to an AWS resource\. Each tag consists of a *key* and a *value*\. For tags that you assign, you define the key and value\. For example, you might define the key as "stage" and the value as "test\." Tags help you to identify and organize your AWS resources\. Metadata tags that you assign to AWS Elemental MediaConvert jobs appear in Amazon CloudWatch Events notifications\.
+A *tag* is a label that you assign or that AWS assigns to an AWS resource\. Each tag consists of a *key* and a *value*\. For tags that you assign, you define the key and value\. For example, you might define the key as "stage" and the value as "test\." Tags help you to identify and organize your AWS resources\. Metadata tags that you assign to AWS Elemental MediaConvert jobs appear in Amazon EventBridge notifications\.
 
 You add metadata tags to jobs in one of the following ways:
 + Through the MediaConvert console on the **Job settings** page, in the **Metadata** pane\. 

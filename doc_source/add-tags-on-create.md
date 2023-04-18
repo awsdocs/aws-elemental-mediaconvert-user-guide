@@ -13,7 +13,7 @@ You can add tags when you create a queue, job template, or output preset\.
 1. Follow the steps in one of the following procedures to begin creating the resource, but don't save the resource:
    + [Setting up a job](setting-up-a-job.md)
    + [Creating an on\-demand queue](creating-queues.md)
-   + [Creating a custom preset from scratch](creating-template-from-scratch.md)
+   + [Creating a custom template from scratch](creating-template-from-scratch.md)
    + [Creating a custom preset from scratch](creating-preset-from-scratch.md)
    + [Creating a custom preset from a system preset](create-custom-preset-from-system-preset.md)
 

@@ -1,6 +1,6 @@
 # Setting up access for other AWS accounts to your AWS Elemental MediaConvert outputs<a name="setting-up-access-for-other-aws-accounts"></a>
 
-When you follow the usual setup for permissions as described in [Step 5: Set up IAM permissions ](iam-role.md), only users that belong to your AWS account can access your output files\.
+When you follow the usual setup for permissions as described in [Set up IAM permissions ](iam-role.md), only users that belong to your AWS account can access your output files\.
 
 In some cases, you might want to allow users of other AWS accounts access to the outputs of your jobs\. For example, you might run transcoding jobs on behalf of one of your customers, and you might want that customer to have access to the outputs of the jobs\. You can do this in one of the following ways:
 + **Grant access to your Amazon S3 bucket\.**

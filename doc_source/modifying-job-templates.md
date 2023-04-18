@@ -6,9 +6,9 @@ You can change the settings and field values in your custom job templates\. You 
 
 1. Open the MediaConvert console at [https://console\.aws\.amazon\.com/mediaconvert](https://console.aws.amazon.com/mediaconvert)\.
 
-1. On the navigation bar of the MediaConvert console, choose the region where the job template was created\.
+1. On the navigation bar of the MediaConvert console, choose the AWS Region where the job template was created\.
 
-   System job templates are available in all regions\. Custom job templates appear only in the region where they are created\.  
+   System job templates are available in all AWS Regions\. Custom job templates appear only in the AWS Region where they are created\.  
 ![\[Choose a region.\]](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/regions-list.png)
 
 1. Choose the three\-bar icon on the left to access the left navigation pane\.

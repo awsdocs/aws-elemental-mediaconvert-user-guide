@@ -1,4 +1,4 @@
-# SCC, SRT \(sidecar\) output captions<a name="scc-srt-output-captions"></a>
+# SCC, SRT, and SMI \(sidecar\) output captions<a name="scc-srt-output-captions"></a>
 
 ## Where to specify the captions<a name="where-scc-srt-output-captions"></a>
 
@@ -16,4 +16,4 @@ After you add captions to an output, delete the **Video** and **Audio 1** groups
 
 ## How to specify multiple captions tracks<a name="multilang-scc-srt-output-captions"></a>
 
-Specify all tracks in the same output by creating one group of captions settings for each track\. They will appear in the list of settings groups as **Captions 1**, **Captions 2**, and so forth\. In each group of settings, choose the captions selector under **Captions source** that is set up for the track that you want to include\.
+ For each SRT, SCC or SMI output you must have one output per caption selector\. In the caption output, choose the captions selector under **Captions source** that is set up for the track that you want to include\. They will appear in the list of settings groups as **Captions Selector 1**, **Captions Selector 2**, and so forth\. 

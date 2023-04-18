@@ -10,9 +10,8 @@ MediaConvert takes in an input file and the information that you provide about t
 If you aren't familiar with jobs, queues, presets, and job templates—the basic concepts behind MediaConvert—we recommend that you take a quick look at [What is AWS Elemental MediaConvert?](what-is.md) before you begin the tutorial\.
 
 **Topics**
-+ [Step 1: Sign up for AWS](gs-1-sign-up.md)
-+ [Step 2: Create storage for files](set-up-file-locations.md)
-+ [Step 3: \(Optional\) Get set up to use DRM encryption](set-up-encryption.md)
-+ [Step 4: Upload files for transcoding](upload-input-files.md)
-+ [Step 5: Set up IAM permissions](iam-role.md)
-+ [Step 6: Create a job](create-a-job.md)
++ [Create storage for files](set-up-file-locations.md)
++ [\(Optional\) Get set up to use DRM encryption](set-up-encryption.md)
++ [Upload files for transcoding](upload-input-files.md)
++ [Set up IAM permissions](iam-role.md)
++ [Create a job](create-a-job.md)

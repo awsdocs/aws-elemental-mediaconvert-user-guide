@@ -8,7 +8,7 @@ When you set up queue hopping, you specify the *submission queue*, the *wait tim
 
 1. In the **Job settings** section on the right, choose **Queue hopping**\.
 
-1. For **Wait minutes**, enter the time, in whole minutes, that you want the job to wait in the submission queue before hopping\. You can enter a number from 1 through 1,440\.
+1. For **Wait minutes**, enter the time, in whole minutes, that you want the job to wait in the submission queue before hopping\. You can enter a number from 1 through 4320\.
 
 1. For **Destination queue**, choose the queue that you want your job to hop to if it stays in the submission queue longer than the time you specify for **Wait minutes**\.
 

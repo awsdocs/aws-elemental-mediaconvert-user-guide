@@ -1,6 +1,6 @@
 # Logging MediaConvert API calls with AWS CloudTrail<a name="logging-using-cloudtrail"></a>
 
-MediaConvert is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in MediaConvert\. CloudTrail captures all API calls for MediaConvert as events, including calls from the MediaConvert console and from code calls to the MediaConvert APIs\. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for MediaConvert\. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**\. Using the information collected by CloudTrail, you can determine the request that was made to MediaConvert, the IP address from which the request was made, who made the request, when it was made, and additional details\. 
+MediaConvert is integrated with AWS CloudTrail, a service that provides a record of actions taken by a IAM user, role, or an AWS service in MediaConvert\. CloudTrail captures all API calls for MediaConvert as events, including calls from the MediaConvert console and from code calls to the MediaConvert APIs\. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for MediaConvert\. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**\. Using the information collected by CloudTrail, you can determine the request that was made to MediaConvert, the IP address from which the request was made, who made the request, when it was made, and additional details\. 
 
 To learn more about CloudTrail, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/)\.
 
@@ -18,7 +18,7 @@ All MediaConvert actions are logged by CloudTrail and are documented in the [AWS
 
 Every event or log entry contains information about who generated the request\. The identity information helps you determine the following: 
 + Whether the request was made with root or IAM user credentials\.
-+ Whether the request was made with temporary security credentials for a role or federated user\.
++ Whether the request was made with temporary security credentials for a role or federated IAM user\.
 + Whether the request was made by another AWS service\.
 
 For more information, see the [CloudTrail userIdentity element](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html)\.
@@ -32,14 +32,14 @@ The following examples show CloudTrail log entries that demonstrate the `DeleteQ
 **Example log entry: DeleteQueue**
 
 ```
-      {
+{
     "eventVersion": "1.05",
     "userIdentity": {
         "type": "IAMUser",
-        "principalId": "AIDACKCEVSQ6C2EXAMPLE",
+        "principalId": "AKIAIOSFODNN7EXAMPLE",
         "arn": "arn:aws:iam::111122223333:user/testuser",
         "accountId": "111122223333",
-        "accessKeyId": "AIDACKCEVSQ6C2EXAMPLE",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
         "userName": "testuser",
         "sessionContext": {
             "attributes": {
@@ -59,8 +59,8 @@ The following examples show CloudTrail log entries that demonstrate the `DeleteQ
         "name": "8"
     },
     "responseElements": null,
-    "requestID": "03691738-8457-11e8-a138-2b67258eef82",
-    "eventID": "e7d85e26-6c96-4242-80f8-6c8074c26253",
+    "requestID": "1234abcd-12ab-34cd-56ef-1234567890ab",
+    "eventID": "0987dcba-09fe-87dc-65ba-ab0987654321",
     "readOnly": false,
     "eventType": "AwsApiCall",
     "recipientAccountId": "111122223333"
@@ -70,14 +70,14 @@ The following examples show CloudTrail log entries that demonstrate the `DeleteQ
 **Example log entry: CreateQueue**
 
 ```
-      {
+{
     "eventVersion": "1.05",
     "userIdentity": {
         "type": "IAMUser",
-        "principalId": "AIDACKCEVSQ6C2EXAMPLE",
-        "arn": "arn:aws:iam::111122223333:user/jeremyj",
+        "principalId": "AKIAIOSFODNN7EXAMPLE",
+        "arn": "arn:aws:iam::111122223333:user/testuser",
         "accountId": "111122223333",
-        "accessKeyId": "AIDACKCEVSQ6C2EXAMPLE",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
         "userName": "testUser",
         "sessionContext": {
             "attributes": {
@@ -111,8 +111,8 @@ The following examples show CloudTrail log entries that demonstrate the `DeleteQ
             "progressingJobsCount": 0
         }
     },
-    "requestID": "2ccb3914-8461-11e8-bcb3-8578a1397527",
-    "eventID": "a0ff791e-e676-4070-a296-67ecdaa662b1",
+    "requestID": "1234abcd-12ab-34cd-56ef-1234567890ab",
+    "eventID": "0987dcba-09fe-87dc-65ba-ab0987654321",
     "readOnly": false,
     "eventType": "AwsApiCall",
     "recipientAccountId": "111122223333"
@@ -122,14 +122,14 @@ The following examples show CloudTrail log entries that demonstrate the `DeleteQ
 **Example log entry: TagResource**
 
 ```
-      {
+{
     "eventVersion": "1.05",
     "userIdentity": {
         "type": "IAMUser",
-        "principalId": "AIDACKCEVSQ6C2EXAMPLE",
+        "principalId": "AKIAIOSFODNN7EXAMPLE",
         "arn": "arn:aws:iam::111122223333:user/testuser",
         "accountId": "111122223333",
-        "accessKeyId": "AIDACKCEVSQ6C2EXAMPLE",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
         "userName": "testuser"
     },
     "eventTime": "2018-07-10T18:44:27Z",
@@ -145,11 +145,10 @@ The following examples show CloudTrail log entries that demonstrate the `DeleteQ
         }
     },
     "responseElements": null,
-    "requestID": "462fd283-8471-11e8-b353-03144533ee8a",
-    "eventID": "3364cb1b-79c8-4081-9aa0-1b0677349d5e",
+    "requestID": "1234abcd-12ab-34cd-56ef-1234567890ab",
+    "eventID": "0987dcba-09fe-87dc-65ba-ab0987654321",
     "readOnly": false,
     "eventType": "AwsApiCall",
     "recipientAccountId": "111122223333"
-}
 }
 ```

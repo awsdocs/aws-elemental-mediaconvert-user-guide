@@ -19,7 +19,7 @@ Using FrameFormer increases the transcoding time and incurs a significant add\-o
 Depending on the conversion, you might also use these settings:
 
 **Slow PAL** \(`slowPal`\)  
-When you convert the frame rate from 23\.976 or 24 frames per second \(fps\) to 25 fps, you can optionally enable **Slow PAL** \(slow phase alternating line \)\. When you enable slow PAL, instead of duplicating frames to increase the frame rate, MediaConvert relabels the video frames as 25 fps and resamples your audio to keep it synchronized with the video without affecting the pitch\. Slow PAL frame rate conversion slightly reduces the duration of the video\. Generally, you use slow PAL to convert a cinema format for file\-based playback or internet streaming\.
+When you convert the frame rate from 23\.976 or 24 frames per second \(fps\) to 25 fps, you can optionally enable **Slow PAL** \(slow phase alternating line \)\. When you enable slow PAL, instead of duplicating frames to increase the frame rate, MediaConvert relabels the video frames as 25 fps and resamples your audio to keep it synchronized with the video\. Slow PAL frame rate conversion slightly reduces the duration of the video\. Generally, you use slow PAL to convert a cinema format for file\-based playback or internet streaming\.
 
 **Telecine** \(`telecine`\)  
 When you convert the frame rate from 23\.976 frames per second \(fps\) to 29\.97 fps, and your output scan type is interlaced, you can optionally set **Telecine** to **Hard** or **Soft** to create a smoother picture\. Generally, you use telecine when you're preparing a video asset for broadcasting to set\-top boxes\.  

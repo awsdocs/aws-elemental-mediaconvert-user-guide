@@ -1,30 +1,27 @@
 # Using Dolby Atmos encoding with AWS Elemental MediaConvert<a name="using-dolby-atmos-encoding"></a>
 
-AWS Elemental MediaConvert can encode Dolby Digital Plus with Atmos channel\-based, immersive audio, Audio Descriptive Model Broadcast WAV files, or Dolby Atmos Master File\. 
+AWS Elemental MediaConvert can encode Dolby Digital Plus with Atmos channel\-based, immersive audio, Audio Definition Model Broadcast WAV files, or Dolby Atmos Master File\. 
 
 **Note**  
 Understanding Dolby Atmos is required prerequisite knowledge for using this feature\. Your input audio channels must already be set up according the Dolby Atmos standard you are using as input\. For more information about Dolby Atmos, see the Dolby online documentation\.
 
-## Input File Requirements for Dolby Atmos Encoding<a name="input-file-requirements-for-dolby-atmos-encoding"></a>
-
 ## Feature Restrictions for Dolby Atmos Encoding<a name="feature-restrictions-for-dolby-atmos-encoding"></a>
 
-Note the following restrictions in the AWS Elemental MediaConvert implementation of Dolby Atmos encoding:
-+ **Channel\-based immersive:** AWS Elemental MediaConvert supports channel\-based immersive \(CBI\) content\. 
-+ **Dolby Atmos Master File \(DAMF\):** AWS Elemental MediaConvert supports Dolby Atmos master file \(DAMF\)\. This is a collection of 3 files with the extensions, \.atmos, \.atmos\.metadata, and \.atmos\.audio 
-+ **Audio Descriptive Model Broadcast WAV Format \(ADM BWF\):** AWS Elemental MediaConvert supports ADM BWF\. It is a single broadcast WAV file contains header data with the \.atmos and \.atmos\.metadata information\. 
+Note the following restrictions in the MediaConvert implementation of Dolby Atmos encoding:
++ **Input Channel\-Based Immersive \(CBI\):** MediaConvert supports channel\-based immersive \(CBI\) content\.
++ **Input Dolby Atmos Master File \(DAMF\):** MediaConvert supports Dolby Atmos master file \(DAMF\)\. This is a collection of 3 files with the extensions, \.atmos, \.atmos\.metadata, and \.atmos\.audio 
++ **Input Immersive Audio Bitstream \(IAB\):** MediaConvert supports immersive audio bistream \(IAB\)\.
++ **Input Audio Definition Model Broadcast WAV Format \(ADM BWF\):** MediaConvert supports ADM BWF\. It is a single broadcast WAV file contains header data with the \.atmos and \.atmos\.metadata information\. 
 + **Output codec:** You can create Dolby Atmos audio outputs encoded with only the Dolby Digital Plus \(EAC3\) codec\.
 + **Output containers:** For file outputs, you can create Dolby Atmos audio in only in one of the video containers that supports Dolby Digital Plus: MPEG\-4, MPEG\-2 Transport Stream, or QuickTime\.
-+ **Output packages:** For adaptive bitrate \(ABR\) outputs, you can create Dolby Atmos audio in any of the AWS Elemental MediaConvert output group types: CMAF, Apple HLS, DASH ISO, or Microsoft Smooth Streaming\.
++ **Output packages:** For adaptive bitrate \(ABR\) outputs, you can create Dolby Atmos audio in any of the MediaConvert output group types: CMAF, Apple HLS, DASH ISO, or Microsoft Smooth Streaming\.
 
 ## Setting up a job for Dolby Atmos encoding<a name="setting-up-a-job-for-dolby-atmos-encoding"></a>
 
-To encode 9\.1\.6 audio Dolby Atmos objects, provide 16 input channels of PCM audio, either in individual \.wav files or as tracks in a single container\.
+AWS Elemental MediaConvert can encode Dolby Digital Plus with Atmos channel\-based, immersive audio, Audio Descriptive Model Broadcast WAV files, or Dolby Atmos Master File\. 
 
-If you provide input audio as individual \.wav files, you specify them in order in your input\. You specify them as **Audio selector 1**, **Audio selector 2**, and so on, up to **Audio selector 16**\. If you provide your audio as a single file containing 16 tracks, you specify the file in your input as **Audio selector 1**, and then you specify the tracks individually within that audio selector\. 
-
-**Important**  
-Regardless of whether they are in separate files or a single file, you must set up the channels in the following order: L, R, C, LFE, Ls, Rs, Lrs, Rrs, Lw, Rw, Ltf, Rtf, Ltm, Rtm, Ltr, Rtr\.
+**Note**  
+Understanding Dolby Atmos is required prerequisite knowledge for using this feature\. Your input audio channels must already be set up according the Dolby Atmos standard you are using as input\. For more information about Dolby Atmos, see the Dolby online documentation\.
 
 For more details about setting up your job for Dolby Atmos encoding, see one of the following procedures:
 

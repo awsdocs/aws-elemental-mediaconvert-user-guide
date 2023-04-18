@@ -7,26 +7,29 @@ A GOP is a specific arrangement of compressed video frame types\. These frame ty
  **I\-Frames**   
 Intra\-coded frames\. Contain all of the information a decoder uses decode the frame\. Typically, I\-frames use the most number of bits within a video stream\.
 
+ **IDR\-Frames**   
+Instantaneous Decoder Refresh frames\. Similar to I\-frames in that they contain all of the information a decoder uses to decode the frame, but frames cannot reference any frame that comes before an IDR\-frame\.
+
  **P\-frames**   
 Predicted frames\. Contain the differences between the current frame and one or more frames before it\. P\-frames offer much better compression than I\-frames and use fewer bits within a video stream\.
 
  **B\-Frames**   
 Bidirectional predicted frames\. Contain the differences between the current frame and one or more frames before or after it\. B\-frames offer the highest compression and take up the fewest bits within a video stream\.
 
-A typical GOP starts with an I\-frame and follows with a repeating pattern of B\- and P\-frames\. This is a typical repeating frame pattern: IBBPBBPBBPBB
+A typical GOP starts with an IDR\-frame and follows with a repeating pattern of B\- and P\-frames\. This is a typical repeating frame pattern: IBBPBBPBBPBB
 
 The following topics provide more information about individual GOP settings and recommend settings that are optimized for video quality\.
 
 ## GOP size<a name="gop-size-settings"></a>
 
-GOP size \(the number of frames in a GOP\) defines the interval between I\-frames\. For example, if a GOP starts with an I\-frame and has a combination of 29 B and P\-frames, the GOP size is 30 frames\. 
+GOP size \(the number of frames in a GOP\) defines the interval between IDR\-frames\. For example, if a GOP starts with an IDR\-frame and has a combination of 29 B and P\-frames, the GOP size is 30 frames\. 
 
 A typical GOP size is 1–2 seconds long corresponding to the video frame rate\. For example, if your output frame rate is 30 frames per second, a typical GOP size is 30 or 60 frames\.
 
-When you set your output video codec to `H_264` or `H_265`, set **GOP size** to `Auto` to allow MediaConvert to select an optimal GOP size\.
+When you set your output video codec to `H_264` or `H_265`, set **GOP mode control** to `Auto` to allow MediaConvert to select an optimal GOP size\.
 
 **Note**  
-Streaming video formats, including HLS, DASH, CMAF, and MSS, require the fragment or segment length to be a multiple of the GOP size\. For more information, see [Setting the fragment length for streaming outputs](setting-the-fragment-length.md)\. When you set GOP size to auto for these video formats, MediaConvert automatically selects a compatible and optimized GOP size\.
+Streaming video formats, including HLS, DASH, CMAF, and MSS, require the fragment or segment length to be a multiple of the GOP size\. For more information, see [Setting the fragment length for streaming outputs](setting-the-fragment-length.md)\. When you set GOP mode control to Auto for these video formats, MediaConvert automatically selects a compatible and optimized GOP size relative to the fragment or segment length\.
 
 ## Closed GOP cadence<a name="closed-gop-cadence"></a>
 

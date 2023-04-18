@@ -2,6 +2,8 @@
 
 If you want your output video to use a different color space than your input video, use color space conversion\. Set up color space conversion in the output **Color corrector** settings\.
 
+MediaConvert supports the following input color spaces: Rec\. 601, Rec\. 709, HDR10, HLG 2020, P3DCI, and P3D65\.
+
 **To convert the color space**
 
 1. Confirm that MediaConvert supports the conversion that you want to do\. See [Supported color space conversions](hdr-support.md#supported-color-space-conversions)\.
